@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either a EnterprisePreAlertingAnnouncementGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterprisePreAlertingAnnouncementGetRequestAsync instead.")]
-        public static async Task<EnterprisePreAlertingAnnouncementGetResponse> EnterprisePreAlertingAnnouncementGetRequest(this OcipClient client, EnterprisePreAlertingAnnouncementGetRequest request)
+        public static async Task<EnterprisePreAlertingAnnouncementGetResponse> EnterprisePreAlertingAnnouncementGetRequest(this OcipClientBase client, EnterprisePreAlertingAnnouncementGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterprisePreAlertingAnnouncementGetResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Get the Enterprise pre-alerting service settings.
         /// The response is either a EnterprisePreAlertingAnnouncementGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterprisePreAlertingAnnouncementGetResponse> EnterprisePreAlertingAnnouncementGetRequestAsync(this OcipClient client, EnterprisePreAlertingAnnouncementGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterprisePreAlertingAnnouncementGetResponse> EnterprisePreAlertingAnnouncementGetRequestAsync(this OcipClientBase client, EnterprisePreAlertingAnnouncementGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterprisePreAlertingAnnouncementGetResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterprisePreAlertingAnnouncementModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterprisePreAlertingAnnouncementModifyRequest(this OcipClient client, EnterprisePreAlertingAnnouncementModifyRequest request)
+        public static async Task<SuccessResponse> EnterprisePreAlertingAnnouncementModifyRequest(this OcipClientBase client, EnterprisePreAlertingAnnouncementModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Modify the enterprise level pre-alerting service settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterprisePreAlertingAnnouncementModifyRequestAsync(this OcipClient client, EnterprisePreAlertingAnnouncementModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterprisePreAlertingAnnouncementModifyRequestAsync(this OcipClientBase client, EnterprisePreAlertingAnnouncementModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -50,7 +50,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupPreAlertingAnnouncementGetResponse20 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupPreAlertingAnnouncementGetRequest20Async instead.")]
-        public static async Task<GroupPreAlertingAnnouncementGetResponse20> GroupPreAlertingAnnouncementGetRequest20(this OcipClient client, GroupPreAlertingAnnouncementGetRequest20 request)
+        public static async Task<GroupPreAlertingAnnouncementGetResponse20> GroupPreAlertingAnnouncementGetRequest20(this OcipClientBase client, GroupPreAlertingAnnouncementGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupPreAlertingAnnouncementGetResponse20;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// Get the group’s PreAlertingservice settings.
         /// The response is either a GroupPreAlertingAnnouncementGetResponse20 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupPreAlertingAnnouncementGetResponse20> GroupPreAlertingAnnouncementGetRequest20Async(this OcipClient client, GroupPreAlertingAnnouncementGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupPreAlertingAnnouncementGetResponse20> GroupPreAlertingAnnouncementGetRequest20Async(this OcipClientBase client, GroupPreAlertingAnnouncementGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupPreAlertingAnnouncementGetResponse20;
         }
@@ -68,7 +68,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupPreAlertingAnnouncementModifyRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupPreAlertingAnnouncementModifyRequest20(this OcipClient client, GroupPreAlertingAnnouncementModifyRequest20 request)
+        public static async Task<SuccessResponse> GroupPreAlertingAnnouncementModifyRequest20(this OcipClientBase client, GroupPreAlertingAnnouncementModifyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -77,7 +77,7 @@ namespace BroadWorksConnector
         /// Modify the group level pre-alerting service settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupPreAlertingAnnouncementModifyRequest20Async(this OcipClient client, GroupPreAlertingAnnouncementModifyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupPreAlertingAnnouncementModifyRequest20Async(this OcipClientBase client, GroupPreAlertingAnnouncementModifyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -90,7 +90,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPreAlertingAnnouncementAddCriteriaRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserPreAlertingAnnouncementAddCriteriaRequest(this OcipClient client, UserPreAlertingAnnouncementAddCriteriaRequest request)
+        public static async Task<SuccessResponse> UserPreAlertingAnnouncementAddCriteriaRequest(this OcipClientBase client, UserPreAlertingAnnouncementAddCriteriaRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -103,7 +103,7 @@ namespace BroadWorksConnector
         /// For the callToNumber, the extension element is not used and the number element is only used when the type is BroadWorks Mobility.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserPreAlertingAnnouncementAddCriteriaRequestAsync(this OcipClient client, UserPreAlertingAnnouncementAddCriteriaRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserPreAlertingAnnouncementAddCriteriaRequestAsync(this OcipClientBase client, UserPreAlertingAnnouncementAddCriteriaRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -112,7 +112,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPreAlertingAnnouncementDeleteCriteriaRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserPreAlertingAnnouncementDeleteCriteriaRequest(this OcipClient client, UserPreAlertingAnnouncementDeleteCriteriaRequest request)
+        public static async Task<SuccessResponse> UserPreAlertingAnnouncementDeleteCriteriaRequest(this OcipClientBase client, UserPreAlertingAnnouncementDeleteCriteriaRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -121,7 +121,7 @@ namespace BroadWorksConnector
         /// Delete a criteria from the user's pre-alerting service.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserPreAlertingAnnouncementDeleteCriteriaRequestAsync(this OcipClient client, UserPreAlertingAnnouncementDeleteCriteriaRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserPreAlertingAnnouncementDeleteCriteriaRequestAsync(this OcipClientBase client, UserPreAlertingAnnouncementDeleteCriteriaRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -130,7 +130,7 @@ namespace BroadWorksConnector
         /// The response is either a UserPreAlertingAnnouncementGetCriteriaResponse21 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPreAlertingAnnouncementGetCriteriaRequest21Async instead.")]
-        public static async Task<UserPreAlertingAnnouncementGetCriteriaResponse21> UserPreAlertingAnnouncementGetCriteriaRequest21(this OcipClient client, UserPreAlertingAnnouncementGetCriteriaRequest21 request)
+        public static async Task<UserPreAlertingAnnouncementGetCriteriaResponse21> UserPreAlertingAnnouncementGetCriteriaRequest21(this OcipClientBase client, UserPreAlertingAnnouncementGetCriteriaRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserPreAlertingAnnouncementGetCriteriaResponse21;
         }
@@ -139,7 +139,7 @@ namespace BroadWorksConnector
         /// Get a criteria for the user's pre-alerting service.
         /// The response is either a UserPreAlertingAnnouncementGetCriteriaResponse21 or an ErrorResponse.
         /// </summary>
-        public static async Task<UserPreAlertingAnnouncementGetCriteriaResponse21> UserPreAlertingAnnouncementGetCriteriaRequest21Async(this OcipClient client, UserPreAlertingAnnouncementGetCriteriaRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<UserPreAlertingAnnouncementGetCriteriaResponse21> UserPreAlertingAnnouncementGetCriteriaRequest21Async(this OcipClientBase client, UserPreAlertingAnnouncementGetCriteriaRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserPreAlertingAnnouncementGetCriteriaResponse21;
         }
@@ -148,7 +148,7 @@ namespace BroadWorksConnector
         /// The response is either a UserPreAlertingAnnouncementGetResponse20 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPreAlertingAnnouncementGetRequest20Async instead.")]
-        public static async Task<UserPreAlertingAnnouncementGetResponse20> UserPreAlertingAnnouncementGetRequest20(this OcipClient client, UserPreAlertingAnnouncementGetRequest20 request)
+        public static async Task<UserPreAlertingAnnouncementGetResponse20> UserPreAlertingAnnouncementGetRequest20(this OcipClientBase client, UserPreAlertingAnnouncementGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserPreAlertingAnnouncementGetResponse20;
         }
@@ -157,7 +157,7 @@ namespace BroadWorksConnector
         /// Get the user's pre-alerting service setting.
         /// The response is either a UserPreAlertingAnnouncementGetResponse20 or an ErrorResponse.
         /// </summary>
-        public static async Task<UserPreAlertingAnnouncementGetResponse20> UserPreAlertingAnnouncementGetRequest20Async(this OcipClient client, UserPreAlertingAnnouncementGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<UserPreAlertingAnnouncementGetResponse20> UserPreAlertingAnnouncementGetRequest20Async(this OcipClientBase client, UserPreAlertingAnnouncementGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserPreAlertingAnnouncementGetResponse20;
         }
@@ -170,7 +170,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPreAlertingAnnouncementModifyCriteriaRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyCriteriaRequest(this OcipClient client, UserPreAlertingAnnouncementModifyCriteriaRequest request)
+        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyCriteriaRequest(this OcipClientBase client, UserPreAlertingAnnouncementModifyCriteriaRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -183,7 +183,7 @@ namespace BroadWorksConnector
         /// For the callToNumbers in the callToNumberList, the extension element is not used and the number element is only used when the type is BroadWorks Mobility.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyCriteriaRequestAsync(this OcipClient client, UserPreAlertingAnnouncementModifyCriteriaRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyCriteriaRequestAsync(this OcipClientBase client, UserPreAlertingAnnouncementModifyCriteriaRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -192,7 +192,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPreAlertingAnnouncementModifyRequest20Async instead.")]
-        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyRequest20(this OcipClient client, UserPreAlertingAnnouncementModifyRequest20 request)
+        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyRequest20(this OcipClientBase client, UserPreAlertingAnnouncementModifyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -201,7 +201,7 @@ namespace BroadWorksConnector
         /// Modify the user's pre-alerting service setting.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyRequest20Async(this OcipClient client, UserPreAlertingAnnouncementModifyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyRequest20Async(this OcipClientBase client, UserPreAlertingAnnouncementModifyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

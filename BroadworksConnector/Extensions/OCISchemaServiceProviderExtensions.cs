@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceAddRequest14Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceAddRequest14(this OcipClient client, ServiceProviderAccessDeviceAddRequest14 request)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceAddRequest14(this OcipClientBase client, ServiceProviderAccessDeviceAddRequest14 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Request to add a service provider access device.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceAddRequest14Async(this OcipClient client, ServiceProviderAccessDeviceAddRequest14 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceAddRequest14Async(this OcipClientBase client, ServiceProviderAccessDeviceAddRequest14 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceCustomTagAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagAddRequest(this OcipClient client, ServiceProviderAccessDeviceCustomTagAddRequest request)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagAddRequest(this OcipClientBase client, ServiceProviderAccessDeviceCustomTagAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Request to add a static configuration tag for a service provider access device.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagAddRequestAsync(this OcipClient client, ServiceProviderAccessDeviceCustomTagAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagAddRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceCustomTagAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -50,7 +50,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceCustomTagDeleteListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagDeleteListRequest(this OcipClient client, ServiceProviderAccessDeviceCustomTagDeleteListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagDeleteListRequest(this OcipClientBase client, ServiceProviderAccessDeviceCustomTagDeleteListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// Request to delete static configuration tags for a service provider access device.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagDeleteListRequestAsync(this OcipClient client, ServiceProviderAccessDeviceCustomTagDeleteListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagDeleteListRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceCustomTagDeleteListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -68,7 +68,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderAccessDeviceCustomTagGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceCustomTagGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderAccessDeviceCustomTagGetListResponse> ServiceProviderAccessDeviceCustomTagGetListRequest(this OcipClient client, ServiceProviderAccessDeviceCustomTagGetListRequest request)
+        public static async Task<ServiceProviderAccessDeviceCustomTagGetListResponse> ServiceProviderAccessDeviceCustomTagGetListRequest(this OcipClientBase client, ServiceProviderAccessDeviceCustomTagGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAccessDeviceCustomTagGetListResponse;
         }
@@ -77,7 +77,7 @@ namespace BroadWorksConnector
         /// Request to get the list of custom configuration tags managed by the Device Management System, on a per-device profile basis.
         /// The response is either ServiceProviderAccessDeviceCustomTagGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAccessDeviceCustomTagGetListResponse> ServiceProviderAccessDeviceCustomTagGetListRequestAsync(this OcipClient client, ServiceProviderAccessDeviceCustomTagGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAccessDeviceCustomTagGetListResponse> ServiceProviderAccessDeviceCustomTagGetListRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceCustomTagGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAccessDeviceCustomTagGetListResponse;
         }
@@ -92,7 +92,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceCustomTagModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagModifyRequest(this OcipClient client, ServiceProviderAccessDeviceCustomTagModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagModifyRequest(this OcipClientBase client, ServiceProviderAccessDeviceCustomTagModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -107,7 +107,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagModifyRequestAsync(this OcipClient client, ServiceProviderAccessDeviceCustomTagModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceCustomTagModifyRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceCustomTagModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -116,7 +116,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceDeleteRequest(this OcipClient client, ServiceProviderAccessDeviceDeleteRequest request)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceDeleteRequest(this OcipClientBase client, ServiceProviderAccessDeviceDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -125,7 +125,7 @@ namespace BroadWorksConnector
         /// Request to delete a specified service provider access device.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceDeleteRequestAsync(this OcipClient client, ServiceProviderAccessDeviceDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceDeleteRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -134,7 +134,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderAccessDeviceFileGetListResponse14sp8 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceFileGetListRequest14sp8Async instead.")]
-        public static async Task<ServiceProviderAccessDeviceFileGetListResponse14sp8> ServiceProviderAccessDeviceFileGetListRequest14sp8(this OcipClient client, ServiceProviderAccessDeviceFileGetListRequest14sp8 request)
+        public static async Task<ServiceProviderAccessDeviceFileGetListResponse14sp8> ServiceProviderAccessDeviceFileGetListRequest14sp8(this OcipClientBase client, ServiceProviderAccessDeviceFileGetListRequest14sp8 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAccessDeviceFileGetListResponse14sp8;
         }
@@ -143,7 +143,7 @@ namespace BroadWorksConnector
         /// Request to get the list of device files managed by the Device Management System, on a per-device profile basis.
         /// The response is either ServiceProviderAccessDeviceFileGetListResponse14sp8 or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAccessDeviceFileGetListResponse14sp8> ServiceProviderAccessDeviceFileGetListRequest14sp8Async(this OcipClient client, ServiceProviderAccessDeviceFileGetListRequest14sp8 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAccessDeviceFileGetListResponse14sp8> ServiceProviderAccessDeviceFileGetListRequest14sp8Async(this OcipClientBase client, ServiceProviderAccessDeviceFileGetListRequest14sp8 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAccessDeviceFileGetListResponse14sp8;
         }
@@ -152,7 +152,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderAccessDeviceFileGetResponse20 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceFileGetRequest20Async instead.")]
-        public static async Task<ServiceProviderAccessDeviceFileGetResponse20> ServiceProviderAccessDeviceFileGetRequest20(this OcipClient client, ServiceProviderAccessDeviceFileGetRequest20 request)
+        public static async Task<ServiceProviderAccessDeviceFileGetResponse20> ServiceProviderAccessDeviceFileGetRequest20(this OcipClientBase client, ServiceProviderAccessDeviceFileGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAccessDeviceFileGetResponse20;
         }
@@ -161,7 +161,7 @@ namespace BroadWorksConnector
         /// Request to get a service provider device profile file.
         /// The response is either ServiceProviderAccessDeviceFileGetResponse20 or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAccessDeviceFileGetResponse20> ServiceProviderAccessDeviceFileGetRequest20Async(this OcipClient client, ServiceProviderAccessDeviceFileGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAccessDeviceFileGetResponse20> ServiceProviderAccessDeviceFileGetRequest20Async(this OcipClientBase client, ServiceProviderAccessDeviceFileGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAccessDeviceFileGetResponse20;
         }
@@ -170,7 +170,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceFileModifyRequest14sp8Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceFileModifyRequest14sp8(this OcipClient client, ServiceProviderAccessDeviceFileModifyRequest14sp8 request)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceFileModifyRequest14sp8(this OcipClientBase client, ServiceProviderAccessDeviceFileModifyRequest14sp8 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -179,7 +179,7 @@ namespace BroadWorksConnector
         /// Request to modify a specified service provider/enterprise access device file.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceFileModifyRequest14sp8Async(this OcipClient client, ServiceProviderAccessDeviceFileModifyRequest14sp8 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceFileModifyRequest14sp8Async(this OcipClientBase client, ServiceProviderAccessDeviceFileModifyRequest14sp8 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -190,7 +190,7 @@ namespace BroadWorksConnector
         /// or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListRequestAsync instead.")]
-        public static async Task<ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListResponse> ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListRequest(this OcipClient client, ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListRequest request)
+        public static async Task<ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListResponse> ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListRequest(this OcipClientBase client, ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListResponse;
         }
@@ -201,7 +201,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListResponse
         /// or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListResponse> ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListRequestAsync(this OcipClient client, ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListResponse> ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAccessDeviceGetEnhancedConfigurationTypeListResponse;
         }
@@ -211,7 +211,7 @@ namespace BroadWorksConnector
         /// or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceGetEnhancedConfigurationTypeRequestAsync instead.")]
-        public static async Task<ServiceProviderAccessDeviceGetEnhancedConfigurationTypeResponse> ServiceProviderAccessDeviceGetEnhancedConfigurationTypeRequest(this OcipClient client, ServiceProviderAccessDeviceGetEnhancedConfigurationTypeRequest request)
+        public static async Task<ServiceProviderAccessDeviceGetEnhancedConfigurationTypeResponse> ServiceProviderAccessDeviceGetEnhancedConfigurationTypeRequest(this OcipClientBase client, ServiceProviderAccessDeviceGetEnhancedConfigurationTypeRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAccessDeviceGetEnhancedConfigurationTypeResponse;
         }
@@ -221,7 +221,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderAccessDeviceGetEnhancedConfigurationTypeResponse
         /// or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAccessDeviceGetEnhancedConfigurationTypeResponse> ServiceProviderAccessDeviceGetEnhancedConfigurationTypeRequestAsync(this OcipClient client, ServiceProviderAccessDeviceGetEnhancedConfigurationTypeRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAccessDeviceGetEnhancedConfigurationTypeResponse> ServiceProviderAccessDeviceGetEnhancedConfigurationTypeRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceGetEnhancedConfigurationTypeRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAccessDeviceGetEnhancedConfigurationTypeResponse;
         }
@@ -230,7 +230,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderAccessDeviceGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderAccessDeviceGetListResponse> ServiceProviderAccessDeviceGetListRequest(this OcipClient client, ServiceProviderAccessDeviceGetListRequest request)
+        public static async Task<ServiceProviderAccessDeviceGetListResponse> ServiceProviderAccessDeviceGetListRequest(this OcipClientBase client, ServiceProviderAccessDeviceGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAccessDeviceGetListResponse;
         }
@@ -239,7 +239,7 @@ namespace BroadWorksConnector
         /// Requests the list of access devices in a service provider.
         /// The response is either ServiceProviderAccessDeviceGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAccessDeviceGetListResponse> ServiceProviderAccessDeviceGetListRequestAsync(this OcipClient client, ServiceProviderAccessDeviceGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAccessDeviceGetListResponse> ServiceProviderAccessDeviceGetListRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAccessDeviceGetListResponse;
         }
@@ -248,7 +248,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderAccessDeviceGetResponse18sp1 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceGetRequest18sp1Async instead.")]
-        public static async Task<ServiceProviderAccessDeviceGetResponse18sp1> ServiceProviderAccessDeviceGetRequest18sp1(this OcipClient client, ServiceProviderAccessDeviceGetRequest18sp1 request)
+        public static async Task<ServiceProviderAccessDeviceGetResponse18sp1> ServiceProviderAccessDeviceGetRequest18sp1(this OcipClientBase client, ServiceProviderAccessDeviceGetRequest18sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAccessDeviceGetResponse18sp1;
         }
@@ -257,7 +257,7 @@ namespace BroadWorksConnector
         /// Requests the configuration of a specified service provider access device.
         /// The response is either ServiceProviderAccessDeviceGetResponse18sp1 or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAccessDeviceGetResponse18sp1> ServiceProviderAccessDeviceGetRequest18sp1Async(this OcipClient client, ServiceProviderAccessDeviceGetRequest18sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAccessDeviceGetResponse18sp1> ServiceProviderAccessDeviceGetRequest18sp1Async(this OcipClientBase client, ServiceProviderAccessDeviceGetRequest18sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAccessDeviceGetResponse18sp1;
         }
@@ -268,7 +268,7 @@ namespace BroadWorksConnector
         /// searchCriteriaAccessDeviceEndpointPrivateIdentity
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceGetUserListRequest21sp1Async instead.")]
-        public static async Task<ServiceProviderAccessDeviceGetUserListResponse21sp1> ServiceProviderAccessDeviceGetUserListRequest21sp1(this OcipClient client, ServiceProviderAccessDeviceGetUserListRequest21sp1 request)
+        public static async Task<ServiceProviderAccessDeviceGetUserListResponse21sp1> ServiceProviderAccessDeviceGetUserListRequest21sp1(this OcipClientBase client, ServiceProviderAccessDeviceGetUserListRequest21sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAccessDeviceGetUserListResponse21sp1;
         }
@@ -279,7 +279,7 @@ namespace BroadWorksConnector
         /// The following elements are only used in XS data mode and ignored in AS data mode:
         /// searchCriteriaAccessDeviceEndpointPrivateIdentity
         /// </summary>
-        public static async Task<ServiceProviderAccessDeviceGetUserListResponse21sp1> ServiceProviderAccessDeviceGetUserListRequest21sp1Async(this OcipClient client, ServiceProviderAccessDeviceGetUserListRequest21sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAccessDeviceGetUserListResponse21sp1> ServiceProviderAccessDeviceGetUserListRequest21sp1Async(this OcipClientBase client, ServiceProviderAccessDeviceGetUserListRequest21sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAccessDeviceGetUserListResponse21sp1;
         }
@@ -288,7 +288,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceModifyRequest14Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceModifyRequest14(this OcipClient client, ServiceProviderAccessDeviceModifyRequest14 request)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceModifyRequest14(this OcipClientBase client, ServiceProviderAccessDeviceModifyRequest14 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -297,7 +297,7 @@ namespace BroadWorksConnector
         /// Request to modify a specified service provider access device.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceModifyRequest14Async(this OcipClient client, ServiceProviderAccessDeviceModifyRequest14 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceModifyRequest14Async(this OcipClientBase client, ServiceProviderAccessDeviceModifyRequest14 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -308,7 +308,7 @@ namespace BroadWorksConnector
         /// privateIdentity
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceModifyUserRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceModifyUserRequest(this OcipClient client, ServiceProviderAccessDeviceModifyUserRequest request)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceModifyUserRequest(this OcipClientBase client, ServiceProviderAccessDeviceModifyUserRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -319,7 +319,7 @@ namespace BroadWorksConnector
         /// The following elements are only used in XS data mode and ignored in AS data mode:
         /// privateIdentity
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceModifyUserRequestAsync(this OcipClient client, ServiceProviderAccessDeviceModifyUserRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceModifyUserRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceModifyUserRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -328,7 +328,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceResetRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceResetRequest(this OcipClient client, ServiceProviderAccessDeviceResetRequest request)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceResetRequest(this OcipClientBase client, ServiceProviderAccessDeviceResetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -337,7 +337,7 @@ namespace BroadWorksConnector
         /// Reset a specific service provider SIP device that supports the reset operation.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceResetRequestAsync(this OcipClient client, ServiceProviderAccessDeviceResetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceResetRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceResetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -346,7 +346,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderAccessDeviceTagSetGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceTagSetGetRequestAsync instead.")]
-        public static async Task<ServiceProviderAccessDeviceTagSetGetResponse> ServiceProviderAccessDeviceTagSetGetRequest(this OcipClient client, ServiceProviderAccessDeviceTagSetGetRequest request)
+        public static async Task<ServiceProviderAccessDeviceTagSetGetResponse> ServiceProviderAccessDeviceTagSetGetRequest(this OcipClientBase client, ServiceProviderAccessDeviceTagSetGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAccessDeviceTagSetGetResponse;
         }
@@ -355,7 +355,7 @@ namespace BroadWorksConnector
         /// Request to get the custom configuration tag set defined at the access device.
         /// The response is either ServiceProviderAccessDeviceTagSetGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAccessDeviceTagSetGetResponse> ServiceProviderAccessDeviceTagSetGetRequestAsync(this OcipClient client, ServiceProviderAccessDeviceTagSetGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAccessDeviceTagSetGetResponse> ServiceProviderAccessDeviceTagSetGetRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceTagSetGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAccessDeviceTagSetGetResponse;
         }
@@ -364,7 +364,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceTagSetModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceTagSetModifyRequest(this OcipClient client, ServiceProviderAccessDeviceTagSetModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceTagSetModifyRequest(this OcipClientBase client, ServiceProviderAccessDeviceTagSetModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -373,7 +373,7 @@ namespace BroadWorksConnector
         /// Request to modify a static configuration tag set.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAccessDeviceTagSetModifyRequestAsync(this OcipClient client, ServiceProviderAccessDeviceTagSetModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAccessDeviceTagSetModifyRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceTagSetModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -398,7 +398,7 @@ namespace BroadWorksConnector
         /// If reseller administrator sends the request, resellerId is ignored. The reseller administrator's reseller id is used.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAddRequest13mp2Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAddRequest13mp2(this OcipClient client, ServiceProviderAddRequest13mp2 request)
+        public static async Task<SuccessResponse> ServiceProviderAddRequest13mp2(this OcipClientBase client, ServiceProviderAddRequest13mp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -423,7 +423,7 @@ namespace BroadWorksConnector
         /// resellerId
         /// If reseller administrator sends the request, resellerId is ignored. The reseller administrator's reseller id is used.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAddRequest13mp2Async(this OcipClient client, ServiceProviderAddRequest13mp2 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAddRequest13mp2Async(this OcipClientBase client, ServiceProviderAddRequest13mp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -432,7 +432,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAdminAddRequest14Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAdminAddRequest14(this OcipClient client, ServiceProviderAdminAddRequest14 request)
+        public static async Task<SuccessResponse> ServiceProviderAdminAddRequest14(this OcipClientBase client, ServiceProviderAdminAddRequest14 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -441,7 +441,7 @@ namespace BroadWorksConnector
         /// Add a service provider administrator.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAdminAddRequest14Async(this OcipClient client, ServiceProviderAdminAddRequest14 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAdminAddRequest14Async(this OcipClientBase client, ServiceProviderAdminAddRequest14 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -450,7 +450,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAdminDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAdminDeleteRequest(this OcipClient client, ServiceProviderAdminDeleteRequest request)
+        public static async Task<SuccessResponse> ServiceProviderAdminDeleteRequest(this OcipClientBase client, ServiceProviderAdminDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -459,7 +459,7 @@ namespace BroadWorksConnector
         /// Delete a service provider administrator.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAdminDeleteRequestAsync(this OcipClient client, ServiceProviderAdminDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAdminDeleteRequestAsync(this OcipClientBase client, ServiceProviderAdminDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -468,7 +468,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderAdminGetListResponse14 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAdminGetListRequest14Async instead.")]
-        public static async Task<ServiceProviderAdminGetListResponse14> ServiceProviderAdminGetListRequest14(this OcipClient client, ServiceProviderAdminGetListRequest14 request)
+        public static async Task<ServiceProviderAdminGetListResponse14> ServiceProviderAdminGetListRequest14(this OcipClientBase client, ServiceProviderAdminGetListRequest14 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAdminGetListResponse14;
         }
@@ -477,7 +477,7 @@ namespace BroadWorksConnector
         /// Get a list of service provider administrators.
         /// The response is either a ServiceProviderAdminGetListResponse14 or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAdminGetListResponse14> ServiceProviderAdminGetListRequest14Async(this OcipClient client, ServiceProviderAdminGetListRequest14 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAdminGetListResponse14> ServiceProviderAdminGetListRequest14Async(this OcipClientBase client, ServiceProviderAdminGetListRequest14 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAdminGetListResponse14;
         }
@@ -492,7 +492,7 @@ namespace BroadWorksConnector
         /// included. Then the search criteria are logically ORed together.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAdminGetPagedSortedListRequestAsync instead.")]
-        public static async Task<ServiceProviderAdminGetPagedSortedListResponse> ServiceProviderAdminGetPagedSortedListRequest(this OcipClient client, ServiceProviderAdminGetPagedSortedListRequest request)
+        public static async Task<ServiceProviderAdminGetPagedSortedListResponse> ServiceProviderAdminGetPagedSortedListRequest(this OcipClientBase client, ServiceProviderAdminGetPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAdminGetPagedSortedListResponse;
         }
@@ -507,7 +507,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together unless the searchCriteriaModeOr option is
         /// included. Then the search criteria are logically ORed together.
         /// </summary>
-        public static async Task<ServiceProviderAdminGetPagedSortedListResponse> ServiceProviderAdminGetPagedSortedListRequestAsync(this OcipClient client, ServiceProviderAdminGetPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAdminGetPagedSortedListResponse> ServiceProviderAdminGetPagedSortedListRequestAsync(this OcipClientBase client, ServiceProviderAdminGetPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAdminGetPagedSortedListResponse;
         }
@@ -516,7 +516,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderAdminGetPolicyResponse20 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAdminGetPolicyRequest20Async instead.")]
-        public static async Task<ServiceProviderAdminGetPolicyResponse20> ServiceProviderAdminGetPolicyRequest20(this OcipClient client, ServiceProviderAdminGetPolicyRequest20 request)
+        public static async Task<ServiceProviderAdminGetPolicyResponse20> ServiceProviderAdminGetPolicyRequest20(this OcipClientBase client, ServiceProviderAdminGetPolicyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAdminGetPolicyResponse20;
         }
@@ -525,7 +525,7 @@ namespace BroadWorksConnector
         /// Requests the service provider administrator's policy settings.
         /// The response is either ServiceProviderAdminGetPolicyResponse20 or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAdminGetPolicyResponse20> ServiceProviderAdminGetPolicyRequest20Async(this OcipClient client, ServiceProviderAdminGetPolicyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAdminGetPolicyResponse20> ServiceProviderAdminGetPolicyRequest20Async(this OcipClientBase client, ServiceProviderAdminGetPolicyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAdminGetPolicyResponse20;
         }
@@ -534,7 +534,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderAdminGetResponse21sp1 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAdminGetRequest21sp1Async instead.")]
-        public static async Task<ServiceProviderAdminGetResponse21sp1> ServiceProviderAdminGetRequest21sp1(this OcipClient client, ServiceProviderAdminGetRequest21sp1 request)
+        public static async Task<ServiceProviderAdminGetResponse21sp1> ServiceProviderAdminGetRequest21sp1(this OcipClientBase client, ServiceProviderAdminGetRequest21sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAdminGetResponse21sp1;
         }
@@ -543,7 +543,7 @@ namespace BroadWorksConnector
         /// Get a service provider administrators profile.
         /// The response is either a ServiceProviderAdminGetResponse21sp1 or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAdminGetResponse21sp1> ServiceProviderAdminGetRequest21sp1Async(this OcipClient client, ServiceProviderAdminGetRequest21sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAdminGetResponse21sp1> ServiceProviderAdminGetRequest21sp1Async(this OcipClientBase client, ServiceProviderAdminGetRequest21sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAdminGetResponse21sp1;
         }
@@ -553,7 +553,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAdministratorPasswordRulesGetRequestAsync instead.")]
-        public static async Task<ServiceProviderAdministratorPasswordRulesGetResponse> ServiceProviderAdministratorPasswordRulesGetRequest(this OcipClient client, ServiceProviderAdministratorPasswordRulesGetRequest request)
+        public static async Task<ServiceProviderAdministratorPasswordRulesGetResponse> ServiceProviderAdministratorPasswordRulesGetRequest(this OcipClientBase client, ServiceProviderAdministratorPasswordRulesGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAdministratorPasswordRulesGetResponse;
         }
@@ -563,7 +563,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderAdministratorPasswordRulesGetResponse or
         /// ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAdministratorPasswordRulesGetResponse> ServiceProviderAdministratorPasswordRulesGetRequestAsync(this OcipClient client, ServiceProviderAdministratorPasswordRulesGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAdministratorPasswordRulesGetResponse> ServiceProviderAdministratorPasswordRulesGetRequestAsync(this OcipClientBase client, ServiceProviderAdministratorPasswordRulesGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAdministratorPasswordRulesGetResponse;
         }
@@ -576,7 +576,7 @@ namespace BroadWorksConnector
         /// verifyTranslationAndroutingAccess
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAdminModifyPolicyRequest14Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAdminModifyPolicyRequest14(this OcipClient client, ServiceProviderAdminModifyPolicyRequest14 request)
+        public static async Task<SuccessResponse> ServiceProviderAdminModifyPolicyRequest14(this OcipClientBase client, ServiceProviderAdminModifyPolicyRequest14 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -589,7 +589,7 @@ namespace BroadWorksConnector
         /// dialableCallerIDAccess
         /// verifyTranslationAndroutingAccess
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAdminModifyPolicyRequest14Async(this OcipClient client, ServiceProviderAdminModifyPolicyRequest14 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAdminModifyPolicyRequest14Async(this OcipClientBase client, ServiceProviderAdminModifyPolicyRequest14 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -600,7 +600,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAdminModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAdminModifyRequest(this OcipClient client, ServiceProviderAdminModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderAdminModifyRequest(this OcipClientBase client, ServiceProviderAdminModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -611,7 +611,7 @@ namespace BroadWorksConnector
         /// does not apply.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAdminModifyRequestAsync(this OcipClient client, ServiceProviderAdminModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAdminModifyRequestAsync(this OcipClientBase client, ServiceProviderAdminModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -620,7 +620,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderAnswerConfirmationGetResponse16 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAnswerConfirmationGetRequest16Async instead.")]
-        public static async Task<ServiceProviderAnswerConfirmationGetResponse16> ServiceProviderAnswerConfirmationGetRequest16(this OcipClient client, ServiceProviderAnswerConfirmationGetRequest16 request)
+        public static async Task<ServiceProviderAnswerConfirmationGetResponse16> ServiceProviderAnswerConfirmationGetRequest16(this OcipClientBase client, ServiceProviderAnswerConfirmationGetRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAnswerConfirmationGetResponse16;
         }
@@ -629,7 +629,7 @@ namespace BroadWorksConnector
         /// Get a service provider or enterprise's answer confirmation settings.
         /// The response is either a ServiceProviderAnswerConfirmationGetResponse16 or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderAnswerConfirmationGetResponse16> ServiceProviderAnswerConfirmationGetRequest16Async(this OcipClient client, ServiceProviderAnswerConfirmationGetRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAnswerConfirmationGetResponse16> ServiceProviderAnswerConfirmationGetRequest16Async(this OcipClientBase client, ServiceProviderAnswerConfirmationGetRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAnswerConfirmationGetResponse16;
         }
@@ -638,7 +638,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAnswerConfirmationModifyRequest16Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderAnswerConfirmationModifyRequest16(this OcipClient client, ServiceProviderAnswerConfirmationModifyRequest16 request)
+        public static async Task<SuccessResponse> ServiceProviderAnswerConfirmationModifyRequest16(this OcipClientBase client, ServiceProviderAnswerConfirmationModifyRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -647,7 +647,7 @@ namespace BroadWorksConnector
         /// Modify a service provider or enterprise's answer confirmation settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderAnswerConfirmationModifyRequest16Async(this OcipClient client, ServiceProviderAnswerConfirmationModifyRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderAnswerConfirmationModifyRequest16Async(this OcipClientBase client, ServiceProviderAnswerConfirmationModifyRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -656,7 +656,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderApplicationServerSetGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderApplicationServerSetGetRequestAsync instead.")]
-        public static async Task<ServiceProviderApplicationServerSetGetResponse> ServiceProviderApplicationServerSetGetRequest(this OcipClient client, ServiceProviderApplicationServerSetGetRequest request)
+        public static async Task<ServiceProviderApplicationServerSetGetResponse> ServiceProviderApplicationServerSetGetRequest(this OcipClientBase client, ServiceProviderApplicationServerSetGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderApplicationServerSetGetResponse;
         }
@@ -665,7 +665,7 @@ namespace BroadWorksConnector
         /// Get the Application Server set for a service provider or enterprise.
         /// The response is either a ServiceProviderApplicationServerSetGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderApplicationServerSetGetResponse> ServiceProviderApplicationServerSetGetRequestAsync(this OcipClient client, ServiceProviderApplicationServerSetGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderApplicationServerSetGetResponse> ServiceProviderApplicationServerSetGetRequestAsync(this OcipClientBase client, ServiceProviderApplicationServerSetGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderApplicationServerSetGetResponse;
         }
@@ -674,7 +674,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderApplicationServerSetModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderApplicationServerSetModifyRequest(this OcipClient client, ServiceProviderApplicationServerSetModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderApplicationServerSetModifyRequest(this OcipClientBase client, ServiceProviderApplicationServerSetModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -683,7 +683,7 @@ namespace BroadWorksConnector
         /// Modify the Application Server set assigned to the service provider or enterprise.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderApplicationServerSetModifyRequestAsync(this OcipClient client, ServiceProviderApplicationServerSetModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderApplicationServerSetModifyRequestAsync(this OcipClientBase client, ServiceProviderApplicationServerSetModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -692,7 +692,7 @@ namespace BroadWorksConnector
         /// Policy. The response is either a ServiceProviderCallProcessingGetPolicyResponse22V2 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCallProcessingGetPolicyRequest22V2Async instead.")]
-        public static async Task<ServiceProviderCallProcessingGetPolicyResponse22V2> ServiceProviderCallProcessingGetPolicyRequest22V2(this OcipClient client, ServiceProviderCallProcessingGetPolicyRequest22V2 request)
+        public static async Task<ServiceProviderCallProcessingGetPolicyResponse22V2> ServiceProviderCallProcessingGetPolicyRequest22V2(this OcipClientBase client, ServiceProviderCallProcessingGetPolicyRequest22V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCallProcessingGetPolicyResponse22V2;
         }
@@ -701,7 +701,7 @@ namespace BroadWorksConnector
         /// Request the service provider level data associated with Call Processing
         /// Policy. The response is either a ServiceProviderCallProcessingGetPolicyResponse22V2 or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCallProcessingGetPolicyResponse22V2> ServiceProviderCallProcessingGetPolicyRequest22V2Async(this OcipClient client, ServiceProviderCallProcessingGetPolicyRequest22V2 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCallProcessingGetPolicyResponse22V2> ServiceProviderCallProcessingGetPolicyRequest22V2Async(this OcipClientBase client, ServiceProviderCallProcessingGetPolicyRequest22V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCallProcessingGetPolicyResponse22V2;
         }
@@ -727,7 +727,7 @@ namespace BroadWorksConnector
         /// routeOverridePrefix
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCallProcessingModifyPolicyRequest15Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCallProcessingModifyPolicyRequest15(this OcipClient client, ServiceProviderCallProcessingModifyPolicyRequest15 request)
+        public static async Task<SuccessResponse> ServiceProviderCallProcessingModifyPolicyRequest15(this OcipClientBase client, ServiceProviderCallProcessingModifyPolicyRequest15 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -753,7 +753,7 @@ namespace BroadWorksConnector
         /// routeOverrideDomain
         /// routeOverridePrefix
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCallProcessingModifyPolicyRequest15Async(this OcipClient client, ServiceProviderCallProcessingModifyPolicyRequest15 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCallProcessingModifyPolicyRequest15Async(this OcipClientBase client, ServiceProviderCallProcessingModifyPolicyRequest15 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -762,7 +762,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringCriteriaAssignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringCriteriaAssignListRequest(this OcipClient client, ServiceProviderCommunicationBarringCriteriaAssignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringCriteriaAssignListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringCriteriaAssignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -771,7 +771,7 @@ namespace BroadWorksConnector
         /// Assign a list of Communication Barring Criteria to a service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringCriteriaAssignListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringCriteriaAssignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringCriteriaAssignListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringCriteriaAssignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -781,7 +781,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringCriteriaGetAssignedListRequestAsync instead.")]
-        public static async Task<ServiceProviderCommunicationBarringCriteriaGetAssignedListResponse> ServiceProviderCommunicationBarringCriteriaGetAssignedListRequest(this OcipClient client, ServiceProviderCommunicationBarringCriteriaGetAssignedListRequest request)
+        public static async Task<ServiceProviderCommunicationBarringCriteriaGetAssignedListResponse> ServiceProviderCommunicationBarringCriteriaGetAssignedListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringCriteriaGetAssignedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringCriteriaGetAssignedListResponse;
         }
@@ -791,7 +791,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderCommunicationBarringCriteriaGetAssignedListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringCriteriaGetAssignedListResponse> ServiceProviderCommunicationBarringCriteriaGetAssignedListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringCriteriaGetAssignedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringCriteriaGetAssignedListResponse> ServiceProviderCommunicationBarringCriteriaGetAssignedListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringCriteriaGetAssignedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringCriteriaGetAssignedListResponse;
         }
@@ -800,7 +800,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringCriteriaUnassignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringCriteriaUnassignListRequest(this OcipClient client, ServiceProviderCommunicationBarringCriteriaUnassignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringCriteriaUnassignListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringCriteriaUnassignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -809,7 +809,7 @@ namespace BroadWorksConnector
         /// Unassign a list of Communication Barring Criteria from a service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringCriteriaUnassignListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringCriteriaUnassignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringCriteriaUnassignListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringCriteriaUnassignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -818,7 +818,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringDigitPatternCriteriaAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaAddRequest(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaAddRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaAddRequest(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -827,7 +827,7 @@ namespace BroadWorksConnector
         /// Add a new Communication Barring Digit Pattern Criteria.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaAddRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaAddRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -836,7 +836,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringDigitPatternCriteriaDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaDeleteRequest(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaDeleteRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaDeleteRequest(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -845,7 +845,7 @@ namespace BroadWorksConnector
         /// Delete an existing Communication Barring Digit Pattern Criteria.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaDeleteRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaDeleteRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -854,7 +854,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderCommunicationBarringDigitPatternCriteriaGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringDigitPatternCriteriaGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetListResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetListRequest(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetListRequest request)
+        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetListResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringDigitPatternCriteriaGetListResponse;
         }
@@ -863,7 +863,7 @@ namespace BroadWorksConnector
         /// Get the list of all Digit Pattern Criteria defined for the service provider.
         /// The response is either a ServiceProviderCommunicationBarringDigitPatternCriteriaGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetListResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetListResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringDigitPatternCriteriaGetListResponse;
         }
@@ -872,7 +872,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListRequestAsync instead.")]
-        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListRequest(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListRequest request)
+        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListResponse;
         }
@@ -881,7 +881,7 @@ namespace BroadWorksConnector
         /// Get an existing Digit Pattern Criteria.
         /// The response is either a ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringDigitPatternCriteriaGetPatternListResponse;
         }
@@ -890,7 +890,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderCommunicationBarringDigitPatternCriteriaGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringDigitPatternCriteriaGetRequestAsync instead.")]
-        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetRequest(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetRequest request)
+        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetRequest(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringDigitPatternCriteriaGetResponse;
         }
@@ -899,7 +899,7 @@ namespace BroadWorksConnector
         /// Get an existing Digit Pattern Criteria.
         /// The response is either a ServiceProviderCommunicationBarringDigitPatternCriteriaGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringDigitPatternCriteriaGetResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaGetRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringDigitPatternCriteriaGetResponse;
         }
@@ -908,7 +908,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringDigitPatternCriteriaModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaModifyRequest(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaModifyRequest(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -917,7 +917,7 @@ namespace BroadWorksConnector
         /// Modify an existing Communication Barring Digit Pattern Criteria.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaModifyRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringDigitPatternCriteriaModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringDigitPatternCriteriaModifyRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringDigitPatternCriteriaModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -926,7 +926,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringIncomingCriteriaAssignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringIncomingCriteriaAssignListRequest(this OcipClient client, ServiceProviderCommunicationBarringIncomingCriteriaAssignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringIncomingCriteriaAssignListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringIncomingCriteriaAssignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -935,7 +935,7 @@ namespace BroadWorksConnector
         /// Assign a list of Communication Barring Incoming Criteria to a service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringIncomingCriteriaAssignListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringIncomingCriteriaAssignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringIncomingCriteriaAssignListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringIncomingCriteriaAssignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -945,7 +945,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListRequestAsync instead.")]
-        public static async Task<ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListResponse> ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListRequest(this OcipClient client, ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListRequest request)
+        public static async Task<ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListResponse> ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListResponse;
         }
@@ -955,7 +955,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListResponse> ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListResponse> ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringIncomingCriteriaGetAssignedListResponse;
         }
@@ -964,7 +964,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringIncomingCriteriaUnassignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringIncomingCriteriaUnassignListRequest(this OcipClient client, ServiceProviderCommunicationBarringIncomingCriteriaUnassignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringIncomingCriteriaUnassignListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringIncomingCriteriaUnassignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -973,7 +973,7 @@ namespace BroadWorksConnector
         /// Unassign a list of Communication Barring Incoming Criteria from a service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringIncomingCriteriaUnassignListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringIncomingCriteriaUnassignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringIncomingCriteriaUnassignListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringIncomingCriteriaUnassignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -988,7 +988,7 @@ namespace BroadWorksConnector
         /// applyToAttendedCallTransfers, use value "false" in XS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileAddRequest19sp1Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileAddRequest19sp1(this OcipClient client, ServiceProviderCommunicationBarringProfileAddRequest19sp1 request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileAddRequest19sp1(this OcipClientBase client, ServiceProviderCommunicationBarringProfileAddRequest19sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1003,7 +1003,7 @@ namespace BroadWorksConnector
         /// callMeNowRule
         /// applyToAttendedCallTransfers, use value "false" in XS data mode
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileAddRequest19sp1Async(this OcipClient client, ServiceProviderCommunicationBarringProfileAddRequest19sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileAddRequest19sp1Async(this OcipClientBase client, ServiceProviderCommunicationBarringProfileAddRequest19sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1012,7 +1012,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileDeleteRequest(this OcipClient client, ServiceProviderCommunicationBarringProfileDeleteRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileDeleteRequest(this OcipClientBase client, ServiceProviderCommunicationBarringProfileDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1021,7 +1021,7 @@ namespace BroadWorksConnector
         /// Deletes an existing Communication Barring Profile.  Optionally, a new default profile can be chosen if the current default profile is being deleted.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileDeleteRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringProfileDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileDeleteRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringProfileDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1032,7 +1032,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileGetAssignedGroupListRequestAsync instead.")]
-        public static async Task<ServiceProviderCommunicationBarringProfileGetAssignedGroupListResponse> ServiceProviderCommunicationBarringProfileGetAssignedGroupListRequest(this OcipClient client, ServiceProviderCommunicationBarringProfileGetAssignedGroupListRequest request)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetAssignedGroupListResponse> ServiceProviderCommunicationBarringProfileGetAssignedGroupListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetAssignedGroupListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetAssignedGroupListResponse;
         }
@@ -1043,7 +1043,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderCommunicationBarringProfileGetAssignedGroupListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringProfileGetAssignedGroupListResponse> ServiceProviderCommunicationBarringProfileGetAssignedGroupListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringProfileGetAssignedGroupListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetAssignedGroupListResponse> ServiceProviderCommunicationBarringProfileGetAssignedGroupListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetAssignedGroupListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetAssignedGroupListResponse;
         }
@@ -1053,7 +1053,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileGetCriteriaUsageListRequestAsync instead.")]
-        public static async Task<ServiceProviderCommunicationBarringProfileGetCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetCriteriaUsageListRequest(this OcipClient client, ServiceProviderCommunicationBarringProfileGetCriteriaUsageListRequest request)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetCriteriaUsageListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetCriteriaUsageListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetCriteriaUsageListResponse;
         }
@@ -1063,7 +1063,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderCommunicationBarringProfileGetCriteriaUsageListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringProfileGetCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetCriteriaUsageListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringProfileGetCriteriaUsageListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetCriteriaUsageListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetCriteriaUsageListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetCriteriaUsageListResponse;
         }
@@ -1073,7 +1073,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListRequestAsync instead.")]
-        public static async Task<ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListRequest(this OcipClient client, ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListRequest request)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListResponse;
         }
@@ -1083,7 +1083,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetDigitPatternCriteriaUsageListResponse;
         }
@@ -1093,7 +1093,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListRequestAsync instead.")]
-        public static async Task<ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListRequest(this OcipClient client, ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListRequest request)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListResponse;
         }
@@ -1103,7 +1103,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListResponse> ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetIncomingCriteriaUsageListResponse;
         }
@@ -1112,7 +1112,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderCommunicationBarringProfileGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderCommunicationBarringProfileGetListResponse> ServiceProviderCommunicationBarringProfileGetListRequest(this OcipClient client, ServiceProviderCommunicationBarringProfileGetListRequest request)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetListResponse> ServiceProviderCommunicationBarringProfileGetListRequest(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetListResponse;
         }
@@ -1121,7 +1121,7 @@ namespace BroadWorksConnector
         /// Get the list of all Communication Barring Profiles.
         /// The response is either a ServiceProviderCommunicationBarringProfileGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringProfileGetListResponse> ServiceProviderCommunicationBarringProfileGetListRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringProfileGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetListResponse> ServiceProviderCommunicationBarringProfileGetListRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetListResponse;
         }
@@ -1131,7 +1131,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileGetRequest19sp1V2Async instead.")]
-        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse19sp1V2> ServiceProviderCommunicationBarringProfileGetRequest19sp1V2(this OcipClient client, ServiceProviderCommunicationBarringProfileGetRequest19sp1V2 request)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse19sp1V2> ServiceProviderCommunicationBarringProfileGetRequest19sp1V2(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetRequest19sp1V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetResponse19sp1V2;
         }
@@ -1141,7 +1141,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderCommunicationBarringProfileGetResponse19sp1V2
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse19sp1V2> ServiceProviderCommunicationBarringProfileGetRequest19sp1V2Async(this OcipClient client, ServiceProviderCommunicationBarringProfileGetRequest19sp1V2 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse19sp1V2> ServiceProviderCommunicationBarringProfileGetRequest19sp1V2Async(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetRequest19sp1V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetResponse19sp1V2;
         }
@@ -1150,7 +1150,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileModifyDefaultRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileModifyDefaultRequest(this OcipClient client, ServiceProviderCommunicationBarringProfileModifyDefaultRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileModifyDefaultRequest(this OcipClientBase client, ServiceProviderCommunicationBarringProfileModifyDefaultRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1159,7 +1159,7 @@ namespace BroadWorksConnector
         /// Modifies the default Communication Barring Profile of a Service Provider.  If a default has been previously selected, this command will swap the default profile with the profile provided.  Selecting a nil profile will cause the service provider to not have a default Communicaton Barring Profile.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileModifyDefaultRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringProfileModifyDefaultRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileModifyDefaultRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringProfileModifyDefaultRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1174,7 +1174,7 @@ namespace BroadWorksConnector
         /// applyToAttendedCallTransfers
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileModifyRequest(this OcipClient client, ServiceProviderCommunicationBarringProfileModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileModifyRequest(this OcipClientBase client, ServiceProviderCommunicationBarringProfileModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1189,7 +1189,7 @@ namespace BroadWorksConnector
         /// callMeNowRule
         /// applyToAttendedCallTransfers
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileModifyRequestAsync(this OcipClient client, ServiceProviderCommunicationBarringProfileModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileModifyRequestAsync(this OcipClientBase client, ServiceProviderCommunicationBarringProfileModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1198,7 +1198,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCPEConfigRebuildConfigFileRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigRebuildConfigFileRequest(this OcipClient client, ServiceProviderCPEConfigRebuildConfigFileRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigRebuildConfigFileRequest(this OcipClientBase client, ServiceProviderCPEConfigRebuildConfigFileRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1207,7 +1207,7 @@ namespace BroadWorksConnector
         /// Rebuild the service provider default config file for the specified device type.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigRebuildConfigFileRequestAsync(this OcipClient client, ServiceProviderCPEConfigRebuildConfigFileRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigRebuildConfigFileRequestAsync(this OcipClientBase client, ServiceProviderCPEConfigRebuildConfigFileRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1216,7 +1216,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCPEConfigRebuildDeviceConfigFileRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigRebuildDeviceConfigFileRequest(this OcipClient client, ServiceProviderCPEConfigRebuildDeviceConfigFileRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigRebuildDeviceConfigFileRequest(this OcipClientBase client, ServiceProviderCPEConfigRebuildDeviceConfigFileRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1225,7 +1225,7 @@ namespace BroadWorksConnector
         /// Rebuild the config file for a specified device.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigRebuildDeviceConfigFileRequestAsync(this OcipClient client, ServiceProviderCPEConfigRebuildDeviceConfigFileRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigRebuildDeviceConfigFileRequestAsync(this OcipClientBase client, ServiceProviderCPEConfigRebuildDeviceConfigFileRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1236,7 +1236,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCPEConfigReorderDeviceLinePortsRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigReorderDeviceLinePortsRequest(this OcipClient client, ServiceProviderCPEConfigReorderDeviceLinePortsRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigReorderDeviceLinePortsRequest(this OcipClientBase client, ServiceProviderCPEConfigReorderDeviceLinePortsRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1247,7 +1247,7 @@ namespace BroadWorksConnector
         /// with the ServiceProviderAccessDeviceGetRequest command.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigReorderDeviceLinePortsRequestAsync(this OcipClient client, ServiceProviderCPEConfigReorderDeviceLinePortsRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigReorderDeviceLinePortsRequestAsync(this OcipClientBase client, ServiceProviderCPEConfigReorderDeviceLinePortsRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1256,7 +1256,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCPEConfigResetDeviceRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigResetDeviceRequest(this OcipClient client, ServiceProviderCPEConfigResetDeviceRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigResetDeviceRequest(this OcipClientBase client, ServiceProviderCPEConfigResetDeviceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1265,7 +1265,7 @@ namespace BroadWorksConnector
         /// Reset a specific service provider or enterprise device.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigResetDeviceRequestAsync(this OcipClient client, ServiceProviderCPEConfigResetDeviceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigResetDeviceRequestAsync(this OcipClientBase client, ServiceProviderCPEConfigResetDeviceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1274,7 +1274,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCPEConfigResetDeviceTypeRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigResetDeviceTypeRequest(this OcipClient client, ServiceProviderCPEConfigResetDeviceTypeRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigResetDeviceTypeRequest(this OcipClientBase client, ServiceProviderCPEConfigResetDeviceTypeRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1283,7 +1283,7 @@ namespace BroadWorksConnector
         /// Reset all the devices of the specified device type in a service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigResetDeviceTypeRequestAsync(this OcipClient client, ServiceProviderCPEConfigResetDeviceTypeRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigResetDeviceTypeRequestAsync(this OcipClientBase client, ServiceProviderCPEConfigResetDeviceTypeRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1295,7 +1295,7 @@ namespace BroadWorksConnector
         /// at the parent level is used.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCPEConfigSetConfigFileRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigSetConfigFileRequest(this OcipClient client, ServiceProviderCPEConfigSetConfigFileRequest request)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigSetConfigFileRequest(this OcipClientBase client, ServiceProviderCPEConfigSetConfigFileRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1307,7 +1307,7 @@ namespace BroadWorksConnector
         /// When the element configFile is set to nil, the configuration file defined
         /// at the parent level is used.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCPEConfigSetConfigFileRequestAsync(this OcipClient client, ServiceProviderCPEConfigSetConfigFileRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCPEConfigSetConfigFileRequestAsync(this OcipClientBase client, ServiceProviderCPEConfigSetConfigFileRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1316,7 +1316,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDeleteRequest(this OcipClient client, ServiceProviderDeleteRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDeleteRequest(this OcipClientBase client, ServiceProviderDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1325,7 +1325,7 @@ namespace BroadWorksConnector
         /// Delete a service provider or enterprise.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDeleteRequestAsync(this OcipClient client, ServiceProviderDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDeleteRequestAsync(this OcipClientBase client, ServiceProviderDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1338,7 +1338,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderDeviceManagementEventGetListResponse22 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceManagementEventGetListRequest22Async instead.")]
-        public static async Task<ServiceProviderDeviceManagementEventGetListResponse22> ServiceProviderDeviceManagementEventGetListRequest22(this OcipClient client, ServiceProviderDeviceManagementEventGetListRequest22 request)
+        public static async Task<ServiceProviderDeviceManagementEventGetListResponse22> ServiceProviderDeviceManagementEventGetListRequest22(this OcipClientBase client, ServiceProviderDeviceManagementEventGetListRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDeviceManagementEventGetListResponse22;
         }
@@ -1351,7 +1351,7 @@ namespace BroadWorksConnector
         /// event queues are returned.
         /// The response is either a ServiceProviderDeviceManagementEventGetListResponse22 or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDeviceManagementEventGetListResponse22> ServiceProviderDeviceManagementEventGetListRequest22Async(this OcipClient client, ServiceProviderDeviceManagementEventGetListRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDeviceManagementEventGetListResponse22> ServiceProviderDeviceManagementEventGetListRequest22Async(this OcipClientBase client, ServiceProviderDeviceManagementEventGetListRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDeviceManagementEventGetListResponse22;
         }
@@ -1364,7 +1364,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderRequestAsync instead.")]
-        public static async Task<ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderResponse> ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderRequest(this OcipClient client, ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderRequest request)
+        public static async Task<ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderResponse> ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderRequest(this OcipClientBase client, ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderResponse;
         }
@@ -1377,7 +1377,7 @@ namespace BroadWorksConnector
         /// When allowUnmanagedDeviceType is true, unmanaged device type will be counted and a successful response is returned.
         /// The response is either ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderResponse> ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderRequestAsync(this OcipClient client, ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderResponse> ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderRequestAsync(this OcipClientBase client, ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDeviceManagementGetAccessDeviceCountForDeviceTypeServiceProviderResponse;
         }
@@ -1387,7 +1387,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceManagementInProgressAndPendingEventCancelRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDeviceManagementInProgressAndPendingEventCancelRequest(this OcipClient client, ServiceProviderDeviceManagementInProgressAndPendingEventCancelRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDeviceManagementInProgressAndPendingEventCancelRequest(this OcipClientBase client, ServiceProviderDeviceManagementInProgressAndPendingEventCancelRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1397,7 +1397,7 @@ namespace BroadWorksConnector
         /// be canceled.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDeviceManagementInProgressAndPendingEventCancelRequestAsync(this OcipClient client, ServiceProviderDeviceManagementInProgressAndPendingEventCancelRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDeviceManagementInProgressAndPendingEventCancelRequestAsync(this OcipClientBase client, ServiceProviderDeviceManagementInProgressAndPendingEventCancelRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1406,7 +1406,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderDeviceProfileAuthenticationPasswordRulesGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceProfileAuthenticationPasswordRulesGetRequestAsync instead.")]
-        public static async Task<ServiceProviderDeviceProfileAuthenticationPasswordRulesGetResponse> ServiceProviderDeviceProfileAuthenticationPasswordRulesGetRequest(this OcipClient client, ServiceProviderDeviceProfileAuthenticationPasswordRulesGetRequest request)
+        public static async Task<ServiceProviderDeviceProfileAuthenticationPasswordRulesGetResponse> ServiceProviderDeviceProfileAuthenticationPasswordRulesGetRequest(this OcipClientBase client, ServiceProviderDeviceProfileAuthenticationPasswordRulesGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDeviceProfileAuthenticationPasswordRulesGetResponse;
         }
@@ -1415,7 +1415,7 @@ namespace BroadWorksConnector
         /// Request to get the service provider level device profile authentication password rule settings.
         /// The response is either a ServiceProviderDeviceProfileAuthenticationPasswordRulesGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDeviceProfileAuthenticationPasswordRulesGetResponse> ServiceProviderDeviceProfileAuthenticationPasswordRulesGetRequestAsync(this OcipClient client, ServiceProviderDeviceProfileAuthenticationPasswordRulesGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDeviceProfileAuthenticationPasswordRulesGetResponse> ServiceProviderDeviceProfileAuthenticationPasswordRulesGetRequestAsync(this OcipClientBase client, ServiceProviderDeviceProfileAuthenticationPasswordRulesGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDeviceProfileAuthenticationPasswordRulesGetResponse;
         }
@@ -1424,7 +1424,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceProfileAuthenticationPasswordRulesModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDeviceProfileAuthenticationPasswordRulesModifyRequest(this OcipClient client, ServiceProviderDeviceProfileAuthenticationPasswordRulesModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDeviceProfileAuthenticationPasswordRulesModifyRequest(this OcipClientBase client, ServiceProviderDeviceProfileAuthenticationPasswordRulesModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1433,7 +1433,7 @@ namespace BroadWorksConnector
         /// Request to modify the service provider level device profile authentication password rule settings. The useServiceProviderSettings element can only be modified by a system administrator or a provisioning administrator.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDeviceProfileAuthenticationPasswordRulesModifyRequestAsync(this OcipClient client, ServiceProviderDeviceProfileAuthenticationPasswordRulesModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDeviceProfileAuthenticationPasswordRulesModifyRequestAsync(this OcipClientBase client, ServiceProviderDeviceProfileAuthenticationPasswordRulesModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1451,7 +1451,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceTypeCustomTagAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagAddRequest(this OcipClient client, ServiceProviderDeviceTypeCustomTagAddRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagAddRequest(this OcipClientBase client, ServiceProviderDeviceTypeCustomTagAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1469,7 +1469,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagAddRequestAsync(this OcipClient client, ServiceProviderDeviceTypeCustomTagAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagAddRequestAsync(this OcipClientBase client, ServiceProviderDeviceTypeCustomTagAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1478,7 +1478,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceTypeCustomTagDeleteListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagDeleteListRequest(this OcipClient client, ServiceProviderDeviceTypeCustomTagDeleteListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagDeleteListRequest(this OcipClientBase client, ServiceProviderDeviceTypeCustomTagDeleteListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1487,7 +1487,7 @@ namespace BroadWorksConnector
         /// Request to delete static configuration tags for an access device type used in a service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagDeleteListRequestAsync(this OcipClient client, ServiceProviderDeviceTypeCustomTagDeleteListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagDeleteListRequestAsync(this OcipClientBase client, ServiceProviderDeviceTypeCustomTagDeleteListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1496,7 +1496,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderDeviceTypeCustomTagGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceTypeCustomTagGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderDeviceTypeCustomTagGetListResponse> ServiceProviderDeviceTypeCustomTagGetListRequest(this OcipClient client, ServiceProviderDeviceTypeCustomTagGetListRequest request)
+        public static async Task<ServiceProviderDeviceTypeCustomTagGetListResponse> ServiceProviderDeviceTypeCustomTagGetListRequest(this OcipClientBase client, ServiceProviderDeviceTypeCustomTagGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDeviceTypeCustomTagGetListResponse;
         }
@@ -1505,7 +1505,7 @@ namespace BroadWorksConnector
         /// Request to get the list of custom configuration tags managed by the Device Management System, on a per-device type basis for a service provider.
         /// The response is either ServiceProviderDeviceTypeCustomTagGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDeviceTypeCustomTagGetListResponse> ServiceProviderDeviceTypeCustomTagGetListRequestAsync(this OcipClient client, ServiceProviderDeviceTypeCustomTagGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDeviceTypeCustomTagGetListResponse> ServiceProviderDeviceTypeCustomTagGetListRequestAsync(this OcipClientBase client, ServiceProviderDeviceTypeCustomTagGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDeviceTypeCustomTagGetListResponse;
         }
@@ -1520,7 +1520,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceTypeCustomTagModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagModifyRequest(this OcipClient client, ServiceProviderDeviceTypeCustomTagModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagModifyRequest(this OcipClientBase client, ServiceProviderDeviceTypeCustomTagModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1535,7 +1535,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagModifyRequestAsync(this OcipClient client, ServiceProviderDeviceTypeCustomTagModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDeviceTypeCustomTagModifyRequestAsync(this OcipClientBase client, ServiceProviderDeviceTypeCustomTagModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1544,7 +1544,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderDeviceTypeFileGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceTypeFileGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderDeviceTypeFileGetListResponse> ServiceProviderDeviceTypeFileGetListRequest(this OcipClient client, ServiceProviderDeviceTypeFileGetListRequest request)
+        public static async Task<ServiceProviderDeviceTypeFileGetListResponse> ServiceProviderDeviceTypeFileGetListRequest(this OcipClientBase client, ServiceProviderDeviceTypeFileGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDeviceTypeFileGetListResponse;
         }
@@ -1553,7 +1553,7 @@ namespace BroadWorksConnector
         /// Request to get the list of device type files managed by the Device Management System, on a per-service provider basis.
         /// The response is either ServiceProviderDeviceTypeFileGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDeviceTypeFileGetListResponse> ServiceProviderDeviceTypeFileGetListRequestAsync(this OcipClient client, ServiceProviderDeviceTypeFileGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDeviceTypeFileGetListResponse> ServiceProviderDeviceTypeFileGetListRequestAsync(this OcipClientBase client, ServiceProviderDeviceTypeFileGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDeviceTypeFileGetListResponse;
         }
@@ -1562,7 +1562,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderDeviceTypeFileGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceTypeFileGetRequestAsync instead.")]
-        public static async Task<ServiceProviderDeviceTypeFileGetResponse> ServiceProviderDeviceTypeFileGetRequest(this OcipClient client, ServiceProviderDeviceTypeFileGetRequest request)
+        public static async Task<ServiceProviderDeviceTypeFileGetResponse> ServiceProviderDeviceTypeFileGetRequest(this OcipClientBase client, ServiceProviderDeviceTypeFileGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDeviceTypeFileGetResponse;
         }
@@ -1571,7 +1571,7 @@ namespace BroadWorksConnector
         /// Request to get a service provider device type file.
         /// The response is either ServiceProviderDeviceTypeFileGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDeviceTypeFileGetResponse> ServiceProviderDeviceTypeFileGetRequestAsync(this OcipClient client, ServiceProviderDeviceTypeFileGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDeviceTypeFileGetResponse> ServiceProviderDeviceTypeFileGetRequestAsync(this OcipClientBase client, ServiceProviderDeviceTypeFileGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDeviceTypeFileGetResponse;
         }
@@ -1580,7 +1580,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceTypeFileModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDeviceTypeFileModifyRequest(this OcipClient client, ServiceProviderDeviceTypeFileModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDeviceTypeFileModifyRequest(this OcipClientBase client, ServiceProviderDeviceTypeFileModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1589,7 +1589,7 @@ namespace BroadWorksConnector
         /// Request to modify a specified device type file for a service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDeviceTypeFileModifyRequestAsync(this OcipClient client, ServiceProviderDeviceTypeFileModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDeviceTypeFileModifyRequestAsync(this OcipClientBase client, ServiceProviderDeviceTypeFileModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1598,7 +1598,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderDeviceTypeTagSetGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceTypeTagSetGetRequestAsync instead.")]
-        public static async Task<ServiceProviderDeviceTypeTagSetGetResponse> ServiceProviderDeviceTypeTagSetGetRequest(this OcipClient client, ServiceProviderDeviceTypeTagSetGetRequest request)
+        public static async Task<ServiceProviderDeviceTypeTagSetGetResponse> ServiceProviderDeviceTypeTagSetGetRequest(this OcipClientBase client, ServiceProviderDeviceTypeTagSetGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDeviceTypeTagSetGetResponse;
         }
@@ -1607,7 +1607,7 @@ namespace BroadWorksConnector
         /// Request to get the custom configuration tag set defined for the service provider and device type.
         /// The response is either ServiceProviderDeviceTypeTagSetGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDeviceTypeTagSetGetResponse> ServiceProviderDeviceTypeTagSetGetRequestAsync(this OcipClient client, ServiceProviderDeviceTypeTagSetGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDeviceTypeTagSetGetResponse> ServiceProviderDeviceTypeTagSetGetRequestAsync(this OcipClientBase client, ServiceProviderDeviceTypeTagSetGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDeviceTypeTagSetGetResponse;
         }
@@ -1616,7 +1616,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDeviceTypeTagSetModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDeviceTypeTagSetModifyRequest(this OcipClient client, ServiceProviderDeviceTypeTagSetModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDeviceTypeTagSetModifyRequest(this OcipClientBase client, ServiceProviderDeviceTypeTagSetModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1625,7 +1625,7 @@ namespace BroadWorksConnector
         /// Request to modify a static configuration tag set.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDeviceTypeTagSetModifyRequestAsync(this OcipClient client, ServiceProviderDeviceTypeTagSetModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDeviceTypeTagSetModifyRequestAsync(this OcipClientBase client, ServiceProviderDeviceTypeTagSetModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1633,7 +1633,7 @@ namespace BroadWorksConnector
         /// Add a new Dialable Caller ID Criteria. Criteria are added at the bottom of the list with the lowest priority. The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialableCallerIDCriteriaAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaAddRequest(this OcipClient client, ServiceProviderDialableCallerIDCriteriaAddRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaAddRequest(this OcipClientBase client, ServiceProviderDialableCallerIDCriteriaAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1641,7 +1641,7 @@ namespace BroadWorksConnector
         /// <summary>
         /// Add a new Dialable Caller ID Criteria. Criteria are added at the bottom of the list with the lowest priority. The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaAddRequestAsync(this OcipClient client, ServiceProviderDialableCallerIDCriteriaAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaAddRequestAsync(this OcipClientBase client, ServiceProviderDialableCallerIDCriteriaAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1650,7 +1650,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialableCallerIDCriteriaDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaDeleteRequest(this OcipClient client, ServiceProviderDialableCallerIDCriteriaDeleteRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaDeleteRequest(this OcipClientBase client, ServiceProviderDialableCallerIDCriteriaDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1659,7 +1659,7 @@ namespace BroadWorksConnector
         /// Delete a Dialable Caller ID Criteria.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaDeleteRequestAsync(this OcipClient client, ServiceProviderDialableCallerIDCriteriaDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaDeleteRequestAsync(this OcipClientBase client, ServiceProviderDialableCallerIDCriteriaDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1668,7 +1668,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderDialableCallerIDCriteriaGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialableCallerIDCriteriaGetRequestAsync instead.")]
-        public static async Task<ServiceProviderDialableCallerIDCriteriaGetResponse> ServiceProviderDialableCallerIDCriteriaGetRequest(this OcipClient client, ServiceProviderDialableCallerIDCriteriaGetRequest request)
+        public static async Task<ServiceProviderDialableCallerIDCriteriaGetResponse> ServiceProviderDialableCallerIDCriteriaGetRequest(this OcipClientBase client, ServiceProviderDialableCallerIDCriteriaGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDialableCallerIDCriteriaGetResponse;
         }
@@ -1677,7 +1677,7 @@ namespace BroadWorksConnector
         /// Get an existing Dialable Caller ID Criteria.
         /// The response is either a ServiceProviderDialableCallerIDCriteriaGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDialableCallerIDCriteriaGetResponse> ServiceProviderDialableCallerIDCriteriaGetRequestAsync(this OcipClient client, ServiceProviderDialableCallerIDCriteriaGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDialableCallerIDCriteriaGetResponse> ServiceProviderDialableCallerIDCriteriaGetRequestAsync(this OcipClientBase client, ServiceProviderDialableCallerIDCriteriaGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDialableCallerIDCriteriaGetResponse;
         }
@@ -1686,7 +1686,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialableCallerIDCriteriaModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaModifyRequest(this OcipClient client, ServiceProviderDialableCallerIDCriteriaModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaModifyRequest(this OcipClientBase client, ServiceProviderDialableCallerIDCriteriaModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1695,7 +1695,7 @@ namespace BroadWorksConnector
         /// Modify a Dialable Caller ID Criteria.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaModifyRequestAsync(this OcipClient client, ServiceProviderDialableCallerIDCriteriaModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDCriteriaModifyRequestAsync(this OcipClientBase client, ServiceProviderDialableCallerIDCriteriaModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1704,7 +1704,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderDialableCallerIDGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialableCallerIDGetRequestAsync instead.")]
-        public static async Task<ServiceProviderDialableCallerIDGetResponse> ServiceProviderDialableCallerIDGetRequest(this OcipClient client, ServiceProviderDialableCallerIDGetRequest request)
+        public static async Task<ServiceProviderDialableCallerIDGetResponse> ServiceProviderDialableCallerIDGetRequest(this OcipClientBase client, ServiceProviderDialableCallerIDGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDialableCallerIDGetResponse;
         }
@@ -1713,7 +1713,7 @@ namespace BroadWorksConnector
         /// Get the service provider?s Dialable Caller ID settings and criteria list.
         /// The response is either a ServiceProviderDialableCallerIDGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDialableCallerIDGetResponse> ServiceProviderDialableCallerIDGetRequestAsync(this OcipClient client, ServiceProviderDialableCallerIDGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDialableCallerIDGetResponse> ServiceProviderDialableCallerIDGetRequestAsync(this OcipClientBase client, ServiceProviderDialableCallerIDGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDialableCallerIDGetResponse;
         }
@@ -1722,7 +1722,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialableCallerIDModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDModifyRequest(this OcipClient client, ServiceProviderDialableCallerIDModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDModifyRequest(this OcipClientBase client, ServiceProviderDialableCallerIDModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1731,7 +1731,7 @@ namespace BroadWorksConnector
         /// Modify the service provider?s Dialable Caller ID settings and criteria list.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDModifyRequestAsync(this OcipClient client, ServiceProviderDialableCallerIDModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDialableCallerIDModifyRequestAsync(this OcipClientBase client, ServiceProviderDialableCallerIDModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1740,7 +1740,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialPlanPolicyAddAccessCodeRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyAddAccessCodeRequest(this OcipClient client, ServiceProviderDialPlanPolicyAddAccessCodeRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyAddAccessCodeRequest(this OcipClientBase client, ServiceProviderDialPlanPolicyAddAccessCodeRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1749,7 +1749,7 @@ namespace BroadWorksConnector
         /// Request to add a Service Provider level Dial Plan Access Code and its all attribues.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyAddAccessCodeRequestAsync(this OcipClient client, ServiceProviderDialPlanPolicyAddAccessCodeRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyAddAccessCodeRequestAsync(this OcipClientBase client, ServiceProviderDialPlanPolicyAddAccessCodeRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1758,7 +1758,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialPlanPolicyDeleteAccessCodeRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyDeleteAccessCodeRequest(this OcipClient client, ServiceProviderDialPlanPolicyDeleteAccessCodeRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyDeleteAccessCodeRequest(this OcipClientBase client, ServiceProviderDialPlanPolicyDeleteAccessCodeRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1767,7 +1767,7 @@ namespace BroadWorksConnector
         /// Request to delete a Service Provider level Dial Plan Access Code and its all attribues.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyDeleteAccessCodeRequestAsync(this OcipClient client, ServiceProviderDialPlanPolicyDeleteAccessCodeRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyDeleteAccessCodeRequestAsync(this OcipClientBase client, ServiceProviderDialPlanPolicyDeleteAccessCodeRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1777,7 +1777,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialPlanPolicyGetAccessCodeListRequestAsync instead.")]
-        public static async Task<ServiceProviderDialPlanPolicyGetAccessCodeListResponse> ServiceProviderDialPlanPolicyGetAccessCodeListRequest(this OcipClient client, ServiceProviderDialPlanPolicyGetAccessCodeListRequest request)
+        public static async Task<ServiceProviderDialPlanPolicyGetAccessCodeListResponse> ServiceProviderDialPlanPolicyGetAccessCodeListRequest(this OcipClientBase client, ServiceProviderDialPlanPolicyGetAccessCodeListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDialPlanPolicyGetAccessCodeListResponse;
         }
@@ -1787,7 +1787,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderDialPlanPolicyGetAccessCodeListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDialPlanPolicyGetAccessCodeListResponse> ServiceProviderDialPlanPolicyGetAccessCodeListRequestAsync(this OcipClient client, ServiceProviderDialPlanPolicyGetAccessCodeListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDialPlanPolicyGetAccessCodeListResponse> ServiceProviderDialPlanPolicyGetAccessCodeListRequestAsync(this OcipClientBase client, ServiceProviderDialPlanPolicyGetAccessCodeListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDialPlanPolicyGetAccessCodeListResponse;
         }
@@ -1796,7 +1796,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderDialPlanPolicyGetAccessCodeResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialPlanPolicyGetAccessCodeRequestAsync instead.")]
-        public static async Task<ServiceProviderDialPlanPolicyGetAccessCodeResponse> ServiceProviderDialPlanPolicyGetAccessCodeRequest(this OcipClient client, ServiceProviderDialPlanPolicyGetAccessCodeRequest request)
+        public static async Task<ServiceProviderDialPlanPolicyGetAccessCodeResponse> ServiceProviderDialPlanPolicyGetAccessCodeRequest(this OcipClientBase client, ServiceProviderDialPlanPolicyGetAccessCodeRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDialPlanPolicyGetAccessCodeResponse;
         }
@@ -1805,7 +1805,7 @@ namespace BroadWorksConnector
         /// Request access code data associated with Service Provider level Dial Plan Policy access codes.
         /// The response is either a ServiceProviderDialPlanPolicyGetAccessCodeResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDialPlanPolicyGetAccessCodeResponse> ServiceProviderDialPlanPolicyGetAccessCodeRequestAsync(this OcipClient client, ServiceProviderDialPlanPolicyGetAccessCodeRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDialPlanPolicyGetAccessCodeResponse> ServiceProviderDialPlanPolicyGetAccessCodeRequestAsync(this OcipClientBase client, ServiceProviderDialPlanPolicyGetAccessCodeRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDialPlanPolicyGetAccessCodeResponse;
         }
@@ -1815,7 +1815,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialPlanPolicyGetRequest17Async instead.")]
-        public static async Task<ServiceProviderDialPlanPolicyGetResponse17> ServiceProviderDialPlanPolicyGetRequest17(this OcipClient client, ServiceProviderDialPlanPolicyGetRequest17 request)
+        public static async Task<ServiceProviderDialPlanPolicyGetResponse17> ServiceProviderDialPlanPolicyGetRequest17(this OcipClientBase client, ServiceProviderDialPlanPolicyGetRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDialPlanPolicyGetResponse17;
         }
@@ -1825,7 +1825,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderDialPlanPolicyGetResponse17
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDialPlanPolicyGetResponse17> ServiceProviderDialPlanPolicyGetRequest17Async(this OcipClient client, ServiceProviderDialPlanPolicyGetRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDialPlanPolicyGetResponse17> ServiceProviderDialPlanPolicyGetRequest17Async(this OcipClientBase client, ServiceProviderDialPlanPolicyGetRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDialPlanPolicyGetResponse17;
         }
@@ -1834,7 +1834,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialPlanPolicyModifyAccessCodeRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyModifyAccessCodeRequest(this OcipClient client, ServiceProviderDialPlanPolicyModifyAccessCodeRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyModifyAccessCodeRequest(this OcipClientBase client, ServiceProviderDialPlanPolicyModifyAccessCodeRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1843,7 +1843,7 @@ namespace BroadWorksConnector
         /// Request to modify a Service Provider level Dial Plan Access Code and its attribues.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyModifyAccessCodeRequestAsync(this OcipClient client, ServiceProviderDialPlanPolicyModifyAccessCodeRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyModifyAccessCodeRequestAsync(this OcipClientBase client, ServiceProviderDialPlanPolicyModifyAccessCodeRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1852,7 +1852,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDialPlanPolicyModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyModifyRequest(this OcipClient client, ServiceProviderDialPlanPolicyModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyModifyRequest(this OcipClientBase client, ServiceProviderDialPlanPolicyModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1861,7 +1861,7 @@ namespace BroadWorksConnector
         /// Modify the Service Provider level data associated with Dial Plan Policy.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyModifyRequestAsync(this OcipClient client, ServiceProviderDialPlanPolicyModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDialPlanPolicyModifyRequestAsync(this OcipClientBase client, ServiceProviderDialPlanPolicyModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1870,7 +1870,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderDigitCollectionGetResponse13mp4 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDigitCollectionGetRequest13mp4Async instead.")]
-        public static async Task<ServiceProviderDigitCollectionGetResponse13mp4> ServiceProviderDigitCollectionGetRequest13mp4(this OcipClient client, ServiceProviderDigitCollectionGetRequest13mp4 request)
+        public static async Task<ServiceProviderDigitCollectionGetResponse13mp4> ServiceProviderDigitCollectionGetRequest13mp4(this OcipClientBase client, ServiceProviderDigitCollectionGetRequest13mp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDigitCollectionGetResponse13mp4;
         }
@@ -1879,7 +1879,7 @@ namespace BroadWorksConnector
         /// Request the service provider's digit collection attributes.
         /// The response is either a ServiceProviderDigitCollectionGetResponse13mp4 or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDigitCollectionGetResponse13mp4> ServiceProviderDigitCollectionGetRequest13mp4Async(this OcipClient client, ServiceProviderDigitCollectionGetRequest13mp4 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDigitCollectionGetResponse13mp4> ServiceProviderDigitCollectionGetRequest13mp4Async(this OcipClientBase client, ServiceProviderDigitCollectionGetRequest13mp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDigitCollectionGetResponse13mp4;
         }
@@ -1888,7 +1888,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDigitCollectionModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDigitCollectionModifyRequest(this OcipClient client, ServiceProviderDigitCollectionModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDigitCollectionModifyRequest(this OcipClientBase client, ServiceProviderDigitCollectionModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1897,7 +1897,7 @@ namespace BroadWorksConnector
         /// Modifies the service provider's digit collection attributes.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDigitCollectionModifyRequestAsync(this OcipClient client, ServiceProviderDigitCollectionModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDigitCollectionModifyRequestAsync(this OcipClientBase client, ServiceProviderDigitCollectionModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1907,7 +1907,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDnAddListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDnAddListRequest(this OcipClient client, ServiceProviderDnAddListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDnAddListRequest(this OcipClientBase client, ServiceProviderDnAddListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1917,7 +1917,7 @@ namespace BroadWorksConnector
         /// or a list of DNs, or a range of DNs, or any combination thereof.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDnAddListRequestAsync(this OcipClient client, ServiceProviderDnAddListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDnAddListRequestAsync(this OcipClientBase client, ServiceProviderDnAddListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1927,7 +1927,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDnDeleteListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDnDeleteListRequest(this OcipClient client, ServiceProviderDnDeleteListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDnDeleteListRequest(this OcipClientBase client, ServiceProviderDnDeleteListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1937,7 +1937,7 @@ namespace BroadWorksConnector
         /// or a list of DNs, or a range of DNs, or any combination thereof.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDnDeleteListRequestAsync(this OcipClient client, ServiceProviderDnDeleteListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDnDeleteListRequestAsync(this OcipClientBase client, ServiceProviderDnDeleteListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1947,7 +1947,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderDnGetAvailableListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDnGetAvailableListRequestAsync instead.")]
-        public static async Task<ServiceProviderDnGetAvailableListResponse> ServiceProviderDnGetAvailableListRequest(this OcipClient client, ServiceProviderDnGetAvailableListRequest request)
+        public static async Task<ServiceProviderDnGetAvailableListResponse> ServiceProviderDnGetAvailableListRequest(this OcipClientBase client, ServiceProviderDnGetAvailableListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDnGetAvailableListResponse;
         }
@@ -1957,7 +1957,7 @@ namespace BroadWorksConnector
         /// Dns assigned to the IMRN pool are not listed in the response.
         /// The response is either ServiceProviderDnGetAvailableListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDnGetAvailableListResponse> ServiceProviderDnGetAvailableListRequestAsync(this OcipClient client, ServiceProviderDnGetAvailableListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDnGetAvailableListResponse> ServiceProviderDnGetAvailableListRequestAsync(this OcipClientBase client, ServiceProviderDnGetAvailableListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDnGetAvailableListResponse;
         }
@@ -1971,7 +1971,7 @@ namespace BroadWorksConnector
         /// searchCriteriaDn, searchCriteriaGroupId
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDnGetSummaryListRequestAsync instead.")]
-        public static async Task<ServiceProviderDnGetSummaryListResponse> ServiceProviderDnGetSummaryListRequest(this OcipClient client, ServiceProviderDnGetSummaryListRequest request)
+        public static async Task<ServiceProviderDnGetSummaryListResponse> ServiceProviderDnGetSummaryListRequest(this OcipClientBase client, ServiceProviderDnGetSummaryListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDnGetSummaryListResponse;
         }
@@ -1985,7 +1985,7 @@ namespace BroadWorksConnector
         /// The following elements are only used in XS data mode and ignored in AS data mode:
         /// searchCriteriaDn, searchCriteriaGroupId
         /// </summary>
-        public static async Task<ServiceProviderDnGetSummaryListResponse> ServiceProviderDnGetSummaryListRequestAsync(this OcipClient client, ServiceProviderDnGetSummaryListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDnGetSummaryListResponse> ServiceProviderDnGetSummaryListRequestAsync(this OcipClientBase client, ServiceProviderDnGetSummaryListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDnGetSummaryListResponse;
         }
@@ -1994,7 +1994,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDomainAssignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDomainAssignListRequest(this OcipClient client, ServiceProviderDomainAssignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDomainAssignListRequest(this OcipClientBase client, ServiceProviderDomainAssignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2003,7 +2003,7 @@ namespace BroadWorksConnector
         /// Assign a list of domains to a service provider.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDomainAssignListRequestAsync(this OcipClient client, ServiceProviderDomainAssignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDomainAssignListRequestAsync(this OcipClientBase client, ServiceProviderDomainAssignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2014,7 +2014,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderDomainGetAssignedGroupListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDomainGetAssignedGroupListRequestAsync instead.")]
-        public static async Task<ServiceProviderDomainGetAssignedGroupListResponse> ServiceProviderDomainGetAssignedGroupListRequest(this OcipClient client, ServiceProviderDomainGetAssignedGroupListRequest request)
+        public static async Task<ServiceProviderDomainGetAssignedGroupListResponse> ServiceProviderDomainGetAssignedGroupListRequest(this OcipClientBase client, ServiceProviderDomainGetAssignedGroupListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDomainGetAssignedGroupListResponse;
         }
@@ -2025,7 +2025,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together.
         /// The response is either a ServiceProviderDomainGetAssignedGroupListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDomainGetAssignedGroupListResponse> ServiceProviderDomainGetAssignedGroupListRequestAsync(this OcipClient client, ServiceProviderDomainGetAssignedGroupListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDomainGetAssignedGroupListResponse> ServiceProviderDomainGetAssignedGroupListRequestAsync(this OcipClientBase client, ServiceProviderDomainGetAssignedGroupListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDomainGetAssignedGroupListResponse;
         }
@@ -2034,7 +2034,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderDomainGetAssignedListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDomainGetAssignedListRequestAsync instead.")]
-        public static async Task<ServiceProviderDomainGetAssignedListResponse> ServiceProviderDomainGetAssignedListRequest(this OcipClient client, ServiceProviderDomainGetAssignedListRequest request)
+        public static async Task<ServiceProviderDomainGetAssignedListResponse> ServiceProviderDomainGetAssignedListRequest(this OcipClientBase client, ServiceProviderDomainGetAssignedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDomainGetAssignedListResponse;
         }
@@ -2043,7 +2043,7 @@ namespace BroadWorksConnector
         /// Requests the list of all domains assigned to a service provider.
         /// The response is either ServiceProviderDomainGetAssignedListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderDomainGetAssignedListResponse> ServiceProviderDomainGetAssignedListRequestAsync(this OcipClient client, ServiceProviderDomainGetAssignedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDomainGetAssignedListResponse> ServiceProviderDomainGetAssignedListRequestAsync(this OcipClientBase client, ServiceProviderDomainGetAssignedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDomainGetAssignedListResponse;
         }
@@ -2056,7 +2056,7 @@ namespace BroadWorksConnector
         /// searchCriteriaDomainName
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDomainGetAssignedListRequest22Async instead.")]
-        public static async Task<ServiceProviderDomainGetAssignedListResponse22> ServiceProviderDomainGetAssignedListRequest22(this OcipClient client, ServiceProviderDomainGetAssignedListRequest22 request)
+        public static async Task<ServiceProviderDomainGetAssignedListResponse22> ServiceProviderDomainGetAssignedListRequest22(this OcipClientBase client, ServiceProviderDomainGetAssignedListRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderDomainGetAssignedListResponse22;
         }
@@ -2069,7 +2069,7 @@ namespace BroadWorksConnector
         /// responseSizeLimit
         /// searchCriteriaDomainName
         /// </summary>
-        public static async Task<ServiceProviderDomainGetAssignedListResponse22> ServiceProviderDomainGetAssignedListRequest22Async(this OcipClient client, ServiceProviderDomainGetAssignedListRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderDomainGetAssignedListResponse22> ServiceProviderDomainGetAssignedListRequest22Async(this OcipClientBase client, ServiceProviderDomainGetAssignedListRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderDomainGetAssignedListResponse22;
         }
@@ -2078,7 +2078,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderDomainUnassignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderDomainUnassignListRequest(this OcipClient client, ServiceProviderDomainUnassignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderDomainUnassignListRequest(this OcipClientBase client, ServiceProviderDomainUnassignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2087,7 +2087,7 @@ namespace BroadWorksConnector
         /// Unassign a list of domains from a service provider.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderDomainUnassignListRequestAsync(this OcipClient client, ServiceProviderDomainUnassignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderDomainUnassignListRequestAsync(this OcipClientBase client, ServiceProviderDomainUnassignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2097,7 +2097,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderEmergencyCallNotificationGetRequestAsync instead.")]
-        public static async Task<ServiceProviderEmergencyCallNotificationGetResponse> ServiceProviderEmergencyCallNotificationGetRequest(this OcipClient client, ServiceProviderEmergencyCallNotificationGetRequest request)
+        public static async Task<ServiceProviderEmergencyCallNotificationGetResponse> ServiceProviderEmergencyCallNotificationGetRequest(this OcipClientBase client, ServiceProviderEmergencyCallNotificationGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderEmergencyCallNotificationGetResponse;
         }
@@ -2107,7 +2107,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderEmergencyCallNotificationGetResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderEmergencyCallNotificationGetResponse> ServiceProviderEmergencyCallNotificationGetRequestAsync(this OcipClient client, ServiceProviderEmergencyCallNotificationGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderEmergencyCallNotificationGetResponse> ServiceProviderEmergencyCallNotificationGetRequestAsync(this OcipClientBase client, ServiceProviderEmergencyCallNotificationGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderEmergencyCallNotificationGetResponse;
         }
@@ -2116,7 +2116,7 @@ namespace BroadWorksConnector
         /// Call Notification.  The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderEmergencyCallNotificationModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderEmergencyCallNotificationModifyRequest(this OcipClient client, ServiceProviderEmergencyCallNotificationModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderEmergencyCallNotificationModifyRequest(this OcipClientBase client, ServiceProviderEmergencyCallNotificationModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2125,7 +2125,7 @@ namespace BroadWorksConnector
         /// Modify the service provider or enterprise level data associated with Emergency
         /// Call Notification.  The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderEmergencyCallNotificationModifyRequestAsync(this OcipClient client, ServiceProviderEmergencyCallNotificationModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderEmergencyCallNotificationModifyRequestAsync(this OcipClientBase client, ServiceProviderEmergencyCallNotificationModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2134,7 +2134,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderEndpointGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderEndpointGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderEndpointGetListResponse> ServiceProviderEndpointGetListRequest(this OcipClient client, ServiceProviderEndpointGetListRequest request)
+        public static async Task<ServiceProviderEndpointGetListResponse> ServiceProviderEndpointGetListRequest(this OcipClientBase client, ServiceProviderEndpointGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderEndpointGetListResponse;
         }
@@ -2143,7 +2143,7 @@ namespace BroadWorksConnector
         /// Request to search endpoints in the service provider/enterprise.
         /// The response is either ServiceProviderEndpointGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderEndpointGetListResponse> ServiceProviderEndpointGetListRequestAsync(this OcipClient client, ServiceProviderEndpointGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderEndpointGetListResponse> ServiceProviderEndpointGetListRequestAsync(this OcipClientBase client, ServiceProviderEndpointGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderEndpointGetListResponse;
         }
@@ -2156,7 +2156,7 @@ namespace BroadWorksConnector
         /// "Call Recording - Start".
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderFeatureAccessCodeGetListRequest21Async instead.")]
-        public static async Task<ServiceProviderFeatureAccessCodeGetListResponse21> ServiceProviderFeatureAccessCodeGetListRequest21(this OcipClient client, ServiceProviderFeatureAccessCodeGetListRequest21 request)
+        public static async Task<ServiceProviderFeatureAccessCodeGetListResponse21> ServiceProviderFeatureAccessCodeGetListRequest21(this OcipClientBase client, ServiceProviderFeatureAccessCodeGetListRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderFeatureAccessCodeGetListResponse21;
         }
@@ -2169,7 +2169,7 @@ namespace BroadWorksConnector
         /// In release 20 the "Call Recording" FAC name is changed to
         /// "Call Recording - Start".
         /// </summary>
-        public static async Task<ServiceProviderFeatureAccessCodeGetListResponse21> ServiceProviderFeatureAccessCodeGetListRequest21Async(this OcipClient client, ServiceProviderFeatureAccessCodeGetListRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderFeatureAccessCodeGetListResponse21> ServiceProviderFeatureAccessCodeGetListRequest21Async(this OcipClientBase client, ServiceProviderFeatureAccessCodeGetListRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderFeatureAccessCodeGetListResponse21;
         }
@@ -2181,7 +2181,7 @@ namespace BroadWorksConnector
         /// "Call Recording - Start".
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderFeatureAccessCodeModifyListRequest21Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderFeatureAccessCodeModifyListRequest21(this OcipClient client, ServiceProviderFeatureAccessCodeModifyListRequest21 request)
+        public static async Task<SuccessResponse> ServiceProviderFeatureAccessCodeModifyListRequest21(this OcipClientBase client, ServiceProviderFeatureAccessCodeModifyListRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2193,7 +2193,7 @@ namespace BroadWorksConnector
         /// In release 20 the "Call Recording" FAC name is changed to
         /// "Call Recording - Start".
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderFeatureAccessCodeModifyListRequest21Async(this OcipClient client, ServiceProviderFeatureAccessCodeModifyListRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderFeatureAccessCodeModifyListRequest21Async(this OcipClientBase client, ServiceProviderFeatureAccessCodeModifyListRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2202,7 +2202,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderFileRepositoryDeviceUserAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserAddRequest(this OcipClient client, ServiceProviderFileRepositoryDeviceUserAddRequest request)
+        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserAddRequest(this OcipClientBase client, ServiceProviderFileRepositoryDeviceUserAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2211,7 +2211,7 @@ namespace BroadWorksConnector
         /// Add a new service provider file repository user.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserAddRequestAsync(this OcipClient client, ServiceProviderFileRepositoryDeviceUserAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserAddRequestAsync(this OcipClientBase client, ServiceProviderFileRepositoryDeviceUserAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2220,7 +2220,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderFileRepositoryDeviceUserDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserDeleteRequest(this OcipClient client, ServiceProviderFileRepositoryDeviceUserDeleteRequest request)
+        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserDeleteRequest(this OcipClientBase client, ServiceProviderFileRepositoryDeviceUserDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2229,7 +2229,7 @@ namespace BroadWorksConnector
         /// Delete a service provider file repository user.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserDeleteRequestAsync(this OcipClient client, ServiceProviderFileRepositoryDeviceUserDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserDeleteRequestAsync(this OcipClientBase client, ServiceProviderFileRepositoryDeviceUserDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2238,7 +2238,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderFileRepositoryDeviceUserGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderFileRepositoryDeviceUserGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderFileRepositoryDeviceUserGetListResponse> ServiceProviderFileRepositoryDeviceUserGetListRequest(this OcipClient client, ServiceProviderFileRepositoryDeviceUserGetListRequest request)
+        public static async Task<ServiceProviderFileRepositoryDeviceUserGetListResponse> ServiceProviderFileRepositoryDeviceUserGetListRequest(this OcipClientBase client, ServiceProviderFileRepositoryDeviceUserGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderFileRepositoryDeviceUserGetListResponse;
         }
@@ -2247,7 +2247,7 @@ namespace BroadWorksConnector
         /// Request the list of service provider users for a file repository in the system.
         /// The response is either a ServiceProviderFileRepositoryDeviceUserGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderFileRepositoryDeviceUserGetListResponse> ServiceProviderFileRepositoryDeviceUserGetListRequestAsync(this OcipClient client, ServiceProviderFileRepositoryDeviceUserGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderFileRepositoryDeviceUserGetListResponse> ServiceProviderFileRepositoryDeviceUserGetListRequestAsync(this OcipClientBase client, ServiceProviderFileRepositoryDeviceUserGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderFileRepositoryDeviceUserGetListResponse;
         }
@@ -2256,7 +2256,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderFileRepositoryDeviceUserModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserModifyRequest(this OcipClient client, ServiceProviderFileRepositoryDeviceUserModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserModifyRequest(this OcipClientBase client, ServiceProviderFileRepositoryDeviceUserModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2265,7 +2265,7 @@ namespace BroadWorksConnector
         /// Modify a service provider file repository user.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserModifyRequestAsync(this OcipClient client, ServiceProviderFileRepositoryDeviceUserModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderFileRepositoryDeviceUserModifyRequestAsync(this OcipClientBase client, ServiceProviderFileRepositoryDeviceUserModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2274,7 +2274,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderGetDefaultResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderGetDefaultRequestAsync instead.")]
-        public static async Task<ServiceProviderGetDefaultResponse> ServiceProviderGetDefaultRequest(this OcipClient client, ServiceProviderGetDefaultRequest request)
+        public static async Task<ServiceProviderGetDefaultResponse> ServiceProviderGetDefaultRequest(this OcipClientBase client, ServiceProviderGetDefaultRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderGetDefaultResponse;
         }
@@ -2283,7 +2283,7 @@ namespace BroadWorksConnector
         /// Request the default profile for a service provider or enterprise.
         /// The response is either a ServiceProviderGetDefaultResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderGetDefaultResponse> ServiceProviderGetDefaultRequestAsync(this OcipClient client, ServiceProviderGetDefaultRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderGetDefaultResponse> ServiceProviderGetDefaultRequestAsync(this OcipClientBase client, ServiceProviderGetDefaultRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderGetDefaultResponse;
         }
@@ -2299,7 +2299,7 @@ namespace BroadWorksConnector
         /// searchCriteriaResellerId
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderGetListResponse> ServiceProviderGetListRequest(this OcipClient client, ServiceProviderGetListRequest request)
+        public static async Task<ServiceProviderGetListResponse> ServiceProviderGetListRequest(this OcipClientBase client, ServiceProviderGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderGetListResponse;
         }
@@ -2315,7 +2315,7 @@ namespace BroadWorksConnector
         /// The following data elements are only used in AS data mode:
         /// searchCriteriaResellerId
         /// </summary>
-        public static async Task<ServiceProviderGetListResponse> ServiceProviderGetListRequestAsync(this OcipClient client, ServiceProviderGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderGetListResponse> ServiceProviderGetListRequestAsync(this OcipClientBase client, ServiceProviderGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderGetListResponse;
         }
@@ -2331,7 +2331,7 @@ namespace BroadWorksConnector
         /// included. Then the search criteria are logically ORed together.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderGetPagedSortedListRequestAsync instead.")]
-        public static async Task<ServiceProviderGetPagedSortedListResponse> ServiceProviderGetPagedSortedListRequest(this OcipClient client, ServiceProviderGetPagedSortedListRequest request)
+        public static async Task<ServiceProviderGetPagedSortedListResponse> ServiceProviderGetPagedSortedListRequest(this OcipClientBase client, ServiceProviderGetPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderGetPagedSortedListResponse;
         }
@@ -2347,7 +2347,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together unless the searchCriteriaModeOr option is
         /// included. Then the search criteria are logically ORed together.
         /// </summary>
-        public static async Task<ServiceProviderGetPagedSortedListResponse> ServiceProviderGetPagedSortedListRequestAsync(this OcipClient client, ServiceProviderGetPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderGetPagedSortedListResponse> ServiceProviderGetPagedSortedListRequestAsync(this OcipClientBase client, ServiceProviderGetPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderGetPagedSortedListResponse;
         }
@@ -2356,7 +2356,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderGetResponse22V2 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderGetRequest22V2Async instead.")]
-        public static async Task<ServiceProviderGetResponse22V2> ServiceProviderGetRequest22V2(this OcipClient client, ServiceProviderGetRequest22V2 request)
+        public static async Task<ServiceProviderGetResponse22V2> ServiceProviderGetRequest22V2(this OcipClientBase client, ServiceProviderGetRequest22V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderGetResponse22V2;
         }
@@ -2365,7 +2365,7 @@ namespace BroadWorksConnector
         /// Get the profile for a service provider or enterprise.
         /// The response is either a ServiceProviderGetResponse22V2 or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderGetResponse22V2> ServiceProviderGetRequest22V2Async(this OcipClient client, ServiceProviderGetRequest22V2 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderGetResponse22V2> ServiceProviderGetRequest22V2Async(this OcipClientBase client, ServiceProviderGetRequest22V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderGetResponse22V2;
         }
@@ -2374,7 +2374,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderHPBXAlternateCarrierSelectionGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderHPBXAlternateCarrierSelectionGetRequestAsync instead.")]
-        public static async Task<ServiceProviderHPBXAlternateCarrierSelectionGetResponse> ServiceProviderHPBXAlternateCarrierSelectionGetRequest(this OcipClient client, ServiceProviderHPBXAlternateCarrierSelectionGetRequest request)
+        public static async Task<ServiceProviderHPBXAlternateCarrierSelectionGetResponse> ServiceProviderHPBXAlternateCarrierSelectionGetRequest(this OcipClientBase client, ServiceProviderHPBXAlternateCarrierSelectionGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderHPBXAlternateCarrierSelectionGetResponse;
         }
@@ -2383,7 +2383,7 @@ namespace BroadWorksConnector
         /// Request to get the Alternate Carrier Selection parameters.
         /// The response is either a ServiceProviderHPBXAlternateCarrierSelectionGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderHPBXAlternateCarrierSelectionGetResponse> ServiceProviderHPBXAlternateCarrierSelectionGetRequestAsync(this OcipClient client, ServiceProviderHPBXAlternateCarrierSelectionGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderHPBXAlternateCarrierSelectionGetResponse> ServiceProviderHPBXAlternateCarrierSelectionGetRequestAsync(this OcipClientBase client, ServiceProviderHPBXAlternateCarrierSelectionGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderHPBXAlternateCarrierSelectionGetResponse;
         }
@@ -2392,7 +2392,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderHPBXAlternateCarrierSelectionModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderHPBXAlternateCarrierSelectionModifyRequest(this OcipClient client, ServiceProviderHPBXAlternateCarrierSelectionModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderHPBXAlternateCarrierSelectionModifyRequest(this OcipClientBase client, ServiceProviderHPBXAlternateCarrierSelectionModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2401,7 +2401,7 @@ namespace BroadWorksConnector
         /// Request to modify the Alternate Carrier Selection parameters.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderHPBXAlternateCarrierSelectionModifyRequestAsync(this OcipClient client, ServiceProviderHPBXAlternateCarrierSelectionModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderHPBXAlternateCarrierSelectionModifyRequestAsync(this OcipClientBase client, ServiceProviderHPBXAlternateCarrierSelectionModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2411,7 +2411,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderIMRNAssignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderIMRNAssignListRequest(this OcipClient client, ServiceProviderIMRNAssignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderIMRNAssignListRequest(this OcipClientBase client, ServiceProviderIMRNAssignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2421,7 +2421,7 @@ namespace BroadWorksConnector
         /// or a list of DNs, or a range of DNs, or any combination thereof.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderIMRNAssignListRequestAsync(this OcipClient client, ServiceProviderIMRNAssignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderIMRNAssignListRequestAsync(this OcipClientBase client, ServiceProviderIMRNAssignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2430,7 +2430,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderIMRNGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderIMRNGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderIMRNGetListResponse> ServiceProviderIMRNGetListRequest(this OcipClient client, ServiceProviderIMRNGetListRequest request)
+        public static async Task<ServiceProviderIMRNGetListResponse> ServiceProviderIMRNGetListRequest(this OcipClientBase client, ServiceProviderIMRNGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderIMRNGetListResponse;
         }
@@ -2439,7 +2439,7 @@ namespace BroadWorksConnector
         /// Returns a list of dns or dn ranges in a service provider IMRN pool.
         /// The response is either ServiceProviderIMRNGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderIMRNGetListResponse> ServiceProviderIMRNGetListRequestAsync(this OcipClient client, ServiceProviderIMRNGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderIMRNGetListResponse> ServiceProviderIMRNGetListRequestAsync(this OcipClientBase client, ServiceProviderIMRNGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderIMRNGetListResponse;
         }
@@ -2450,7 +2450,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderIMRNUnassignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderIMRNUnassignListRequest(this OcipClient client, ServiceProviderIMRNUnassignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderIMRNUnassignListRequest(this OcipClientBase client, ServiceProviderIMRNUnassignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2461,7 +2461,7 @@ namespace BroadWorksConnector
         /// or a list of DNs, or a range of DNs, or any combination thereof.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderIMRNUnassignListRequestAsync(this OcipClient client, ServiceProviderIMRNUnassignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderIMRNUnassignListRequestAsync(this OcipClientBase client, ServiceProviderIMRNUnassignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2470,7 +2470,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderLanguageAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderLanguageAddRequest(this OcipClient client, ServiceProviderLanguageAddRequest request)
+        public static async Task<SuccessResponse> ServiceProviderLanguageAddRequest(this OcipClientBase client, ServiceProviderLanguageAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2479,7 +2479,7 @@ namespace BroadWorksConnector
         /// Request to add a language for a service provder.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderLanguageAddRequestAsync(this OcipClient client, ServiceProviderLanguageAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderLanguageAddRequestAsync(this OcipClientBase client, ServiceProviderLanguageAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2488,7 +2488,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderLanguageDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderLanguageDeleteRequest(this OcipClient client, ServiceProviderLanguageDeleteRequest request)
+        public static async Task<SuccessResponse> ServiceProviderLanguageDeleteRequest(this OcipClientBase client, ServiceProviderLanguageDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2497,7 +2497,7 @@ namespace BroadWorksConnector
         /// Request to delete a language from a service provider supported languages.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderLanguageDeleteRequestAsync(this OcipClient client, ServiceProviderLanguageDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderLanguageDeleteRequestAsync(this OcipClientBase client, ServiceProviderLanguageDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2507,7 +2507,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderLanguageGetAvailableListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderLanguageGetAvailableListRequestAsync instead.")]
-        public static async Task<ServiceProviderLanguageGetAvailableListResponse> ServiceProviderLanguageGetAvailableListRequest(this OcipClient client, ServiceProviderLanguageGetAvailableListRequest request)
+        public static async Task<ServiceProviderLanguageGetAvailableListResponse> ServiceProviderLanguageGetAvailableListRequest(this OcipClientBase client, ServiceProviderLanguageGetAvailableListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderLanguageGetAvailableListResponse;
         }
@@ -2517,7 +2517,7 @@ namespace BroadWorksConnector
         /// The list will either be the system or service provider languages list, depending on the useServiceProviderLanguages flag.
         /// The response is either a ServiceProviderLanguageGetAvailableListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderLanguageGetAvailableListResponse> ServiceProviderLanguageGetAvailableListRequestAsync(this OcipClient client, ServiceProviderLanguageGetAvailableListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderLanguageGetAvailableListResponse> ServiceProviderLanguageGetAvailableListRequestAsync(this OcipClientBase client, ServiceProviderLanguageGetAvailableListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderLanguageGetAvailableListResponse;
         }
@@ -2526,7 +2526,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderLanguageGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderLanguageGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderLanguageGetListResponse> ServiceProviderLanguageGetListRequest(this OcipClient client, ServiceProviderLanguageGetListRequest request)
+        public static async Task<ServiceProviderLanguageGetListResponse> ServiceProviderLanguageGetListRequest(this OcipClientBase client, ServiceProviderLanguageGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderLanguageGetListResponse;
         }
@@ -2535,7 +2535,7 @@ namespace BroadWorksConnector
         /// Request the defined languages for a service provider.
         /// The response is either a ServiceProviderLanguageGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderLanguageGetListResponse> ServiceProviderLanguageGetListRequestAsync(this OcipClient client, ServiceProviderLanguageGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderLanguageGetListResponse> ServiceProviderLanguageGetListRequestAsync(this OcipClientBase client, ServiceProviderLanguageGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderLanguageGetListResponse;
         }
@@ -2546,7 +2546,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderLanguageModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderLanguageModifyRequest(this OcipClient client, ServiceProviderLanguageModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderLanguageModifyRequest(this OcipClientBase client, ServiceProviderLanguageModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2557,7 +2557,7 @@ namespace BroadWorksConnector
         /// Becomes the default language for the service provider/enterprise.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderLanguageModifyRequestAsync(this OcipClient client, ServiceProviderLanguageModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderLanguageModifyRequestAsync(this OcipClientBase client, ServiceProviderLanguageModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2580,7 +2580,7 @@ namespace BroadWorksConnector
         /// Only Provisioning admin and above can change the preferredDataCenter.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderModifyRequest(this OcipClient client, ServiceProviderModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderModifyRequest(this OcipClientBase client, ServiceProviderModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2603,7 +2603,7 @@ namespace BroadWorksConnector
         /// preferredDataCenter.
         /// Only Provisioning admin and above can change the preferredDataCenter.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderModifyRequestAsync(this OcipClient client, ServiceProviderModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderModifyRequestAsync(this OcipClientBase client, ServiceProviderModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2614,7 +2614,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNetworkClassOfServiceAssignListRequest21Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListRequest21(this OcipClient client, ServiceProviderNetworkClassOfServiceAssignListRequest21 request)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListRequest21(this OcipClientBase client, ServiceProviderNetworkClassOfServiceAssignListRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2625,7 +2625,7 @@ namespace BroadWorksConnector
         /// there is already one assigned to the service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListRequest21Async(this OcipClient client, ServiceProviderNetworkClassOfServiceAssignListRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListRequest21Async(this OcipClientBase client, ServiceProviderNetworkClassOfServiceAssignListRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2637,7 +2637,7 @@ namespace BroadWorksConnector
         /// assigned to the service provider. The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNetworkClassOfServiceAssignListToAllGroupsRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListToAllGroupsRequest(this OcipClient client, ServiceProviderNetworkClassOfServiceAssignListToAllGroupsRequest request)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListToAllGroupsRequest(this OcipClientBase client, ServiceProviderNetworkClassOfServiceAssignListToAllGroupsRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2649,7 +2649,7 @@ namespace BroadWorksConnector
         /// The Network Classes of Service must be currently
         /// assigned to the service provider. The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListToAllGroupsRequestAsync(this OcipClient client, ServiceProviderNetworkClassOfServiceAssignListToAllGroupsRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListToAllGroupsRequestAsync(this OcipClientBase client, ServiceProviderNetworkClassOfServiceAssignListToAllGroupsRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2663,7 +2663,7 @@ namespace BroadWorksConnector
         /// the service provider. The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNetworkClassOfServiceAssignToAllUsersRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignToAllUsersRequest(this OcipClient client, ServiceProviderNetworkClassOfServiceAssignToAllUsersRequest request)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignToAllUsersRequest(this OcipClientBase client, ServiceProviderNetworkClassOfServiceAssignToAllUsersRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2677,7 +2677,7 @@ namespace BroadWorksConnector
         /// However, the Network Classes of Service must be currently assigned to
         /// the service provider. The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignToAllUsersRequestAsync(this OcipClient client, ServiceProviderNetworkClassOfServiceAssignToAllUsersRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignToAllUsersRequestAsync(this OcipClientBase client, ServiceProviderNetworkClassOfServiceAssignToAllUsersRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2688,7 +2688,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNetworkClassOfServiceGetAssignedGroupListRequestAsync instead.")]
-        public static async Task<ServiceProviderNetworkClassOfServiceGetAssignedGroupListResponse> ServiceProviderNetworkClassOfServiceGetAssignedGroupListRequest(this OcipClient client, ServiceProviderNetworkClassOfServiceGetAssignedGroupListRequest request)
+        public static async Task<ServiceProviderNetworkClassOfServiceGetAssignedGroupListResponse> ServiceProviderNetworkClassOfServiceGetAssignedGroupListRequest(this OcipClientBase client, ServiceProviderNetworkClassOfServiceGetAssignedGroupListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderNetworkClassOfServiceGetAssignedGroupListResponse;
         }
@@ -2699,7 +2699,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderNetworkClassOfServiceGetAssignedGroupListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderNetworkClassOfServiceGetAssignedGroupListResponse> ServiceProviderNetworkClassOfServiceGetAssignedGroupListRequestAsync(this OcipClient client, ServiceProviderNetworkClassOfServiceGetAssignedGroupListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderNetworkClassOfServiceGetAssignedGroupListResponse> ServiceProviderNetworkClassOfServiceGetAssignedGroupListRequestAsync(this OcipClientBase client, ServiceProviderNetworkClassOfServiceGetAssignedGroupListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderNetworkClassOfServiceGetAssignedGroupListResponse;
         }
@@ -2709,7 +2709,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNetworkClassOfServiceGetAssignedListRequestAsync instead.")]
-        public static async Task<ServiceProviderNetworkClassOfServiceGetAssignedListResponse> ServiceProviderNetworkClassOfServiceGetAssignedListRequest(this OcipClient client, ServiceProviderNetworkClassOfServiceGetAssignedListRequest request)
+        public static async Task<ServiceProviderNetworkClassOfServiceGetAssignedListResponse> ServiceProviderNetworkClassOfServiceGetAssignedListRequest(this OcipClientBase client, ServiceProviderNetworkClassOfServiceGetAssignedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderNetworkClassOfServiceGetAssignedListResponse;
         }
@@ -2719,7 +2719,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderNetworkClassOfServiceGetAssignedListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderNetworkClassOfServiceGetAssignedListResponse> ServiceProviderNetworkClassOfServiceGetAssignedListRequestAsync(this OcipClient client, ServiceProviderNetworkClassOfServiceGetAssignedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderNetworkClassOfServiceGetAssignedListResponse> ServiceProviderNetworkClassOfServiceGetAssignedListRequestAsync(this OcipClientBase client, ServiceProviderNetworkClassOfServiceGetAssignedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderNetworkClassOfServiceGetAssignedListResponse;
         }
@@ -2728,7 +2728,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNetworkClassOfServiceModifyDefaultRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceModifyDefaultRequest(this OcipClient client, ServiceProviderNetworkClassOfServiceModifyDefaultRequest request)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceModifyDefaultRequest(this OcipClientBase client, ServiceProviderNetworkClassOfServiceModifyDefaultRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2737,7 +2737,7 @@ namespace BroadWorksConnector
         /// Modifies the default Network Classes of Service of a Service Provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceModifyDefaultRequestAsync(this OcipClient client, ServiceProviderNetworkClassOfServiceModifyDefaultRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceModifyDefaultRequestAsync(this OcipClientBase client, ServiceProviderNetworkClassOfServiceModifyDefaultRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2748,7 +2748,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNetworkClassOfServiceUnassignListRequest21Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceUnassignListRequest21(this OcipClient client, ServiceProviderNetworkClassOfServiceUnassignListRequest21 request)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceUnassignListRequest21(this OcipClientBase client, ServiceProviderNetworkClassOfServiceUnassignListRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2759,7 +2759,7 @@ namespace BroadWorksConnector
         /// Network Classes of Service assigned to the service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceUnassignListRequest21Async(this OcipClient client, ServiceProviderNetworkClassOfServiceUnassignListRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceUnassignListRequest21Async(this OcipClientBase client, ServiceProviderNetworkClassOfServiceUnassignListRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2768,7 +2768,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNumberPortabilityQueryAddListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderNumberPortabilityQueryAddListRequest(this OcipClient client, ServiceProviderNumberPortabilityQueryAddListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderNumberPortabilityQueryAddListRequest(this OcipClientBase client, ServiceProviderNumberPortabilityQueryAddListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2777,7 +2777,7 @@ namespace BroadWorksConnector
         /// Add a list of the Service Provider Number Portability Query Digit Patterns.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderNumberPortabilityQueryAddListRequestAsync(this OcipClient client, ServiceProviderNumberPortabilityQueryAddListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderNumberPortabilityQueryAddListRequestAsync(this OcipClientBase client, ServiceProviderNumberPortabilityQueryAddListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2786,7 +2786,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderNumberPortabilityQueryGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNumberPortabilityQueryGetRequestAsync instead.")]
-        public static async Task<ServiceProviderNumberPortabilityQueryGetResponse> ServiceProviderNumberPortabilityQueryGetRequest(this OcipClient client, ServiceProviderNumberPortabilityQueryGetRequest request)
+        public static async Task<ServiceProviderNumberPortabilityQueryGetResponse> ServiceProviderNumberPortabilityQueryGetRequest(this OcipClientBase client, ServiceProviderNumberPortabilityQueryGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderNumberPortabilityQueryGetResponse;
         }
@@ -2795,7 +2795,7 @@ namespace BroadWorksConnector
         /// Request to get the Service Provider Number Portability Query Digit Pattern Trigger List information.
         /// The response is either a ServiceProviderNumberPortabilityQueryGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderNumberPortabilityQueryGetResponse> ServiceProviderNumberPortabilityQueryGetRequestAsync(this OcipClient client, ServiceProviderNumberPortabilityQueryGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderNumberPortabilityQueryGetResponse> ServiceProviderNumberPortabilityQueryGetRequestAsync(this OcipClientBase client, ServiceProviderNumberPortabilityQueryGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderNumberPortabilityQueryGetResponse;
         }
@@ -2804,7 +2804,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNumberPortabilityQueryModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderNumberPortabilityQueryModifyRequest(this OcipClient client, ServiceProviderNumberPortabilityQueryModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderNumberPortabilityQueryModifyRequest(this OcipClientBase client, ServiceProviderNumberPortabilityQueryModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2813,7 +2813,7 @@ namespace BroadWorksConnector
         /// Modify the Service Provider Number Portability Query information.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderNumberPortabilityQueryModifyRequestAsync(this OcipClient client, ServiceProviderNumberPortabilityQueryModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderNumberPortabilityQueryModifyRequestAsync(this OcipClientBase client, ServiceProviderNumberPortabilityQueryModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2824,7 +2824,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderOfficeZoneAssignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderOfficeZoneAssignListRequest(this OcipClient client, ServiceProviderOfficeZoneAssignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderOfficeZoneAssignListRequest(this OcipClientBase client, ServiceProviderOfficeZoneAssignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2835,7 +2835,7 @@ namespace BroadWorksConnector
         /// Office Zones can only be assigned if the Location-Based Calling Restrictions has been authorized to the service provider otherwise the request will fail.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderOfficeZoneAssignListRequestAsync(this OcipClient client, ServiceProviderOfficeZoneAssignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderOfficeZoneAssignListRequestAsync(this OcipClientBase client, ServiceProviderOfficeZoneAssignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2845,7 +2845,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderOfficeZoneGetAssignedGroupListRequestAsync instead.")]
-        public static async Task<ServiceProviderOfficeZoneGetAssignedGroupListResponse> ServiceProviderOfficeZoneGetAssignedGroupListRequest(this OcipClient client, ServiceProviderOfficeZoneGetAssignedGroupListRequest request)
+        public static async Task<ServiceProviderOfficeZoneGetAssignedGroupListResponse> ServiceProviderOfficeZoneGetAssignedGroupListRequest(this OcipClientBase client, ServiceProviderOfficeZoneGetAssignedGroupListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderOfficeZoneGetAssignedGroupListResponse;
         }
@@ -2855,7 +2855,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderOfficeZoneGetAssignedGroupListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderOfficeZoneGetAssignedGroupListResponse> ServiceProviderOfficeZoneGetAssignedGroupListRequestAsync(this OcipClient client, ServiceProviderOfficeZoneGetAssignedGroupListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderOfficeZoneGetAssignedGroupListResponse> ServiceProviderOfficeZoneGetAssignedGroupListRequestAsync(this OcipClientBase client, ServiceProviderOfficeZoneGetAssignedGroupListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderOfficeZoneGetAssignedGroupListResponse;
         }
@@ -2865,7 +2865,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderOfficeZoneGetAssignedListRequestAsync instead.")]
-        public static async Task<ServiceProviderOfficeZoneGetAssignedListResponse> ServiceProviderOfficeZoneGetAssignedListRequest(this OcipClient client, ServiceProviderOfficeZoneGetAssignedListRequest request)
+        public static async Task<ServiceProviderOfficeZoneGetAssignedListResponse> ServiceProviderOfficeZoneGetAssignedListRequest(this OcipClientBase client, ServiceProviderOfficeZoneGetAssignedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderOfficeZoneGetAssignedListResponse;
         }
@@ -2875,7 +2875,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderOfficeZoneGetAssignedListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderOfficeZoneGetAssignedListResponse> ServiceProviderOfficeZoneGetAssignedListRequestAsync(this OcipClient client, ServiceProviderOfficeZoneGetAssignedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderOfficeZoneGetAssignedListResponse> ServiceProviderOfficeZoneGetAssignedListRequestAsync(this OcipClientBase client, ServiceProviderOfficeZoneGetAssignedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderOfficeZoneGetAssignedListResponse;
         }
@@ -2885,7 +2885,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderOfficeZoneUnassignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderOfficeZoneUnassignListRequest(this OcipClient client, ServiceProviderOfficeZoneUnassignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderOfficeZoneUnassignListRequest(this OcipClientBase client, ServiceProviderOfficeZoneUnassignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2895,7 +2895,7 @@ namespace BroadWorksConnector
         /// Office Zones can only be unassigned if the Location-Based Calling Restrictions has been authorized to the service provider otherwise the request will fail.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderOfficeZoneUnassignListRequestAsync(this OcipClient client, ServiceProviderOfficeZoneUnassignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderOfficeZoneUnassignListRequestAsync(this OcipClientBase client, ServiceProviderOfficeZoneUnassignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2905,7 +2905,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderPasswordRulesGetResponse22 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPasswordRulesGetRequest22Async instead.")]
-        public static async Task<ServiceProviderPasswordRulesGetResponse22> ServiceProviderPasswordRulesGetRequest22(this OcipClient client, ServiceProviderPasswordRulesGetRequest22 request)
+        public static async Task<ServiceProviderPasswordRulesGetResponse22> ServiceProviderPasswordRulesGetRequest22(this OcipClientBase client, ServiceProviderPasswordRulesGetRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderPasswordRulesGetResponse22;
         }
@@ -2915,7 +2915,7 @@ namespace BroadWorksConnector
         /// Administrators (Group and Department) and Users.
         /// The response is either ServiceProviderPasswordRulesGetResponse22 or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderPasswordRulesGetResponse22> ServiceProviderPasswordRulesGetRequest22Async(this OcipClient client, ServiceProviderPasswordRulesGetRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderPasswordRulesGetResponse22> ServiceProviderPasswordRulesGetRequest22Async(this OcipClientBase client, ServiceProviderPasswordRulesGetRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderPasswordRulesGetResponse22;
         }
@@ -2929,7 +2929,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPasswordRulesModifyRequest14sp3Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderPasswordRulesModifyRequest14sp3(this OcipClient client, ServiceProviderPasswordRulesModifyRequest14sp3 request)
+        public static async Task<SuccessResponse> ServiceProviderPasswordRulesModifyRequest14sp3(this OcipClientBase client, ServiceProviderPasswordRulesModifyRequest14sp3 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2943,7 +2943,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderPasswordRulesModifyRequest14sp3Async(this OcipClient client, ServiceProviderPasswordRulesModifyRequest14sp3 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderPasswordRulesModifyRequest14sp3Async(this OcipClientBase client, ServiceProviderPasswordRulesModifyRequest14sp3 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2952,7 +2952,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderPortalPasscodeRulesGetResponse19 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPortalPasscodeRulesGetRequest19Async instead.")]
-        public static async Task<ServiceProviderPortalPasscodeRulesGetResponse19> ServiceProviderPortalPasscodeRulesGetRequest19(this OcipClient client, ServiceProviderPortalPasscodeRulesGetRequest19 request)
+        public static async Task<ServiceProviderPortalPasscodeRulesGetResponse19> ServiceProviderPortalPasscodeRulesGetRequest19(this OcipClientBase client, ServiceProviderPortalPasscodeRulesGetRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderPortalPasscodeRulesGetResponse19;
         }
@@ -2961,7 +2961,7 @@ namespace BroadWorksConnector
         /// Requests the service provider's passcode rules setting.
         /// The response is either ServiceProviderPortalPasscodeRulesGetResponse19 or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderPortalPasscodeRulesGetResponse19> ServiceProviderPortalPasscodeRulesGetRequest19Async(this OcipClient client, ServiceProviderPortalPasscodeRulesGetRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderPortalPasscodeRulesGetResponse19> ServiceProviderPortalPasscodeRulesGetRequest19Async(this OcipClientBase client, ServiceProviderPortalPasscodeRulesGetRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderPortalPasscodeRulesGetResponse19;
         }
@@ -2978,7 +2978,7 @@ namespace BroadWorksConnector
         /// numberOfPreviousPasscodes
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPortalPasscodeRulesModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderPortalPasscodeRulesModifyRequest(this OcipClient client, ServiceProviderPortalPasscodeRulesModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderPortalPasscodeRulesModifyRequest(this OcipClientBase client, ServiceProviderPortalPasscodeRulesModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2995,7 +2995,7 @@ namespace BroadWorksConnector
         /// numberOfDescendingDigits
         /// numberOfPreviousPasscodes
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderPortalPasscodeRulesModifyRequestAsync(this OcipClient client, ServiceProviderPortalPasscodeRulesModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderPortalPasscodeRulesModifyRequestAsync(this OcipClientBase client, ServiceProviderPortalPasscodeRulesModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3004,7 +3004,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderRoutePointExternalSystemAssignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderRoutePointExternalSystemAssignListRequest(this OcipClient client, ServiceProviderRoutePointExternalSystemAssignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderRoutePointExternalSystemAssignListRequest(this OcipClientBase client, ServiceProviderRoutePointExternalSystemAssignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3013,7 +3013,7 @@ namespace BroadWorksConnector
         /// Assign a list of route point external systems to a service provider.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderRoutePointExternalSystemAssignListRequestAsync(this OcipClient client, ServiceProviderRoutePointExternalSystemAssignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderRoutePointExternalSystemAssignListRequestAsync(this OcipClientBase client, ServiceProviderRoutePointExternalSystemAssignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3024,7 +3024,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderRoutePointExternalSystemGetAssignedGroupListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderRoutePointExternalSystemGetAssignedGroupListRequestAsync instead.")]
-        public static async Task<ServiceProviderRoutePointExternalSystemGetAssignedGroupListResponse> ServiceProviderRoutePointExternalSystemGetAssignedGroupListRequest(this OcipClient client, ServiceProviderRoutePointExternalSystemGetAssignedGroupListRequest request)
+        public static async Task<ServiceProviderRoutePointExternalSystemGetAssignedGroupListResponse> ServiceProviderRoutePointExternalSystemGetAssignedGroupListRequest(this OcipClientBase client, ServiceProviderRoutePointExternalSystemGetAssignedGroupListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderRoutePointExternalSystemGetAssignedGroupListResponse;
         }
@@ -3035,7 +3035,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together.
         /// The response is either a ServiceProviderRoutePointExternalSystemGetAssignedGroupListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderRoutePointExternalSystemGetAssignedGroupListResponse> ServiceProviderRoutePointExternalSystemGetAssignedGroupListRequestAsync(this OcipClient client, ServiceProviderRoutePointExternalSystemGetAssignedGroupListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderRoutePointExternalSystemGetAssignedGroupListResponse> ServiceProviderRoutePointExternalSystemGetAssignedGroupListRequestAsync(this OcipClientBase client, ServiceProviderRoutePointExternalSystemGetAssignedGroupListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderRoutePointExternalSystemGetAssignedGroupListResponse;
         }
@@ -3044,7 +3044,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderRoutePointExternalSystemGetAssignedListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderRoutePointExternalSystemGetAssignedListRequestAsync instead.")]
-        public static async Task<ServiceProviderRoutePointExternalSystemGetAssignedListResponse> ServiceProviderRoutePointExternalSystemGetAssignedListRequest(this OcipClient client, ServiceProviderRoutePointExternalSystemGetAssignedListRequest request)
+        public static async Task<ServiceProviderRoutePointExternalSystemGetAssignedListResponse> ServiceProviderRoutePointExternalSystemGetAssignedListRequest(this OcipClientBase client, ServiceProviderRoutePointExternalSystemGetAssignedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderRoutePointExternalSystemGetAssignedListResponse;
         }
@@ -3053,7 +3053,7 @@ namespace BroadWorksConnector
         /// Requests the list of all Route Point External Systems assigned to a service provider.
         /// The response is either ServiceProviderRoutePointExternalSystemGetAssignedListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderRoutePointExternalSystemGetAssignedListResponse> ServiceProviderRoutePointExternalSystemGetAssignedListRequestAsync(this OcipClient client, ServiceProviderRoutePointExternalSystemGetAssignedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderRoutePointExternalSystemGetAssignedListResponse> ServiceProviderRoutePointExternalSystemGetAssignedListRequestAsync(this OcipClientBase client, ServiceProviderRoutePointExternalSystemGetAssignedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderRoutePointExternalSystemGetAssignedListResponse;
         }
@@ -3062,7 +3062,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderRoutePointExternalSystemUnassignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderRoutePointExternalSystemUnassignListRequest(this OcipClient client, ServiceProviderRoutePointExternalSystemUnassignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderRoutePointExternalSystemUnassignListRequest(this OcipClientBase client, ServiceProviderRoutePointExternalSystemUnassignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3071,7 +3071,7 @@ namespace BroadWorksConnector
         /// Unassign a list of route point external systems from a service provider.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderRoutePointExternalSystemUnassignListRequestAsync(this OcipClient client, ServiceProviderRoutePointExternalSystemUnassignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderRoutePointExternalSystemUnassignListRequestAsync(this OcipClientBase client, ServiceProviderRoutePointExternalSystemUnassignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3080,7 +3080,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderRoutingProfileGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderRoutingProfileGetRequestAsync instead.")]
-        public static async Task<ServiceProviderRoutingProfileGetResponse> ServiceProviderRoutingProfileGetRequest(this OcipClient client, ServiceProviderRoutingProfileGetRequest request)
+        public static async Task<ServiceProviderRoutingProfileGetResponse> ServiceProviderRoutingProfileGetRequest(this OcipClientBase client, ServiceProviderRoutingProfileGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderRoutingProfileGetResponse;
         }
@@ -3089,7 +3089,7 @@ namespace BroadWorksConnector
         /// Request the routing profile for the service provider/enterprise.
         /// The response is either a ServiceProviderRoutingProfileGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderRoutingProfileGetResponse> ServiceProviderRoutingProfileGetRequestAsync(this OcipClient client, ServiceProviderRoutingProfileGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderRoutingProfileGetResponse> ServiceProviderRoutingProfileGetRequestAsync(this OcipClientBase client, ServiceProviderRoutingProfileGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderRoutingProfileGetResponse;
         }
@@ -3098,7 +3098,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderRoutingProfileModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderRoutingProfileModifyRequest(this OcipClient client, ServiceProviderRoutingProfileModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderRoutingProfileModifyRequest(this OcipClientBase client, ServiceProviderRoutingProfileModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3107,7 +3107,7 @@ namespace BroadWorksConnector
         /// Requests to modify the routing profile for a service provider.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderRoutingProfileModifyRequestAsync(this OcipClient client, ServiceProviderRoutingProfileModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderRoutingProfileModifyRequestAsync(this OcipClientBase client, ServiceProviderRoutingProfileModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3118,7 +3118,7 @@ namespace BroadWorksConnector
         /// The endDate element is set to the sum of the adjusted starDate element value and the event duration.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderScheduleAddEventRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderScheduleAddEventRequest(this OcipClient client, ServiceProviderScheduleAddEventRequest request)
+        public static async Task<SuccessResponse> ServiceProviderScheduleAddEventRequest(this OcipClientBase client, ServiceProviderScheduleAddEventRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3129,7 +3129,7 @@ namespace BroadWorksConnector
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after the startDate.
         /// The endDate element is set to the sum of the adjusted starDate element value and the event duration.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderScheduleAddEventRequestAsync(this OcipClient client, ServiceProviderScheduleAddEventRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderScheduleAddEventRequestAsync(this OcipClientBase client, ServiceProviderScheduleAddEventRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3138,7 +3138,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderScheduleAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderScheduleAddRequest(this OcipClient client, ServiceProviderScheduleAddRequest request)
+        public static async Task<SuccessResponse> ServiceProviderScheduleAddRequest(this OcipClientBase client, ServiceProviderScheduleAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3147,7 +3147,7 @@ namespace BroadWorksConnector
         /// Add a service provider schedule.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderScheduleAddRequestAsync(this OcipClient client, ServiceProviderScheduleAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderScheduleAddRequestAsync(this OcipClientBase client, ServiceProviderScheduleAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3156,7 +3156,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderScheduleDeleteEventListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderScheduleDeleteEventListRequest(this OcipClient client, ServiceProviderScheduleDeleteEventListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderScheduleDeleteEventListRequest(this OcipClientBase client, ServiceProviderScheduleDeleteEventListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3165,7 +3165,7 @@ namespace BroadWorksConnector
         /// Delete a list of events from a service provider schedule.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderScheduleDeleteEventListRequestAsync(this OcipClient client, ServiceProviderScheduleDeleteEventListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderScheduleDeleteEventListRequestAsync(this OcipClientBase client, ServiceProviderScheduleDeleteEventListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3174,7 +3174,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderScheduleDeleteListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderScheduleDeleteListRequest(this OcipClient client, ServiceProviderScheduleDeleteListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderScheduleDeleteListRequest(this OcipClientBase client, ServiceProviderScheduleDeleteListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3183,7 +3183,7 @@ namespace BroadWorksConnector
         /// Delete a list of service provider schedule.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderScheduleDeleteListRequestAsync(this OcipClient client, ServiceProviderScheduleDeleteListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderScheduleDeleteListRequestAsync(this OcipClientBase client, ServiceProviderScheduleDeleteListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3192,7 +3192,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderScheduleGetEventDetailListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderScheduleGetEventDetailListRequestAsync instead.")]
-        public static async Task<ServiceProviderScheduleGetEventDetailListResponse> ServiceProviderScheduleGetEventDetailListRequest(this OcipClient client, ServiceProviderScheduleGetEventDetailListRequest request)
+        public static async Task<ServiceProviderScheduleGetEventDetailListResponse> ServiceProviderScheduleGetEventDetailListRequest(this OcipClientBase client, ServiceProviderScheduleGetEventDetailListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderScheduleGetEventDetailListResponse;
         }
@@ -3201,7 +3201,7 @@ namespace BroadWorksConnector
         /// Get the list of events of a service provider schedule.
         /// The response is either a ServiceProviderScheduleGetEventDetailListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderScheduleGetEventDetailListResponse> ServiceProviderScheduleGetEventDetailListRequestAsync(this OcipClient client, ServiceProviderScheduleGetEventDetailListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderScheduleGetEventDetailListResponse> ServiceProviderScheduleGetEventDetailListRequestAsync(this OcipClientBase client, ServiceProviderScheduleGetEventDetailListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderScheduleGetEventDetailListResponse;
         }
@@ -3210,7 +3210,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderScheduleGetEventListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderScheduleGetEventListRequestAsync instead.")]
-        public static async Task<ServiceProviderScheduleGetEventListResponse> ServiceProviderScheduleGetEventListRequest(this OcipClient client, ServiceProviderScheduleGetEventListRequest request)
+        public static async Task<ServiceProviderScheduleGetEventListResponse> ServiceProviderScheduleGetEventListRequest(this OcipClientBase client, ServiceProviderScheduleGetEventListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderScheduleGetEventListResponse;
         }
@@ -3219,7 +3219,7 @@ namespace BroadWorksConnector
         /// Get the list of events of a service provider schedule.
         /// The response is either a ServiceProviderScheduleGetEventListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderScheduleGetEventListResponse> ServiceProviderScheduleGetEventListRequestAsync(this OcipClient client, ServiceProviderScheduleGetEventListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderScheduleGetEventListResponse> ServiceProviderScheduleGetEventListRequestAsync(this OcipClientBase client, ServiceProviderScheduleGetEventListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderScheduleGetEventListResponse;
         }
@@ -3228,7 +3228,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderScheduleGetEventResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderScheduleGetEventRequestAsync instead.")]
-        public static async Task<ServiceProviderScheduleGetEventResponse> ServiceProviderScheduleGetEventRequest(this OcipClient client, ServiceProviderScheduleGetEventRequest request)
+        public static async Task<ServiceProviderScheduleGetEventResponse> ServiceProviderScheduleGetEventRequest(this OcipClientBase client, ServiceProviderScheduleGetEventRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderScheduleGetEventResponse;
         }
@@ -3237,7 +3237,7 @@ namespace BroadWorksConnector
         /// Get an event from a service provider schedule.
         /// The response is either a ServiceProviderScheduleGetEventResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderScheduleGetEventResponse> ServiceProviderScheduleGetEventRequestAsync(this OcipClient client, ServiceProviderScheduleGetEventRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderScheduleGetEventResponse> ServiceProviderScheduleGetEventRequestAsync(this OcipClientBase client, ServiceProviderScheduleGetEventRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderScheduleGetEventResponse;
         }
@@ -3246,7 +3246,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderScheduleGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderScheduleGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderScheduleGetListResponse> ServiceProviderScheduleGetListRequest(this OcipClient client, ServiceProviderScheduleGetListRequest request)
+        public static async Task<ServiceProviderScheduleGetListResponse> ServiceProviderScheduleGetListRequest(this OcipClientBase client, ServiceProviderScheduleGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderScheduleGetListResponse;
         }
@@ -3255,7 +3255,7 @@ namespace BroadWorksConnector
         /// Get the list of a service provider schedules. The list can be filtered by schedule type.
         /// The response is either a ServiceProviderScheduleGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderScheduleGetListResponse> ServiceProviderScheduleGetListRequestAsync(this OcipClient client, ServiceProviderScheduleGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderScheduleGetListResponse> ServiceProviderScheduleGetListRequestAsync(this OcipClientBase client, ServiceProviderScheduleGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderScheduleGetListResponse;
         }
@@ -3266,7 +3266,7 @@ namespace BroadWorksConnector
         /// The endDate element is set to the sum of the adjusted starDate element value and the event duration.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderScheduleModifyEventRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderScheduleModifyEventRequest(this OcipClient client, ServiceProviderScheduleModifyEventRequest request)
+        public static async Task<SuccessResponse> ServiceProviderScheduleModifyEventRequest(this OcipClientBase client, ServiceProviderScheduleModifyEventRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3277,7 +3277,7 @@ namespace BroadWorksConnector
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after the startDate.
         /// The endDate element is set to the sum of the adjusted starDate element value and the event duration.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderScheduleModifyEventRequestAsync(this OcipClient client, ServiceProviderScheduleModifyEventRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderScheduleModifyEventRequestAsync(this OcipClientBase client, ServiceProviderScheduleModifyEventRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3286,7 +3286,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderScheduleModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderScheduleModifyRequest(this OcipClient client, ServiceProviderScheduleModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderScheduleModifyRequest(this OcipClientBase client, ServiceProviderScheduleModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3295,7 +3295,7 @@ namespace BroadWorksConnector
         /// Modify a service provider schedule.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderScheduleModifyRequestAsync(this OcipClient client, ServiceProviderScheduleModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderScheduleModifyRequestAsync(this OcipClientBase client, ServiceProviderScheduleModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3304,7 +3304,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderServiceGetAuthorizationListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServiceGetAuthorizationListRequestAsync instead.")]
-        public static async Task<ServiceProviderServiceGetAuthorizationListResponse> ServiceProviderServiceGetAuthorizationListRequest(this OcipClient client, ServiceProviderServiceGetAuthorizationListRequest request)
+        public static async Task<ServiceProviderServiceGetAuthorizationListResponse> ServiceProviderServiceGetAuthorizationListRequest(this OcipClientBase client, ServiceProviderServiceGetAuthorizationListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServiceGetAuthorizationListResponse;
         }
@@ -3313,7 +3313,7 @@ namespace BroadWorksConnector
         /// Requests the service provider's service authorization status.
         /// The response is either ServiceProviderServiceGetAuthorizationListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderServiceGetAuthorizationListResponse> ServiceProviderServiceGetAuthorizationListRequestAsync(this OcipClient client, ServiceProviderServiceGetAuthorizationListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServiceGetAuthorizationListResponse> ServiceProviderServiceGetAuthorizationListRequestAsync(this OcipClientBase client, ServiceProviderServiceGetAuthorizationListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServiceGetAuthorizationListResponse;
         }
@@ -3322,7 +3322,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderServiceGetAuthorizationResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServiceGetAuthorizationRequestAsync instead.")]
-        public static async Task<ServiceProviderServiceGetAuthorizationResponse> ServiceProviderServiceGetAuthorizationRequest(this OcipClient client, ServiceProviderServiceGetAuthorizationRequest request)
+        public static async Task<ServiceProviderServiceGetAuthorizationResponse> ServiceProviderServiceGetAuthorizationRequest(this OcipClientBase client, ServiceProviderServiceGetAuthorizationRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServiceGetAuthorizationResponse;
         }
@@ -3331,7 +3331,7 @@ namespace BroadWorksConnector
         /// Requests the service provider's service authorization information for a specific service or service pack.
         /// The response is either ServiceProviderServiceGetAuthorizationResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderServiceGetAuthorizationResponse> ServiceProviderServiceGetAuthorizationRequestAsync(this OcipClient client, ServiceProviderServiceGetAuthorizationRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServiceGetAuthorizationResponse> ServiceProviderServiceGetAuthorizationRequestAsync(this OcipClientBase client, ServiceProviderServiceGetAuthorizationRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServiceGetAuthorizationResponse;
         }
@@ -3340,7 +3340,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderServiceGetUserAssignableListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServiceGetUserAssignableListRequestAsync instead.")]
-        public static async Task<ServiceProviderServiceGetUserAssignableListResponse> ServiceProviderServiceGetUserAssignableListRequest(this OcipClient client, ServiceProviderServiceGetUserAssignableListRequest request)
+        public static async Task<ServiceProviderServiceGetUserAssignableListResponse> ServiceProviderServiceGetUserAssignableListRequest(this OcipClientBase client, ServiceProviderServiceGetUserAssignableListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServiceGetUserAssignableListResponse;
         }
@@ -3349,7 +3349,7 @@ namespace BroadWorksConnector
         /// Requests the list of all user services assignable to users in the specified service provider.
         /// The response is either ServiceProviderServiceGetUserAssignableListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderServiceGetUserAssignableListResponse> ServiceProviderServiceGetUserAssignableListRequestAsync(this OcipClient client, ServiceProviderServiceGetUserAssignableListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServiceGetUserAssignableListResponse> ServiceProviderServiceGetUserAssignableListRequestAsync(this OcipClientBase client, ServiceProviderServiceGetUserAssignableListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServiceGetUserAssignableListResponse;
         }
@@ -3359,7 +3359,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServiceModifyAuthorizationListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServiceModifyAuthorizationListRequest(this OcipClient client, ServiceProviderServiceModifyAuthorizationListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServiceModifyAuthorizationListRequest(this OcipClientBase client, ServiceProviderServiceModifyAuthorizationListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3369,7 +3369,7 @@ namespace BroadWorksConnector
         /// The boolean flags are used to authorize or unauthorize services.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServiceModifyAuthorizationListRequestAsync(this OcipClient client, ServiceProviderServiceModifyAuthorizationListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServiceModifyAuthorizationListRequestAsync(this OcipClientBase client, ServiceProviderServiceModifyAuthorizationListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3378,7 +3378,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackAddRequest(this OcipClient client, ServiceProviderServicePackAddRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackAddRequest(this OcipClientBase client, ServiceProviderServicePackAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3387,7 +3387,7 @@ namespace BroadWorksConnector
         /// Request to add a service pack to a service provider.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackAddRequestAsync(this OcipClient client, ServiceProviderServicePackAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackAddRequestAsync(this OcipClientBase client, ServiceProviderServicePackAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3396,7 +3396,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackAddServiceListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackAddServiceListRequest(this OcipClient client, ServiceProviderServicePackAddServiceListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackAddServiceListRequest(this OcipClientBase client, ServiceProviderServicePackAddServiceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3405,7 +3405,7 @@ namespace BroadWorksConnector
         /// Request to add services to a service pack if the pack has not been authorized to a group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackAddServiceListRequestAsync(this OcipClient client, ServiceProviderServicePackAddServiceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackAddServiceListRequestAsync(this OcipClientBase client, ServiceProviderServicePackAddServiceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3414,7 +3414,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackDeleteRequest(this OcipClient client, ServiceProviderServicePackDeleteRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackDeleteRequest(this OcipClientBase client, ServiceProviderServicePackDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3423,7 +3423,7 @@ namespace BroadWorksConnector
         /// Request to delete a service pack from a service provider.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackDeleteRequestAsync(this OcipClient client, ServiceProviderServicePackDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackDeleteRequestAsync(this OcipClientBase client, ServiceProviderServicePackDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3432,7 +3432,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderServicePackGetDetailListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackGetDetailListRequestAsync instead.")]
-        public static async Task<ServiceProviderServicePackGetDetailListResponse> ServiceProviderServicePackGetDetailListRequest(this OcipClient client, ServiceProviderServicePackGetDetailListRequest request)
+        public static async Task<ServiceProviderServicePackGetDetailListResponse> ServiceProviderServicePackGetDetailListRequest(this OcipClientBase client, ServiceProviderServicePackGetDetailListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServicePackGetDetailListResponse;
         }
@@ -3441,7 +3441,7 @@ namespace BroadWorksConnector
         /// Request to get a service pack details.
         /// The response is either ServiceProviderServicePackGetDetailListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderServicePackGetDetailListResponse> ServiceProviderServicePackGetDetailListRequestAsync(this OcipClient client, ServiceProviderServicePackGetDetailListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServicePackGetDetailListResponse> ServiceProviderServicePackGetDetailListRequestAsync(this OcipClientBase client, ServiceProviderServicePackGetDetailListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServicePackGetDetailListResponse;
         }
@@ -3450,7 +3450,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderServicePackGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderServicePackGetListResponse> ServiceProviderServicePackGetListRequest(this OcipClient client, ServiceProviderServicePackGetListRequest request)
+        public static async Task<ServiceProviderServicePackGetListResponse> ServiceProviderServicePackGetListRequest(this OcipClientBase client, ServiceProviderServicePackGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServicePackGetListResponse;
         }
@@ -3459,7 +3459,7 @@ namespace BroadWorksConnector
         /// Request to get a list of defined service packs for a service provider.
         /// The response is either ServiceProviderServicePackGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderServicePackGetListResponse> ServiceProviderServicePackGetListRequestAsync(this OcipClient client, ServiceProviderServicePackGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServicePackGetListResponse> ServiceProviderServicePackGetListRequestAsync(this OcipClientBase client, ServiceProviderServicePackGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServicePackGetListResponse;
         }
@@ -3468,7 +3468,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderServicePackGetServiceUsageListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackGetServiceUsageListRequestAsync instead.")]
-        public static async Task<ServiceProviderServicePackGetServiceUsageListResponse> ServiceProviderServicePackGetServiceUsageListRequest(this OcipClient client, ServiceProviderServicePackGetServiceUsageListRequest request)
+        public static async Task<ServiceProviderServicePackGetServiceUsageListResponse> ServiceProviderServicePackGetServiceUsageListRequest(this OcipClientBase client, ServiceProviderServicePackGetServiceUsageListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServicePackGetServiceUsageListResponse;
         }
@@ -3477,7 +3477,7 @@ namespace BroadWorksConnector
         /// Request to get the list of service packs containing a specified service.
         /// The response is either ServiceProviderServicePackGetServiceUsageListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderServicePackGetServiceUsageListResponse> ServiceProviderServicePackGetServiceUsageListRequestAsync(this OcipClient client, ServiceProviderServicePackGetServiceUsageListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServicePackGetServiceUsageListResponse> ServiceProviderServicePackGetServiceUsageListRequestAsync(this OcipClientBase client, ServiceProviderServicePackGetServiceUsageListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServicePackGetServiceUsageListResponse;
         }
@@ -3487,7 +3487,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderServicePackGetUtilizationListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackGetUtilizationListRequestAsync instead.")]
-        public static async Task<ServiceProviderServicePackGetUtilizationListResponse> ServiceProviderServicePackGetUtilizationListRequest(this OcipClient client, ServiceProviderServicePackGetUtilizationListRequest request)
+        public static async Task<ServiceProviderServicePackGetUtilizationListResponse> ServiceProviderServicePackGetUtilizationListRequest(this OcipClientBase client, ServiceProviderServicePackGetUtilizationListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServicePackGetUtilizationListResponse;
         }
@@ -3497,7 +3497,7 @@ namespace BroadWorksConnector
         /// For each service pack, a table of groups utilizing the pack is returned.
         /// The response is either ServiceProviderServicePackGetUtilizationListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderServicePackGetUtilizationListResponse> ServiceProviderServicePackGetUtilizationListRequestAsync(this OcipClient client, ServiceProviderServicePackGetUtilizationListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServicePackGetUtilizationListResponse> ServiceProviderServicePackGetUtilizationListRequestAsync(this OcipClientBase client, ServiceProviderServicePackGetUtilizationListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServicePackGetUtilizationListResponse;
         }
@@ -3506,7 +3506,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskAddRequest21Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskAddRequest21(this OcipClient client, ServiceProviderServicePackMigrationTaskAddRequest21 request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskAddRequest21(this OcipClientBase client, ServiceProviderServicePackMigrationTaskAddRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3515,7 +3515,7 @@ namespace BroadWorksConnector
         /// Create a service pack migration task.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskAddRequest21Async(this OcipClient client, ServiceProviderServicePackMigrationTaskAddRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskAddRequest21Async(this OcipClientBase client, ServiceProviderServicePackMigrationTaskAddRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3527,7 +3527,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskCopyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskCopyRequest(this OcipClient client, ServiceProviderServicePackMigrationTaskCopyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskCopyRequest(this OcipClientBase client, ServiceProviderServicePackMigrationTaskCopyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3539,7 +3539,7 @@ namespace BroadWorksConnector
         /// be "Copy (number) of taskName".
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskCopyRequestAsync(this OcipClient client, ServiceProviderServicePackMigrationTaskCopyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskCopyRequestAsync(this OcipClientBase client, ServiceProviderServicePackMigrationTaskCopyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3549,7 +3549,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskDeleteRequest(this OcipClient client, ServiceProviderServicePackMigrationTaskDeleteRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskDeleteRequest(this OcipClientBase client, ServiceProviderServicePackMigrationTaskDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3559,7 +3559,7 @@ namespace BroadWorksConnector
         /// currently executing.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskDeleteRequestAsync(this OcipClient client, ServiceProviderServicePackMigrationTaskDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskDeleteRequestAsync(this OcipClientBase client, ServiceProviderServicePackMigrationTaskDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3569,7 +3569,7 @@ namespace BroadWorksConnector
         /// or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskGetAvailableGroupListRequestAsync instead.")]
-        public static async Task<ServiceProviderServicePackMigrationTaskGetAvailableGroupListResponse> ServiceProviderServicePackMigrationTaskGetAvailableGroupListRequest(this OcipClient client, ServiceProviderServicePackMigrationTaskGetAvailableGroupListRequest request)
+        public static async Task<ServiceProviderServicePackMigrationTaskGetAvailableGroupListResponse> ServiceProviderServicePackMigrationTaskGetAvailableGroupListRequest(this OcipClientBase client, ServiceProviderServicePackMigrationTaskGetAvailableGroupListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServicePackMigrationTaskGetAvailableGroupListResponse;
         }
@@ -3579,7 +3579,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderServicePackMigrationTaskGetAvailableGroupListResponse
         /// or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderServicePackMigrationTaskGetAvailableGroupListResponse> ServiceProviderServicePackMigrationTaskGetAvailableGroupListRequestAsync(this OcipClient client, ServiceProviderServicePackMigrationTaskGetAvailableGroupListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServicePackMigrationTaskGetAvailableGroupListResponse> ServiceProviderServicePackMigrationTaskGetAvailableGroupListRequestAsync(this OcipClientBase client, ServiceProviderServicePackMigrationTaskGetAvailableGroupListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServicePackMigrationTaskGetAvailableGroupListResponse;
         }
@@ -3589,7 +3589,7 @@ namespace BroadWorksConnector
         /// or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskGetListRequest21Async instead.")]
-        public static async Task<ServiceProviderServicePackMigrationTaskGetListResponse21> ServiceProviderServicePackMigrationTaskGetListRequest21(this OcipClient client, ServiceProviderServicePackMigrationTaskGetListRequest21 request)
+        public static async Task<ServiceProviderServicePackMigrationTaskGetListResponse21> ServiceProviderServicePackMigrationTaskGetListRequest21(this OcipClientBase client, ServiceProviderServicePackMigrationTaskGetListRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServicePackMigrationTaskGetListResponse21;
         }
@@ -3599,7 +3599,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderServicePackMigrationTaskGetListResponse21
         /// or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderServicePackMigrationTaskGetListResponse21> ServiceProviderServicePackMigrationTaskGetListRequest21Async(this OcipClient client, ServiceProviderServicePackMigrationTaskGetListRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServicePackMigrationTaskGetListResponse21> ServiceProviderServicePackMigrationTaskGetListRequest21Async(this OcipClientBase client, ServiceProviderServicePackMigrationTaskGetListRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServicePackMigrationTaskGetListResponse21;
         }
@@ -3609,7 +3609,7 @@ namespace BroadWorksConnector
         /// or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskGetRequest21Async instead.")]
-        public static async Task<ServiceProviderServicePackMigrationTaskGetResponse21> ServiceProviderServicePackMigrationTaskGetRequest21(this OcipClient client, ServiceProviderServicePackMigrationTaskGetRequest21 request)
+        public static async Task<ServiceProviderServicePackMigrationTaskGetResponse21> ServiceProviderServicePackMigrationTaskGetRequest21(this OcipClientBase client, ServiceProviderServicePackMigrationTaskGetRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServicePackMigrationTaskGetResponse21;
         }
@@ -3619,7 +3619,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderServicePackMigrationTaskGetResponse21
         /// or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderServicePackMigrationTaskGetResponse21> ServiceProviderServicePackMigrationTaskGetRequest21Async(this OcipClient client, ServiceProviderServicePackMigrationTaskGetRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServicePackMigrationTaskGetResponse21> ServiceProviderServicePackMigrationTaskGetRequest21Async(this OcipClientBase client, ServiceProviderServicePackMigrationTaskGetRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServicePackMigrationTaskGetResponse21;
         }
@@ -3629,7 +3629,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskModifyAssignmentListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyAssignmentListRequest(this OcipClient client, ServiceProviderServicePackMigrationTaskModifyAssignmentListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyAssignmentListRequest(this OcipClientBase client, ServiceProviderServicePackMigrationTaskModifyAssignmentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3639,7 +3639,7 @@ namespace BroadWorksConnector
         /// Modification is only allowed prior to task execution.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyAssignmentListRequestAsync(this OcipClient client, ServiceProviderServicePackMigrationTaskModifyAssignmentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyAssignmentListRequestAsync(this OcipClientBase client, ServiceProviderServicePackMigrationTaskModifyAssignmentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3649,7 +3649,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskModifyGroupListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyGroupListRequest(this OcipClient client, ServiceProviderServicePackMigrationTaskModifyGroupListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyGroupListRequest(this OcipClientBase client, ServiceProviderServicePackMigrationTaskModifyGroupListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3659,7 +3659,7 @@ namespace BroadWorksConnector
         /// Modification is only allowed prior to task execution.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyGroupListRequestAsync(this OcipClient client, ServiceProviderServicePackMigrationTaskModifyGroupListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyGroupListRequestAsync(this OcipClientBase client, ServiceProviderServicePackMigrationTaskModifyGroupListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3669,7 +3669,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskModifyRemovalListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyRemovalListRequest(this OcipClient client, ServiceProviderServicePackMigrationTaskModifyRemovalListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyRemovalListRequest(this OcipClientBase client, ServiceProviderServicePackMigrationTaskModifyRemovalListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3679,7 +3679,7 @@ namespace BroadWorksConnector
         /// Modification is only allowed prior to task execution.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyRemovalListRequestAsync(this OcipClient client, ServiceProviderServicePackMigrationTaskModifyRemovalListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyRemovalListRequestAsync(this OcipClientBase client, ServiceProviderServicePackMigrationTaskModifyRemovalListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3689,7 +3689,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyRequest(this OcipClient client, ServiceProviderServicePackMigrationTaskModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyRequest(this OcipClientBase client, ServiceProviderServicePackMigrationTaskModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3699,7 +3699,7 @@ namespace BroadWorksConnector
         /// Modification is only allowed prior to task execution.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyRequestAsync(this OcipClient client, ServiceProviderServicePackMigrationTaskModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyRequestAsync(this OcipClientBase client, ServiceProviderServicePackMigrationTaskModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3709,7 +3709,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskModifyUserSelectionRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyUserSelectionRequest(this OcipClient client, ServiceProviderServicePackMigrationTaskModifyUserSelectionRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyUserSelectionRequest(this OcipClientBase client, ServiceProviderServicePackMigrationTaskModifyUserSelectionRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3719,7 +3719,7 @@ namespace BroadWorksConnector
         /// Modification is only allowed prior to task execution.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyUserSelectionRequestAsync(this OcipClient client, ServiceProviderServicePackMigrationTaskModifyUserSelectionRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskModifyUserSelectionRequestAsync(this OcipClientBase client, ServiceProviderServicePackMigrationTaskModifyUserSelectionRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3729,7 +3729,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskTerminateRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskTerminateRequest(this OcipClient client, ServiceProviderServicePackMigrationTaskTerminateRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskTerminateRequest(this OcipClientBase client, ServiceProviderServicePackMigrationTaskTerminateRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3739,7 +3739,7 @@ namespace BroadWorksConnector
         /// Modification is only allowed prior to task execution.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskTerminateRequestAsync(this OcipClient client, ServiceProviderServicePackMigrationTaskTerminateRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskTerminateRequestAsync(this OcipClientBase client, ServiceProviderServicePackMigrationTaskTerminateRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3748,7 +3748,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackModifyRequest(this OcipClient client, ServiceProviderServicePackModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackModifyRequest(this OcipClientBase client, ServiceProviderServicePackModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3757,7 +3757,7 @@ namespace BroadWorksConnector
         /// Requests to modify a service pack for a service provider.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackModifyRequestAsync(this OcipClient client, ServiceProviderServicePackModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackModifyRequestAsync(this OcipClientBase client, ServiceProviderServicePackModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3766,7 +3766,7 @@ namespace BroadWorksConnector
         /// The response is ServiceProviderServicePhoneNumberLookupResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePhoneNumberLookupRequestAsync instead.")]
-        public static async Task<ServiceProviderServicePhoneNumberLookupResponse> ServiceProviderServicePhoneNumberLookupRequest(this OcipClient client, ServiceProviderServicePhoneNumberLookupRequest request)
+        public static async Task<ServiceProviderServicePhoneNumberLookupResponse> ServiceProviderServicePhoneNumberLookupRequest(this OcipClientBase client, ServiceProviderServicePhoneNumberLookupRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServicePhoneNumberLookupResponse;
         }
@@ -3775,7 +3775,7 @@ namespace BroadWorksConnector
         /// Lookup if the given number is defined in the specified service in the service provider.
         /// The response is ServiceProviderServicePhoneNumberLookupResponse.
         /// </summary>
-        public static async Task<ServiceProviderServicePhoneNumberLookupResponse> ServiceProviderServicePhoneNumberLookupRequestAsync(this OcipClient client, ServiceProviderServicePhoneNumberLookupRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServicePhoneNumberLookupResponse> ServiceProviderServicePhoneNumberLookupRequestAsync(this OcipClientBase client, ServiceProviderServicePhoneNumberLookupRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServicePhoneNumberLookupResponse;
         }
@@ -3784,7 +3784,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderSessionAdmissionControlGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderSessionAdmissionControlGetRequestAsync instead.")]
-        public static async Task<ServiceProviderSessionAdmissionControlGetResponse> ServiceProviderSessionAdmissionControlGetRequest(this OcipClient client, ServiceProviderSessionAdmissionControlGetRequest request)
+        public static async Task<ServiceProviderSessionAdmissionControlGetResponse> ServiceProviderSessionAdmissionControlGetRequest(this OcipClientBase client, ServiceProviderSessionAdmissionControlGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderSessionAdmissionControlGetResponse;
         }
@@ -3793,7 +3793,7 @@ namespace BroadWorksConnector
         /// Get the session admission control capacity for the service provider.
         /// The response is either a ServiceProviderSessionAdmissionControlGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderSessionAdmissionControlGetResponse> ServiceProviderSessionAdmissionControlGetRequestAsync(this OcipClient client, ServiceProviderSessionAdmissionControlGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderSessionAdmissionControlGetResponse> ServiceProviderSessionAdmissionControlGetRequestAsync(this OcipClientBase client, ServiceProviderSessionAdmissionControlGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderSessionAdmissionControlGetResponse;
         }
@@ -3802,7 +3802,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderSessionAdmissionControlModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderSessionAdmissionControlModifyRequest(this OcipClient client, ServiceProviderSessionAdmissionControlModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderSessionAdmissionControlModifyRequest(this OcipClientBase client, ServiceProviderSessionAdmissionControlModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3811,7 +3811,7 @@ namespace BroadWorksConnector
         /// Request to modify session admission control capacity for the service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderSessionAdmissionControlModifyRequestAsync(this OcipClient client, ServiceProviderSessionAdmissionControlModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderSessionAdmissionControlModifyRequestAsync(this OcipClientBase client, ServiceProviderSessionAdmissionControlModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3820,7 +3820,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderSessionAdmissionControlWhiteListGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderSessionAdmissionControlWhiteListGetRequestAsync instead.")]
-        public static async Task<ServiceProviderSessionAdmissionControlWhiteListGetResponse> ServiceProviderSessionAdmissionControlWhiteListGetRequest(this OcipClient client, ServiceProviderSessionAdmissionControlWhiteListGetRequest request)
+        public static async Task<ServiceProviderSessionAdmissionControlWhiteListGetResponse> ServiceProviderSessionAdmissionControlWhiteListGetRequest(this OcipClientBase client, ServiceProviderSessionAdmissionControlWhiteListGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderSessionAdmissionControlWhiteListGetResponse;
         }
@@ -3829,7 +3829,7 @@ namespace BroadWorksConnector
         /// Request to get the Service Provider Session Admission White List information.
         /// The response is either a ServiceProviderSessionAdmissionControlWhiteListGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderSessionAdmissionControlWhiteListGetResponse> ServiceProviderSessionAdmissionControlWhiteListGetRequestAsync(this OcipClient client, ServiceProviderSessionAdmissionControlWhiteListGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderSessionAdmissionControlWhiteListGetResponse> ServiceProviderSessionAdmissionControlWhiteListGetRequestAsync(this OcipClientBase client, ServiceProviderSessionAdmissionControlWhiteListGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderSessionAdmissionControlWhiteListGetResponse;
         }
@@ -3839,7 +3839,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderSessionAdmissionControlWhiteListModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderSessionAdmissionControlWhiteListModifyRequest(this OcipClient client, ServiceProviderSessionAdmissionControlWhiteListModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderSessionAdmissionControlWhiteListModifyRequest(this OcipClientBase client, ServiceProviderSessionAdmissionControlWhiteListModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3849,7 +3849,7 @@ namespace BroadWorksConnector
         /// The number of digit pattern entries is limited to 100.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderSessionAdmissionControlWhiteListModifyRequestAsync(this OcipClient client, ServiceProviderSessionAdmissionControlWhiteListModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderSessionAdmissionControlWhiteListModifyRequestAsync(this OcipClientBase client, ServiceProviderSessionAdmissionControlWhiteListModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3858,7 +3858,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderSIPAuthenticationPasswordRulesGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderSIPAuthenticationPasswordRulesGetRequestAsync instead.")]
-        public static async Task<ServiceProviderSIPAuthenticationPasswordRulesGetResponse> ServiceProviderSIPAuthenticationPasswordRulesGetRequest(this OcipClient client, ServiceProviderSIPAuthenticationPasswordRulesGetRequest request)
+        public static async Task<ServiceProviderSIPAuthenticationPasswordRulesGetResponse> ServiceProviderSIPAuthenticationPasswordRulesGetRequest(this OcipClientBase client, ServiceProviderSIPAuthenticationPasswordRulesGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderSIPAuthenticationPasswordRulesGetResponse;
         }
@@ -3867,7 +3867,7 @@ namespace BroadWorksConnector
         /// Request to get the service provider level SIP authentication password rule settings.
         /// The response is either a ServiceProviderSIPAuthenticationPasswordRulesGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderSIPAuthenticationPasswordRulesGetResponse> ServiceProviderSIPAuthenticationPasswordRulesGetRequestAsync(this OcipClient client, ServiceProviderSIPAuthenticationPasswordRulesGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderSIPAuthenticationPasswordRulesGetResponse> ServiceProviderSIPAuthenticationPasswordRulesGetRequestAsync(this OcipClientBase client, ServiceProviderSIPAuthenticationPasswordRulesGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderSIPAuthenticationPasswordRulesGetResponse;
         }
@@ -3876,7 +3876,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderSIPAuthenticationPasswordRulesModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderSIPAuthenticationPasswordRulesModifyRequest(this OcipClient client, ServiceProviderSIPAuthenticationPasswordRulesModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderSIPAuthenticationPasswordRulesModifyRequest(this OcipClientBase client, ServiceProviderSIPAuthenticationPasswordRulesModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3885,7 +3885,7 @@ namespace BroadWorksConnector
         /// Request to modify the service provider level SIP authentication password rule settings. The useServiceProviderSettings element can only be modified by a system administrator or a provisioning administrator.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderSIPAuthenticationPasswordRulesModifyRequestAsync(this OcipClient client, ServiceProviderSIPAuthenticationPasswordRulesModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderSIPAuthenticationPasswordRulesModifyRequestAsync(this OcipClientBase client, ServiceProviderSIPAuthenticationPasswordRulesModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseEnterpriseTrunkAddRequest21Async instead.")]
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkAddRequest21(this OcipClient client, EnterpriseEnterpriseTrunkAddRequest21 request)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkAddRequest21(this OcipClientBase client, EnterpriseEnterpriseTrunkAddRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Request to add an enterprise trunk in an enterprise.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkAddRequest21Async(this OcipClient client, EnterpriseEnterpriseTrunkAddRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkAddRequest21Async(this OcipClientBase client, EnterpriseEnterpriseTrunkAddRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseEnterpriseTrunkAddUserListRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkAddUserListRequest(this OcipClient client, EnterpriseEnterpriseTrunkAddUserListRequest request)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkAddUserListRequest(this OcipClientBase client, EnterpriseEnterpriseTrunkAddUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Request to add users to an enterprise trunk in an enterprise.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkAddUserListRequestAsync(this OcipClient client, EnterpriseEnterpriseTrunkAddUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkAddUserListRequestAsync(this OcipClientBase client, EnterpriseEnterpriseTrunkAddUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -50,7 +50,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseEnterpriseTrunkDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkDeleteRequest(this OcipClient client, EnterpriseEnterpriseTrunkDeleteRequest request)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkDeleteRequest(this OcipClientBase client, EnterpriseEnterpriseTrunkDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// Request to delete an enterprise trunk in an enterprise.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkDeleteRequestAsync(this OcipClient client, EnterpriseEnterpriseTrunkDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkDeleteRequestAsync(this OcipClientBase client, EnterpriseEnterpriseTrunkDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -68,7 +68,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseEnterpriseTrunkDeleteUserListRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkDeleteUserListRequest(this OcipClient client, EnterpriseEnterpriseTrunkDeleteUserListRequest request)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkDeleteUserListRequest(this OcipClientBase client, EnterpriseEnterpriseTrunkDeleteUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -77,7 +77,7 @@ namespace BroadWorksConnector
         /// Request to delete users from an enterprise trunk in an enterprise.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkDeleteUserListRequestAsync(this OcipClient client, EnterpriseEnterpriseTrunkDeleteUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkDeleteUserListRequestAsync(this OcipClientBase client, EnterpriseEnterpriseTrunkDeleteUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -87,7 +87,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseEnterpriseTrunkForceAssignUserListRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkForceAssignUserListRequest(this OcipClient client, EnterpriseEnterpriseTrunkForceAssignUserListRequest request)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkForceAssignUserListRequest(this OcipClientBase client, EnterpriseEnterpriseTrunkForceAssignUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -97,7 +97,7 @@ namespace BroadWorksConnector
         /// it will be unassigned from the old enterprise trunk and assigned to the new enterprise trunk specified in this request.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkForceAssignUserListRequestAsync(this OcipClient client, EnterpriseEnterpriseTrunkForceAssignUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkForceAssignUserListRequestAsync(this OcipClientBase client, EnterpriseEnterpriseTrunkForceAssignUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -107,7 +107,7 @@ namespace BroadWorksConnector
         /// The response is either a EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListRequestAsync instead.")]
-        public static async Task<EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListResponse> EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListRequest(this OcipClient client, EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListRequest request)
+        public static async Task<EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListResponse> EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListRequest(this OcipClientBase client, EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListResponse;
         }
@@ -117,7 +117,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together.
         /// The response is either a EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListResponse> EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListRequestAsync(this OcipClient client, EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListResponse> EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListRequestAsync(this OcipClientBase client, EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseEnterpriseTrunkGetAvailableTrunkGroupListResponse;
         }
@@ -128,7 +128,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseEnterpriseTrunkGetAvailableUserListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseEnterpriseTrunkGetAvailableUserListRequestAsync instead.")]
-        public static async Task<EnterpriseEnterpriseTrunkGetAvailableUserListResponse> EnterpriseEnterpriseTrunkGetAvailableUserListRequest(this OcipClient client, EnterpriseEnterpriseTrunkGetAvailableUserListRequest request)
+        public static async Task<EnterpriseEnterpriseTrunkGetAvailableUserListResponse> EnterpriseEnterpriseTrunkGetAvailableUserListRequest(this OcipClientBase client, EnterpriseEnterpriseTrunkGetAvailableUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseEnterpriseTrunkGetAvailableUserListResponse;
         }
@@ -139,7 +139,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together.
         /// The response is either an EnterpriseEnterpriseTrunkGetAvailableUserListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseEnterpriseTrunkGetAvailableUserListResponse> EnterpriseEnterpriseTrunkGetAvailableUserListRequestAsync(this OcipClient client, EnterpriseEnterpriseTrunkGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseEnterpriseTrunkGetAvailableUserListResponse> EnterpriseEnterpriseTrunkGetAvailableUserListRequestAsync(this OcipClientBase client, EnterpriseEnterpriseTrunkGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseEnterpriseTrunkGetAvailableUserListResponse;
         }
@@ -148,7 +148,7 @@ namespace BroadWorksConnector
         /// The response is either a EnterpriseEnterpriseTrunkGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseEnterpriseTrunkGetListRequestAsync instead.")]
-        public static async Task<EnterpriseEnterpriseTrunkGetListResponse> EnterpriseEnterpriseTrunkGetListRequest(this OcipClient client, EnterpriseEnterpriseTrunkGetListRequest request)
+        public static async Task<EnterpriseEnterpriseTrunkGetListResponse> EnterpriseEnterpriseTrunkGetListRequest(this OcipClientBase client, EnterpriseEnterpriseTrunkGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseEnterpriseTrunkGetListResponse;
         }
@@ -157,7 +157,7 @@ namespace BroadWorksConnector
         /// Request to get the list of all enterprise trunks defined in an enterprise.
         /// The response is either a EnterpriseEnterpriseTrunkGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseEnterpriseTrunkGetListResponse> EnterpriseEnterpriseTrunkGetListRequestAsync(this OcipClient client, EnterpriseEnterpriseTrunkGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseEnterpriseTrunkGetListResponse> EnterpriseEnterpriseTrunkGetListRequestAsync(this OcipClientBase client, EnterpriseEnterpriseTrunkGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseEnterpriseTrunkGetListResponse;
         }
@@ -166,7 +166,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseEnterpriseTrunkGetResponse21 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseEnterpriseTrunkGetRequest21Async instead.")]
-        public static async Task<EnterpriseEnterpriseTrunkGetResponse21> EnterpriseEnterpriseTrunkGetRequest21(this OcipClient client, EnterpriseEnterpriseTrunkGetRequest21 request)
+        public static async Task<EnterpriseEnterpriseTrunkGetResponse21> EnterpriseEnterpriseTrunkGetRequest21(this OcipClientBase client, EnterpriseEnterpriseTrunkGetRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseEnterpriseTrunkGetResponse21;
         }
@@ -175,7 +175,7 @@ namespace BroadWorksConnector
         /// Request to get an enterprise trunk
         /// The response is either an EnterpriseEnterpriseTrunkGetResponse21 or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseEnterpriseTrunkGetResponse21> EnterpriseEnterpriseTrunkGetRequest21Async(this OcipClient client, EnterpriseEnterpriseTrunkGetRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseEnterpriseTrunkGetResponse21> EnterpriseEnterpriseTrunkGetRequest21Async(this OcipClientBase client, EnterpriseEnterpriseTrunkGetRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseEnterpriseTrunkGetResponse21;
         }
@@ -186,7 +186,7 @@ namespace BroadWorksConnector
         /// The response is either a EnterpriseEnterpriseTrunkGetUserListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseEnterpriseTrunkGetUserListRequestAsync instead.")]
-        public static async Task<EnterpriseEnterpriseTrunkGetUserListResponse> EnterpriseEnterpriseTrunkGetUserListRequest(this OcipClient client, EnterpriseEnterpriseTrunkGetUserListRequest request)
+        public static async Task<EnterpriseEnterpriseTrunkGetUserListResponse> EnterpriseEnterpriseTrunkGetUserListRequest(this OcipClientBase client, EnterpriseEnterpriseTrunkGetUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseEnterpriseTrunkGetUserListResponse;
         }
@@ -197,7 +197,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together.
         /// The response is either a EnterpriseEnterpriseTrunkGetUserListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseEnterpriseTrunkGetUserListResponse> EnterpriseEnterpriseTrunkGetUserListRequestAsync(this OcipClient client, EnterpriseEnterpriseTrunkGetUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseEnterpriseTrunkGetUserListResponse> EnterpriseEnterpriseTrunkGetUserListRequestAsync(this OcipClientBase client, EnterpriseEnterpriseTrunkGetUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseEnterpriseTrunkGetUserListResponse;
         }
@@ -206,7 +206,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseEnterpriseTrunkModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkModifyRequest(this OcipClient client, EnterpriseEnterpriseTrunkModifyRequest request)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkModifyRequest(this OcipClientBase client, EnterpriseEnterpriseTrunkModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -215,7 +215,7 @@ namespace BroadWorksConnector
         /// Request to modify an enterprise trunk in an enterprise.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkModifyRequestAsync(this OcipClient client, EnterpriseEnterpriseTrunkModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseEnterpriseTrunkModifyRequestAsync(this OcipClientBase client, EnterpriseEnterpriseTrunkModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -224,7 +224,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnterpriseTrunkAddRequest21Async instead.")]
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkAddRequest21(this OcipClient client, GroupEnterpriseTrunkAddRequest21 request)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkAddRequest21(this OcipClientBase client, GroupEnterpriseTrunkAddRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -233,7 +233,7 @@ namespace BroadWorksConnector
         /// Request to add an enterprise trunk in a group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkAddRequest21Async(this OcipClient client, GroupEnterpriseTrunkAddRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkAddRequest21Async(this OcipClientBase client, GroupEnterpriseTrunkAddRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -242,7 +242,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnterpriseTrunkAddUserListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkAddUserListRequest(this OcipClient client, GroupEnterpriseTrunkAddUserListRequest request)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkAddUserListRequest(this OcipClientBase client, GroupEnterpriseTrunkAddUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -251,7 +251,7 @@ namespace BroadWorksConnector
         /// Request to add users to an enterprise trunk in a group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkAddUserListRequestAsync(this OcipClient client, GroupEnterpriseTrunkAddUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkAddUserListRequestAsync(this OcipClientBase client, GroupEnterpriseTrunkAddUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -260,7 +260,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnterpriseTrunkDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkDeleteRequest(this OcipClient client, GroupEnterpriseTrunkDeleteRequest request)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkDeleteRequest(this OcipClientBase client, GroupEnterpriseTrunkDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -269,7 +269,7 @@ namespace BroadWorksConnector
         /// Request to delete an enterprise trunk in a group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkDeleteRequestAsync(this OcipClient client, GroupEnterpriseTrunkDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkDeleteRequestAsync(this OcipClientBase client, GroupEnterpriseTrunkDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -278,7 +278,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnterpriseTrunkDeleteUserListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkDeleteUserListRequest(this OcipClient client, GroupEnterpriseTrunkDeleteUserListRequest request)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkDeleteUserListRequest(this OcipClientBase client, GroupEnterpriseTrunkDeleteUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -287,7 +287,7 @@ namespace BroadWorksConnector
         /// Request to delete users from an enterprise trunk in a group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkDeleteUserListRequestAsync(this OcipClient client, GroupEnterpriseTrunkDeleteUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkDeleteUserListRequestAsync(this OcipClientBase client, GroupEnterpriseTrunkDeleteUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -297,7 +297,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnterpriseTrunkForceAssignUserListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkForceAssignUserListRequest(this OcipClient client, GroupEnterpriseTrunkForceAssignUserListRequest request)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkForceAssignUserListRequest(this OcipClientBase client, GroupEnterpriseTrunkForceAssignUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -307,7 +307,7 @@ namespace BroadWorksConnector
         /// it will be unassigned from the old enterprise trunk and assigned to the new enterprise trunk specified in this request.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkForceAssignUserListRequestAsync(this OcipClient client, GroupEnterpriseTrunkForceAssignUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkForceAssignUserListRequestAsync(this OcipClientBase client, GroupEnterpriseTrunkForceAssignUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -318,7 +318,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupEnterpriseTrunkGetAvailableTrunkGroupListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnterpriseTrunkGetAvailableTrunkGroupListRequestAsync instead.")]
-        public static async Task<GroupEnterpriseTrunkGetAvailableTrunkGroupListResponse> GroupEnterpriseTrunkGetAvailableTrunkGroupListRequest(this OcipClient client, GroupEnterpriseTrunkGetAvailableTrunkGroupListRequest request)
+        public static async Task<GroupEnterpriseTrunkGetAvailableTrunkGroupListResponse> GroupEnterpriseTrunkGetAvailableTrunkGroupListRequest(this OcipClientBase client, GroupEnterpriseTrunkGetAvailableTrunkGroupListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupEnterpriseTrunkGetAvailableTrunkGroupListResponse;
         }
@@ -329,7 +329,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together.
         /// The response is either a GroupEnterpriseTrunkGetAvailableTrunkGroupListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupEnterpriseTrunkGetAvailableTrunkGroupListResponse> GroupEnterpriseTrunkGetAvailableTrunkGroupListRequestAsync(this OcipClient client, GroupEnterpriseTrunkGetAvailableTrunkGroupListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupEnterpriseTrunkGetAvailableTrunkGroupListResponse> GroupEnterpriseTrunkGetAvailableTrunkGroupListRequestAsync(this OcipClientBase client, GroupEnterpriseTrunkGetAvailableTrunkGroupListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupEnterpriseTrunkGetAvailableTrunkGroupListResponse;
         }
@@ -340,7 +340,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupEnterpriseTrunkGetAvailableUserListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnterpriseTrunkGetAvailableUserListRequestAsync instead.")]
-        public static async Task<GroupEnterpriseTrunkGetAvailableUserListResponse> GroupEnterpriseTrunkGetAvailableUserListRequest(this OcipClient client, GroupEnterpriseTrunkGetAvailableUserListRequest request)
+        public static async Task<GroupEnterpriseTrunkGetAvailableUserListResponse> GroupEnterpriseTrunkGetAvailableUserListRequest(this OcipClientBase client, GroupEnterpriseTrunkGetAvailableUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupEnterpriseTrunkGetAvailableUserListResponse;
         }
@@ -351,7 +351,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together.
         /// The response is either a GroupEnterpriseTrunkGetAvailableUserListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupEnterpriseTrunkGetAvailableUserListResponse> GroupEnterpriseTrunkGetAvailableUserListRequestAsync(this OcipClient client, GroupEnterpriseTrunkGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupEnterpriseTrunkGetAvailableUserListResponse> GroupEnterpriseTrunkGetAvailableUserListRequestAsync(this OcipClientBase client, GroupEnterpriseTrunkGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupEnterpriseTrunkGetAvailableUserListResponse;
         }
@@ -360,7 +360,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupEnterpriseTrunkGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnterpriseTrunkGetListRequestAsync instead.")]
-        public static async Task<GroupEnterpriseTrunkGetListResponse> GroupEnterpriseTrunkGetListRequest(this OcipClient client, GroupEnterpriseTrunkGetListRequest request)
+        public static async Task<GroupEnterpriseTrunkGetListResponse> GroupEnterpriseTrunkGetListRequest(this OcipClientBase client, GroupEnterpriseTrunkGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupEnterpriseTrunkGetListResponse;
         }
@@ -369,7 +369,7 @@ namespace BroadWorksConnector
         /// Request to get the list of all enterprise trunks defined in a group.
         /// The response is either a GroupEnterpriseTrunkGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupEnterpriseTrunkGetListResponse> GroupEnterpriseTrunkGetListRequestAsync(this OcipClient client, GroupEnterpriseTrunkGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupEnterpriseTrunkGetListResponse> GroupEnterpriseTrunkGetListRequestAsync(this OcipClientBase client, GroupEnterpriseTrunkGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupEnterpriseTrunkGetListResponse;
         }
@@ -378,7 +378,7 @@ namespace BroadWorksConnector
         /// The response is either an GroupEnterpriseTrunkGetResponse21 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnterpriseTrunkGetRequest21Async instead.")]
-        public static async Task<GroupEnterpriseTrunkGetResponse21> GroupEnterpriseTrunkGetRequest21(this OcipClient client, GroupEnterpriseTrunkGetRequest21 request)
+        public static async Task<GroupEnterpriseTrunkGetResponse21> GroupEnterpriseTrunkGetRequest21(this OcipClientBase client, GroupEnterpriseTrunkGetRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupEnterpriseTrunkGetResponse21;
         }
@@ -387,7 +387,7 @@ namespace BroadWorksConnector
         /// Request to get an enterprise trunk
         /// The response is either an GroupEnterpriseTrunkGetResponse21 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupEnterpriseTrunkGetResponse21> GroupEnterpriseTrunkGetRequest21Async(this OcipClient client, GroupEnterpriseTrunkGetRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupEnterpriseTrunkGetResponse21> GroupEnterpriseTrunkGetRequest21Async(this OcipClientBase client, GroupEnterpriseTrunkGetRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupEnterpriseTrunkGetResponse21;
         }
@@ -398,7 +398,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupEnterpriseTrunkGetUserListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnterpriseTrunkGetUserListRequestAsync instead.")]
-        public static async Task<GroupEnterpriseTrunkGetUserListResponse> GroupEnterpriseTrunkGetUserListRequest(this OcipClient client, GroupEnterpriseTrunkGetUserListRequest request)
+        public static async Task<GroupEnterpriseTrunkGetUserListResponse> GroupEnterpriseTrunkGetUserListRequest(this OcipClientBase client, GroupEnterpriseTrunkGetUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupEnterpriseTrunkGetUserListResponse;
         }
@@ -409,7 +409,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together.
         /// The response is either a GroupEnterpriseTrunkGetUserListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupEnterpriseTrunkGetUserListResponse> GroupEnterpriseTrunkGetUserListRequestAsync(this OcipClient client, GroupEnterpriseTrunkGetUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupEnterpriseTrunkGetUserListResponse> GroupEnterpriseTrunkGetUserListRequestAsync(this OcipClientBase client, GroupEnterpriseTrunkGetUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupEnterpriseTrunkGetUserListResponse;
         }
@@ -418,7 +418,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnterpriseTrunkModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkModifyRequest(this OcipClient client, GroupEnterpriseTrunkModifyRequest request)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkModifyRequest(this OcipClientBase client, GroupEnterpriseTrunkModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -427,7 +427,7 @@ namespace BroadWorksConnector
         /// Request to modify an enterprise trunk in a group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupEnterpriseTrunkModifyRequestAsync(this OcipClient client, GroupEnterpriseTrunkModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupEnterpriseTrunkModifyRequestAsync(this OcipClientBase client, GroupEnterpriseTrunkModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -443,7 +443,7 @@ namespace BroadWorksConnector
         /// useSystemSIPIdentityForPilotAndProxyTrunkModesPolicy
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupAddInstanceRequest21Async instead.")]
-        public static async Task<SuccessResponse> GroupTrunkGroupAddInstanceRequest21(this OcipClient client, GroupTrunkGroupAddInstanceRequest21 request)
+        public static async Task<SuccessResponse> GroupTrunkGroupAddInstanceRequest21(this OcipClientBase client, GroupTrunkGroupAddInstanceRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -459,7 +459,7 @@ namespace BroadWorksConnector
         /// sipIdentityForPilotAndProxyTrunkModesPolicy
         /// useSystemSIPIdentityForPilotAndProxyTrunkModesPolicy
         /// </summary>
-        public static async Task<SuccessResponse> GroupTrunkGroupAddInstanceRequest21Async(this OcipClient client, GroupTrunkGroupAddInstanceRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupTrunkGroupAddInstanceRequest21Async(this OcipClientBase client, GroupTrunkGroupAddInstanceRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -475,7 +475,7 @@ namespace BroadWorksConnector
         /// useSystemSIPIdentityForPilotAndProxyTrunkModesPolicy
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupAddInstanceRequest22Async instead.")]
-        public static async Task<SuccessResponse> GroupTrunkGroupAddInstanceRequest22(this OcipClient client, GroupTrunkGroupAddInstanceRequest22 request)
+        public static async Task<SuccessResponse> GroupTrunkGroupAddInstanceRequest22(this OcipClientBase client, GroupTrunkGroupAddInstanceRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -491,7 +491,7 @@ namespace BroadWorksConnector
         /// sipIdentityForPilotAndProxyTrunkModesPolicy
         /// useSystemSIPIdentityForPilotAndProxyTrunkModesPolicy
         /// </summary>
-        public static async Task<SuccessResponse> GroupTrunkGroupAddInstanceRequest22Async(this OcipClient client, GroupTrunkGroupAddInstanceRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupTrunkGroupAddInstanceRequest22Async(this OcipClientBase client, GroupTrunkGroupAddInstanceRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -500,7 +500,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupDeleteInstanceRequest14sp4Async instead.")]
-        public static async Task<SuccessResponse> GroupTrunkGroupDeleteInstanceRequest14sp4(this OcipClient client, GroupTrunkGroupDeleteInstanceRequest14sp4 request)
+        public static async Task<SuccessResponse> GroupTrunkGroupDeleteInstanceRequest14sp4(this OcipClientBase client, GroupTrunkGroupDeleteInstanceRequest14sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -509,7 +509,7 @@ namespace BroadWorksConnector
         /// Delete a Trunk Group Instance from a group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupTrunkGroupDeleteInstanceRequest14sp4Async(this OcipClient client, GroupTrunkGroupDeleteInstanceRequest14sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupTrunkGroupDeleteInstanceRequest14sp4Async(this OcipClientBase client, GroupTrunkGroupDeleteInstanceRequest14sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -518,7 +518,7 @@ namespace BroadWorksConnector
         /// The response is either GroupTrunkGroupGetAvailableHostedUserListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupGetAvailableHostedUserListRequestAsync instead.")]
-        public static async Task<GroupTrunkGroupGetAvailableHostedUserListResponse> GroupTrunkGroupGetAvailableHostedUserListRequest(this OcipClient client, GroupTrunkGroupGetAvailableHostedUserListRequest request)
+        public static async Task<GroupTrunkGroupGetAvailableHostedUserListResponse> GroupTrunkGroupGetAvailableHostedUserListRequest(this OcipClientBase client, GroupTrunkGroupGetAvailableHostedUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupTrunkGroupGetAvailableHostedUserListResponse;
         }
@@ -527,7 +527,7 @@ namespace BroadWorksConnector
         /// Get a list of hosted users that can be assigned to a Trunk Group.
         /// The response is either GroupTrunkGroupGetAvailableHostedUserListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupTrunkGroupGetAvailableHostedUserListResponse> GroupTrunkGroupGetAvailableHostedUserListRequestAsync(this OcipClient client, GroupTrunkGroupGetAvailableHostedUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupTrunkGroupGetAvailableHostedUserListResponse> GroupTrunkGroupGetAvailableHostedUserListRequestAsync(this OcipClientBase client, GroupTrunkGroupGetAvailableHostedUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupTrunkGroupGetAvailableHostedUserListResponse;
         }
@@ -537,7 +537,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupTrunkGroupGetInstanceListResponse14sp4 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupGetInstanceListRequest14sp4Async instead.")]
-        public static async Task<GroupTrunkGroupGetInstanceListResponse14sp4> GroupTrunkGroupGetInstanceListRequest14sp4(this OcipClient client, GroupTrunkGroupGetInstanceListRequest14sp4 request)
+        public static async Task<GroupTrunkGroupGetInstanceListResponse14sp4> GroupTrunkGroupGetInstanceListRequest14sp4(this OcipClientBase client, GroupTrunkGroupGetInstanceListRequest14sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupTrunkGroupGetInstanceListResponse14sp4;
         }
@@ -547,7 +547,7 @@ namespace BroadWorksConnector
         /// It is possible to restrict the results to a particular department, or expand the list to the entire enterprise.
         /// The response is either a GroupTrunkGroupGetInstanceListResponse14sp4 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupTrunkGroupGetInstanceListResponse14sp4> GroupTrunkGroupGetInstanceListRequest14sp4Async(this OcipClient client, GroupTrunkGroupGetInstanceListRequest14sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupTrunkGroupGetInstanceListResponse14sp4> GroupTrunkGroupGetInstanceListRequest14sp4Async(this OcipClientBase client, GroupTrunkGroupGetInstanceListRequest14sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupTrunkGroupGetInstanceListResponse14sp4;
         }
@@ -559,7 +559,7 @@ namespace BroadWorksConnector
         /// "Department", "Email Address".
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupGetInstanceRequest23Async instead.")]
-        public static async Task<GroupTrunkGroupGetInstanceResponse23> GroupTrunkGroupGetInstanceRequest23(this OcipClient client, GroupTrunkGroupGetInstanceRequest23 request)
+        public static async Task<GroupTrunkGroupGetInstanceResponse23> GroupTrunkGroupGetInstanceRequest23(this OcipClientBase client, GroupTrunkGroupGetInstanceRequest23 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupTrunkGroupGetInstanceResponse23;
         }
@@ -571,7 +571,7 @@ namespace BroadWorksConnector
         /// "First Name", "Hiragana Last Name", "Hiragana First Name", "Phone Number", "Extension",
         /// "Department", "Email Address".
         /// </summary>
-        public static async Task<GroupTrunkGroupGetInstanceResponse23> GroupTrunkGroupGetInstanceRequest23Async(this OcipClient client, GroupTrunkGroupGetInstanceRequest23 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupTrunkGroupGetInstanceResponse23> GroupTrunkGroupGetInstanceRequest23Async(this OcipClientBase client, GroupTrunkGroupGetInstanceRequest23 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupTrunkGroupGetInstanceResponse23;
         }
@@ -580,7 +580,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupTrunkGroupGetInstanceUserListResponse14sp4 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupGetInstanceUserListRequest14sp4Async instead.")]
-        public static async Task<GroupTrunkGroupGetInstanceUserListResponse14sp4> GroupTrunkGroupGetInstanceUserListRequest14sp4(this OcipClient client, GroupTrunkGroupGetInstanceUserListRequest14sp4 request)
+        public static async Task<GroupTrunkGroupGetInstanceUserListResponse14sp4> GroupTrunkGroupGetInstanceUserListRequest14sp4(this OcipClientBase client, GroupTrunkGroupGetInstanceUserListRequest14sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupTrunkGroupGetInstanceUserListResponse14sp4;
         }
@@ -589,7 +589,7 @@ namespace BroadWorksConnector
         /// Get a list of user's on a Trunk Group Instance.
         /// The response is either a GroupTrunkGroupGetInstanceUserListResponse14sp4 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupTrunkGroupGetInstanceUserListResponse14sp4> GroupTrunkGroupGetInstanceUserListRequest14sp4Async(this OcipClient client, GroupTrunkGroupGetInstanceUserListRequest14sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupTrunkGroupGetInstanceUserListResponse14sp4> GroupTrunkGroupGetInstanceUserListRequest14sp4Async(this OcipClientBase client, GroupTrunkGroupGetInstanceUserListRequest14sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupTrunkGroupGetInstanceUserListResponse14sp4;
         }
@@ -598,7 +598,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupTrunkGroupGetResponse14sp9 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupGetRequest14sp9Async instead.")]
-        public static async Task<GroupTrunkGroupGetResponse14sp9> GroupTrunkGroupGetRequest14sp9(this OcipClient client, GroupTrunkGroupGetRequest14sp9 request)
+        public static async Task<GroupTrunkGroupGetResponse14sp9> GroupTrunkGroupGetRequest14sp9(this OcipClientBase client, GroupTrunkGroupGetRequest14sp9 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupTrunkGroupGetResponse14sp9;
         }
@@ -607,7 +607,7 @@ namespace BroadWorksConnector
         /// Get the maximum and bursting maximum permissible active trunk group calls for the group.
         /// The response is either a GroupTrunkGroupGetResponse14sp9 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupTrunkGroupGetResponse14sp9> GroupTrunkGroupGetRequest14sp9Async(this OcipClient client, GroupTrunkGroupGetRequest14sp9 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupTrunkGroupGetResponse14sp9> GroupTrunkGroupGetRequest14sp9Async(this OcipClientBase client, GroupTrunkGroupGetRequest14sp9 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupTrunkGroupGetResponse14sp9;
         }
@@ -624,7 +624,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupModifyInstanceRequest20sp1Async instead.")]
-        public static async Task<SuccessResponse> GroupTrunkGroupModifyInstanceRequest20sp1(this OcipClient client, GroupTrunkGroupModifyInstanceRequest20sp1 request)
+        public static async Task<SuccessResponse> GroupTrunkGroupModifyInstanceRequest20sp1(this OcipClientBase client, GroupTrunkGroupModifyInstanceRequest20sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -641,7 +641,7 @@ namespace BroadWorksConnector
         /// useSystemSIPIdentityForPilotAndProxyTrunkModesPolicy
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupTrunkGroupModifyInstanceRequest20sp1Async(this OcipClient client, GroupTrunkGroupModifyInstanceRequest20sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupTrunkGroupModifyInstanceRequest20sp1Async(this OcipClientBase client, GroupTrunkGroupModifyInstanceRequest20sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -650,7 +650,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupModifyRequest14sp9Async instead.")]
-        public static async Task<SuccessResponse> GroupTrunkGroupModifyRequest14sp9(this OcipClient client, GroupTrunkGroupModifyRequest14sp9 request)
+        public static async Task<SuccessResponse> GroupTrunkGroupModifyRequest14sp9(this OcipClientBase client, GroupTrunkGroupModifyRequest14sp9 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -659,7 +659,7 @@ namespace BroadWorksConnector
         /// Modify the maximum and bursting maximum permissible active Trunk Group calls for the group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupTrunkGroupModifyRequest14sp9Async(this OcipClient client, GroupTrunkGroupModifyRequest14sp9 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupTrunkGroupModifyRequest14sp9Async(this OcipClientBase client, GroupTrunkGroupModifyRequest14sp9 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -668,7 +668,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupOptionsMessageResponseStatusCodeAddListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupTrunkGroupOptionsMessageResponseStatusCodeAddListRequest(this OcipClient client, GroupTrunkGroupOptionsMessageResponseStatusCodeAddListRequest request)
+        public static async Task<SuccessResponse> GroupTrunkGroupOptionsMessageResponseStatusCodeAddListRequest(this OcipClientBase client, GroupTrunkGroupOptionsMessageResponseStatusCodeAddListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -677,7 +677,7 @@ namespace BroadWorksConnector
         /// Add a list of trunk group level successful SIP OPTIONS message respoonse status codes.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupTrunkGroupOptionsMessageResponseStatusCodeAddListRequestAsync(this OcipClient client, GroupTrunkGroupOptionsMessageResponseStatusCodeAddListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupTrunkGroupOptionsMessageResponseStatusCodeAddListRequestAsync(this OcipClientBase client, GroupTrunkGroupOptionsMessageResponseStatusCodeAddListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -686,7 +686,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupUserCreationTaskAddRequest14sp4Async instead.")]
-        public static async Task<SuccessResponse> GroupTrunkGroupUserCreationTaskAddRequest14sp4(this OcipClient client, GroupTrunkGroupUserCreationTaskAddRequest14sp4 request)
+        public static async Task<SuccessResponse> GroupTrunkGroupUserCreationTaskAddRequest14sp4(this OcipClientBase client, GroupTrunkGroupUserCreationTaskAddRequest14sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -695,7 +695,7 @@ namespace BroadWorksConnector
         /// Add a user creation task for a trunk group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupTrunkGroupUserCreationTaskAddRequest14sp4Async(this OcipClient client, GroupTrunkGroupUserCreationTaskAddRequest14sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupTrunkGroupUserCreationTaskAddRequest14sp4Async(this OcipClientBase client, GroupTrunkGroupUserCreationTaskAddRequest14sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -704,7 +704,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupUserCreationTaskDeleteRequest14sp4Async instead.")]
-        public static async Task<SuccessResponse> GroupTrunkGroupUserCreationTaskDeleteRequest14sp4(this OcipClient client, GroupTrunkGroupUserCreationTaskDeleteRequest14sp4 request)
+        public static async Task<SuccessResponse> GroupTrunkGroupUserCreationTaskDeleteRequest14sp4(this OcipClientBase client, GroupTrunkGroupUserCreationTaskDeleteRequest14sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -713,7 +713,7 @@ namespace BroadWorksConnector
         /// Delete a user creation task for a trunk group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupTrunkGroupUserCreationTaskDeleteRequest14sp4Async(this OcipClient client, GroupTrunkGroupUserCreationTaskDeleteRequest14sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupTrunkGroupUserCreationTaskDeleteRequest14sp4Async(this OcipClientBase client, GroupTrunkGroupUserCreationTaskDeleteRequest14sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -722,7 +722,7 @@ namespace BroadWorksConnector
         /// The response is either GroupTrunkGroupUserCreationTaskGetListResponse14sp4 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupUserCreationTaskGetListRequest14sp4Async instead.")]
-        public static async Task<GroupTrunkGroupUserCreationTaskGetListResponse14sp4> GroupTrunkGroupUserCreationTaskGetListRequest14sp4(this OcipClient client, GroupTrunkGroupUserCreationTaskGetListRequest14sp4 request)
+        public static async Task<GroupTrunkGroupUserCreationTaskGetListResponse14sp4> GroupTrunkGroupUserCreationTaskGetListRequest14sp4(this OcipClientBase client, GroupTrunkGroupUserCreationTaskGetListRequest14sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupTrunkGroupUserCreationTaskGetListResponse14sp4;
         }
@@ -731,7 +731,7 @@ namespace BroadWorksConnector
         /// Get the list of user creation tasks for a trunk group.
         /// The response is either GroupTrunkGroupUserCreationTaskGetListResponse14sp4 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupTrunkGroupUserCreationTaskGetListResponse14sp4> GroupTrunkGroupUserCreationTaskGetListRequest14sp4Async(this OcipClient client, GroupTrunkGroupUserCreationTaskGetListRequest14sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupTrunkGroupUserCreationTaskGetListResponse14sp4> GroupTrunkGroupUserCreationTaskGetListRequest14sp4Async(this OcipClientBase client, GroupTrunkGroupUserCreationTaskGetListRequest14sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupTrunkGroupUserCreationTaskGetListResponse14sp4;
         }
@@ -740,7 +740,7 @@ namespace BroadWorksConnector
         /// The response is either GroupTrunkGroupUserCreationTaskGetResponse14sp4 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupTrunkGroupUserCreationTaskGetRequest14sp4Async instead.")]
-        public static async Task<GroupTrunkGroupUserCreationTaskGetResponse14sp4> GroupTrunkGroupUserCreationTaskGetRequest14sp4(this OcipClient client, GroupTrunkGroupUserCreationTaskGetRequest14sp4 request)
+        public static async Task<GroupTrunkGroupUserCreationTaskGetResponse14sp4> GroupTrunkGroupUserCreationTaskGetRequest14sp4(this OcipClientBase client, GroupTrunkGroupUserCreationTaskGetRequest14sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupTrunkGroupUserCreationTaskGetResponse14sp4;
         }
@@ -749,7 +749,7 @@ namespace BroadWorksConnector
         /// Request the details of a specified user creation task for a trunk group.
         /// The response is either GroupTrunkGroupUserCreationTaskGetResponse14sp4 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupTrunkGroupUserCreationTaskGetResponse14sp4> GroupTrunkGroupUserCreationTaskGetRequest14sp4Async(this OcipClient client, GroupTrunkGroupUserCreationTaskGetRequest14sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupTrunkGroupUserCreationTaskGetResponse14sp4> GroupTrunkGroupUserCreationTaskGetRequest14sp4Async(this OcipClientBase client, GroupTrunkGroupUserCreationTaskGetRequest14sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupTrunkGroupUserCreationTaskGetResponse14sp4;
         }
@@ -758,7 +758,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderTrunkGroupGetResponse14sp1 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderTrunkGroupGetRequest14sp1Async instead.")]
-        public static async Task<ServiceProviderTrunkGroupGetResponse14sp1> ServiceProviderTrunkGroupGetRequest14sp1(this OcipClient client, ServiceProviderTrunkGroupGetRequest14sp1 request)
+        public static async Task<ServiceProviderTrunkGroupGetResponse14sp1> ServiceProviderTrunkGroupGetRequest14sp1(this OcipClientBase client, ServiceProviderTrunkGroupGetRequest14sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderTrunkGroupGetResponse14sp1;
         }
@@ -767,7 +767,7 @@ namespace BroadWorksConnector
         /// Get the maximum and bursting maximum permissible active Trunk Group calls for the service provider.
         /// The response is either a ServiceProviderTrunkGroupGetResponse14sp1 or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderTrunkGroupGetResponse14sp1> ServiceProviderTrunkGroupGetRequest14sp1Async(this OcipClient client, ServiceProviderTrunkGroupGetRequest14sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderTrunkGroupGetResponse14sp1> ServiceProviderTrunkGroupGetRequest14sp1Async(this OcipClientBase client, ServiceProviderTrunkGroupGetRequest14sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderTrunkGroupGetResponse14sp1;
         }
@@ -776,7 +776,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderTrunkGroupModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderTrunkGroupModifyRequest(this OcipClient client, ServiceProviderTrunkGroupModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderTrunkGroupModifyRequest(this OcipClientBase client, ServiceProviderTrunkGroupModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -785,7 +785,7 @@ namespace BroadWorksConnector
         /// Modify the maximum and bursting maximum permissible active Trunk Group calls for the service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderTrunkGroupModifyRequestAsync(this OcipClient client, ServiceProviderTrunkGroupModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderTrunkGroupModifyRequestAsync(this OcipClientBase client, ServiceProviderTrunkGroupModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -794,7 +794,7 @@ namespace BroadWorksConnector
         /// The response is either SystemTrunkGroupGetResponse23 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTrunkGroupGetRequest23Async instead.")]
-        public static async Task<SystemTrunkGroupGetResponse23> SystemTrunkGroupGetRequest23(this OcipClient client, SystemTrunkGroupGetRequest23 request)
+        public static async Task<SystemTrunkGroupGetResponse23> SystemTrunkGroupGetRequest23(this OcipClientBase client, SystemTrunkGroupGetRequest23 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemTrunkGroupGetResponse23;
         }
@@ -803,7 +803,7 @@ namespace BroadWorksConnector
         /// Request the system level data associated with the Trunk Group service.
         /// The response is either SystemTrunkGroupGetResponse23 or ErrorResponse.
         /// </summary>
-        public static async Task<SystemTrunkGroupGetResponse23> SystemTrunkGroupGetRequest23Async(this OcipClient client, SystemTrunkGroupGetRequest23 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemTrunkGroupGetResponse23> SystemTrunkGroupGetRequest23Async(this OcipClientBase client, SystemTrunkGroupGetRequest23 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemTrunkGroupGetResponse23;
         }
@@ -816,7 +816,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTrunkGroupModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemTrunkGroupModifyRequest(this OcipClient client, SystemTrunkGroupModifyRequest request)
+        public static async Task<SuccessResponse> SystemTrunkGroupModifyRequest(this OcipClientBase client, SystemTrunkGroupModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -829,7 +829,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemTrunkGroupModifyRequestAsync(this OcipClient client, SystemTrunkGroupModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTrunkGroupModifyRequestAsync(this OcipClientBase client, SystemTrunkGroupModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -838,7 +838,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTrunkGroupOptionsMessageResponseStatusCodeAddListRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeAddListRequest(this OcipClient client, SystemTrunkGroupOptionsMessageResponseStatusCodeAddListRequest request)
+        public static async Task<SuccessResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeAddListRequest(this OcipClientBase client, SystemTrunkGroupOptionsMessageResponseStatusCodeAddListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -847,7 +847,7 @@ namespace BroadWorksConnector
         /// Add a list of system level successful SIP OPTIONS message respoonse status codes.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeAddListRequestAsync(this OcipClient client, SystemTrunkGroupOptionsMessageResponseStatusCodeAddListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeAddListRequestAsync(this OcipClientBase client, SystemTrunkGroupOptionsMessageResponseStatusCodeAddListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -856,7 +856,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTrunkGroupOptionsMessageResponseStatusCodeDeleteListRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeDeleteListRequest(this OcipClient client, SystemTrunkGroupOptionsMessageResponseStatusCodeDeleteListRequest request)
+        public static async Task<SuccessResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeDeleteListRequest(this OcipClientBase client, SystemTrunkGroupOptionsMessageResponseStatusCodeDeleteListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -865,7 +865,7 @@ namespace BroadWorksConnector
         /// Delete a list of system level successful SIP OPTIONS message respoonse status codes.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeDeleteListRequestAsync(this OcipClient client, SystemTrunkGroupOptionsMessageResponseStatusCodeDeleteListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeDeleteListRequestAsync(this OcipClientBase client, SystemTrunkGroupOptionsMessageResponseStatusCodeDeleteListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -874,7 +874,7 @@ namespace BroadWorksConnector
         /// The response is either SystemTrunkGroupOptionsMessageResponseStatusCodeGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTrunkGroupOptionsMessageResponseStatusCodeGetListRequestAsync instead.")]
-        public static async Task<SystemTrunkGroupOptionsMessageResponseStatusCodeGetListResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeGetListRequest(this OcipClient client, SystemTrunkGroupOptionsMessageResponseStatusCodeGetListRequest request)
+        public static async Task<SystemTrunkGroupOptionsMessageResponseStatusCodeGetListResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeGetListRequest(this OcipClientBase client, SystemTrunkGroupOptionsMessageResponseStatusCodeGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemTrunkGroupOptionsMessageResponseStatusCodeGetListResponse;
         }
@@ -883,7 +883,7 @@ namespace BroadWorksConnector
         /// Get the list of system level successful SIP OPTIONS message respoonse status codes.
         /// The response is either SystemTrunkGroupOptionsMessageResponseStatusCodeGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SystemTrunkGroupOptionsMessageResponseStatusCodeGetListResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeGetListRequestAsync(this OcipClient client, SystemTrunkGroupOptionsMessageResponseStatusCodeGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemTrunkGroupOptionsMessageResponseStatusCodeGetListResponse> SystemTrunkGroupOptionsMessageResponseStatusCodeGetListRequestAsync(this OcipClientBase client, SystemTrunkGroupOptionsMessageResponseStatusCodeGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemTrunkGroupOptionsMessageResponseStatusCodeGetListResponse;
         }
@@ -892,7 +892,7 @@ namespace BroadWorksConnector
         /// The response is either SystemTrunkGroupUserCreationTaskGetListResponse14sp4 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTrunkGroupUserCreationTaskGetListRequest14sp4Async instead.")]
-        public static async Task<SystemTrunkGroupUserCreationTaskGetListResponse14sp4> SystemTrunkGroupUserCreationTaskGetListRequest14sp4(this OcipClient client, SystemTrunkGroupUserCreationTaskGetListRequest14sp4 request)
+        public static async Task<SystemTrunkGroupUserCreationTaskGetListResponse14sp4> SystemTrunkGroupUserCreationTaskGetListRequest14sp4(this OcipClientBase client, SystemTrunkGroupUserCreationTaskGetListRequest14sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemTrunkGroupUserCreationTaskGetListResponse14sp4;
         }
@@ -901,7 +901,7 @@ namespace BroadWorksConnector
         /// Get the list of user creation tasks in the system.
         /// The response is either SystemTrunkGroupUserCreationTaskGetListResponse14sp4 or ErrorResponse.
         /// </summary>
-        public static async Task<SystemTrunkGroupUserCreationTaskGetListResponse14sp4> SystemTrunkGroupUserCreationTaskGetListRequest14sp4Async(this OcipClient client, SystemTrunkGroupUserCreationTaskGetListRequest14sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemTrunkGroupUserCreationTaskGetListResponse14sp4> SystemTrunkGroupUserCreationTaskGetListRequest14sp4Async(this OcipClientBase client, SystemTrunkGroupUserCreationTaskGetListRequest14sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemTrunkGroupUserCreationTaskGetListResponse14sp4;
         }

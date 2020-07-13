@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either a UserRemoteOfficeGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserRemoteOfficeGetRequestAsync instead.")]
-        public static async Task<UserRemoteOfficeGetResponse> UserRemoteOfficeGetRequest(this OcipClient client, UserRemoteOfficeGetRequest request)
+        public static async Task<UserRemoteOfficeGetResponse> UserRemoteOfficeGetRequest(this OcipClientBase client, UserRemoteOfficeGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserRemoteOfficeGetResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Request the user level data associated with Remote Office.
         /// The response is either a UserRemoteOfficeGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserRemoteOfficeGetResponse> UserRemoteOfficeGetRequestAsync(this OcipClient client, UserRemoteOfficeGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserRemoteOfficeGetResponse> UserRemoteOfficeGetRequestAsync(this OcipClientBase client, UserRemoteOfficeGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserRemoteOfficeGetResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserRemoteOfficeModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserRemoteOfficeModifyRequest(this OcipClient client, UserRemoteOfficeModifyRequest request)
+        public static async Task<SuccessResponse> UserRemoteOfficeModifyRequest(this OcipClientBase client, UserRemoteOfficeModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Modify the user level data associated with Remote Office.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserRemoteOfficeModifyRequestAsync(this OcipClient client, UserRemoteOfficeModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserRemoteOfficeModifyRequestAsync(this OcipClientBase client, UserRemoteOfficeModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

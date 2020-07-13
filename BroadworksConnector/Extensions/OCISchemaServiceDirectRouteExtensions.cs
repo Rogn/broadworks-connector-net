@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either UserDirectRouteGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserDirectRouteGetRequestAsync instead.")]
-        public static async Task<UserDirectRouteGetResponse> UserDirectRouteGetRequest(this OcipClient client, UserDirectRouteGetRequest request)
+        public static async Task<UserDirectRouteGetResponse> UserDirectRouteGetRequest(this OcipClientBase client, UserDirectRouteGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserDirectRouteGetResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Get the direct route setting and the list of DTGs/Trunk Identities assigned to a user.
         /// The response is either UserDirectRouteGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<UserDirectRouteGetResponse> UserDirectRouteGetRequestAsync(this OcipClient client, UserDirectRouteGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserDirectRouteGetResponse> UserDirectRouteGetRequestAsync(this OcipClientBase client, UserDirectRouteGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserDirectRouteGetResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserDirectRouteModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserDirectRouteModifyRequest(this OcipClient client, UserDirectRouteModifyRequest request)
+        public static async Task<SuccessResponse> UserDirectRouteModifyRequest(this OcipClientBase client, UserDirectRouteModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Modify the direct route setting and the list of DTGs/Trunk Identities assigned to a user.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserDirectRouteModifyRequestAsync(this OcipClient client, UserDirectRouteModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserDirectRouteModifyRequestAsync(this OcipClientBase client, UserDirectRouteModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

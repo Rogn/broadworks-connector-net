@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ResellerCallNotifyGetRequestAsync instead.")]
-        public static async Task<ResellerCallNotifyGetResponse> ResellerCallNotifyGetRequest(this OcipClient client, ResellerCallNotifyGetRequest request)
+        public static async Task<ResellerCallNotifyGetResponse> ResellerCallNotifyGetRequest(this OcipClientBase client, ResellerCallNotifyGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ResellerCallNotifyGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a ResellerCallNotifyGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<ResellerCallNotifyGetResponse> ResellerCallNotifyGetRequestAsync(this OcipClient client, ResellerCallNotifyGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ResellerCallNotifyGetResponse> ResellerCallNotifyGetRequestAsync(this OcipClientBase client, ResellerCallNotifyGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ResellerCallNotifyGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ResellerCallNotifyModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ResellerCallNotifyModifyRequest(this OcipClient client, ResellerCallNotifyModifyRequest request)
+        public static async Task<SuccessResponse> ResellerCallNotifyModifyRequest(this OcipClientBase client, ResellerCallNotifyModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the reseller level data associated with Call Notify.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ResellerCallNotifyModifyRequestAsync(this OcipClient client, ResellerCallNotifyModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ResellerCallNotifyModifyRequestAsync(this OcipClientBase client, ResellerCallNotifyModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -53,7 +53,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallNotifyGetRequestAsync instead.")]
-        public static async Task<SystemCallNotifyGetResponse> SystemCallNotifyGetRequest(this OcipClient client, SystemCallNotifyGetRequest request)
+        public static async Task<SystemCallNotifyGetResponse> SystemCallNotifyGetRequest(this OcipClientBase client, SystemCallNotifyGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallNotifyGetResponse;
         }
@@ -63,7 +63,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCallNotifyGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallNotifyGetResponse> SystemCallNotifyGetRequestAsync(this OcipClient client, SystemCallNotifyGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallNotifyGetResponse> SystemCallNotifyGetRequestAsync(this OcipClientBase client, SystemCallNotifyGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallNotifyGetResponse;
         }
@@ -72,7 +72,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallNotifyModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemCallNotifyModifyRequest(this OcipClient client, SystemCallNotifyModifyRequest request)
+        public static async Task<SuccessResponse> SystemCallNotifyModifyRequest(this OcipClientBase client, SystemCallNotifyModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -81,7 +81,7 @@ namespace BroadWorksConnector
         /// Modify the system level data associated with Call Notify.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemCallNotifyModifyRequestAsync(this OcipClient client, SystemCallNotifyModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCallNotifyModifyRequestAsync(this OcipClientBase client, SystemCallNotifyModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -94,7 +94,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallNotifyAddCriteriaRequest16Async instead.")]
-        public static async Task<SuccessResponse> UserCallNotifyAddCriteriaRequest16(this OcipClient client, UserCallNotifyAddCriteriaRequest16 request)
+        public static async Task<SuccessResponse> UserCallNotifyAddCriteriaRequest16(this OcipClientBase client, UserCallNotifyAddCriteriaRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -107,7 +107,7 @@ namespace BroadWorksConnector
         /// For the callToNumber, the extension element is not used and the number element is only used when the type is BroadWorks Mobility.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallNotifyAddCriteriaRequest16Async(this OcipClient client, UserCallNotifyAddCriteriaRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallNotifyAddCriteriaRequest16Async(this OcipClientBase client, UserCallNotifyAddCriteriaRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -116,7 +116,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallNotifyDeleteCriteriaRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallNotifyDeleteCriteriaRequest(this OcipClient client, UserCallNotifyDeleteCriteriaRequest request)
+        public static async Task<SuccessResponse> UserCallNotifyDeleteCriteriaRequest(this OcipClientBase client, UserCallNotifyDeleteCriteriaRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -125,7 +125,7 @@ namespace BroadWorksConnector
         /// Delete a criteria from the user's call notify service.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallNotifyDeleteCriteriaRequestAsync(this OcipClient client, UserCallNotifyDeleteCriteriaRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallNotifyDeleteCriteriaRequestAsync(this OcipClientBase client, UserCallNotifyDeleteCriteriaRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -134,7 +134,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallNotifyGetCriteriaResponse21 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallNotifyGetCriteriaRequest21Async instead.")]
-        public static async Task<UserCallNotifyGetCriteriaResponse21> UserCallNotifyGetCriteriaRequest21(this OcipClient client, UserCallNotifyGetCriteriaRequest21 request)
+        public static async Task<UserCallNotifyGetCriteriaResponse21> UserCallNotifyGetCriteriaRequest21(this OcipClientBase client, UserCallNotifyGetCriteriaRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallNotifyGetCriteriaResponse21;
         }
@@ -143,7 +143,7 @@ namespace BroadWorksConnector
         /// Get a criteria for the user's call notify service.
         /// The response is either a UserCallNotifyGetCriteriaResponse21 or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCallNotifyGetCriteriaResponse21> UserCallNotifyGetCriteriaRequest21Async(this OcipClient client, UserCallNotifyGetCriteriaRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallNotifyGetCriteriaResponse21> UserCallNotifyGetCriteriaRequest21Async(this OcipClientBase client, UserCallNotifyGetCriteriaRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallNotifyGetCriteriaResponse21;
         }
@@ -152,7 +152,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallNotifyGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallNotifyGetRequestAsync instead.")]
-        public static async Task<UserCallNotifyGetResponse> UserCallNotifyGetRequest(this OcipClient client, UserCallNotifyGetRequest request)
+        public static async Task<UserCallNotifyGetResponse> UserCallNotifyGetRequest(this OcipClientBase client, UserCallNotifyGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallNotifyGetResponse;
         }
@@ -161,7 +161,7 @@ namespace BroadWorksConnector
         /// Get the user's call notify service setting.
         /// The response is either a UserCallNotifyGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCallNotifyGetResponse> UserCallNotifyGetRequestAsync(this OcipClient client, UserCallNotifyGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallNotifyGetResponse> UserCallNotifyGetRequestAsync(this OcipClientBase client, UserCallNotifyGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallNotifyGetResponse;
         }
@@ -174,7 +174,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallNotifyModifyCriteriaRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallNotifyModifyCriteriaRequest(this OcipClient client, UserCallNotifyModifyCriteriaRequest request)
+        public static async Task<SuccessResponse> UserCallNotifyModifyCriteriaRequest(this OcipClientBase client, UserCallNotifyModifyCriteriaRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -187,7 +187,7 @@ namespace BroadWorksConnector
         /// For the callToNumbers in the callToNumberList, the extension element is not used and the number element is only used when the type is BroadWorks Mobility.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallNotifyModifyCriteriaRequestAsync(this OcipClient client, UserCallNotifyModifyCriteriaRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallNotifyModifyCriteriaRequestAsync(this OcipClientBase client, UserCallNotifyModifyCriteriaRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -196,7 +196,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallNotifyModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallNotifyModifyRequest(this OcipClient client, UserCallNotifyModifyRequest request)
+        public static async Task<SuccessResponse> UserCallNotifyModifyRequest(this OcipClientBase client, UserCallNotifyModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -205,7 +205,7 @@ namespace BroadWorksConnector
         /// Modify the user's call notify service setting.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallNotifyModifyRequestAsync(this OcipClient client, UserCallNotifyModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallNotifyModifyRequestAsync(this OcipClientBase client, UserCallNotifyModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

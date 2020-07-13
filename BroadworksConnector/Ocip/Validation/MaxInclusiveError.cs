@@ -7,7 +7,7 @@ namespace BroadWorksConnector.Ocip.Validation
     /// <summary>
     /// Error when a member's value is set above the allowed range
     /// </summary>
-    class MaxInclusiveError : ValidationError
+    public class MaxInclusiveError : ValidationError
     {
         /// <summary>
         /// Name of the field with the error

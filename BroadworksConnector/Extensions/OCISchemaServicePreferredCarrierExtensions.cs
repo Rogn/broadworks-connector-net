@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupPreferredCarrierGroupGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupPreferredCarrierGroupGetRequestAsync instead.")]
-        public static async Task<GroupPreferredCarrierGroupGetResponse> GroupPreferredCarrierGroupGetRequest(this OcipClient client, GroupPreferredCarrierGroupGetRequest request)
+        public static async Task<GroupPreferredCarrierGroupGetResponse> GroupPreferredCarrierGroupGetRequest(this OcipClientBase client, GroupPreferredCarrierGroupGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupPreferredCarrierGroupGetResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Requests the currently configured carriers for a group.
         /// The response is either a GroupPreferredCarrierGroupGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupPreferredCarrierGroupGetResponse> GroupPreferredCarrierGroupGetRequestAsync(this OcipClient client, GroupPreferredCarrierGroupGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupPreferredCarrierGroupGetResponse> GroupPreferredCarrierGroupGetRequestAsync(this OcipClientBase client, GroupPreferredCarrierGroupGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupPreferredCarrierGroupGetResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupPreferredCarrierGroupModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupPreferredCarrierGroupModifyRequest(this OcipClient client, GroupPreferredCarrierGroupModifyRequest request)
+        public static async Task<SuccessResponse> GroupPreferredCarrierGroupModifyRequest(this OcipClientBase client, GroupPreferredCarrierGroupModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Modifies the currently configured carriers for a group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupPreferredCarrierGroupModifyRequestAsync(this OcipClient client, GroupPreferredCarrierGroupModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupPreferredCarrierGroupModifyRequestAsync(this OcipClientBase client, GroupPreferredCarrierGroupModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -54,7 +54,7 @@ namespace BroadWorksConnector
         /// At the service provider level, you must choose from the carriers assigned at the system level.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPreferredCarrierAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierAddRequest(this OcipClient client, ServiceProviderPreferredCarrierAddRequest request)
+        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierAddRequest(this OcipClientBase client, ServiceProviderPreferredCarrierAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -67,7 +67,7 @@ namespace BroadWorksConnector
         /// Note: At the system level, more than one carrier may be assigned to each country code.
         /// At the service provider level, you must choose from the carriers assigned at the system level.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierAddRequestAsync(this OcipClient client, ServiceProviderPreferredCarrierAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierAddRequestAsync(this OcipClientBase client, ServiceProviderPreferredCarrierAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -80,7 +80,7 @@ namespace BroadWorksConnector
         /// were already deleted.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPreferredCarrierDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierDeleteRequest(this OcipClient client, ServiceProviderPreferredCarrierDeleteRequest request)
+        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierDeleteRequest(this OcipClientBase client, ServiceProviderPreferredCarrierDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -93,7 +93,7 @@ namespace BroadWorksConnector
         /// An ErrorResponse will be returned if the country code preferred carriers were never added or
         /// were already deleted.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierDeleteRequestAsync(this OcipClient client, ServiceProviderPreferredCarrierDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierDeleteRequestAsync(this OcipClientBase client, ServiceProviderPreferredCarrierDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -102,7 +102,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderPreferredCarrierGetAvailableCountryCodeListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPreferredCarrierGetAvailableCountryCodeListRequestAsync instead.")]
-        public static async Task<ServiceProviderPreferredCarrierGetAvailableCountryCodeListResponse> ServiceProviderPreferredCarrierGetAvailableCountryCodeListRequest(this OcipClient client, ServiceProviderPreferredCarrierGetAvailableCountryCodeListRequest request)
+        public static async Task<ServiceProviderPreferredCarrierGetAvailableCountryCodeListResponse> ServiceProviderPreferredCarrierGetAvailableCountryCodeListRequest(this OcipClientBase client, ServiceProviderPreferredCarrierGetAvailableCountryCodeListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderPreferredCarrierGetAvailableCountryCodeListResponse;
         }
@@ -111,7 +111,7 @@ namespace BroadWorksConnector
         /// Requests the default country code and the list of unused country codes for a service provider / enterprise.
         /// The response is either a ServiceProviderPreferredCarrierGetAvailableCountryCodeListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderPreferredCarrierGetAvailableCountryCodeListResponse> ServiceProviderPreferredCarrierGetAvailableCountryCodeListRequestAsync(this OcipClient client, ServiceProviderPreferredCarrierGetAvailableCountryCodeListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderPreferredCarrierGetAvailableCountryCodeListResponse> ServiceProviderPreferredCarrierGetAvailableCountryCodeListRequestAsync(this OcipClientBase client, ServiceProviderPreferredCarrierGetAvailableCountryCodeListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderPreferredCarrierGetAvailableCountryCodeListResponse;
         }
@@ -120,7 +120,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderPreferredCarrierGetCarrierListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPreferredCarrierGetCarrierListRequestAsync instead.")]
-        public static async Task<ServiceProviderPreferredCarrierGetCarrierListResponse> ServiceProviderPreferredCarrierGetCarrierListRequest(this OcipClient client, ServiceProviderPreferredCarrierGetCarrierListRequest request)
+        public static async Task<ServiceProviderPreferredCarrierGetCarrierListResponse> ServiceProviderPreferredCarrierGetCarrierListRequest(this OcipClientBase client, ServiceProviderPreferredCarrierGetCarrierListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderPreferredCarrierGetCarrierListResponse;
         }
@@ -129,7 +129,7 @@ namespace BroadWorksConnector
         /// Requests the lists of carriers for a specified country code for a service provider / enterprise.
         /// The response is either a ServiceProviderPreferredCarrierGetCarrierListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderPreferredCarrierGetCarrierListResponse> ServiceProviderPreferredCarrierGetCarrierListRequestAsync(this OcipClient client, ServiceProviderPreferredCarrierGetCarrierListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderPreferredCarrierGetCarrierListResponse> ServiceProviderPreferredCarrierGetCarrierListRequestAsync(this OcipClientBase client, ServiceProviderPreferredCarrierGetCarrierListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderPreferredCarrierGetCarrierListResponse;
         }
@@ -138,7 +138,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderPreferredCarrierGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPreferredCarrierGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderPreferredCarrierGetListResponse> ServiceProviderPreferredCarrierGetListRequest(this OcipClient client, ServiceProviderPreferredCarrierGetListRequest request)
+        public static async Task<ServiceProviderPreferredCarrierGetListResponse> ServiceProviderPreferredCarrierGetListRequest(this OcipClientBase client, ServiceProviderPreferredCarrierGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderPreferredCarrierGetListResponse;
         }
@@ -147,7 +147,7 @@ namespace BroadWorksConnector
         /// Requests a table of all the carriers defined in a specified service provider or enterprise.
         /// The response is either a ServiceProviderPreferredCarrierGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderPreferredCarrierGetListResponse> ServiceProviderPreferredCarrierGetListRequestAsync(this OcipClient client, ServiceProviderPreferredCarrierGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderPreferredCarrierGetListResponse> ServiceProviderPreferredCarrierGetListRequestAsync(this OcipClientBase client, ServiceProviderPreferredCarrierGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderPreferredCarrierGetListResponse;
         }
@@ -156,7 +156,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderPreferredCarrierGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPreferredCarrierGetRequestAsync instead.")]
-        public static async Task<ServiceProviderPreferredCarrierGetResponse> ServiceProviderPreferredCarrierGetRequest(this OcipClient client, ServiceProviderPreferredCarrierGetRequest request)
+        public static async Task<ServiceProviderPreferredCarrierGetResponse> ServiceProviderPreferredCarrierGetRequest(this OcipClientBase client, ServiceProviderPreferredCarrierGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderPreferredCarrierGetResponse;
         }
@@ -165,7 +165,7 @@ namespace BroadWorksConnector
         /// Requests the currently configured carriers for a specified country code for a service provider / enterprise.
         /// The response is either a ServiceProviderPreferredCarrierGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderPreferredCarrierGetResponse> ServiceProviderPreferredCarrierGetRequestAsync(this OcipClient client, ServiceProviderPreferredCarrierGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderPreferredCarrierGetResponse> ServiceProviderPreferredCarrierGetRequestAsync(this OcipClientBase client, ServiceProviderPreferredCarrierGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderPreferredCarrierGetResponse;
         }
@@ -180,7 +180,7 @@ namespace BroadWorksConnector
         /// At the service provider level, you must choose from the carriers assigned at the system level.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPreferredCarrierModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierModifyRequest(this OcipClient client, ServiceProviderPreferredCarrierModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierModifyRequest(this OcipClientBase client, ServiceProviderPreferredCarrierModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -195,7 +195,7 @@ namespace BroadWorksConnector
         /// Note: At the system level, more than one carrier may be assigned to each country code.
         /// At the service provider level, you must choose from the carriers assigned at the system level.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierModifyRequestAsync(this OcipClient client, ServiceProviderPreferredCarrierModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderPreferredCarrierModifyRequestAsync(this OcipClientBase client, ServiceProviderPreferredCarrierModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -205,7 +205,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPreferredCarrierAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemPreferredCarrierAddRequest(this OcipClient client, SystemPreferredCarrierAddRequest request)
+        public static async Task<SuccessResponse> SystemPreferredCarrierAddRequest(this OcipClientBase client, SystemPreferredCarrierAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -215,7 +215,7 @@ namespace BroadWorksConnector
         /// More than one carrier may be assigned to each country code.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemPreferredCarrierAddRequestAsync(this OcipClient client, SystemPreferredCarrierAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemPreferredCarrierAddRequestAsync(this OcipClientBase client, SystemPreferredCarrierAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -225,7 +225,7 @@ namespace BroadWorksConnector
         /// An ErrorResponse is returned if the carrier is in use, or if the carrier didn't exist prior to deletion..
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPreferredCarrierDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemPreferredCarrierDeleteRequest(this OcipClient client, SystemPreferredCarrierDeleteRequest request)
+        public static async Task<SuccessResponse> SystemPreferredCarrierDeleteRequest(this OcipClientBase client, SystemPreferredCarrierDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -235,7 +235,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// An ErrorResponse is returned if the carrier is in use, or if the carrier didn't exist prior to deletion..
         /// </summary>
-        public static async Task<SuccessResponse> SystemPreferredCarrierDeleteRequestAsync(this OcipClient client, SystemPreferredCarrierDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemPreferredCarrierDeleteRequestAsync(this OcipClientBase client, SystemPreferredCarrierDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -246,7 +246,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemPreferredCarrierGetGroupListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPreferredCarrierGetGroupListRequestAsync instead.")]
-        public static async Task<SystemPreferredCarrierGetGroupListResponse> SystemPreferredCarrierGetGroupListRequest(this OcipClient client, SystemPreferredCarrierGetGroupListRequest request)
+        public static async Task<SystemPreferredCarrierGetGroupListResponse> SystemPreferredCarrierGetGroupListRequest(this OcipClientBase client, SystemPreferredCarrierGetGroupListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemPreferredCarrierGetGroupListResponse;
         }
@@ -257,7 +257,7 @@ namespace BroadWorksConnector
         /// are logically ANDed together.
         /// The response is either a SystemPreferredCarrierGetGroupListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemPreferredCarrierGetGroupListResponse> SystemPreferredCarrierGetGroupListRequestAsync(this OcipClient client, SystemPreferredCarrierGetGroupListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemPreferredCarrierGetGroupListResponse> SystemPreferredCarrierGetGroupListRequestAsync(this OcipClientBase client, SystemPreferredCarrierGetGroupListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemPreferredCarrierGetGroupListResponse;
         }
@@ -267,7 +267,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPreferredCarrierGetListRequestAsync instead.")]
-        public static async Task<SystemPreferredCarrierGetListResponse> SystemPreferredCarrierGetListRequest(this OcipClient client, SystemPreferredCarrierGetListRequest request)
+        public static async Task<SystemPreferredCarrierGetListResponse> SystemPreferredCarrierGetListRequest(this OcipClientBase client, SystemPreferredCarrierGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemPreferredCarrierGetListResponse;
         }
@@ -277,7 +277,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemPreferredCarrierGetListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemPreferredCarrierGetListResponse> SystemPreferredCarrierGetListRequestAsync(this OcipClient client, SystemPreferredCarrierGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemPreferredCarrierGetListResponse> SystemPreferredCarrierGetListRequestAsync(this OcipClientBase client, SystemPreferredCarrierGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemPreferredCarrierGetListResponse;
         }
@@ -286,7 +286,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemPreferredCarrierGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPreferredCarrierGetRequestAsync instead.")]
-        public static async Task<SystemPreferredCarrierGetResponse> SystemPreferredCarrierGetRequest(this OcipClient client, SystemPreferredCarrierGetRequest request)
+        public static async Task<SystemPreferredCarrierGetResponse> SystemPreferredCarrierGetRequest(this OcipClientBase client, SystemPreferredCarrierGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemPreferredCarrierGetResponse;
         }
@@ -295,7 +295,7 @@ namespace BroadWorksConnector
         /// Requests the attributes of carrier.
         /// The response is either a SystemPreferredCarrierGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemPreferredCarrierGetResponse> SystemPreferredCarrierGetRequestAsync(this OcipClient client, SystemPreferredCarrierGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemPreferredCarrierGetResponse> SystemPreferredCarrierGetRequestAsync(this OcipClientBase client, SystemPreferredCarrierGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemPreferredCarrierGetResponse;
         }
@@ -307,7 +307,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPreferredCarrierGetUserListRequestAsync instead.")]
-        public static async Task<SystemPreferredCarrierGetUserListResponse> SystemPreferredCarrierGetUserListRequest(this OcipClient client, SystemPreferredCarrierGetUserListRequest request)
+        public static async Task<SystemPreferredCarrierGetUserListResponse> SystemPreferredCarrierGetUserListRequest(this OcipClientBase client, SystemPreferredCarrierGetUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemPreferredCarrierGetUserListResponse;
         }
@@ -319,7 +319,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemPreferredCarrierGetUserListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemPreferredCarrierGetUserListResponse> SystemPreferredCarrierGetUserListRequestAsync(this OcipClient client, SystemPreferredCarrierGetUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemPreferredCarrierGetUserListResponse> SystemPreferredCarrierGetUserListRequestAsync(this OcipClientBase client, SystemPreferredCarrierGetUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemPreferredCarrierGetUserListResponse;
         }
@@ -331,7 +331,7 @@ namespace BroadWorksConnector
         /// An ErrorResponse is returned if an attempt to set isInternational to false is made while the carrier is used as an international carrier.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPreferredCarrierModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemPreferredCarrierModifyRequest(this OcipClient client, SystemPreferredCarrierModifyRequest request)
+        public static async Task<SuccessResponse> SystemPreferredCarrierModifyRequest(this OcipClientBase client, SystemPreferredCarrierModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -343,7 +343,7 @@ namespace BroadWorksConnector
         /// An ErrorResponse is returned if an attempt to set isIntraLata to false is made while the carrier is used as an intra-LATA carrier.
         /// An ErrorResponse is returned if an attempt to set isInternational to false is made while the carrier is used as an international carrier.
         /// </summary>
-        public static async Task<SuccessResponse> SystemPreferredCarrierModifyRequestAsync(this OcipClient client, SystemPreferredCarrierModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemPreferredCarrierModifyRequestAsync(this OcipClientBase client, SystemPreferredCarrierModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -352,7 +352,7 @@ namespace BroadWorksConnector
         /// The response is either a UserPreferredCarrierUserGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPreferredCarrierUserGetRequestAsync instead.")]
-        public static async Task<UserPreferredCarrierUserGetResponse> UserPreferredCarrierUserGetRequest(this OcipClient client, UserPreferredCarrierUserGetRequest request)
+        public static async Task<UserPreferredCarrierUserGetResponse> UserPreferredCarrierUserGetRequest(this OcipClientBase client, UserPreferredCarrierUserGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserPreferredCarrierUserGetResponse;
         }
@@ -361,7 +361,7 @@ namespace BroadWorksConnector
         /// Requests the currently configured preferred carriers for a user.
         /// The response is either a UserPreferredCarrierUserGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserPreferredCarrierUserGetResponse> UserPreferredCarrierUserGetRequestAsync(this OcipClient client, UserPreferredCarrierUserGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserPreferredCarrierUserGetResponse> UserPreferredCarrierUserGetRequestAsync(this OcipClientBase client, UserPreferredCarrierUserGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserPreferredCarrierUserGetResponse;
         }
@@ -370,7 +370,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPreferredCarrierUserModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserPreferredCarrierUserModifyRequest(this OcipClient client, UserPreferredCarrierUserModifyRequest request)
+        public static async Task<SuccessResponse> UserPreferredCarrierUserModifyRequest(this OcipClientBase client, UserPreferredCarrierUserModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -379,7 +379,7 @@ namespace BroadWorksConnector
         /// Modifies the currently configured preferred carriers for a user.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserPreferredCarrierUserModifyRequestAsync(this OcipClient client, UserPreferredCarrierUserModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserPreferredCarrierUserModifyRequestAsync(this OcipClientBase client, UserPreferredCarrierUserModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

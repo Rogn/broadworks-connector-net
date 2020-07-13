@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either a UserAuthenticationGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserAuthenticationGetRequestAsync instead.")]
-        public static async Task<UserAuthenticationGetResponse> UserAuthenticationGetRequest(this OcipClient client, UserAuthenticationGetRequest request)
+        public static async Task<UserAuthenticationGetResponse> UserAuthenticationGetRequest(this OcipClientBase client, UserAuthenticationGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserAuthenticationGetResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Get the user's authentication service information.
         /// The response is either a UserAuthenticationGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserAuthenticationGetResponse> UserAuthenticationGetRequestAsync(this OcipClient client, UserAuthenticationGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserAuthenticationGetResponse> UserAuthenticationGetRequestAsync(this OcipClientBase client, UserAuthenticationGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserAuthenticationGetResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserAuthenticationModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserAuthenticationModifyRequest(this OcipClient client, UserAuthenticationModifyRequest request)
+        public static async Task<SuccessResponse> UserAuthenticationModifyRequest(this OcipClientBase client, UserAuthenticationModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Modify the user's authentication service information.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserAuthenticationModifyRequestAsync(this OcipClient client, UserAuthenticationModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserAuthenticationModifyRequestAsync(this OcipClientBase client, UserAuthenticationModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

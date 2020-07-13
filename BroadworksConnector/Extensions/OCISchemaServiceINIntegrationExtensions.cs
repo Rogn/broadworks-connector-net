@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either UserINIntegrationGetResponse or ErrorResponse
         /// </summary>
         [Obsolete("This method is deprecated. Use UserINIntegrationGetRequestAsync instead.")]
-        public static async Task<UserINIntegrationGetResponse> UserINIntegrationGetRequest(this OcipClient client, UserINIntegrationGetRequest request)
+        public static async Task<UserINIntegrationGetResponse> UserINIntegrationGetRequest(this OcipClientBase client, UserINIntegrationGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserINIntegrationGetResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Request to get the user level IN Integration service attributes
         /// The response is either UserINIntegrationGetResponse or ErrorResponse
         /// </summary>
-        public static async Task<UserINIntegrationGetResponse> UserINIntegrationGetRequestAsync(this OcipClient client, UserINIntegrationGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserINIntegrationGetResponse> UserINIntegrationGetRequestAsync(this OcipClientBase client, UserINIntegrationGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserINIntegrationGetResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse
         /// </summary>
         [Obsolete("This method is deprecated. Use UserINIntegrationModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserINIntegrationModifyRequest(this OcipClient client, UserINIntegrationModifyRequest request)
+        public static async Task<SuccessResponse> UserINIntegrationModifyRequest(this OcipClientBase client, UserINIntegrationModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Request to modify the user level IN Integration service attributes
         /// The response is either SuccessResponse or ErrorResponse
         /// </summary>
-        public static async Task<SuccessResponse> UserINIntegrationModifyRequestAsync(this OcipClient client, UserINIntegrationModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserINIntegrationModifyRequestAsync(this OcipClientBase client, UserINIntegrationModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

@@ -16,7 +16,7 @@ namespace BroadWorksConnector
         /// The response is either GroupDirectoryNumberHuntingGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupDirectoryNumberHuntingGetAvailableUserListRequestAsync instead.")]
-        public static async Task<GroupDirectoryNumberHuntingGetAvailableUserListResponse> GroupDirectoryNumberHuntingGetAvailableUserListRequest(this OcipClient client, GroupDirectoryNumberHuntingGetAvailableUserListRequest request)
+        public static async Task<GroupDirectoryNumberHuntingGetAvailableUserListResponse> GroupDirectoryNumberHuntingGetAvailableUserListRequest(this OcipClientBase client, GroupDirectoryNumberHuntingGetAvailableUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupDirectoryNumberHuntingGetAvailableUserListResponse;
         }
@@ -27,7 +27,7 @@ namespace BroadWorksConnector
         /// are not already assigned to any other directory number hunting group.
         /// The response is either GroupDirectoryNumberHuntingGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupDirectoryNumberHuntingGetAvailableUserListResponse> GroupDirectoryNumberHuntingGetAvailableUserListRequestAsync(this OcipClient client, GroupDirectoryNumberHuntingGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupDirectoryNumberHuntingGetAvailableUserListResponse> GroupDirectoryNumberHuntingGetAvailableUserListRequestAsync(this OcipClientBase client, GroupDirectoryNumberHuntingGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupDirectoryNumberHuntingGetAvailableUserListResponse;
         }
@@ -39,7 +39,7 @@ namespace BroadWorksConnector
         /// The response is either GroupDirectoryNumberHuntingGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupDirectoryNumberHuntingGetRequest17sp1Async instead.")]
-        public static async Task<GroupDirectoryNumberHuntingGetResponse> GroupDirectoryNumberHuntingGetRequest17sp1(this OcipClient client, GroupDirectoryNumberHuntingGetRequest17sp1 request)
+        public static async Task<GroupDirectoryNumberHuntingGetResponse> GroupDirectoryNumberHuntingGetRequest17sp1(this OcipClientBase client, GroupDirectoryNumberHuntingGetRequest17sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupDirectoryNumberHuntingGetResponse;
         }
@@ -51,7 +51,7 @@ namespace BroadWorksConnector
         /// assigned to any other directory number hunting group.
         /// The response is either GroupDirectoryNumberHuntingGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupDirectoryNumberHuntingGetResponse> GroupDirectoryNumberHuntingGetRequest17sp1Async(this OcipClient client, GroupDirectoryNumberHuntingGetRequest17sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupDirectoryNumberHuntingGetResponse> GroupDirectoryNumberHuntingGetRequest17sp1Async(this OcipClientBase client, GroupDirectoryNumberHuntingGetRequest17sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupDirectoryNumberHuntingGetResponse;
         }
@@ -60,7 +60,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupDirectoryNumberHuntingModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupDirectoryNumberHuntingModifyRequest(this OcipClient client, GroupDirectoryNumberHuntingModifyRequest request)
+        public static async Task<SuccessResponse> GroupDirectoryNumberHuntingModifyRequest(this OcipClientBase client, GroupDirectoryNumberHuntingModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -69,7 +69,7 @@ namespace BroadWorksConnector
         /// Replaces a list of users as agents for a directory number hunting group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupDirectoryNumberHuntingModifyRequestAsync(this OcipClient client, GroupDirectoryNumberHuntingModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupDirectoryNumberHuntingModifyRequestAsync(this OcipClientBase client, GroupDirectoryNumberHuntingModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

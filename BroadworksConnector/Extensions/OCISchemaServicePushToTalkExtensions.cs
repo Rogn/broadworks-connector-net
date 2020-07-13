@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either UserPushToTalkGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPushToTalkGetAvailableUserListRequestAsync instead.")]
-        public static async Task<UserPushToTalkGetAvailableUserListResponse> UserPushToTalkGetAvailableUserListRequest(this OcipClient client, UserPushToTalkGetAvailableUserListRequest request)
+        public static async Task<UserPushToTalkGetAvailableUserListResponse> UserPushToTalkGetAvailableUserListRequest(this OcipClientBase client, UserPushToTalkGetAvailableUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserPushToTalkGetAvailableUserListResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Get a list of available users for the push to talk service.
         /// The response is either UserPushToTalkGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<UserPushToTalkGetAvailableUserListResponse> UserPushToTalkGetAvailableUserListRequestAsync(this OcipClient client, UserPushToTalkGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserPushToTalkGetAvailableUserListResponse> UserPushToTalkGetAvailableUserListRequestAsync(this OcipClientBase client, UserPushToTalkGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserPushToTalkGetAvailableUserListResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a UserPushToTalkGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPushToTalkGetRequestAsync instead.")]
-        public static async Task<UserPushToTalkGetResponse> UserPushToTalkGetRequest(this OcipClient client, UserPushToTalkGetRequest request)
+        public static async Task<UserPushToTalkGetResponse> UserPushToTalkGetRequest(this OcipClientBase client, UserPushToTalkGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserPushToTalkGetResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Request the push to talk service setting.
         /// The response is either a UserPushToTalkGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserPushToTalkGetResponse> UserPushToTalkGetRequestAsync(this OcipClient client, UserPushToTalkGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserPushToTalkGetResponse> UserPushToTalkGetRequestAsync(this OcipClientBase client, UserPushToTalkGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserPushToTalkGetResponse;
         }
@@ -50,7 +50,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPushToTalkModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserPushToTalkModifyRequest(this OcipClient client, UserPushToTalkModifyRequest request)
+        public static async Task<SuccessResponse> UserPushToTalkModifyRequest(this OcipClientBase client, UserPushToTalkModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// Change the push to talk service settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserPushToTalkModifyRequestAsync(this OcipClient client, UserPushToTalkModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserPushToTalkModifyRequestAsync(this OcipClientBase client, UserPushToTalkModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

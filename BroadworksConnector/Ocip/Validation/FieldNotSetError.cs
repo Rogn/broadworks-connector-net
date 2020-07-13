@@ -3,7 +3,7 @@
     /// <summary>
     /// Error happens when a required field is not set.
     /// </summary>
-    class FieldNotSetError : ValidationError
+    public class FieldNotSetError : ValidationError
     {
         /// <summary>
         /// Name of the field that wasn't set

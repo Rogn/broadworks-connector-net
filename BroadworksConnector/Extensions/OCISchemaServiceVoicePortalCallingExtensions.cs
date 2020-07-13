@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserVoicePortalCallingGetRequestAsync instead.")]
-        public static async Task<UserVoicePortalCallingGetResponse> UserVoicePortalCallingGetRequest(this OcipClient client, UserVoicePortalCallingGetRequest request)
+        public static async Task<UserVoicePortalCallingGetResponse> UserVoicePortalCallingGetRequest(this OcipClientBase client, UserVoicePortalCallingGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserVoicePortalCallingGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a UserVoicePortalCallingGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserVoicePortalCallingGetResponse> UserVoicePortalCallingGetRequestAsync(this OcipClient client, UserVoicePortalCallingGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserVoicePortalCallingGetResponse> UserVoicePortalCallingGetRequestAsync(this OcipClientBase client, UserVoicePortalCallingGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserVoicePortalCallingGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserVoicePortalCallingModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserVoicePortalCallingModifyRequest(this OcipClient client, UserVoicePortalCallingModifyRequest request)
+        public static async Task<SuccessResponse> UserVoicePortalCallingModifyRequest(this OcipClientBase client, UserVoicePortalCallingModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the user level data associated with Voice Portal Calling.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserVoicePortalCallingModifyRequestAsync(this OcipClient client, UserVoicePortalCallingModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserVoicePortalCallingModifyRequestAsync(this OcipClientBase client, UserVoicePortalCallingModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserAutomaticHoldRetrieveGetRequestAsync instead.")]
-        public static async Task<UserAutomaticHoldRetrieveGetResponse> UserAutomaticHoldRetrieveGetRequest(this OcipClient client, UserAutomaticHoldRetrieveGetRequest request)
+        public static async Task<UserAutomaticHoldRetrieveGetResponse> UserAutomaticHoldRetrieveGetRequest(this OcipClientBase client, UserAutomaticHoldRetrieveGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserAutomaticHoldRetrieveGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a UserAutomaticHoldRetrieveGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserAutomaticHoldRetrieveGetResponse> UserAutomaticHoldRetrieveGetRequestAsync(this OcipClient client, UserAutomaticHoldRetrieveGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserAutomaticHoldRetrieveGetResponse> UserAutomaticHoldRetrieveGetRequestAsync(this OcipClientBase client, UserAutomaticHoldRetrieveGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserAutomaticHoldRetrieveGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserAutomaticHoldRetrieveModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserAutomaticHoldRetrieveModifyRequest(this OcipClient client, UserAutomaticHoldRetrieveModifyRequest request)
+        public static async Task<SuccessResponse> UserAutomaticHoldRetrieveModifyRequest(this OcipClientBase client, UserAutomaticHoldRetrieveModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the user level data associated with Automatic Hold/Retrieve.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserAutomaticHoldRetrieveModifyRequestAsync(this OcipClient client, UserAutomaticHoldRetrieveModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserAutomaticHoldRetrieveModifyRequestAsync(this OcipClientBase client, UserAutomaticHoldRetrieveModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

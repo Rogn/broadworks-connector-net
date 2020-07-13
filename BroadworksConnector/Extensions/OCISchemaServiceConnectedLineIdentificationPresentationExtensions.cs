@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemConnectedLineIdentificationPresentationGetRequestAsync instead.")]
-        public static async Task<SystemConnectedLineIdentificationPresentationGetResponse> SystemConnectedLineIdentificationPresentationGetRequest(this OcipClient client, SystemConnectedLineIdentificationPresentationGetRequest request)
+        public static async Task<SystemConnectedLineIdentificationPresentationGetResponse> SystemConnectedLineIdentificationPresentationGetRequest(this OcipClientBase client, SystemConnectedLineIdentificationPresentationGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemConnectedLineIdentificationPresentationGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemConnectedLineIdentificationPresentationGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<SystemConnectedLineIdentificationPresentationGetResponse> SystemConnectedLineIdentificationPresentationGetRequestAsync(this OcipClient client, SystemConnectedLineIdentificationPresentationGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemConnectedLineIdentificationPresentationGetResponse> SystemConnectedLineIdentificationPresentationGetRequestAsync(this OcipClientBase client, SystemConnectedLineIdentificationPresentationGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemConnectedLineIdentificationPresentationGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemConnectedLineIdentificationPresentationModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemConnectedLineIdentificationPresentationModifyRequest(this OcipClient client, SystemConnectedLineIdentificationPresentationModifyRequest request)
+        public static async Task<SuccessResponse> SystemConnectedLineIdentificationPresentationModifyRequest(this OcipClientBase client, SystemConnectedLineIdentificationPresentationModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the system level data associated with the COLP Service.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemConnectedLineIdentificationPresentationModifyRequestAsync(this OcipClient client, SystemConnectedLineIdentificationPresentationModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemConnectedLineIdentificationPresentationModifyRequestAsync(this OcipClientBase client, SystemConnectedLineIdentificationPresentationModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

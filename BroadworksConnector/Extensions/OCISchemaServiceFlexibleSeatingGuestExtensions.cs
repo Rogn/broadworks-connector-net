@@ -17,7 +17,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingAccessDeviceGetListRequestAsync instead.")]
-        public static async Task<GroupFlexibleSeatingAccessDeviceGetListResponse> GroupFlexibleSeatingAccessDeviceGetListRequest(this OcipClient client, GroupFlexibleSeatingAccessDeviceGetListRequest request)
+        public static async Task<GroupFlexibleSeatingAccessDeviceGetListResponse> GroupFlexibleSeatingAccessDeviceGetListRequest(this OcipClientBase client, GroupFlexibleSeatingAccessDeviceGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupFlexibleSeatingAccessDeviceGetListResponse;
         }
@@ -29,7 +29,7 @@ namespace BroadWorksConnector
         /// The response is either GroupFlexibleSeatingAccessDeviceGetListResponse or
         /// ErrorResponse.
         /// </summary>
-        public static async Task<GroupFlexibleSeatingAccessDeviceGetListResponse> GroupFlexibleSeatingAccessDeviceGetListRequestAsync(this OcipClient client, GroupFlexibleSeatingAccessDeviceGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupFlexibleSeatingAccessDeviceGetListResponse> GroupFlexibleSeatingAccessDeviceGetListRequestAsync(this OcipClientBase client, GroupFlexibleSeatingAccessDeviceGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupFlexibleSeatingAccessDeviceGetListResponse;
         }
@@ -39,7 +39,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostAddInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostAddInstanceRequest(this OcipClient client, GroupFlexibleSeatingHostAddInstanceRequest request)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostAddInstanceRequest(this OcipClientBase client, GroupFlexibleSeatingHostAddInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -49,7 +49,7 @@ namespace BroadWorksConnector
         /// The domain is required in the serviceUserId.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostAddInstanceRequestAsync(this OcipClient client, GroupFlexibleSeatingHostAddInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostAddInstanceRequestAsync(this OcipClientBase client, GroupFlexibleSeatingHostAddInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostAddInstanceRequest22Async instead.")]
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostAddInstanceRequest22(this OcipClient client, GroupFlexibleSeatingHostAddInstanceRequest22 request)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostAddInstanceRequest22(this OcipClientBase client, GroupFlexibleSeatingHostAddInstanceRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -69,7 +69,7 @@ namespace BroadWorksConnector
         /// The domain is required in the serviceUserId.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostAddInstanceRequest22Async(this OcipClient client, GroupFlexibleSeatingHostAddInstanceRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostAddInstanceRequest22Async(this OcipClientBase client, GroupFlexibleSeatingHostAddInstanceRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -78,7 +78,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostDeleteInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostDeleteInstanceRequest(this OcipClient client, GroupFlexibleSeatingHostDeleteInstanceRequest request)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostDeleteInstanceRequest(this OcipClientBase client, GroupFlexibleSeatingHostDeleteInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -87,7 +87,7 @@ namespace BroadWorksConnector
         /// Delete a flexible seating host instance from a group. Host cannot be deleted when a guest is associated to a host.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostDeleteInstanceRequestAsync(this OcipClient client, GroupFlexibleSeatingHostDeleteInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostDeleteInstanceRequestAsync(this OcipClientBase client, GroupFlexibleSeatingHostDeleteInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -97,7 +97,7 @@ namespace BroadWorksConnector
         /// It is possible to get the instances within a specified department.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostGetInstanceListRequestAsync instead.")]
-        public static async Task<GroupFlexibleSeatingHostGetInstanceListResponse> GroupFlexibleSeatingHostGetInstanceListRequest(this OcipClient client, GroupFlexibleSeatingHostGetInstanceListRequest request)
+        public static async Task<GroupFlexibleSeatingHostGetInstanceListResponse> GroupFlexibleSeatingHostGetInstanceListRequest(this OcipClientBase client, GroupFlexibleSeatingHostGetInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupFlexibleSeatingHostGetInstanceListResponse;
         }
@@ -107,7 +107,7 @@ namespace BroadWorksConnector
         /// The response is either GroupFlexibleSeatingHostGetInstanceListResponse or ErrorResponse.
         /// It is possible to get the instances within a specified department.
         /// </summary>
-        public static async Task<GroupFlexibleSeatingHostGetInstanceListResponse> GroupFlexibleSeatingHostGetInstanceListRequestAsync(this OcipClient client, GroupFlexibleSeatingHostGetInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupFlexibleSeatingHostGetInstanceListResponse> GroupFlexibleSeatingHostGetInstanceListRequestAsync(this OcipClientBase client, GroupFlexibleSeatingHostGetInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupFlexibleSeatingHostGetInstanceListResponse;
         }
@@ -116,7 +116,7 @@ namespace BroadWorksConnector
         /// The response is either GroupFlexibleSeatingHostGetInstanceResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostGetInstanceRequestAsync instead.")]
-        public static async Task<GroupFlexibleSeatingHostGetInstanceResponse> GroupFlexibleSeatingHostGetInstanceRequest(this OcipClient client, GroupFlexibleSeatingHostGetInstanceRequest request)
+        public static async Task<GroupFlexibleSeatingHostGetInstanceResponse> GroupFlexibleSeatingHostGetInstanceRequest(this OcipClientBase client, GroupFlexibleSeatingHostGetInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupFlexibleSeatingHostGetInstanceResponse;
         }
@@ -125,7 +125,7 @@ namespace BroadWorksConnector
         /// Request to get all the information of a flexible seating host instance.
         /// The response is either GroupFlexibleSeatingHostGetInstanceResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupFlexibleSeatingHostGetInstanceResponse> GroupFlexibleSeatingHostGetInstanceRequestAsync(this OcipClient client, GroupFlexibleSeatingHostGetInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupFlexibleSeatingHostGetInstanceResponse> GroupFlexibleSeatingHostGetInstanceRequestAsync(this OcipClientBase client, GroupFlexibleSeatingHostGetInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupFlexibleSeatingHostGetInstanceResponse;
         }
@@ -134,7 +134,7 @@ namespace BroadWorksConnector
         /// The response is either GroupFlexibleSeatingHostGetInstanceResponse22 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostGetInstanceRequest22Async instead.")]
-        public static async Task<GroupFlexibleSeatingHostGetInstanceResponse22> GroupFlexibleSeatingHostGetInstanceRequest22(this OcipClient client, GroupFlexibleSeatingHostGetInstanceRequest22 request)
+        public static async Task<GroupFlexibleSeatingHostGetInstanceResponse22> GroupFlexibleSeatingHostGetInstanceRequest22(this OcipClientBase client, GroupFlexibleSeatingHostGetInstanceRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupFlexibleSeatingHostGetInstanceResponse22;
         }
@@ -143,7 +143,7 @@ namespace BroadWorksConnector
         /// Request to get all the information of a flexible seating host instance.
         /// The response is either GroupFlexibleSeatingHostGetInstanceResponse22 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupFlexibleSeatingHostGetInstanceResponse22> GroupFlexibleSeatingHostGetInstanceRequest22Async(this OcipClient client, GroupFlexibleSeatingHostGetInstanceRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupFlexibleSeatingHostGetInstanceResponse22> GroupFlexibleSeatingHostGetInstanceRequest22Async(this OcipClientBase client, GroupFlexibleSeatingHostGetInstanceRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupFlexibleSeatingHostGetInstanceResponse22;
         }
@@ -153,7 +153,7 @@ namespace BroadWorksConnector
         /// accessLevel is always set to Group for a Service Provider
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostGuestAssociationGetRequestAsync instead.")]
-        public static async Task<GroupFlexibleSeatingHostGuestAssociationGetResponse> GroupFlexibleSeatingHostGuestAssociationGetRequest(this OcipClient client, GroupFlexibleSeatingHostGuestAssociationGetRequest request)
+        public static async Task<GroupFlexibleSeatingHostGuestAssociationGetResponse> GroupFlexibleSeatingHostGuestAssociationGetRequest(this OcipClientBase client, GroupFlexibleSeatingHostGuestAssociationGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupFlexibleSeatingHostGuestAssociationGetResponse;
         }
@@ -163,7 +163,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupFlexibleSeatingHostGuestAssociationGetResponse or an ErrorResponse.
         /// accessLevel is always set to Group for a Service Provider
         /// </summary>
-        public static async Task<GroupFlexibleSeatingHostGuestAssociationGetResponse> GroupFlexibleSeatingHostGuestAssociationGetRequestAsync(this OcipClient client, GroupFlexibleSeatingHostGuestAssociationGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupFlexibleSeatingHostGuestAssociationGetResponse> GroupFlexibleSeatingHostGuestAssociationGetRequestAsync(this OcipClientBase client, GroupFlexibleSeatingHostGuestAssociationGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupFlexibleSeatingHostGuestAssociationGetResponse;
         }
@@ -173,7 +173,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostGuestAssociationModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostGuestAssociationModifyRequest(this OcipClient client, GroupFlexibleSeatingHostGuestAssociationModifyRequest request)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostGuestAssociationModifyRequest(this OcipClientBase client, GroupFlexibleSeatingHostGuestAssociationModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -183,7 +183,7 @@ namespace BroadWorksConnector
         /// The request fails if enforceAssociationLimit or associationLimitHours are changed when the host is associated to a guest.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostGuestAssociationModifyRequestAsync(this OcipClient client, GroupFlexibleSeatingHostGuestAssociationModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostGuestAssociationModifyRequestAsync(this OcipClientBase client, GroupFlexibleSeatingHostGuestAssociationModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -192,7 +192,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostModifyActiveInstanceListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyActiveInstanceListRequest(this OcipClient client, GroupFlexibleSeatingHostModifyActiveInstanceListRequest request)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyActiveInstanceListRequest(this OcipClientBase client, GroupFlexibleSeatingHostModifyActiveInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -201,7 +201,7 @@ namespace BroadWorksConnector
         /// Request to set the active status of flexible seating host instances. Host cannot be disabled when a flexible seating guest is associated.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyActiveInstanceListRequestAsync(this OcipClient client, GroupFlexibleSeatingHostModifyActiveInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyActiveInstanceListRequestAsync(this OcipClientBase client, GroupFlexibleSeatingHostModifyActiveInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -210,7 +210,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostModifyInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyInstanceRequest(this OcipClient client, GroupFlexibleSeatingHostModifyInstanceRequest request)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyInstanceRequest(this OcipClientBase client, GroupFlexibleSeatingHostModifyInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -219,7 +219,7 @@ namespace BroadWorksConnector
         /// Request to modify a flexible seating host instance.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyInstanceRequestAsync(this OcipClient client, GroupFlexibleSeatingHostModifyInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyInstanceRequestAsync(this OcipClientBase client, GroupFlexibleSeatingHostModifyInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -228,7 +228,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostModifyInstanceRequest22Async instead.")]
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyInstanceRequest22(this OcipClient client, GroupFlexibleSeatingHostModifyInstanceRequest22 request)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyInstanceRequest22(this OcipClientBase client, GroupFlexibleSeatingHostModifyInstanceRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -237,7 +237,7 @@ namespace BroadWorksConnector
         /// Request to modify a flexible seating host instance.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyInstanceRequest22Async(this OcipClient client, GroupFlexibleSeatingHostModifyInstanceRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostModifyInstanceRequest22Async(this OcipClientBase client, GroupFlexibleSeatingHostModifyInstanceRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -246,7 +246,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupFlexibleSeatingHostRoutingPoliciesGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostRoutingPoliciesGetRequestAsync instead.")]
-        public static async Task<GroupFlexibleSeatingHostRoutingPoliciesGetResponse> GroupFlexibleSeatingHostRoutingPoliciesGetRequest(this OcipClient client, GroupFlexibleSeatingHostRoutingPoliciesGetRequest request)
+        public static async Task<GroupFlexibleSeatingHostRoutingPoliciesGetResponse> GroupFlexibleSeatingHostRoutingPoliciesGetRequest(this OcipClientBase client, GroupFlexibleSeatingHostRoutingPoliciesGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupFlexibleSeatingHostRoutingPoliciesGetResponse;
         }
@@ -255,7 +255,7 @@ namespace BroadWorksConnector
         /// Get a flexible seating host’s routing policies
         /// The response is either a GroupFlexibleSeatingHostRoutingPoliciesGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupFlexibleSeatingHostRoutingPoliciesGetResponse> GroupFlexibleSeatingHostRoutingPoliciesGetRequestAsync(this OcipClient client, GroupFlexibleSeatingHostRoutingPoliciesGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupFlexibleSeatingHostRoutingPoliciesGetResponse> GroupFlexibleSeatingHostRoutingPoliciesGetRequestAsync(this OcipClientBase client, GroupFlexibleSeatingHostRoutingPoliciesGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupFlexibleSeatingHostRoutingPoliciesGetResponse;
         }
@@ -264,7 +264,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFlexibleSeatingHostRoutingPoliciesModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostRoutingPoliciesModifyRequest(this OcipClient client, GroupFlexibleSeatingHostRoutingPoliciesModifyRequest request)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostRoutingPoliciesModifyRequest(this OcipClientBase client, GroupFlexibleSeatingHostRoutingPoliciesModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -273,7 +273,7 @@ namespace BroadWorksConnector
         /// Modify a flexible seating host’s routing policies
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupFlexibleSeatingHostRoutingPoliciesModifyRequestAsync(this OcipClient client, GroupFlexibleSeatingHostRoutingPoliciesModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupFlexibleSeatingHostRoutingPoliciesModifyRequestAsync(this OcipClientBase client, GroupFlexibleSeatingHostRoutingPoliciesModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -283,7 +283,7 @@ namespace BroadWorksConnector
         /// - host that has the equivalent device type as the guest, host already assigned to another guest and for a guest in a Service Provider host in the user’s group and for a user in an Enterprise a host within the user’s group and host in the user’s enterprise that has the accessLevel set to Enterprise.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserFlexibleSeatingGuestGetAvailableHostListRequestAsync instead.")]
-        public static async Task<UserFlexibleSeatingGuestGetAvailableHostListResponse> UserFlexibleSeatingGuestGetAvailableHostListRequest(this OcipClient client, UserFlexibleSeatingGuestGetAvailableHostListRequest request)
+        public static async Task<UserFlexibleSeatingGuestGetAvailableHostListResponse> UserFlexibleSeatingGuestGetAvailableHostListRequest(this OcipClientBase client, UserFlexibleSeatingGuestGetAvailableHostListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserFlexibleSeatingGuestGetAvailableHostListResponse;
         }
@@ -293,7 +293,7 @@ namespace BroadWorksConnector
         /// The response is either UserFlexibleSeatingGuestGetAvailableHostListResponse or ErrorResponse. The response will include active hosts based on the following criteria.
         /// - host that has the equivalent device type as the guest, host already assigned to another guest and for a guest in a Service Provider host in the user’s group and for a user in an Enterprise a host within the user’s group and host in the user’s enterprise that has the accessLevel set to Enterprise.
         /// </summary>
-        public static async Task<UserFlexibleSeatingGuestGetAvailableHostListResponse> UserFlexibleSeatingGuestGetAvailableHostListRequestAsync(this OcipClient client, UserFlexibleSeatingGuestGetAvailableHostListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserFlexibleSeatingGuestGetAvailableHostListResponse> UserFlexibleSeatingGuestGetAvailableHostListRequestAsync(this OcipClientBase client, UserFlexibleSeatingGuestGetAvailableHostListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserFlexibleSeatingGuestGetAvailableHostListResponse;
         }
@@ -302,7 +302,7 @@ namespace BroadWorksConnector
         /// The response is either a UserFlexibleSeatingGuestGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserFlexibleSeatingGuestGetRequestAsync instead.")]
-        public static async Task<UserFlexibleSeatingGuestGetResponse> UserFlexibleSeatingGuestGetRequest(this OcipClient client, UserFlexibleSeatingGuestGetRequest request)
+        public static async Task<UserFlexibleSeatingGuestGetResponse> UserFlexibleSeatingGuestGetRequest(this OcipClientBase client, UserFlexibleSeatingGuestGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserFlexibleSeatingGuestGetResponse;
         }
@@ -311,7 +311,7 @@ namespace BroadWorksConnector
         /// Request the user level data associated with flexible seating guest.
         /// The response is either a UserFlexibleSeatingGuestGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserFlexibleSeatingGuestGetResponse> UserFlexibleSeatingGuestGetRequestAsync(this OcipClient client, UserFlexibleSeatingGuestGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserFlexibleSeatingGuestGetResponse> UserFlexibleSeatingGuestGetRequestAsync(this OcipClientBase client, UserFlexibleSeatingGuestGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserFlexibleSeatingGuestGetResponse;
         }
@@ -324,7 +324,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserFlexibleSeatingGuestModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserFlexibleSeatingGuestModifyRequest(this OcipClient client, UserFlexibleSeatingGuestModifyRequest request)
+        public static async Task<SuccessResponse> UserFlexibleSeatingGuestModifyRequest(this OcipClientBase client, UserFlexibleSeatingGuestModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -337,7 +337,7 @@ namespace BroadWorksConnector
         /// The request fails when accessDeviceEndpoint is set in the request when the guest is associated to a host.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserFlexibleSeatingGuestModifyRequestAsync(this OcipClient client, UserFlexibleSeatingGuestModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserFlexibleSeatingGuestModifyRequestAsync(this OcipClientBase client, UserFlexibleSeatingGuestModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -346,7 +346,7 @@ namespace BroadWorksConnector
         /// The response is either a UserFlexibleSeatingGuestGetResponse22 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserFlexibleSeatingGuestGetRequest22Async instead.")]
-        public static async Task<UserFlexibleSeatingGuestGetResponse22> UserFlexibleSeatingGuestGetRequest22(this OcipClient client, UserFlexibleSeatingGuestGetRequest22 request)
+        public static async Task<UserFlexibleSeatingGuestGetResponse22> UserFlexibleSeatingGuestGetRequest22(this OcipClientBase client, UserFlexibleSeatingGuestGetRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserFlexibleSeatingGuestGetResponse22;
         }
@@ -355,7 +355,7 @@ namespace BroadWorksConnector
         /// Request the user level data associated with flexible seating guest.
         /// The response is either a UserFlexibleSeatingGuestGetResponse22 or an ErrorResponse.
         /// </summary>
-        public static async Task<UserFlexibleSeatingGuestGetResponse22> UserFlexibleSeatingGuestGetRequest22Async(this OcipClient client, UserFlexibleSeatingGuestGetRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<UserFlexibleSeatingGuestGetResponse22> UserFlexibleSeatingGuestGetRequest22Async(this OcipClientBase client, UserFlexibleSeatingGuestGetRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserFlexibleSeatingGuestGetResponse22;
         }
@@ -368,7 +368,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserFlexibleSeatingGuestModifyRequest22Async instead.")]
-        public static async Task<SuccessResponse> UserFlexibleSeatingGuestModifyRequest22(this OcipClient client, UserFlexibleSeatingGuestModifyRequest22 request)
+        public static async Task<SuccessResponse> UserFlexibleSeatingGuestModifyRequest22(this OcipClientBase client, UserFlexibleSeatingGuestModifyRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -381,7 +381,7 @@ namespace BroadWorksConnector
         /// The request fails when accessDeviceEndpoint is set in the request when the guest is associated to a host.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserFlexibleSeatingGuestModifyRequest22Async(this OcipClient client, UserFlexibleSeatingGuestModifyRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserFlexibleSeatingGuestModifyRequest22Async(this OcipClientBase client, UserFlexibleSeatingGuestModifyRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

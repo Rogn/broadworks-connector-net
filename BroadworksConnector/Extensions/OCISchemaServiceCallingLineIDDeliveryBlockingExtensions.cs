@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallingLineIDDeliveryBlockingGetRequestAsync instead.")]
-        public static async Task<UserCallingLineIDDeliveryBlockingGetResponse> UserCallingLineIDDeliveryBlockingGetRequest(this OcipClient client, UserCallingLineIDDeliveryBlockingGetRequest request)
+        public static async Task<UserCallingLineIDDeliveryBlockingGetResponse> UserCallingLineIDDeliveryBlockingGetRequest(this OcipClientBase client, UserCallingLineIDDeliveryBlockingGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallingLineIDDeliveryBlockingGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallingLineIDDeliveryBlockingGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCallingLineIDDeliveryBlockingGetResponse> UserCallingLineIDDeliveryBlockingGetRequestAsync(this OcipClient client, UserCallingLineIDDeliveryBlockingGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallingLineIDDeliveryBlockingGetResponse> UserCallingLineIDDeliveryBlockingGetRequestAsync(this OcipClientBase client, UserCallingLineIDDeliveryBlockingGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallingLineIDDeliveryBlockingGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallingLineIDDeliveryBlockingModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallingLineIDDeliveryBlockingModifyRequest(this OcipClient client, UserCallingLineIDDeliveryBlockingModifyRequest request)
+        public static async Task<SuccessResponse> UserCallingLineIDDeliveryBlockingModifyRequest(this OcipClientBase client, UserCallingLineIDDeliveryBlockingModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the user level data associated with Calling Line ID Delivery Blocking.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallingLineIDDeliveryBlockingModifyRequestAsync(this OcipClient client, UserCallingLineIDDeliveryBlockingModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallingLineIDDeliveryBlockingModifyRequestAsync(this OcipClientBase client, UserCallingLineIDDeliveryBlockingModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

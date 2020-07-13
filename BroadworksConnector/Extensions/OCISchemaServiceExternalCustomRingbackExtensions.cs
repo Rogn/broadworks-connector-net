@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderExternalCustomRingbackGetRequestAsync instead.")]
-        public static async Task<ServiceProviderExternalCustomRingbackGetResponse> ServiceProviderExternalCustomRingbackGetRequest(this OcipClient client, ServiceProviderExternalCustomRingbackGetRequest request)
+        public static async Task<ServiceProviderExternalCustomRingbackGetResponse> ServiceProviderExternalCustomRingbackGetRequest(this OcipClientBase client, ServiceProviderExternalCustomRingbackGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderExternalCustomRingbackGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderExternalCustomRingbackGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderExternalCustomRingbackGetResponse> ServiceProviderExternalCustomRingbackGetRequestAsync(this OcipClient client, ServiceProviderExternalCustomRingbackGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderExternalCustomRingbackGetResponse> ServiceProviderExternalCustomRingbackGetRequestAsync(this OcipClientBase client, ServiceProviderExternalCustomRingbackGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderExternalCustomRingbackGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderExternalCustomRingbackModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderExternalCustomRingbackModifyRequest(this OcipClient client, ServiceProviderExternalCustomRingbackModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderExternalCustomRingbackModifyRequest(this OcipClientBase client, ServiceProviderExternalCustomRingbackModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the service provider level data associated with External Custom Ringback.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderExternalCustomRingbackModifyRequestAsync(this OcipClient client, ServiceProviderExternalCustomRingbackModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderExternalCustomRingbackModifyRequestAsync(this OcipClientBase client, ServiceProviderExternalCustomRingbackModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -53,7 +53,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserExternalCustomRingbackGetRequestAsync instead.")]
-        public static async Task<UserExternalCustomRingbackGetResponse> UserExternalCustomRingbackGetRequest(this OcipClient client, UserExternalCustomRingbackGetRequest request)
+        public static async Task<UserExternalCustomRingbackGetResponse> UserExternalCustomRingbackGetRequest(this OcipClientBase client, UserExternalCustomRingbackGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserExternalCustomRingbackGetResponse;
         }
@@ -63,7 +63,7 @@ namespace BroadWorksConnector
         /// The response is either a UserExternalCustomRingbackGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserExternalCustomRingbackGetResponse> UserExternalCustomRingbackGetRequestAsync(this OcipClient client, UserExternalCustomRingbackGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserExternalCustomRingbackGetResponse> UserExternalCustomRingbackGetRequestAsync(this OcipClientBase client, UserExternalCustomRingbackGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserExternalCustomRingbackGetResponse;
         }
@@ -77,7 +77,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserExternalCustomRingbackModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserExternalCustomRingbackModifyRequest(this OcipClient client, UserExternalCustomRingbackModifyRequest request)
+        public static async Task<SuccessResponse> UserExternalCustomRingbackModifyRequest(this OcipClientBase client, UserExternalCustomRingbackModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -91,7 +91,7 @@ namespace BroadWorksConnector
         /// The timeout value is the only SP configuration used when the user SIP URI is selected.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserExternalCustomRingbackModifyRequestAsync(this OcipClient client, UserExternalCustomRingbackModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserExternalCustomRingbackModifyRequestAsync(this OcipClientBase client, UserExternalCustomRingbackModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

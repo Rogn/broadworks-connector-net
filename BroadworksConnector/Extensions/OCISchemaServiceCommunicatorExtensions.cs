@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// provider. The response is either a ServiceProviderBroadWorksCommunicatorGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderBroadWorksCommunicatorGetRequestAsync instead.")]
-        public static async Task<ServiceProviderBroadWorksCommunicatorGetResponse> ServiceProviderBroadWorksCommunicatorGetRequest(this OcipClient client, ServiceProviderBroadWorksCommunicatorGetRequest request)
+        public static async Task<ServiceProviderBroadWorksCommunicatorGetResponse> ServiceProviderBroadWorksCommunicatorGetRequest(this OcipClientBase client, ServiceProviderBroadWorksCommunicatorGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderBroadWorksCommunicatorGetResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Request to get Configuration Server for a specified service
         /// provider. The response is either a ServiceProviderBroadWorksCommunicatorGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderBroadWorksCommunicatorGetResponse> ServiceProviderBroadWorksCommunicatorGetRequestAsync(this OcipClient client, ServiceProviderBroadWorksCommunicatorGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderBroadWorksCommunicatorGetResponse> ServiceProviderBroadWorksCommunicatorGetRequestAsync(this OcipClientBase client, ServiceProviderBroadWorksCommunicatorGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderBroadWorksCommunicatorGetResponse;
         }
@@ -31,7 +31,7 @@ namespace BroadWorksConnector
         /// Request to modify the Configuration URL. The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderBroadWorksCommunicatorModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderBroadWorksCommunicatorModifyRequest(this OcipClient client, ServiceProviderBroadWorksCommunicatorModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderBroadWorksCommunicatorModifyRequest(this OcipClientBase client, ServiceProviderBroadWorksCommunicatorModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -39,7 +39,7 @@ namespace BroadWorksConnector
         /// <summary>
         /// Request to modify the Configuration URL. The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderBroadWorksCommunicatorModifyRequestAsync(this OcipClient client, ServiceProviderBroadWorksCommunicatorModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderBroadWorksCommunicatorModifyRequestAsync(this OcipClientBase client, ServiceProviderBroadWorksCommunicatorModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -48,7 +48,7 @@ namespace BroadWorksConnector
         /// The response is either a UserBroadWorksCommunicatorGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserBroadWorksCommunicatorGetRequestAsync instead.")]
-        public static async Task<UserBroadWorksCommunicatorGetResponse> UserBroadWorksCommunicatorGetRequest(this OcipClient client, UserBroadWorksCommunicatorGetRequest request)
+        public static async Task<UserBroadWorksCommunicatorGetResponse> UserBroadWorksCommunicatorGetRequest(this OcipClientBase client, UserBroadWorksCommunicatorGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserBroadWorksCommunicatorGetResponse;
         }
@@ -57,7 +57,7 @@ namespace BroadWorksConnector
         /// Request to get the Configuration Server for a specified user.
         /// The response is either a UserBroadWorksCommunicatorGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserBroadWorksCommunicatorGetResponse> UserBroadWorksCommunicatorGetRequestAsync(this OcipClient client, UserBroadWorksCommunicatorGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserBroadWorksCommunicatorGetResponse> UserBroadWorksCommunicatorGetRequestAsync(this OcipClientBase client, UserBroadWorksCommunicatorGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserBroadWorksCommunicatorGetResponse;
         }

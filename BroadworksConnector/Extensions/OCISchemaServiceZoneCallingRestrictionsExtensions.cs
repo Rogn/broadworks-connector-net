@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is ServiceProviderZoneCallingRestrictionsGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderZoneCallingRestrictionsGetRequestAsync instead.")]
-        public static async Task<ServiceProviderZoneCallingRestrictionsGetResponse> ServiceProviderZoneCallingRestrictionsGetRequest(this OcipClient client, ServiceProviderZoneCallingRestrictionsGetRequest request)
+        public static async Task<ServiceProviderZoneCallingRestrictionsGetResponse> ServiceProviderZoneCallingRestrictionsGetRequest(this OcipClientBase client, ServiceProviderZoneCallingRestrictionsGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderZoneCallingRestrictionsGetResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Gets the Service Provider/Enterprise level Zone Calling Restrictions Policies.
         /// The response is ServiceProviderZoneCallingRestrictionsGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderZoneCallingRestrictionsGetResponse> ServiceProviderZoneCallingRestrictionsGetRequestAsync(this OcipClient client, ServiceProviderZoneCallingRestrictionsGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderZoneCallingRestrictionsGetResponse> ServiceProviderZoneCallingRestrictionsGetRequestAsync(this OcipClientBase client, ServiceProviderZoneCallingRestrictionsGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderZoneCallingRestrictionsGetResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderZoneCallingRestrictionsModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderZoneCallingRestrictionsModifyRequest(this OcipClient client, ServiceProviderZoneCallingRestrictionsModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderZoneCallingRestrictionsModifyRequest(this OcipClientBase client, ServiceProviderZoneCallingRestrictionsModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Modifies the Service Provider/Enterprise level Zone Calling Restrictions Policies.
         /// The response is SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderZoneCallingRestrictionsModifyRequestAsync(this OcipClient client, ServiceProviderZoneCallingRestrictionsModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderZoneCallingRestrictionsModifyRequestAsync(this OcipClientBase client, ServiceProviderZoneCallingRestrictionsModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -50,7 +50,7 @@ namespace BroadWorksConnector
         /// The response is either a UserZoneCallingRestrictionsGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserZoneCallingRestrictionsGetRequestAsync instead.")]
-        public static async Task<UserZoneCallingRestrictionsGetResponse> UserZoneCallingRestrictionsGetRequest(this OcipClient client, UserZoneCallingRestrictionsGetRequest request)
+        public static async Task<UserZoneCallingRestrictionsGetResponse> UserZoneCallingRestrictionsGetRequest(this OcipClientBase client, UserZoneCallingRestrictionsGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserZoneCallingRestrictionsGetResponse;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// Gets the home zone for a user
         /// The response is either a UserZoneCallingRestrictionsGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserZoneCallingRestrictionsGetResponse> UserZoneCallingRestrictionsGetRequestAsync(this OcipClient client, UserZoneCallingRestrictionsGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserZoneCallingRestrictionsGetResponse> UserZoneCallingRestrictionsGetRequestAsync(this OcipClientBase client, UserZoneCallingRestrictionsGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserZoneCallingRestrictionsGetResponse;
         }
@@ -68,7 +68,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserZoneCallingRestrictionsModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserZoneCallingRestrictionsModifyRequest(this OcipClient client, UserZoneCallingRestrictionsModifyRequest request)
+        public static async Task<SuccessResponse> UserZoneCallingRestrictionsModifyRequest(this OcipClientBase client, UserZoneCallingRestrictionsModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -77,7 +77,7 @@ namespace BroadWorksConnector
         /// Modify the home zone for a user
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserZoneCallingRestrictionsModifyRequestAsync(this OcipClient client, UserZoneCallingRestrictionsModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserZoneCallingRestrictionsModifyRequestAsync(this OcipClientBase client, UserZoneCallingRestrictionsModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkAddInstanceRequest16sp2Async instead.")]
-        public static async Task<SuccessResponse> GroupCallParkAddInstanceRequest16sp2(this OcipClient client, GroupCallParkAddInstanceRequest16sp2 request)
+        public static async Task<SuccessResponse> GroupCallParkAddInstanceRequest16sp2(this OcipClientBase client, GroupCallParkAddInstanceRequest16sp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Adds a Call Park group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallParkAddInstanceRequest16sp2Async(this OcipClient client, GroupCallParkAddInstanceRequest16sp2 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallParkAddInstanceRequest16sp2Async(this OcipClientBase client, GroupCallParkAddInstanceRequest16sp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkDeleteInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallParkDeleteInstanceRequest(this OcipClient client, GroupCallParkDeleteInstanceRequest request)
+        public static async Task<SuccessResponse> GroupCallParkDeleteInstanceRequest(this OcipClientBase client, GroupCallParkDeleteInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Deletes a Call Park group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallParkDeleteInstanceRequestAsync(this OcipClient client, GroupCallParkDeleteInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallParkDeleteInstanceRequestAsync(this OcipClientBase client, GroupCallParkDeleteInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -50,7 +50,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallParkGetAvailableAlternateRecallUserListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkGetAvailableAlternateRecallUserListRequestAsync instead.")]
-        public static async Task<GroupCallParkGetAvailableAlternateRecallUserListResponse> GroupCallParkGetAvailableAlternateRecallUserListRequest(this OcipClient client, GroupCallParkGetAvailableAlternateRecallUserListRequest request)
+        public static async Task<GroupCallParkGetAvailableAlternateRecallUserListResponse> GroupCallParkGetAvailableAlternateRecallUserListRequest(this OcipClientBase client, GroupCallParkGetAvailableAlternateRecallUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallParkGetAvailableAlternateRecallUserListResponse;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// Get a list of hunt groups that are available to select as an alternate recall user.
         /// The response is either GroupCallParkGetAvailableAlternateRecallUserListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallParkGetAvailableAlternateRecallUserListResponse> GroupCallParkGetAvailableAlternateRecallUserListRequestAsync(this OcipClient client, GroupCallParkGetAvailableAlternateRecallUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallParkGetAvailableAlternateRecallUserListResponse> GroupCallParkGetAvailableAlternateRecallUserListRequestAsync(this OcipClientBase client, GroupCallParkGetAvailableAlternateRecallUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallParkGetAvailableAlternateRecallUserListResponse;
         }
@@ -78,7 +78,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallParkGetAvailableAlternateRecallUserPagedSortedListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkGetAvailableAlternateRecallUserPagedSortedListRequestAsync instead.")]
-        public static async Task<GroupCallParkGetAvailableAlternateRecallUserPagedSortedListResponse> GroupCallParkGetAvailableAlternateRecallUserPagedSortedListRequest(this OcipClient client, GroupCallParkGetAvailableAlternateRecallUserPagedSortedListRequest request)
+        public static async Task<GroupCallParkGetAvailableAlternateRecallUserPagedSortedListResponse> GroupCallParkGetAvailableAlternateRecallUserPagedSortedListRequest(this OcipClientBase client, GroupCallParkGetAvailableAlternateRecallUserPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallParkGetAvailableAlternateRecallUserPagedSortedListResponse;
         }
@@ -97,7 +97,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either GroupCallParkGetAvailableAlternateRecallUserPagedSortedListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallParkGetAvailableAlternateRecallUserPagedSortedListResponse> GroupCallParkGetAvailableAlternateRecallUserPagedSortedListRequestAsync(this OcipClient client, GroupCallParkGetAvailableAlternateRecallUserPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallParkGetAvailableAlternateRecallUserPagedSortedListResponse> GroupCallParkGetAvailableAlternateRecallUserPagedSortedListRequestAsync(this OcipClientBase client, GroupCallParkGetAvailableAlternateRecallUserPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallParkGetAvailableAlternateRecallUserPagedSortedListResponse;
         }
@@ -108,7 +108,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallParkGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkGetAvailableUserListRequestAsync instead.")]
-        public static async Task<GroupCallParkGetAvailableUserListResponse> GroupCallParkGetAvailableUserListRequest(this OcipClient client, GroupCallParkGetAvailableUserListRequest request)
+        public static async Task<GroupCallParkGetAvailableUserListResponse> GroupCallParkGetAvailableUserListRequest(this OcipClientBase client, GroupCallParkGetAvailableUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallParkGetAvailableUserListResponse;
         }
@@ -119,7 +119,7 @@ namespace BroadWorksConnector
         /// by not setting the name.
         /// The response is either GroupCallParkGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallParkGetAvailableUserListResponse> GroupCallParkGetAvailableUserListRequestAsync(this OcipClient client, GroupCallParkGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallParkGetAvailableUserListResponse> GroupCallParkGetAvailableUserListRequestAsync(this OcipClientBase client, GroupCallParkGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallParkGetAvailableUserListResponse;
         }
@@ -140,7 +140,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallParkGetAvailableUserPagedSortedListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkGetAvailableUserPagedSortedListRequestAsync instead.")]
-        public static async Task<GroupCallParkGetAvailableUserPagedSortedListResponse> GroupCallParkGetAvailableUserPagedSortedListRequest(this OcipClient client, GroupCallParkGetAvailableUserPagedSortedListRequest request)
+        public static async Task<GroupCallParkGetAvailableUserPagedSortedListResponse> GroupCallParkGetAvailableUserPagedSortedListRequest(this OcipClientBase client, GroupCallParkGetAvailableUserPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallParkGetAvailableUserPagedSortedListResponse;
         }
@@ -161,7 +161,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either GroupCallParkGetAvailableUserPagedSortedListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallParkGetAvailableUserPagedSortedListResponse> GroupCallParkGetAvailableUserPagedSortedListRequestAsync(this OcipClient client, GroupCallParkGetAvailableUserPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallParkGetAvailableUserPagedSortedListResponse> GroupCallParkGetAvailableUserPagedSortedListRequestAsync(this OcipClientBase client, GroupCallParkGetAvailableUserPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallParkGetAvailableUserPagedSortedListResponse;
         }
@@ -170,7 +170,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallParkGetInstanceListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkGetInstanceListRequestAsync instead.")]
-        public static async Task<GroupCallParkGetInstanceListResponse> GroupCallParkGetInstanceListRequest(this OcipClient client, GroupCallParkGetInstanceListRequest request)
+        public static async Task<GroupCallParkGetInstanceListResponse> GroupCallParkGetInstanceListRequest(this OcipClientBase client, GroupCallParkGetInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallParkGetInstanceListResponse;
         }
@@ -179,7 +179,7 @@ namespace BroadWorksConnector
         /// Request to get a list of Call Park group instances within a group.
         /// The response is either GroupCallParkGetInstanceListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallParkGetInstanceListResponse> GroupCallParkGetInstanceListRequestAsync(this OcipClient client, GroupCallParkGetInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallParkGetInstanceListResponse> GroupCallParkGetInstanceListRequestAsync(this OcipClientBase client, GroupCallParkGetInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallParkGetInstanceListResponse;
         }
@@ -196,7 +196,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallParkGetInstancePagedSortedListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkGetInstancePagedSortedListRequestAsync instead.")]
-        public static async Task<GroupCallParkGetInstancePagedSortedListResponse> GroupCallParkGetInstancePagedSortedListRequest(this OcipClient client, GroupCallParkGetInstancePagedSortedListRequest request)
+        public static async Task<GroupCallParkGetInstancePagedSortedListResponse> GroupCallParkGetInstancePagedSortedListRequest(this OcipClientBase client, GroupCallParkGetInstancePagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallParkGetInstancePagedSortedListResponse;
         }
@@ -213,7 +213,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either GroupCallParkGetInstancePagedSortedListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallParkGetInstancePagedSortedListResponse> GroupCallParkGetInstancePagedSortedListRequestAsync(this OcipClient client, GroupCallParkGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallParkGetInstancePagedSortedListResponse> GroupCallParkGetInstancePagedSortedListRequestAsync(this OcipClientBase client, GroupCallParkGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallParkGetInstancePagedSortedListResponse;
         }
@@ -232,7 +232,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallParkGetInstancePagedSortedResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkGetInstancePagedSortedRequestAsync instead.")]
-        public static async Task<GroupCallParkGetInstancePagedSortedResponse> GroupCallParkGetInstancePagedSortedRequest(this OcipClient client, GroupCallParkGetInstancePagedSortedRequest request)
+        public static async Task<GroupCallParkGetInstancePagedSortedResponse> GroupCallParkGetInstancePagedSortedRequest(this OcipClientBase client, GroupCallParkGetInstancePagedSortedRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallParkGetInstancePagedSortedResponse;
         }
@@ -251,7 +251,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either GroupCallParkGetInstancePagedSortedResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallParkGetInstancePagedSortedResponse> GroupCallParkGetInstancePagedSortedRequestAsync(this OcipClient client, GroupCallParkGetInstancePagedSortedRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallParkGetInstancePagedSortedResponse> GroupCallParkGetInstancePagedSortedRequestAsync(this OcipClientBase client, GroupCallParkGetInstancePagedSortedRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallParkGetInstancePagedSortedResponse;
         }
@@ -260,7 +260,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallParkGetInstanceResponse16sp2 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkGetInstanceRequest16sp2Async instead.")]
-        public static async Task<GroupCallParkGetInstanceResponse16sp2> GroupCallParkGetInstanceRequest16sp2(this OcipClient client, GroupCallParkGetInstanceRequest16sp2 request)
+        public static async Task<GroupCallParkGetInstanceResponse16sp2> GroupCallParkGetInstanceRequest16sp2(this OcipClientBase client, GroupCallParkGetInstanceRequest16sp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallParkGetInstanceResponse16sp2;
         }
@@ -269,7 +269,7 @@ namespace BroadWorksConnector
         /// Gets a Call Park group.
         /// The response is either GroupCallParkGetInstanceResponse16sp2 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallParkGetInstanceResponse16sp2> GroupCallParkGetInstanceRequest16sp2Async(this OcipClient client, GroupCallParkGetInstanceRequest16sp2 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallParkGetInstanceResponse16sp2> GroupCallParkGetInstanceRequest16sp2Async(this OcipClientBase client, GroupCallParkGetInstanceRequest16sp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallParkGetInstanceResponse16sp2;
         }
@@ -278,7 +278,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallParkGetResponse16sp2 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkGetRequest16sp2Async instead.")]
-        public static async Task<GroupCallParkGetResponse16sp2> GroupCallParkGetRequest16sp2(this OcipClient client, GroupCallParkGetRequest16sp2 request)
+        public static async Task<GroupCallParkGetResponse16sp2> GroupCallParkGetRequest16sp2(this OcipClientBase client, GroupCallParkGetRequest16sp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallParkGetResponse16sp2;
         }
@@ -287,7 +287,7 @@ namespace BroadWorksConnector
         /// Gets the Call Park Group settings.
         /// The response is either GroupCallParkGetResponse16sp2 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallParkGetResponse16sp2> GroupCallParkGetRequest16sp2Async(this OcipClient client, GroupCallParkGetRequest16sp2 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallParkGetResponse16sp2> GroupCallParkGetRequest16sp2Async(this OcipClientBase client, GroupCallParkGetRequest16sp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallParkGetResponse16sp2;
         }
@@ -297,7 +297,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkModifyInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallParkModifyInstanceRequest(this OcipClient client, GroupCallParkModifyInstanceRequest request)
+        public static async Task<SuccessResponse> GroupCallParkModifyInstanceRequest(this OcipClientBase client, GroupCallParkModifyInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -307,7 +307,7 @@ namespace BroadWorksConnector
         /// The users are in the list are in the order they will try to be parked on.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallParkModifyInstanceRequestAsync(this OcipClient client, GroupCallParkModifyInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallParkModifyInstanceRequestAsync(this OcipClientBase client, GroupCallParkModifyInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -316,7 +316,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallParkModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallParkModifyRequest(this OcipClient client, GroupCallParkModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallParkModifyRequest(this OcipClientBase client, GroupCallParkModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -325,7 +325,7 @@ namespace BroadWorksConnector
         /// Modifies the Group's Call Park settings.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallParkModifyRequestAsync(this OcipClient client, GroupCallParkModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallParkModifyRequestAsync(this OcipClientBase client, GroupCallParkModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -334,7 +334,7 @@ namespace BroadWorksConnector
         /// The response is either UserCallParkGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallParkGetRequestAsync instead.")]
-        public static async Task<UserCallParkGetResponse> UserCallParkGetRequest(this OcipClient client, UserCallParkGetRequest request)
+        public static async Task<UserCallParkGetResponse> UserCallParkGetRequest(this OcipClientBase client, UserCallParkGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallParkGetResponse;
         }
@@ -343,7 +343,7 @@ namespace BroadWorksConnector
         /// Identifies which Call Park group the user belongs to if any and the list of users in the group.
         /// The response is either UserCallParkGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<UserCallParkGetResponse> UserCallParkGetRequestAsync(this OcipClient client, UserCallParkGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallParkGetResponse> UserCallParkGetRequestAsync(this OcipClientBase client, UserCallParkGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallParkGetResponse;
         }

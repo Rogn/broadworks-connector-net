@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAccountAuthorizationCodesAddListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesAddListRequest(this OcipClient client, GroupAccountAuthorizationCodesAddListRequest request)
+        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesAddListRequest(this OcipClientBase client, GroupAccountAuthorizationCodesAddListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Add a list of account/authorization codes to a group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesAddListRequestAsync(this OcipClient client, GroupAccountAuthorizationCodesAddListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesAddListRequestAsync(this OcipClientBase client, GroupAccountAuthorizationCodesAddListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAccountAuthorizationCodesDeleteListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesDeleteListRequest(this OcipClient client, GroupAccountAuthorizationCodesDeleteListRequest request)
+        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesDeleteListRequest(this OcipClientBase client, GroupAccountAuthorizationCodesDeleteListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Delete a list of account/authorization codes from a group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesDeleteListRequestAsync(this OcipClient client, GroupAccountAuthorizationCodesDeleteListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesDeleteListRequestAsync(this OcipClientBase client, GroupAccountAuthorizationCodesDeleteListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -50,7 +50,7 @@ namespace BroadWorksConnector
         /// The response is either GroupAccountAuthorizationCodesGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAccountAuthorizationCodesGetAvailableUserListRequestAsync instead.")]
-        public static async Task<GroupAccountAuthorizationCodesGetAvailableUserListResponse> GroupAccountAuthorizationCodesGetAvailableUserListRequest(this OcipClient client, GroupAccountAuthorizationCodesGetAvailableUserListRequest request)
+        public static async Task<GroupAccountAuthorizationCodesGetAvailableUserListResponse> GroupAccountAuthorizationCodesGetAvailableUserListRequest(this OcipClientBase client, GroupAccountAuthorizationCodesGetAvailableUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAccountAuthorizationCodesGetAvailableUserListResponse;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// Get a list of non restricted users for the account/authorization codes service.
         /// The response is either GroupAccountAuthorizationCodesGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupAccountAuthorizationCodesGetAvailableUserListResponse> GroupAccountAuthorizationCodesGetAvailableUserListRequestAsync(this OcipClient client, GroupAccountAuthorizationCodesGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAccountAuthorizationCodesGetAvailableUserListResponse> GroupAccountAuthorizationCodesGetAvailableUserListRequestAsync(this OcipClientBase client, GroupAccountAuthorizationCodesGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAccountAuthorizationCodesGetAvailableUserListResponse;
         }
@@ -68,7 +68,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupAccountAuthorizationCodesGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAccountAuthorizationCodesGetListRequestAsync instead.")]
-        public static async Task<GroupAccountAuthorizationCodesGetListResponse> GroupAccountAuthorizationCodesGetListRequest(this OcipClient client, GroupAccountAuthorizationCodesGetListRequest request)
+        public static async Task<GroupAccountAuthorizationCodesGetListResponse> GroupAccountAuthorizationCodesGetListRequest(this OcipClientBase client, GroupAccountAuthorizationCodesGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAccountAuthorizationCodesGetListResponse;
         }
@@ -77,7 +77,7 @@ namespace BroadWorksConnector
         /// Request the list of account/authorization codes for a group.
         /// The response is either a GroupAccountAuthorizationCodesGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupAccountAuthorizationCodesGetListResponse> GroupAccountAuthorizationCodesGetListRequestAsync(this OcipClient client, GroupAccountAuthorizationCodesGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAccountAuthorizationCodesGetListResponse> GroupAccountAuthorizationCodesGetListRequestAsync(this OcipClientBase client, GroupAccountAuthorizationCodesGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAccountAuthorizationCodesGetListResponse;
         }
@@ -86,7 +86,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupAccountAuthorizationCodesGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAccountAuthorizationCodesGetRequestAsync instead.")]
-        public static async Task<GroupAccountAuthorizationCodesGetResponse> GroupAccountAuthorizationCodesGetRequest(this OcipClient client, GroupAccountAuthorizationCodesGetRequest request)
+        public static async Task<GroupAccountAuthorizationCodesGetResponse> GroupAccountAuthorizationCodesGetRequest(this OcipClientBase client, GroupAccountAuthorizationCodesGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAccountAuthorizationCodesGetResponse;
         }
@@ -95,7 +95,7 @@ namespace BroadWorksConnector
         /// Request the group's account/authorization codes setting.
         /// The response is either a GroupAccountAuthorizationCodesGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupAccountAuthorizationCodesGetResponse> GroupAccountAuthorizationCodesGetRequestAsync(this OcipClient client, GroupAccountAuthorizationCodesGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAccountAuthorizationCodesGetResponse> GroupAccountAuthorizationCodesGetRequestAsync(this OcipClientBase client, GroupAccountAuthorizationCodesGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAccountAuthorizationCodesGetResponse;
         }
@@ -104,7 +104,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAccountAuthorizationCodesModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesModifyRequest(this OcipClient client, GroupAccountAuthorizationCodesModifyRequest request)
+        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesModifyRequest(this OcipClientBase client, GroupAccountAuthorizationCodesModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -113,7 +113,7 @@ namespace BroadWorksConnector
         /// Change the group's account/authorization codes setting.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesModifyRequestAsync(this OcipClient client, GroupAccountAuthorizationCodesModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAccountAuthorizationCodesModifyRequestAsync(this OcipClientBase client, GroupAccountAuthorizationCodesModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

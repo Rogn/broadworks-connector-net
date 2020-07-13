@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingNotReachableGetRequestAsync instead.")]
-        public static async Task<UserCallForwardingNotReachableGetResponse> UserCallForwardingNotReachableGetRequest(this OcipClient client, UserCallForwardingNotReachableGetRequest request)
+        public static async Task<UserCallForwardingNotReachableGetResponse> UserCallForwardingNotReachableGetRequest(this OcipClientBase client, UserCallForwardingNotReachableGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallForwardingNotReachableGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallForwardingNotReachableGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCallForwardingNotReachableGetResponse> UserCallForwardingNotReachableGetRequestAsync(this OcipClient client, UserCallForwardingNotReachableGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallForwardingNotReachableGetResponse> UserCallForwardingNotReachableGetRequestAsync(this OcipClientBase client, UserCallForwardingNotReachableGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallForwardingNotReachableGetResponse;
         }
@@ -35,7 +35,7 @@ namespace BroadWorksConnector
         /// Engineering Note: This command is used internally by Call Processing.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingNotReachableModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallForwardingNotReachableModifyRequest(this OcipClient client, UserCallForwardingNotReachableModifyRequest request)
+        public static async Task<SuccessResponse> UserCallForwardingNotReachableModifyRequest(this OcipClientBase client, UserCallForwardingNotReachableModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -45,7 +45,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// Engineering Note: This command is used internally by Call Processing.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallForwardingNotReachableModifyRequestAsync(this OcipClient client, UserCallForwardingNotReachableModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallForwardingNotReachableModifyRequestAsync(this OcipClientBase client, UserCallForwardingNotReachableModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

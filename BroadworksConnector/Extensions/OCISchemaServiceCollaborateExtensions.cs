@@ -16,7 +16,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCollaborateBridgeAddInstanceRequest20sp1Async instead.")]
-        public static async Task<SuccessResponse> GroupCollaborateBridgeAddInstanceRequest20sp1(this OcipClient client, GroupCollaborateBridgeAddInstanceRequest20sp1 request)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeAddInstanceRequest20sp1(this OcipClientBase client, GroupCollaborateBridgeAddInstanceRequest20sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -27,7 +27,7 @@ namespace BroadWorksConnector
         /// The request fails when supportOutdial is enabled and the system-level collaborate supportOutdial setting is disabled.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCollaborateBridgeAddInstanceRequest20sp1Async(this OcipClient client, GroupCollaborateBridgeAddInstanceRequest20sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeAddInstanceRequest20sp1Async(this OcipClientBase client, GroupCollaborateBridgeAddInstanceRequest20sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -42,7 +42,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCollaborateBridgeConsolidatedAddInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedAddInstanceRequest(this OcipClient client, GroupCollaborateBridgeConsolidatedAddInstanceRequest request)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedAddInstanceRequest(this OcipClientBase client, GroupCollaborateBridgeConsolidatedAddInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -57,7 +57,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedAddInstanceRequestAsync(this OcipClient client, GroupCollaborateBridgeConsolidatedAddInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedAddInstanceRequestAsync(this OcipClientBase client, GroupCollaborateBridgeConsolidatedAddInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -72,7 +72,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCollaborateBridgeConsolidatedDeleteInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedDeleteInstanceRequest(this OcipClient client, GroupCollaborateBridgeConsolidatedDeleteInstanceRequest request)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedDeleteInstanceRequest(this OcipClientBase client, GroupCollaborateBridgeConsolidatedDeleteInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -87,7 +87,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedDeleteInstanceRequestAsync(this OcipClient client, GroupCollaborateBridgeConsolidatedDeleteInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedDeleteInstanceRequestAsync(this OcipClientBase client, GroupCollaborateBridgeConsolidatedDeleteInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -105,7 +105,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCollaborateBridgeConsolidatedModifyInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedModifyInstanceRequest(this OcipClient client, GroupCollaborateBridgeConsolidatedModifyInstanceRequest request)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedModifyInstanceRequest(this OcipClientBase client, GroupCollaborateBridgeConsolidatedModifyInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -123,7 +123,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedModifyInstanceRequestAsync(this OcipClient client, GroupCollaborateBridgeConsolidatedModifyInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeConsolidatedModifyInstanceRequestAsync(this OcipClientBase client, GroupCollaborateBridgeConsolidatedModifyInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -133,7 +133,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCollaborateBridgeDeleteInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCollaborateBridgeDeleteInstanceRequest(this OcipClient client, GroupCollaborateBridgeDeleteInstanceRequest request)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeDeleteInstanceRequest(this OcipClientBase client, GroupCollaborateBridgeDeleteInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -143,7 +143,7 @@ namespace BroadWorksConnector
         /// The request fails when attempting to delete the default collaborate bridge.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCollaborateBridgeDeleteInstanceRequestAsync(this OcipClient client, GroupCollaborateBridgeDeleteInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeDeleteInstanceRequestAsync(this OcipClientBase client, GroupCollaborateBridgeDeleteInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -153,7 +153,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCollaborateBridgeGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCollaborateBridgeGetAvailableUserListRequestAsync instead.")]
-        public static async Task<GroupCollaborateBridgeGetAvailableUserListResponse> GroupCollaborateBridgeGetAvailableUserListRequest(this OcipClient client, GroupCollaborateBridgeGetAvailableUserListRequest request)
+        public static async Task<GroupCollaborateBridgeGetAvailableUserListResponse> GroupCollaborateBridgeGetAvailableUserListRequest(this OcipClientBase client, GroupCollaborateBridgeGetAvailableUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCollaborateBridgeGetAvailableUserListResponse;
         }
@@ -163,7 +163,7 @@ namespace BroadWorksConnector
         /// The SearchCriteriaExactUserGroup parameter is only applicable for enterprise groups.
         /// The response is either GroupCollaborateBridgeGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCollaborateBridgeGetAvailableUserListResponse> GroupCollaborateBridgeGetAvailableUserListRequestAsync(this OcipClient client, GroupCollaborateBridgeGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCollaborateBridgeGetAvailableUserListResponse> GroupCollaborateBridgeGetAvailableUserListRequestAsync(this OcipClientBase client, GroupCollaborateBridgeGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCollaborateBridgeGetAvailableUserListResponse;
         }
@@ -181,7 +181,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCollaborateBridgeGetAvailableUserPagedSortedListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCollaborateBridgeGetAvailableUserPagedSortedListRequestAsync instead.")]
-        public static async Task<GroupCollaborateBridgeGetAvailableUserPagedSortedListResponse> GroupCollaborateBridgeGetAvailableUserPagedSortedListRequest(this OcipClient client, GroupCollaborateBridgeGetAvailableUserPagedSortedListRequest request)
+        public static async Task<GroupCollaborateBridgeGetAvailableUserPagedSortedListResponse> GroupCollaborateBridgeGetAvailableUserPagedSortedListRequest(this OcipClientBase client, GroupCollaborateBridgeGetAvailableUserPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCollaborateBridgeGetAvailableUserPagedSortedListResponse;
         }
@@ -199,7 +199,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either GroupCollaborateBridgeGetAvailableUserPagedSortedListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCollaborateBridgeGetAvailableUserPagedSortedListResponse> GroupCollaborateBridgeGetAvailableUserPagedSortedListRequestAsync(this OcipClient client, GroupCollaborateBridgeGetAvailableUserPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCollaborateBridgeGetAvailableUserPagedSortedListResponse> GroupCollaborateBridgeGetAvailableUserPagedSortedListRequestAsync(this OcipClientBase client, GroupCollaborateBridgeGetAvailableUserPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCollaborateBridgeGetAvailableUserPagedSortedListResponse;
         }
@@ -209,7 +209,7 @@ namespace BroadWorksConnector
         /// It is possible to get the instances within a specified department.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCollaborateBridgeGetInstanceListRequestAsync instead.")]
-        public static async Task<GroupCollaborateBridgeGetInstanceListResponse> GroupCollaborateBridgeGetInstanceListRequest(this OcipClient client, GroupCollaborateBridgeGetInstanceListRequest request)
+        public static async Task<GroupCollaborateBridgeGetInstanceListResponse> GroupCollaborateBridgeGetInstanceListRequest(this OcipClientBase client, GroupCollaborateBridgeGetInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCollaborateBridgeGetInstanceListResponse;
         }
@@ -219,7 +219,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCollaborateBridgeGetInstanceListResponse or ErrorResponse.
         /// It is possible to get the instances within a specified department.
         /// </summary>
-        public static async Task<GroupCollaborateBridgeGetInstanceListResponse> GroupCollaborateBridgeGetInstanceListRequestAsync(this OcipClient client, GroupCollaborateBridgeGetInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCollaborateBridgeGetInstanceListResponse> GroupCollaborateBridgeGetInstanceListRequestAsync(this OcipClientBase client, GroupCollaborateBridgeGetInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCollaborateBridgeGetInstanceListResponse;
         }
@@ -238,7 +238,7 @@ namespace BroadWorksConnector
         /// Then the search criteria are logically ORed together.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCollaborateBridgeGetInstancePagedSortedListRequestAsync instead.")]
-        public static async Task<GroupCollaborateBridgeGetInstancePagedSortedListResponse> GroupCollaborateBridgeGetInstancePagedSortedListRequest(this OcipClient client, GroupCollaborateBridgeGetInstancePagedSortedListRequest request)
+        public static async Task<GroupCollaborateBridgeGetInstancePagedSortedListResponse> GroupCollaborateBridgeGetInstancePagedSortedListRequest(this OcipClientBase client, GroupCollaborateBridgeGetInstancePagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCollaborateBridgeGetInstancePagedSortedListResponse;
         }
@@ -257,7 +257,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together unless the searchCriteriaModeOr option is included.
         /// Then the search criteria are logically ORed together.
         /// </summary>
-        public static async Task<GroupCollaborateBridgeGetInstancePagedSortedListResponse> GroupCollaborateBridgeGetInstancePagedSortedListRequestAsync(this OcipClient client, GroupCollaborateBridgeGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCollaborateBridgeGetInstancePagedSortedListResponse> GroupCollaborateBridgeGetInstancePagedSortedListRequestAsync(this OcipClientBase client, GroupCollaborateBridgeGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCollaborateBridgeGetInstancePagedSortedListResponse;
         }
@@ -266,7 +266,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCollaborateBridgeGetInstanceResponse20sp1 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCollaborateBridgeGetInstanceRequest20sp1Async instead.")]
-        public static async Task<GroupCollaborateBridgeGetInstanceResponse20sp1> GroupCollaborateBridgeGetInstanceRequest20sp1(this OcipClient client, GroupCollaborateBridgeGetInstanceRequest20sp1 request)
+        public static async Task<GroupCollaborateBridgeGetInstanceResponse20sp1> GroupCollaborateBridgeGetInstanceRequest20sp1(this OcipClientBase client, GroupCollaborateBridgeGetInstanceRequest20sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCollaborateBridgeGetInstanceResponse20sp1;
         }
@@ -275,7 +275,7 @@ namespace BroadWorksConnector
         /// Request to get all the information of a collaborate bridge.
         /// The response is either GroupCollaborateBridgeGetInstanceResponse20sp1 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCollaborateBridgeGetInstanceResponse20sp1> GroupCollaborateBridgeGetInstanceRequest20sp1Async(this OcipClient client, GroupCollaborateBridgeGetInstanceRequest20sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCollaborateBridgeGetInstanceResponse20sp1> GroupCollaborateBridgeGetInstanceRequest20sp1Async(this OcipClientBase client, GroupCollaborateBridgeGetInstanceRequest20sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCollaborateBridgeGetInstanceResponse20sp1;
         }
@@ -286,7 +286,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCollaborateBridgeModifyInstanceRequest20sp1Async instead.")]
-        public static async Task<SuccessResponse> GroupCollaborateBridgeModifyInstanceRequest20sp1(this OcipClient client, GroupCollaborateBridgeModifyInstanceRequest20sp1 request)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeModifyInstanceRequest20sp1(this OcipClientBase client, GroupCollaborateBridgeModifyInstanceRequest20sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -297,7 +297,7 @@ namespace BroadWorksConnector
         /// The request fails when the supportOutdial is included in the request and the system-level collaborate supportOutdial setting is disabled.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCollaborateBridgeModifyInstanceRequest20sp1Async(this OcipClient client, GroupCollaborateBridgeModifyInstanceRequest20sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCollaborateBridgeModifyInstanceRequest20sp1Async(this OcipClientBase client, GroupCollaborateBridgeModifyInstanceRequest20sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -307,7 +307,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ResellerCollaborateGetRequestAsync instead.")]
-        public static async Task<ResellerCollaborateGetResponse> ResellerCollaborateGetRequest(this OcipClient client, ResellerCollaborateGetRequest request)
+        public static async Task<ResellerCollaborateGetResponse> ResellerCollaborateGetRequest(this OcipClientBase client, ResellerCollaborateGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ResellerCollaborateGetResponse;
         }
@@ -317,7 +317,7 @@ namespace BroadWorksConnector
         /// The response is either a ResellerCollaborateGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<ResellerCollaborateGetResponse> ResellerCollaborateGetRequestAsync(this OcipClient client, ResellerCollaborateGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ResellerCollaborateGetResponse> ResellerCollaborateGetRequestAsync(this OcipClientBase client, ResellerCollaborateGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ResellerCollaborateGetResponse;
         }
@@ -326,7 +326,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ResellerCollaborateModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ResellerCollaborateModifyRequest(this OcipClient client, ResellerCollaborateModifyRequest request)
+        public static async Task<SuccessResponse> ResellerCollaborateModifyRequest(this OcipClientBase client, ResellerCollaborateModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -335,7 +335,7 @@ namespace BroadWorksConnector
         /// Modify the reseller level data associated with Collaborate.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ResellerCollaborateModifyRequestAsync(this OcipClient client, ResellerCollaborateModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ResellerCollaborateModifyRequestAsync(this OcipClientBase client, ResellerCollaborateModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -344,7 +344,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCollaborateGetResponse20sp1V2 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCollaborateGetRequest20sp1V2Async instead.")]
-        public static async Task<SystemCollaborateGetResponse20sp1V2> SystemCollaborateGetRequest20sp1V2(this OcipClient client, SystemCollaborateGetRequest20sp1V2 request)
+        public static async Task<SystemCollaborateGetResponse20sp1V2> SystemCollaborateGetRequest20sp1V2(this OcipClientBase client, SystemCollaborateGetRequest20sp1V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCollaborateGetResponse20sp1V2;
         }
@@ -353,7 +353,7 @@ namespace BroadWorksConnector
         /// Request the system level data associated with collaborate services.
         /// The response is either a SystemCollaborateGetResponse20sp1V2 or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemCollaborateGetResponse20sp1V2> SystemCollaborateGetRequest20sp1V2Async(this OcipClient client, SystemCollaborateGetRequest20sp1V2 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCollaborateGetResponse20sp1V2> SystemCollaborateGetRequest20sp1V2Async(this OcipClientBase client, SystemCollaborateGetRequest20sp1V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCollaborateGetResponse20sp1V2;
         }
@@ -362,7 +362,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCollaborateModifyRequest20sp1V2Async instead.")]
-        public static async Task<SuccessResponse> SystemCollaborateModifyRequest20sp1V2(this OcipClient client, SystemCollaborateModifyRequest20sp1V2 request)
+        public static async Task<SuccessResponse> SystemCollaborateModifyRequest20sp1V2(this OcipClientBase client, SystemCollaborateModifyRequest20sp1V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -371,7 +371,7 @@ namespace BroadWorksConnector
         /// Modify the system level data associated with collaborate services.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemCollaborateModifyRequest20sp1V2Async(this OcipClient client, SystemCollaborateModifyRequest20sp1V2 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCollaborateModifyRequest20sp1V2Async(this OcipClientBase client, SystemCollaborateModifyRequest20sp1V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -381,7 +381,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateBridgeGetRequest20sp1Async instead.")]
-        public static async Task<UserCollaborateBridgeGetResponse20sp1> UserCollaborateBridgeGetRequest20sp1(this OcipClient client, UserCollaborateBridgeGetRequest20sp1 request)
+        public static async Task<UserCollaborateBridgeGetResponse20sp1> UserCollaborateBridgeGetRequest20sp1(this OcipClientBase client, UserCollaborateBridgeGetRequest20sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCollaborateBridgeGetResponse20sp1;
         }
@@ -391,7 +391,7 @@ namespace BroadWorksConnector
         /// The response is either UserCollaborateBridgeGetResponse20sp1 or
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCollaborateBridgeGetResponse20sp1> UserCollaborateBridgeGetRequest20sp1Async(this OcipClient client, UserCollaborateBridgeGetRequest20sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<UserCollaborateBridgeGetResponse20sp1> UserCollaborateBridgeGetRequest20sp1Async(this OcipClientBase client, UserCollaborateBridgeGetRequest20sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCollaborateBridgeGetResponse20sp1;
         }
@@ -401,7 +401,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateDeleteRoomRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCollaborateDeleteRoomRequest(this OcipClient client, UserCollaborateDeleteRoomRequest request)
+        public static async Task<SuccessResponse> UserCollaborateDeleteRoomRequest(this OcipClientBase client, UserCollaborateDeleteRoomRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -411,7 +411,7 @@ namespace BroadWorksConnector
         /// The request fails when deleting a collaborate My Room.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCollaborateDeleteRoomRequestAsync(this OcipClient client, UserCollaborateDeleteRoomRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCollaborateDeleteRoomRequestAsync(this OcipClientBase client, UserCollaborateDeleteRoomRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -420,7 +420,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCollaborateInstantRoomAddResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateInstantRoomAddRequestAsync instead.")]
-        public static async Task<UserCollaborateInstantRoomAddResponse> UserCollaborateInstantRoomAddRequest(this OcipClient client, UserCollaborateInstantRoomAddRequest request)
+        public static async Task<UserCollaborateInstantRoomAddResponse> UserCollaborateInstantRoomAddRequest(this OcipClientBase client, UserCollaborateInstantRoomAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCollaborateInstantRoomAddResponse;
         }
@@ -429,7 +429,7 @@ namespace BroadWorksConnector
         /// Request to add collaborate instant room.
         /// The response is either a UserCollaborateInstantRoomAddResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCollaborateInstantRoomAddResponse> UserCollaborateInstantRoomAddRequestAsync(this OcipClient client, UserCollaborateInstantRoomAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCollaborateInstantRoomAddResponse> UserCollaborateInstantRoomAddRequestAsync(this OcipClientBase client, UserCollaborateInstantRoomAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCollaborateInstantRoomAddResponse;
         }
@@ -440,7 +440,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateInstantRoomGetRequestAsync instead.")]
-        public static async Task<UserCollaborateInstantRoomGetResponse> UserCollaborateInstantRoomGetRequest(this OcipClient client, UserCollaborateInstantRoomGetRequest request)
+        public static async Task<UserCollaborateInstantRoomGetResponse> UserCollaborateInstantRoomGetRequest(this OcipClientBase client, UserCollaborateInstantRoomGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCollaborateInstantRoomGetResponse;
         }
@@ -451,7 +451,7 @@ namespace BroadWorksConnector
         /// The response is either UserCollaborateInstantRoomGetResponse or
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCollaborateInstantRoomGetResponse> UserCollaborateInstantRoomGetRequestAsync(this OcipClient client, UserCollaborateInstantRoomGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCollaborateInstantRoomGetResponse> UserCollaborateInstantRoomGetRequestAsync(this OcipClientBase client, UserCollaborateInstantRoomGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCollaborateInstantRoomGetResponse;
         }
@@ -461,7 +461,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateInstantRoomParametersGetRequestAsync instead.")]
-        public static async Task<UserCollaborateInstantRoomParametersGetResponse> UserCollaborateInstantRoomParametersGetRequest(this OcipClient client, UserCollaborateInstantRoomParametersGetRequest request)
+        public static async Task<UserCollaborateInstantRoomParametersGetResponse> UserCollaborateInstantRoomParametersGetRequest(this OcipClientBase client, UserCollaborateInstantRoomParametersGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCollaborateInstantRoomParametersGetResponse;
         }
@@ -471,7 +471,7 @@ namespace BroadWorksConnector
         /// The response is either UserCollaborateInstantRoomParametersGetResponse or
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCollaborateInstantRoomParametersGetResponse> UserCollaborateInstantRoomParametersGetRequestAsync(this OcipClient client, UserCollaborateInstantRoomParametersGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCollaborateInstantRoomParametersGetResponse> UserCollaborateInstantRoomParametersGetRequestAsync(this OcipClientBase client, UserCollaborateInstantRoomParametersGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCollaborateInstantRoomParametersGetResponse;
         }
@@ -480,7 +480,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateInstantRoomParametersModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCollaborateInstantRoomParametersModifyRequest(this OcipClient client, UserCollaborateInstantRoomParametersModifyRequest request)
+        public static async Task<SuccessResponse> UserCollaborateInstantRoomParametersModifyRequest(this OcipClientBase client, UserCollaborateInstantRoomParametersModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -489,7 +489,7 @@ namespace BroadWorksConnector
         /// Request to modify collaborate instant room settings.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCollaborateInstantRoomParametersModifyRequestAsync(this OcipClient client, UserCollaborateInstantRoomParametersModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCollaborateInstantRoomParametersModifyRequestAsync(this OcipClientBase client, UserCollaborateInstantRoomParametersModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -499,7 +499,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateMyRoomGetRequestAsync instead.")]
-        public static async Task<UserCollaborateMyRoomGetResponse> UserCollaborateMyRoomGetRequest(this OcipClient client, UserCollaborateMyRoomGetRequest request)
+        public static async Task<UserCollaborateMyRoomGetResponse> UserCollaborateMyRoomGetRequest(this OcipClientBase client, UserCollaborateMyRoomGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCollaborateMyRoomGetResponse;
         }
@@ -509,7 +509,7 @@ namespace BroadWorksConnector
         /// The response is either UserCollaborateMyRoomGetResponse or
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCollaborateMyRoomGetResponse> UserCollaborateMyRoomGetRequestAsync(this OcipClient client, UserCollaborateMyRoomGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCollaborateMyRoomGetResponse> UserCollaborateMyRoomGetRequestAsync(this OcipClientBase client, UserCollaborateMyRoomGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCollaborateMyRoomGetResponse;
         }
@@ -518,7 +518,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateMyRoomModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCollaborateMyRoomModifyRequest(this OcipClient client, UserCollaborateMyRoomModifyRequest request)
+        public static async Task<SuccessResponse> UserCollaborateMyRoomModifyRequest(this OcipClientBase client, UserCollaborateMyRoomModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -527,7 +527,7 @@ namespace BroadWorksConnector
         /// Request to modify collaborate room settings for MyRoom.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCollaborateMyRoomModifyRequestAsync(this OcipClient client, UserCollaborateMyRoomModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCollaborateMyRoomModifyRequestAsync(this OcipClientBase client, UserCollaborateMyRoomModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -536,7 +536,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCollaborateProjectRoomAddResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateProjectRoomAddRequestAsync instead.")]
-        public static async Task<UserCollaborateProjectRoomAddResponse> UserCollaborateProjectRoomAddRequest(this OcipClient client, UserCollaborateProjectRoomAddRequest request)
+        public static async Task<UserCollaborateProjectRoomAddResponse> UserCollaborateProjectRoomAddRequest(this OcipClientBase client, UserCollaborateProjectRoomAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCollaborateProjectRoomAddResponse;
         }
@@ -545,7 +545,7 @@ namespace BroadWorksConnector
         /// Request to add collaborate project room.
         /// The response is either a UserCollaborateProjectRoomAddResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCollaborateProjectRoomAddResponse> UserCollaborateProjectRoomAddRequestAsync(this OcipClient client, UserCollaborateProjectRoomAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCollaborateProjectRoomAddResponse> UserCollaborateProjectRoomAddRequestAsync(this OcipClientBase client, UserCollaborateProjectRoomAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCollaborateProjectRoomAddResponse;
         }
@@ -556,7 +556,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateProjectRoomGetRequestAsync instead.")]
-        public static async Task<UserCollaborateProjectRoomGetResponse> UserCollaborateProjectRoomGetRequest(this OcipClient client, UserCollaborateProjectRoomGetRequest request)
+        public static async Task<UserCollaborateProjectRoomGetResponse> UserCollaborateProjectRoomGetRequest(this OcipClientBase client, UserCollaborateProjectRoomGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCollaborateProjectRoomGetResponse;
         }
@@ -567,7 +567,7 @@ namespace BroadWorksConnector
         /// The response is either UserCollaborateProjectRoomGetResponse or
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCollaborateProjectRoomGetResponse> UserCollaborateProjectRoomGetRequestAsync(this OcipClient client, UserCollaborateProjectRoomGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCollaborateProjectRoomGetResponse> UserCollaborateProjectRoomGetRequestAsync(this OcipClientBase client, UserCollaborateProjectRoomGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCollaborateProjectRoomGetResponse;
         }
@@ -577,7 +577,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateProjectRoomModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCollaborateProjectRoomModifyRequest(this OcipClient client, UserCollaborateProjectRoomModifyRequest request)
+        public static async Task<SuccessResponse> UserCollaborateProjectRoomModifyRequest(this OcipClientBase client, UserCollaborateProjectRoomModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -587,7 +587,7 @@ namespace BroadWorksConnector
         /// The request fails when modifying collaborate room settings for instant rooms or My Room.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCollaborateProjectRoomModifyRequestAsync(this OcipClient client, UserCollaborateProjectRoomModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCollaborateProjectRoomModifyRequestAsync(this OcipClientBase client, UserCollaborateProjectRoomModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -602,7 +602,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateRoomGetRequestAsync instead.")]
-        public static async Task<UserCollaborateRoomGetResponse> UserCollaborateRoomGetRequest(this OcipClient client, UserCollaborateRoomGetRequest request)
+        public static async Task<UserCollaborateRoomGetResponse> UserCollaborateRoomGetRequest(this OcipClientBase client, UserCollaborateRoomGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCollaborateRoomGetResponse;
         }
@@ -617,7 +617,7 @@ namespace BroadWorksConnector
         /// The response is either UserCollaborateRoomGetResponse or
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCollaborateRoomGetResponse> UserCollaborateRoomGetRequestAsync(this OcipClient client, UserCollaborateRoomGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCollaborateRoomGetResponse> UserCollaborateRoomGetRequestAsync(this OcipClientBase client, UserCollaborateRoomGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCollaborateRoomGetResponse;
         }
@@ -628,7 +628,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateRoomIDRegenerateRequestAsync instead.")]
-        public static async Task<UserCollaborateRoomIDRegenerateResponse> UserCollaborateRoomIDRegenerateRequest(this OcipClient client, UserCollaborateRoomIDRegenerateRequest request)
+        public static async Task<UserCollaborateRoomIDRegenerateResponse> UserCollaborateRoomIDRegenerateRequest(this OcipClientBase client, UserCollaborateRoomIDRegenerateRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCollaborateRoomIDRegenerateResponse;
         }
@@ -639,7 +639,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCollaborateRoomIDRegenerateResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCollaborateRoomIDRegenerateResponse> UserCollaborateRoomIDRegenerateRequestAsync(this OcipClient client, UserCollaborateRoomIDRegenerateRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCollaborateRoomIDRegenerateResponse> UserCollaborateRoomIDRegenerateRequestAsync(this OcipClientBase client, UserCollaborateRoomIDRegenerateRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCollaborateRoomIDRegenerateResponse;
         }
@@ -649,7 +649,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateRoomListGetRequestAsync instead.")]
-        public static async Task<UserCollaborateRoomListGetResponse> UserCollaborateRoomListGetRequest(this OcipClient client, UserCollaborateRoomListGetRequest request)
+        public static async Task<UserCollaborateRoomListGetResponse> UserCollaborateRoomListGetRequest(this OcipClientBase client, UserCollaborateRoomListGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCollaborateRoomListGetResponse;
         }
@@ -659,7 +659,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCollaborateRoomListGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCollaborateRoomListGetResponse> UserCollaborateRoomListGetRequestAsync(this OcipClient client, UserCollaborateRoomListGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCollaborateRoomListGetResponse> UserCollaborateRoomListGetRequestAsync(this OcipClientBase client, UserCollaborateRoomListGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCollaborateRoomListGetResponse;
         }
@@ -672,7 +672,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCollaborateRoomModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCollaborateRoomModifyRequest(this OcipClient client, UserCollaborateRoomModifyRequest request)
+        public static async Task<SuccessResponse> UserCollaborateRoomModifyRequest(this OcipClientBase client, UserCollaborateRoomModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -685,7 +685,7 @@ namespace BroadWorksConnector
         /// request to modify My Room, the request will be failed.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCollaborateRoomModifyRequestAsync(this OcipClient client, UserCollaborateRoomModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCollaborateRoomModifyRequestAsync(this OcipClientBase client, UserCollaborateRoomModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

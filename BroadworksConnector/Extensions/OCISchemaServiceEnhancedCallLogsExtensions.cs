@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupEnhancedCallLogsSchemaInstanceGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnhancedCallLogsSchemaInstanceGetRequestAsync instead.")]
-        public static async Task<GroupEnhancedCallLogsSchemaInstanceGetResponse> GroupEnhancedCallLogsSchemaInstanceGetRequest(this OcipClient client, GroupEnhancedCallLogsSchemaInstanceGetRequest request)
+        public static async Task<GroupEnhancedCallLogsSchemaInstanceGetResponse> GroupEnhancedCallLogsSchemaInstanceGetRequest(this OcipClientBase client, GroupEnhancedCallLogsSchemaInstanceGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupEnhancedCallLogsSchemaInstanceGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// a service provider.
         /// The response is either a GroupEnhancedCallLogsSchemaInstanceGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupEnhancedCallLogsSchemaInstanceGetResponse> GroupEnhancedCallLogsSchemaInstanceGetRequestAsync(this OcipClient client, GroupEnhancedCallLogsSchemaInstanceGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupEnhancedCallLogsSchemaInstanceGetResponse> GroupEnhancedCallLogsSchemaInstanceGetRequestAsync(this OcipClientBase client, GroupEnhancedCallLogsSchemaInstanceGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupEnhancedCallLogsSchemaInstanceGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupEnhancedCallLogsSchemaInstanceModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupEnhancedCallLogsSchemaInstanceModifyRequest(this OcipClient client, GroupEnhancedCallLogsSchemaInstanceModifyRequest request)
+        public static async Task<SuccessResponse> GroupEnhancedCallLogsSchemaInstanceModifyRequest(this OcipClientBase client, GroupEnhancedCallLogsSchemaInstanceModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the Enhanced Call Logs schema instance associated with a group of a service provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupEnhancedCallLogsSchemaInstanceModifyRequestAsync(this OcipClient client, GroupEnhancedCallLogsSchemaInstanceModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupEnhancedCallLogsSchemaInstanceModifyRequestAsync(this OcipClientBase client, GroupEnhancedCallLogsSchemaInstanceModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -53,7 +53,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderEnhancedCallLogsSchemaInstanceGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderEnhancedCallLogsSchemaInstanceGetRequestAsync instead.")]
-        public static async Task<ServiceProviderEnhancedCallLogsSchemaInstanceGetResponse> ServiceProviderEnhancedCallLogsSchemaInstanceGetRequest(this OcipClient client, ServiceProviderEnhancedCallLogsSchemaInstanceGetRequest request)
+        public static async Task<ServiceProviderEnhancedCallLogsSchemaInstanceGetResponse> ServiceProviderEnhancedCallLogsSchemaInstanceGetRequest(this OcipClientBase client, ServiceProviderEnhancedCallLogsSchemaInstanceGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderEnhancedCallLogsSchemaInstanceGetResponse;
         }
@@ -63,7 +63,7 @@ namespace BroadWorksConnector
         /// service provider.
         /// The response is either a ServiceProviderEnhancedCallLogsSchemaInstanceGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderEnhancedCallLogsSchemaInstanceGetResponse> ServiceProviderEnhancedCallLogsSchemaInstanceGetRequestAsync(this OcipClient client, ServiceProviderEnhancedCallLogsSchemaInstanceGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderEnhancedCallLogsSchemaInstanceGetResponse> ServiceProviderEnhancedCallLogsSchemaInstanceGetRequestAsync(this OcipClientBase client, ServiceProviderEnhancedCallLogsSchemaInstanceGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderEnhancedCallLogsSchemaInstanceGetResponse;
         }
@@ -72,7 +72,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderEnhancedCallLogsSchemaInstanceModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderEnhancedCallLogsSchemaInstanceModifyRequest(this OcipClient client, ServiceProviderEnhancedCallLogsSchemaInstanceModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderEnhancedCallLogsSchemaInstanceModifyRequest(this OcipClientBase client, ServiceProviderEnhancedCallLogsSchemaInstanceModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -81,7 +81,7 @@ namespace BroadWorksConnector
         /// Modify the Enhanced Call Logs schema instance associated with this Service Provider.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderEnhancedCallLogsSchemaInstanceModifyRequestAsync(this OcipClient client, ServiceProviderEnhancedCallLogsSchemaInstanceModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderEnhancedCallLogsSchemaInstanceModifyRequestAsync(this OcipClientBase client, ServiceProviderEnhancedCallLogsSchemaInstanceModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -91,7 +91,7 @@ namespace BroadWorksConnector
         /// This command will return an ErrorResponse if DBS is used as the call log server.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderEnhancedCallLogsGetRequest17sp4Async instead.")]
-        public static async Task<ServiceProviderEnhancedCallLogsGetResponse17sp4> ServiceProviderEnhancedCallLogsGetRequest17sp4(this OcipClient client, ServiceProviderEnhancedCallLogsGetRequest17sp4 request)
+        public static async Task<ServiceProviderEnhancedCallLogsGetResponse17sp4> ServiceProviderEnhancedCallLogsGetRequest17sp4(this OcipClientBase client, ServiceProviderEnhancedCallLogsGetRequest17sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderEnhancedCallLogsGetResponse17sp4;
         }
@@ -101,7 +101,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderEnhancedCallLogsGetResponse17sp4 or an ErrorResponse.
         /// This command will return an ErrorResponse if DBS is used as the call log server.
         /// </summary>
-        public static async Task<ServiceProviderEnhancedCallLogsGetResponse17sp4> ServiceProviderEnhancedCallLogsGetRequest17sp4Async(this OcipClient client, ServiceProviderEnhancedCallLogsGetRequest17sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderEnhancedCallLogsGetResponse17sp4> ServiceProviderEnhancedCallLogsGetRequest17sp4Async(this OcipClientBase client, ServiceProviderEnhancedCallLogsGetRequest17sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderEnhancedCallLogsGetResponse17sp4;
         }
@@ -112,7 +112,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderEnhancedCallLogsModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderEnhancedCallLogsModifyRequest(this OcipClient client, ServiceProviderEnhancedCallLogsModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderEnhancedCallLogsModifyRequest(this OcipClientBase client, ServiceProviderEnhancedCallLogsModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -123,7 +123,7 @@ namespace BroadWorksConnector
         /// Log entries are deleted when either of the two limits is reached.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderEnhancedCallLogsModifyRequestAsync(this OcipClient client, ServiceProviderEnhancedCallLogsModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderEnhancedCallLogsModifyRequestAsync(this OcipClientBase client, ServiceProviderEnhancedCallLogsModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -131,7 +131,7 @@ namespace BroadWorksConnector
         /// Request the system level data associated with Enhanced Call Logs. The response is either a SystemEnhancedCallLogsGetResponse22 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemEnhancedCallLogsGetRequest22Async instead.")]
-        public static async Task<SystemEnhancedCallLogsGetResponse22> SystemEnhancedCallLogsGetRequest22(this OcipClient client, SystemEnhancedCallLogsGetRequest22 request)
+        public static async Task<SystemEnhancedCallLogsGetResponse22> SystemEnhancedCallLogsGetRequest22(this OcipClientBase client, SystemEnhancedCallLogsGetRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemEnhancedCallLogsGetResponse22;
         }
@@ -139,7 +139,7 @@ namespace BroadWorksConnector
         /// <summary>
         /// Request the system level data associated with Enhanced Call Logs. The response is either a SystemEnhancedCallLogsGetResponse22 or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemEnhancedCallLogsGetResponse22> SystemEnhancedCallLogsGetRequest22Async(this OcipClient client, SystemEnhancedCallLogsGetRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemEnhancedCallLogsGetResponse22> SystemEnhancedCallLogsGetRequest22Async(this OcipClientBase client, SystemEnhancedCallLogsGetRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemEnhancedCallLogsGetResponse22;
         }
@@ -148,7 +148,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemEnhancedCallLogsModifyRequest22Async instead.")]
-        public static async Task<SuccessResponse> SystemEnhancedCallLogsModifyRequest22(this OcipClient client, SystemEnhancedCallLogsModifyRequest22 request)
+        public static async Task<SuccessResponse> SystemEnhancedCallLogsModifyRequest22(this OcipClientBase client, SystemEnhancedCallLogsModifyRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -157,7 +157,7 @@ namespace BroadWorksConnector
         /// Modify the system level data associated with Enhanced Call Logs.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemEnhancedCallLogsModifyRequest22Async(this OcipClient client, SystemEnhancedCallLogsModifyRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemEnhancedCallLogsModifyRequest22Async(this OcipClientBase client, SystemEnhancedCallLogsModifyRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -169,7 +169,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemEnhancedCallLogsSchemaInstanceGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemEnhancedCallLogsSchemaInstanceGetListRequestAsync instead.")]
-        public static async Task<SystemEnhancedCallLogsSchemaInstanceGetListResponse> SystemEnhancedCallLogsSchemaInstanceGetListRequest(this OcipClient client, SystemEnhancedCallLogsSchemaInstanceGetListRequest request)
+        public static async Task<SystemEnhancedCallLogsSchemaInstanceGetListResponse> SystemEnhancedCallLogsSchemaInstanceGetListRequest(this OcipClientBase client, SystemEnhancedCallLogsSchemaInstanceGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemEnhancedCallLogsSchemaInstanceGetListResponse;
         }
@@ -181,7 +181,7 @@ namespace BroadWorksConnector
         /// (users part of a group or service provider using that schema instance).
         /// The response is either a SystemEnhancedCallLogsSchemaInstanceGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemEnhancedCallLogsSchemaInstanceGetListResponse> SystemEnhancedCallLogsSchemaInstanceGetListRequestAsync(this OcipClient client, SystemEnhancedCallLogsSchemaInstanceGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemEnhancedCallLogsSchemaInstanceGetListResponse> SystemEnhancedCallLogsSchemaInstanceGetListRequestAsync(this OcipClientBase client, SystemEnhancedCallLogsSchemaInstanceGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemEnhancedCallLogsSchemaInstanceGetListResponse;
         }
@@ -200,7 +200,7 @@ namespace BroadWorksConnector
         /// callAuthorizationCodeFilter
         /// </summary>
         [Obsolete("This method is deprecated. Use UserEnhancedCallLogsGetListRequest22Async instead.")]
-        public static async Task<UserEnhancedCallLogsGetListResponse22> UserEnhancedCallLogsGetListRequest22(this OcipClient client, UserEnhancedCallLogsGetListRequest22 request)
+        public static async Task<UserEnhancedCallLogsGetListResponse22> UserEnhancedCallLogsGetListRequest22(this OcipClientBase client, UserEnhancedCallLogsGetListRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserEnhancedCallLogsGetListResponse22;
         }
@@ -219,7 +219,7 @@ namespace BroadWorksConnector
         /// The following elements are only used in AS data mode and ignored in XS data mode:
         /// callAuthorizationCodeFilter
         /// </summary>
-        public static async Task<UserEnhancedCallLogsGetListResponse22> UserEnhancedCallLogsGetListRequest22Async(this OcipClient client, UserEnhancedCallLogsGetListRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<UserEnhancedCallLogsGetListResponse22> UserEnhancedCallLogsGetListRequest22Async(this OcipClientBase client, UserEnhancedCallLogsGetListRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserEnhancedCallLogsGetListResponse22;
         }

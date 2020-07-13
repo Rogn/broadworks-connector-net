@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// holidayMenu
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantAddInstanceRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantAddInstanceRequest20(this OcipClient client, GroupAutoAttendantAddInstanceRequest20 request)
+        public static async Task<SuccessResponse> GroupAutoAttendantAddInstanceRequest20(this OcipClientBase client, GroupAutoAttendantAddInstanceRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Attendants:
         /// holidayMenu
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantAddInstanceRequest20Async(this OcipClient client, GroupAutoAttendantAddInstanceRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantAddInstanceRequest20Async(this OcipClientBase client, GroupAutoAttendantAddInstanceRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -63,7 +63,7 @@ namespace BroadWorksConnector
         /// holidayMenu
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantConsolidatedAddInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedAddInstanceRequest(this OcipClient client, GroupAutoAttendantConsolidatedAddInstanceRequest request)
+        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedAddInstanceRequest(this OcipClientBase client, GroupAutoAttendantConsolidatedAddInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -85,7 +85,7 @@ namespace BroadWorksConnector
         /// Attendants:
         /// holidayMenu
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedAddInstanceRequestAsync(this OcipClient client, GroupAutoAttendantConsolidatedAddInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedAddInstanceRequestAsync(this OcipClientBase client, GroupAutoAttendantConsolidatedAddInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -98,7 +98,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantConsolidatedDeleteInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedDeleteInstanceRequest(this OcipClient client, GroupAutoAttendantConsolidatedDeleteInstanceRequest request)
+        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedDeleteInstanceRequest(this OcipClientBase client, GroupAutoAttendantConsolidatedDeleteInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -111,7 +111,7 @@ namespace BroadWorksConnector
         /// An ErrorResponse will be returned if any number cannot be unassigned because of insufficient privilege.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedDeleteInstanceRequestAsync(this OcipClient client, GroupAutoAttendantConsolidatedDeleteInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedDeleteInstanceRequestAsync(this OcipClientBase client, GroupAutoAttendantConsolidatedDeleteInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -134,7 +134,7 @@ namespace BroadWorksConnector
         /// holidayMenu
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantConsolidatedModifyInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedModifyInstanceRequest(this OcipClient client, GroupAutoAttendantConsolidatedModifyInstanceRequest request)
+        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedModifyInstanceRequest(this OcipClientBase client, GroupAutoAttendantConsolidatedModifyInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -157,7 +157,7 @@ namespace BroadWorksConnector
         /// Attendants:
         /// holidayMenu
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedModifyInstanceRequestAsync(this OcipClient client, GroupAutoAttendantConsolidatedModifyInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantConsolidatedModifyInstanceRequestAsync(this OcipClientBase client, GroupAutoAttendantConsolidatedModifyInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -172,7 +172,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantDeleteInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantDeleteInstanceRequest(this OcipClient client, GroupAutoAttendantDeleteInstanceRequest request)
+        public static async Task<SuccessResponse> GroupAutoAttendantDeleteInstanceRequest(this OcipClientBase client, GroupAutoAttendantDeleteInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -187,7 +187,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantDeleteInstanceRequestAsync(this OcipClient client, GroupAutoAttendantDeleteInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantDeleteInstanceRequestAsync(this OcipClientBase client, GroupAutoAttendantDeleteInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -197,7 +197,7 @@ namespace BroadWorksConnector
         /// It is possible to get the instances within a specified department.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantGetInstanceListRequestAsync instead.")]
-        public static async Task<GroupAutoAttendantGetInstanceListResponse> GroupAutoAttendantGetInstanceListRequest(this OcipClient client, GroupAutoAttendantGetInstanceListRequest request)
+        public static async Task<GroupAutoAttendantGetInstanceListResponse> GroupAutoAttendantGetInstanceListRequest(this OcipClientBase client, GroupAutoAttendantGetInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAutoAttendantGetInstanceListResponse;
         }
@@ -207,7 +207,7 @@ namespace BroadWorksConnector
         /// The response is either GroupAutoAttendantGetInstanceListResponse or ErrorResponse.
         /// It is possible to get the instances within a specified department.
         /// </summary>
-        public static async Task<GroupAutoAttendantGetInstanceListResponse> GroupAutoAttendantGetInstanceListRequestAsync(this OcipClient client, GroupAutoAttendantGetInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAutoAttendantGetInstanceListResponse> GroupAutoAttendantGetInstanceListRequestAsync(this OcipClientBase client, GroupAutoAttendantGetInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAutoAttendantGetInstanceListResponse;
         }
@@ -228,7 +228,7 @@ namespace BroadWorksConnector
         /// Then the search criteria are logically ORed together.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantGetInstancePagedSortedListRequestAsync instead.")]
-        public static async Task<GroupAutoAttendantGetInstancePagedSortedListResponse> GroupAutoAttendantGetInstancePagedSortedListRequest(this OcipClient client, GroupAutoAttendantGetInstancePagedSortedListRequest request)
+        public static async Task<GroupAutoAttendantGetInstancePagedSortedListResponse> GroupAutoAttendantGetInstancePagedSortedListRequest(this OcipClientBase client, GroupAutoAttendantGetInstancePagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAutoAttendantGetInstancePagedSortedListResponse;
         }
@@ -249,7 +249,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together unless the searchCriteriaModeOr option is included.
         /// Then the search criteria are logically ORed together.
         /// </summary>
-        public static async Task<GroupAutoAttendantGetInstancePagedSortedListResponse> GroupAutoAttendantGetInstancePagedSortedListRequestAsync(this OcipClient client, GroupAutoAttendantGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAutoAttendantGetInstancePagedSortedListResponse> GroupAutoAttendantGetInstancePagedSortedListRequestAsync(this OcipClientBase client, GroupAutoAttendantGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAutoAttendantGetInstancePagedSortedListResponse;
         }
@@ -258,7 +258,7 @@ namespace BroadWorksConnector
         /// The response is either GroupAutoAttendantGetInstanceResponse20 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantGetInstanceRequest20Async instead.")]
-        public static async Task<GroupAutoAttendantGetInstanceResponse20> GroupAutoAttendantGetInstanceRequest20(this OcipClient client, GroupAutoAttendantGetInstanceRequest20 request)
+        public static async Task<GroupAutoAttendantGetInstanceResponse20> GroupAutoAttendantGetInstanceRequest20(this OcipClientBase client, GroupAutoAttendantGetInstanceRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAutoAttendantGetInstanceResponse20;
         }
@@ -267,7 +267,7 @@ namespace BroadWorksConnector
         /// Request to get all the information of a Auto Attendant instance.
         /// The response is either GroupAutoAttendantGetInstanceResponse20 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupAutoAttendantGetInstanceResponse20> GroupAutoAttendantGetInstanceRequest20Async(this OcipClient client, GroupAutoAttendantGetInstanceRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAutoAttendantGetInstanceResponse20> GroupAutoAttendantGetInstanceRequest20Async(this OcipClientBase client, GroupAutoAttendantGetInstanceRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAutoAttendantGetInstanceResponse20;
         }
@@ -276,7 +276,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantModifyActiveInstanceListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantModifyActiveInstanceListRequest(this OcipClient client, GroupAutoAttendantModifyActiveInstanceListRequest request)
+        public static async Task<SuccessResponse> GroupAutoAttendantModifyActiveInstanceListRequest(this OcipClientBase client, GroupAutoAttendantModifyActiveInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -285,7 +285,7 @@ namespace BroadWorksConnector
         /// Request to set the active status of Auto Attendant instances.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantModifyActiveInstanceListRequestAsync(this OcipClient client, GroupAutoAttendantModifyActiveInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantModifyActiveInstanceListRequestAsync(this OcipClientBase client, GroupAutoAttendantModifyActiveInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -301,7 +301,7 @@ namespace BroadWorksConnector
         /// holidayMenu
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantModifyInstanceRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantModifyInstanceRequest20(this OcipClient client, GroupAutoAttendantModifyInstanceRequest20 request)
+        public static async Task<SuccessResponse> GroupAutoAttendantModifyInstanceRequest20(this OcipClientBase client, GroupAutoAttendantModifyInstanceRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -317,7 +317,7 @@ namespace BroadWorksConnector
         /// Attendants:
         /// holidayMenu
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantModifyInstanceRequest20Async(this OcipClient client, GroupAutoAttendantModifyInstanceRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantModifyInstanceRequest20Async(this OcipClientBase client, GroupAutoAttendantModifyInstanceRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -327,7 +327,7 @@ namespace BroadWorksConnector
         /// This request is only valid for Standard auto attendants.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantSubmenuAddRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuAddRequest20(this OcipClient client, GroupAutoAttendantSubmenuAddRequest20 request)
+        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuAddRequest20(this OcipClientBase client, GroupAutoAttendantSubmenuAddRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -337,7 +337,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// This request is only valid for Standard auto attendants.
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuAddRequest20Async(this OcipClient client, GroupAutoAttendantSubmenuAddRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuAddRequest20Async(this OcipClientBase client, GroupAutoAttendantSubmenuAddRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -347,7 +347,7 @@ namespace BroadWorksConnector
         /// This request is only valid for Standard auto attendants.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantSubmenuDeleteListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuDeleteListRequest(this OcipClient client, GroupAutoAttendantSubmenuDeleteListRequest request)
+        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuDeleteListRequest(this OcipClientBase client, GroupAutoAttendantSubmenuDeleteListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -357,7 +357,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// This request is only valid for Standard auto attendants.
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuDeleteListRequestAsync(this OcipClient client, GroupAutoAttendantSubmenuDeleteListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuDeleteListRequestAsync(this OcipClientBase client, GroupAutoAttendantSubmenuDeleteListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -367,7 +367,7 @@ namespace BroadWorksConnector
         /// This request is only valid for Standard auto attendants.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantSubmenuGetListRequestAsync instead.")]
-        public static async Task<GroupAutoAttendantSubmenuGetListResponse> GroupAutoAttendantSubmenuGetListRequest(this OcipClient client, GroupAutoAttendantSubmenuGetListRequest request)
+        public static async Task<GroupAutoAttendantSubmenuGetListResponse> GroupAutoAttendantSubmenuGetListRequest(this OcipClientBase client, GroupAutoAttendantSubmenuGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAutoAttendantSubmenuGetListResponse;
         }
@@ -377,7 +377,7 @@ namespace BroadWorksConnector
         /// The response is either GroupAutoAttendantSubmenuGetListResponse or ErrorResponse.
         /// This request is only valid for Standard auto attendants.
         /// </summary>
-        public static async Task<GroupAutoAttendantSubmenuGetListResponse> GroupAutoAttendantSubmenuGetListRequestAsync(this OcipClient client, GroupAutoAttendantSubmenuGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAutoAttendantSubmenuGetListResponse> GroupAutoAttendantSubmenuGetListRequestAsync(this OcipClientBase client, GroupAutoAttendantSubmenuGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAutoAttendantSubmenuGetListResponse;
         }
@@ -387,7 +387,7 @@ namespace BroadWorksConnector
         /// This request is only valid for Standard auto attendants.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantSubmenuGetRequest20Async instead.")]
-        public static async Task<GroupAutoAttendantSubmenuGetResponse20> GroupAutoAttendantSubmenuGetRequest20(this OcipClient client, GroupAutoAttendantSubmenuGetRequest20 request)
+        public static async Task<GroupAutoAttendantSubmenuGetResponse20> GroupAutoAttendantSubmenuGetRequest20(this OcipClientBase client, GroupAutoAttendantSubmenuGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAutoAttendantSubmenuGetResponse20;
         }
@@ -397,7 +397,7 @@ namespace BroadWorksConnector
         /// The response is either GroupAutoAttendantSubmenuGetResponse20 or ErrorResponse.
         /// This request is only valid for Standard auto attendants.
         /// </summary>
-        public static async Task<GroupAutoAttendantSubmenuGetResponse20> GroupAutoAttendantSubmenuGetRequest20Async(this OcipClient client, GroupAutoAttendantSubmenuGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAutoAttendantSubmenuGetResponse20> GroupAutoAttendantSubmenuGetRequest20Async(this OcipClientBase client, GroupAutoAttendantSubmenuGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAutoAttendantSubmenuGetResponse20;
         }
@@ -407,7 +407,7 @@ namespace BroadWorksConnector
         /// This request is only valid for Standard auto attendants.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantSubmenuGetUsageListRequestAsync instead.")]
-        public static async Task<GroupAutoAttendantSubmenuGetUsageListResponse> GroupAutoAttendantSubmenuGetUsageListRequest(this OcipClient client, GroupAutoAttendantSubmenuGetUsageListRequest request)
+        public static async Task<GroupAutoAttendantSubmenuGetUsageListResponse> GroupAutoAttendantSubmenuGetUsageListRequest(this OcipClientBase client, GroupAutoAttendantSubmenuGetUsageListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAutoAttendantSubmenuGetUsageListResponse;
         }
@@ -417,7 +417,7 @@ namespace BroadWorksConnector
         /// The response is either GroupAutoAttendantSubmenuGetUsageListResponse or ErrorResponse.
         /// This request is only valid for Standard auto attendants.
         /// </summary>
-        public static async Task<GroupAutoAttendantSubmenuGetUsageListResponse> GroupAutoAttendantSubmenuGetUsageListRequestAsync(this OcipClient client, GroupAutoAttendantSubmenuGetUsageListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAutoAttendantSubmenuGetUsageListResponse> GroupAutoAttendantSubmenuGetUsageListRequestAsync(this OcipClientBase client, GroupAutoAttendantSubmenuGetUsageListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAutoAttendantSubmenuGetUsageListResponse;
         }
@@ -427,7 +427,7 @@ namespace BroadWorksConnector
         /// This request is only valid for Standard auto attendants.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantSubmenuModifyRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuModifyRequest20(this OcipClient client, GroupAutoAttendantSubmenuModifyRequest20 request)
+        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuModifyRequest20(this OcipClientBase client, GroupAutoAttendantSubmenuModifyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -437,7 +437,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// This request is only valid for Standard auto attendants.
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuModifyRequest20Async(this OcipClient client, GroupAutoAttendantSubmenuModifyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuModifyRequest20Async(this OcipClientBase client, GroupAutoAttendantSubmenuModifyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

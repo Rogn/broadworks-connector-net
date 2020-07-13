@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCustomerOriginatedTraceGetRequestAsync instead.")]
-        public static async Task<SystemCustomerOriginatedTraceGetResponse> SystemCustomerOriginatedTraceGetRequest(this OcipClient client, SystemCustomerOriginatedTraceGetRequest request)
+        public static async Task<SystemCustomerOriginatedTraceGetResponse> SystemCustomerOriginatedTraceGetRequest(this OcipClientBase client, SystemCustomerOriginatedTraceGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCustomerOriginatedTraceGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCustomerOriginatedTraceGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<SystemCustomerOriginatedTraceGetResponse> SystemCustomerOriginatedTraceGetRequestAsync(this OcipClient client, SystemCustomerOriginatedTraceGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCustomerOriginatedTraceGetResponse> SystemCustomerOriginatedTraceGetRequestAsync(this OcipClientBase client, SystemCustomerOriginatedTraceGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCustomerOriginatedTraceGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCustomerOriginatedTraceModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemCustomerOriginatedTraceModifyRequest(this OcipClient client, SystemCustomerOriginatedTraceModifyRequest request)
+        public static async Task<SuccessResponse> SystemCustomerOriginatedTraceModifyRequest(this OcipClientBase client, SystemCustomerOriginatedTraceModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the system level data associated with Customer Originated Trace.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemCustomerOriginatedTraceModifyRequestAsync(this OcipClient client, SystemCustomerOriginatedTraceModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCustomerOriginatedTraceModifyRequestAsync(this OcipClientBase client, SystemCustomerOriginatedTraceModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

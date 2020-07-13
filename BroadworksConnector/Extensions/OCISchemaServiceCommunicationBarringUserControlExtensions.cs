@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either SystemCommunicationBarringUserControlGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCommunicationBarringUserControlGetRequestAsync instead.")]
-        public static async Task<SystemCommunicationBarringUserControlGetResponse> SystemCommunicationBarringUserControlGetRequest(this OcipClient client, SystemCommunicationBarringUserControlGetRequest request)
+        public static async Task<SystemCommunicationBarringUserControlGetResponse> SystemCommunicationBarringUserControlGetRequest(this OcipClientBase client, SystemCommunicationBarringUserControlGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCommunicationBarringUserControlGetResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Gets the Communication Barring system level settings.
         /// The response is either SystemCommunicationBarringUserControlGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SystemCommunicationBarringUserControlGetResponse> SystemCommunicationBarringUserControlGetRequestAsync(this OcipClient client, SystemCommunicationBarringUserControlGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCommunicationBarringUserControlGetResponse> SystemCommunicationBarringUserControlGetRequestAsync(this OcipClientBase client, SystemCommunicationBarringUserControlGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCommunicationBarringUserControlGetResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCommunicationBarringUserControlModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemCommunicationBarringUserControlModifyRequest(this OcipClient client, SystemCommunicationBarringUserControlModifyRequest request)
+        public static async Task<SuccessResponse> SystemCommunicationBarringUserControlModifyRequest(this OcipClientBase client, SystemCommunicationBarringUserControlModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Modifies the system's Communication Barring User-Control settings.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemCommunicationBarringUserControlModifyRequestAsync(this OcipClient client, SystemCommunicationBarringUserControlModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCommunicationBarringUserControlModifyRequestAsync(this OcipClientBase client, SystemCommunicationBarringUserControlModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -51,7 +51,7 @@ namespace BroadWorksConnector
         /// The response is either UserCommunicationBarringUserControlGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCommunicationBarringUserControlGetRequestAsync instead.")]
-        public static async Task<UserCommunicationBarringUserControlGetResponse> UserCommunicationBarringUserControlGetRequest(this OcipClient client, UserCommunicationBarringUserControlGetRequest request)
+        public static async Task<UserCommunicationBarringUserControlGetResponse> UserCommunicationBarringUserControlGetRequest(this OcipClientBase client, UserCommunicationBarringUserControlGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCommunicationBarringUserControlGetResponse;
         }
@@ -61,7 +61,7 @@ namespace BroadWorksConnector
         /// indicates which profile if any is currently active for the user..
         /// The response is either UserCommunicationBarringUserControlGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<UserCommunicationBarringUserControlGetResponse> UserCommunicationBarringUserControlGetRequestAsync(this OcipClient client, UserCommunicationBarringUserControlGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCommunicationBarringUserControlGetResponse> UserCommunicationBarringUserControlGetRequestAsync(this OcipClientBase client, UserCommunicationBarringUserControlGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCommunicationBarringUserControlGetResponse;
         }
@@ -73,7 +73,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCommunicationBarringUserControlModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCommunicationBarringUserControlModifyRequest(this OcipClient client, UserCommunicationBarringUserControlModifyRequest request)
+        public static async Task<SuccessResponse> UserCommunicationBarringUserControlModifyRequest(this OcipClientBase client, UserCommunicationBarringUserControlModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -85,7 +85,7 @@ namespace BroadWorksConnector
         /// Users must populate both the oldPasscode and new Passcode fields when changing the passcode.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCommunicationBarringUserControlModifyRequestAsync(this OcipClient client, UserCommunicationBarringUserControlModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCommunicationBarringUserControlModifyRequestAsync(this OcipClientBase client, UserCommunicationBarringUserControlModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

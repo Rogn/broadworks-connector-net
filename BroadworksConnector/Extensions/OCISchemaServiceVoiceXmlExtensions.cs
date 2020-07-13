@@ -16,7 +16,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceXmlAddInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupVoiceXmlAddInstanceRequest(this OcipClient client, GroupVoiceXmlAddInstanceRequest request)
+        public static async Task<SuccessResponse> GroupVoiceXmlAddInstanceRequest(this OcipClientBase client, GroupVoiceXmlAddInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -27,7 +27,7 @@ namespace BroadWorksConnector
         /// a device with Static Registration is expected with a valid contact.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupVoiceXmlAddInstanceRequestAsync(this OcipClient client, GroupVoiceXmlAddInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupVoiceXmlAddInstanceRequestAsync(this OcipClientBase client, GroupVoiceXmlAddInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -36,7 +36,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceXmlDeleteInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupVoiceXmlDeleteInstanceRequest(this OcipClient client, GroupVoiceXmlDeleteInstanceRequest request)
+        public static async Task<SuccessResponse> GroupVoiceXmlDeleteInstanceRequest(this OcipClientBase client, GroupVoiceXmlDeleteInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -45,7 +45,7 @@ namespace BroadWorksConnector
         /// Delete a VoiceXML instance from a group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupVoiceXmlDeleteInstanceRequestAsync(this OcipClient client, GroupVoiceXmlDeleteInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupVoiceXmlDeleteInstanceRequestAsync(this OcipClientBase client, GroupVoiceXmlDeleteInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -55,7 +55,7 @@ namespace BroadWorksConnector
         /// It is possible to get the instances within a specified department.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceXmlGetInstanceListRequestAsync instead.")]
-        public static async Task<GroupVoiceXmlGetInstanceListResponse> GroupVoiceXmlGetInstanceListRequest(this OcipClient client, GroupVoiceXmlGetInstanceListRequest request)
+        public static async Task<GroupVoiceXmlGetInstanceListResponse> GroupVoiceXmlGetInstanceListRequest(this OcipClientBase client, GroupVoiceXmlGetInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupVoiceXmlGetInstanceListResponse;
         }
@@ -65,7 +65,7 @@ namespace BroadWorksConnector
         /// The response is either GroupVoiceXmlGetInstanceListResponse or ErrorResponse.
         /// It is possible to get the instances within a specified department.
         /// </summary>
-        public static async Task<GroupVoiceXmlGetInstanceListResponse> GroupVoiceXmlGetInstanceListRequestAsync(this OcipClient client, GroupVoiceXmlGetInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupVoiceXmlGetInstanceListResponse> GroupVoiceXmlGetInstanceListRequestAsync(this OcipClientBase client, GroupVoiceXmlGetInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupVoiceXmlGetInstanceListResponse;
         }
@@ -74,7 +74,7 @@ namespace BroadWorksConnector
         /// The response is either GroupVoiceXmlGetInstanceResponse22 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceXmlGetInstanceRequest22Async instead.")]
-        public static async Task<GroupVoiceXmlGetInstanceResponse22> GroupVoiceXmlGetInstanceRequest22(this OcipClient client, GroupVoiceXmlGetInstanceRequest22 request)
+        public static async Task<GroupVoiceXmlGetInstanceResponse22> GroupVoiceXmlGetInstanceRequest22(this OcipClientBase client, GroupVoiceXmlGetInstanceRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupVoiceXmlGetInstanceResponse22;
         }
@@ -83,7 +83,7 @@ namespace BroadWorksConnector
         /// Request to get all the information of a VoiceXML instance.
         /// The response is either GroupVoiceXmlGetInstanceResponse22 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupVoiceXmlGetInstanceResponse22> GroupVoiceXmlGetInstanceRequest22Async(this OcipClient client, GroupVoiceXmlGetInstanceRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupVoiceXmlGetInstanceResponse22> GroupVoiceXmlGetInstanceRequest22Async(this OcipClientBase client, GroupVoiceXmlGetInstanceRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupVoiceXmlGetInstanceResponse22;
         }
@@ -92,7 +92,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceXmlModifyActiveInstanceListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupVoiceXmlModifyActiveInstanceListRequest(this OcipClient client, GroupVoiceXmlModifyActiveInstanceListRequest request)
+        public static async Task<SuccessResponse> GroupVoiceXmlModifyActiveInstanceListRequest(this OcipClientBase client, GroupVoiceXmlModifyActiveInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -101,7 +101,7 @@ namespace BroadWorksConnector
         /// Request to set the active status of VoiceXML instances.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupVoiceXmlModifyActiveInstanceListRequestAsync(this OcipClient client, GroupVoiceXmlModifyActiveInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupVoiceXmlModifyActiveInstanceListRequestAsync(this OcipClientBase client, GroupVoiceXmlModifyActiveInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -111,7 +111,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceXmlModifyInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupVoiceXmlModifyInstanceRequest(this OcipClient client, GroupVoiceXmlModifyInstanceRequest request)
+        public static async Task<SuccessResponse> GroupVoiceXmlModifyInstanceRequest(this OcipClientBase client, GroupVoiceXmlModifyInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -121,7 +121,7 @@ namespace BroadWorksConnector
         /// a device with Static Registration is expected with a valid contact.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupVoiceXmlModifyInstanceRequestAsync(this OcipClient client, GroupVoiceXmlModifyInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupVoiceXmlModifyInstanceRequestAsync(this OcipClientBase client, GroupVoiceXmlModifyInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

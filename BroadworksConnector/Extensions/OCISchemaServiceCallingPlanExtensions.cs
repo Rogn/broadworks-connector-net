@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallingPlanAddDigitPatternRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallingPlanAddDigitPatternRequest(this OcipClient client, GroupCallingPlanAddDigitPatternRequest request)
+        public static async Task<SuccessResponse> GroupCallingPlanAddDigitPatternRequest(this OcipClientBase client, GroupCallingPlanAddDigitPatternRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Add a new calling plan digit string.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallingPlanAddDigitPatternRequestAsync(this OcipClient client, GroupCallingPlanAddDigitPatternRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallingPlanAddDigitPatternRequestAsync(this OcipClientBase client, GroupCallingPlanAddDigitPatternRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallingPlanDeleteDigitPatternListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallingPlanDeleteDigitPatternListRequest(this OcipClient client, GroupCallingPlanDeleteDigitPatternListRequest request)
+        public static async Task<SuccessResponse> GroupCallingPlanDeleteDigitPatternListRequest(this OcipClientBase client, GroupCallingPlanDeleteDigitPatternListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Delete one or more calling plan digit strings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallingPlanDeleteDigitPatternListRequestAsync(this OcipClient client, GroupCallingPlanDeleteDigitPatternListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallingPlanDeleteDigitPatternListRequestAsync(this OcipClientBase client, GroupCallingPlanDeleteDigitPatternListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -50,7 +50,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallingPlanGetDigitPatternListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallingPlanGetDigitPatternListRequestAsync instead.")]
-        public static async Task<GroupCallingPlanGetDigitPatternListResponse> GroupCallingPlanGetDigitPatternListRequest(this OcipClient client, GroupCallingPlanGetDigitPatternListRequest request)
+        public static async Task<GroupCallingPlanGetDigitPatternListResponse> GroupCallingPlanGetDigitPatternListRequest(this OcipClientBase client, GroupCallingPlanGetDigitPatternListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallingPlanGetDigitPatternListResponse;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// Get the list of calling plan digit strings for a group.
         /// The response is either a GroupCallingPlanGetDigitPatternListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallingPlanGetDigitPatternListResponse> GroupCallingPlanGetDigitPatternListRequestAsync(this OcipClient client, GroupCallingPlanGetDigitPatternListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallingPlanGetDigitPatternListResponse> GroupCallingPlanGetDigitPatternListRequestAsync(this OcipClientBase client, GroupCallingPlanGetDigitPatternListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallingPlanGetDigitPatternListResponse;
         }
@@ -68,7 +68,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallingPlanModifyDigitPatternRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallingPlanModifyDigitPatternRequest(this OcipClient client, GroupCallingPlanModifyDigitPatternRequest request)
+        public static async Task<SuccessResponse> GroupCallingPlanModifyDigitPatternRequest(this OcipClientBase client, GroupCallingPlanModifyDigitPatternRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -77,7 +77,7 @@ namespace BroadWorksConnector
         /// Modify a calling plan digit string. The name is a key; it cannot be changed.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallingPlanModifyDigitPatternRequestAsync(this OcipClient client, GroupCallingPlanModifyDigitPatternRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallingPlanModifyDigitPatternRequestAsync(this OcipClientBase client, GroupCallingPlanModifyDigitPatternRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

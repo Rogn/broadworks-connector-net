@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingAlwaysSecondaryGetRequestAsync instead.")]
-        public static async Task<UserCallForwardingAlwaysSecondaryGetResponse> UserCallForwardingAlwaysSecondaryGetRequest(this OcipClient client, UserCallForwardingAlwaysSecondaryGetRequest request)
+        public static async Task<UserCallForwardingAlwaysSecondaryGetResponse> UserCallForwardingAlwaysSecondaryGetRequest(this OcipClientBase client, UserCallForwardingAlwaysSecondaryGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallForwardingAlwaysSecondaryGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallForwardingAlwaysSecondaryGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCallForwardingAlwaysSecondaryGetResponse> UserCallForwardingAlwaysSecondaryGetRequestAsync(this OcipClient client, UserCallForwardingAlwaysSecondaryGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallForwardingAlwaysSecondaryGetResponse> UserCallForwardingAlwaysSecondaryGetRequestAsync(this OcipClientBase client, UserCallForwardingAlwaysSecondaryGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallForwardingAlwaysSecondaryGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingAlwaysSecondaryModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallForwardingAlwaysSecondaryModifyRequest(this OcipClient client, UserCallForwardingAlwaysSecondaryModifyRequest request)
+        public static async Task<SuccessResponse> UserCallForwardingAlwaysSecondaryModifyRequest(this OcipClientBase client, UserCallForwardingAlwaysSecondaryModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the user level data associated with Call Forwarding Always Secondary service.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallForwardingAlwaysSecondaryModifyRequestAsync(this OcipClient client, UserCallForwardingAlwaysSecondaryModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallForwardingAlwaysSecondaryModifyRequestAsync(this OcipClientBase client, UserCallForwardingAlwaysSecondaryModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

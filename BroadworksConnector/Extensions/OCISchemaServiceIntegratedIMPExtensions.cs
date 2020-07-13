@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either GroupIntegratedIMPGetResponse21sp1 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupIntegratedIMPGetRequest21sp1Async instead.")]
-        public static async Task<GroupIntegratedIMPGetResponse21sp1> GroupIntegratedIMPGetRequest21sp1(this OcipClient client, GroupIntegratedIMPGetRequest21sp1 request)
+        public static async Task<GroupIntegratedIMPGetResponse21sp1> GroupIntegratedIMPGetRequest21sp1(this OcipClientBase client, GroupIntegratedIMPGetRequest21sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupIntegratedIMPGetResponse21sp1;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Get the Integrated IMP service attributes for the group.
         /// The response is either GroupIntegratedIMPGetResponse21sp1 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupIntegratedIMPGetResponse21sp1> GroupIntegratedIMPGetRequest21sp1Async(this OcipClient client, GroupIntegratedIMPGetRequest21sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupIntegratedIMPGetResponse21sp1> GroupIntegratedIMPGetRequest21sp1Async(this OcipClientBase client, GroupIntegratedIMPGetRequest21sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupIntegratedIMPGetResponse21sp1;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupIntegratedIMPModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupIntegratedIMPModifyRequest(this OcipClient client, GroupIntegratedIMPModifyRequest request)
+        public static async Task<SuccessResponse> GroupIntegratedIMPModifyRequest(this OcipClientBase client, GroupIntegratedIMPModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Modify the Integrated IMP service attributes for the group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupIntegratedIMPModifyRequestAsync(this OcipClient client, GroupIntegratedIMPModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupIntegratedIMPModifyRequestAsync(this OcipClientBase client, GroupIntegratedIMPModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -50,7 +50,7 @@ namespace BroadWorksConnector
         /// The response is either ResellerIntegratedIMPGetResponse22 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ResellerIntegratedIMPGetRequest22Async instead.")]
-        public static async Task<ResellerIntegratedIMPGetResponse22> ResellerIntegratedIMPGetRequest22(this OcipClient client, ResellerIntegratedIMPGetRequest22 request)
+        public static async Task<ResellerIntegratedIMPGetResponse22> ResellerIntegratedIMPGetRequest22(this OcipClientBase client, ResellerIntegratedIMPGetRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ResellerIntegratedIMPGetResponse22;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// Get the Integrated IMP service attributes for the reseller.
         /// The response is either ResellerIntegratedIMPGetResponse22 or ErrorResponse.
         /// </summary>
-        public static async Task<ResellerIntegratedIMPGetResponse22> ResellerIntegratedIMPGetRequest22Async(this OcipClient client, ResellerIntegratedIMPGetRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<ResellerIntegratedIMPGetResponse22> ResellerIntegratedIMPGetRequest22Async(this OcipClientBase client, ResellerIntegratedIMPGetRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ResellerIntegratedIMPGetResponse22;
         }
@@ -68,7 +68,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ResellerIntegratedIMPModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ResellerIntegratedIMPModifyRequest(this OcipClient client, ResellerIntegratedIMPModifyRequest request)
+        public static async Task<SuccessResponse> ResellerIntegratedIMPModifyRequest(this OcipClientBase client, ResellerIntegratedIMPModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -77,7 +77,7 @@ namespace BroadWorksConnector
         /// Modify the Integrated IMP service attributes for the reseller.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ResellerIntegratedIMPModifyRequestAsync(this OcipClient client, ResellerIntegratedIMPModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ResellerIntegratedIMPModifyRequestAsync(this OcipClientBase client, ResellerIntegratedIMPModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -86,7 +86,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderIntegratedIMPGetResponse22 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderIntegratedIMPGetRequest22Async instead.")]
-        public static async Task<ServiceProviderIntegratedIMPGetResponse22> ServiceProviderIntegratedIMPGetRequest22(this OcipClient client, ServiceProviderIntegratedIMPGetRequest22 request)
+        public static async Task<ServiceProviderIntegratedIMPGetResponse22> ServiceProviderIntegratedIMPGetRequest22(this OcipClientBase client, ServiceProviderIntegratedIMPGetRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderIntegratedIMPGetResponse22;
         }
@@ -95,7 +95,7 @@ namespace BroadWorksConnector
         /// Get the Integrated IMP service attributes for the service provider.
         /// The response is either ServiceProviderIntegratedIMPGetResponse22 or ErrorResponse.
         /// </summary>
-        public static async Task<ServiceProviderIntegratedIMPGetResponse22> ServiceProviderIntegratedIMPGetRequest22Async(this OcipClient client, ServiceProviderIntegratedIMPGetRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderIntegratedIMPGetResponse22> ServiceProviderIntegratedIMPGetRequest22Async(this OcipClientBase client, ServiceProviderIntegratedIMPGetRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderIntegratedIMPGetResponse22;
         }
@@ -118,7 +118,7 @@ namespace BroadWorksConnector
         /// The element useResellerIMPIdSetting is only applicable for a service provider within a reseller.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderIntegratedIMPModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderIntegratedIMPModifyRequest(this OcipClient client, ServiceProviderIntegratedIMPModifyRequest request)
+        public static async Task<SuccessResponse> ServiceProviderIntegratedIMPModifyRequest(this OcipClientBase client, ServiceProviderIntegratedIMPModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -141,7 +141,7 @@ namespace BroadWorksConnector
         /// 
         /// The element useResellerIMPIdSetting is only applicable for a service provider within a reseller.
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderIntegratedIMPModifyRequestAsync(this OcipClient client, ServiceProviderIntegratedIMPModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderIntegratedIMPModifyRequestAsync(this OcipClientBase client, ServiceProviderIntegratedIMPModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -150,7 +150,7 @@ namespace BroadWorksConnector
         /// The response is either SystemIntegratedIMPGetResponse19 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemIntegratedIMPGetRequest21Async instead.")]
-        public static async Task<SystemIntegratedIMPGetResponse19> SystemIntegratedIMPGetRequest21(this OcipClient client, SystemIntegratedIMPGetRequest21 request)
+        public static async Task<SystemIntegratedIMPGetResponse19> SystemIntegratedIMPGetRequest21(this OcipClientBase client, SystemIntegratedIMPGetRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemIntegratedIMPGetResponse19;
         }
@@ -159,7 +159,7 @@ namespace BroadWorksConnector
         /// Get the system Integrated IMP service attributes.
         /// The response is either SystemIntegratedIMPGetResponse19 or ErrorResponse.
         /// </summary>
-        public static async Task<SystemIntegratedIMPGetResponse19> SystemIntegratedIMPGetRequest21Async(this OcipClient client, SystemIntegratedIMPGetRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemIntegratedIMPGetResponse19> SystemIntegratedIMPGetRequest21Async(this OcipClientBase client, SystemIntegratedIMPGetRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemIntegratedIMPGetResponse19;
         }
@@ -172,7 +172,7 @@ namespace BroadWorksConnector
         /// allowImpPasswordRetrieval
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemIntegratedIMPModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemIntegratedIMPModifyRequest(this OcipClient client, SystemIntegratedIMPModifyRequest request)
+        public static async Task<SuccessResponse> SystemIntegratedIMPModifyRequest(this OcipClientBase client, SystemIntegratedIMPModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -185,7 +185,7 @@ namespace BroadWorksConnector
         /// boshURL
         /// allowImpPasswordRetrieval
         /// </summary>
-        public static async Task<SuccessResponse> SystemIntegratedIMPModifyRequestAsync(this OcipClient client, SystemIntegratedIMPModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemIntegratedIMPModifyRequestAsync(this OcipClientBase client, SystemIntegratedIMPModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -194,7 +194,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserIntegratedIMPGeneratePasswordRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserIntegratedIMPGeneratePasswordRequest(this OcipClient client, UserIntegratedIMPGeneratePasswordRequest request)
+        public static async Task<SuccessResponse> UserIntegratedIMPGeneratePasswordRequest(this OcipClientBase client, UserIntegratedIMPGeneratePasswordRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -203,7 +203,7 @@ namespace BroadWorksConnector
         /// Generate a new IMP password for the user. The new generated password is synchronized to BroadCloud/service Messaging Server.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserIntegratedIMPGeneratePasswordRequestAsync(this OcipClient client, UserIntegratedIMPGeneratePasswordRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserIntegratedIMPGeneratePasswordRequestAsync(this OcipClientBase client, UserIntegratedIMPGeneratePasswordRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -212,7 +212,7 @@ namespace BroadWorksConnector
         /// The response is either UserIntegratedIMPGetResponse21sp1 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserIntegratedIMPGetRequest21sp1Async instead.")]
-        public static async Task<UserIntegratedIMPGetResponse21sp1> UserIntegratedIMPGetRequest21sp1(this OcipClient client, UserIntegratedIMPGetRequest21sp1 request)
+        public static async Task<UserIntegratedIMPGetResponse21sp1> UserIntegratedIMPGetRequest21sp1(this OcipClientBase client, UserIntegratedIMPGetRequest21sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserIntegratedIMPGetResponse21sp1;
         }
@@ -221,7 +221,7 @@ namespace BroadWorksConnector
         /// Get the Integrated IMP specific service attribute for the user.
         /// The response is either UserIntegratedIMPGetResponse21sp1 or ErrorResponse.
         /// </summary>
-        public static async Task<UserIntegratedIMPGetResponse21sp1> UserIntegratedIMPGetRequest21sp1Async(this OcipClient client, UserIntegratedIMPGetRequest21sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<UserIntegratedIMPGetResponse21sp1> UserIntegratedIMPGetRequest21sp1Async(this OcipClientBase client, UserIntegratedIMPGetRequest21sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserIntegratedIMPGetResponse21sp1;
         }
@@ -241,7 +241,7 @@ namespace BroadWorksConnector
         /// isAlternateImpId
         /// </summary>
         [Obsolete("This method is deprecated. Use UserIntegratedIMPModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserIntegratedIMPModifyRequest(this OcipClient client, UserIntegratedIMPModifyRequest request)
+        public static async Task<SuccessResponse> UserIntegratedIMPModifyRequest(this OcipClientBase client, UserIntegratedIMPModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -261,7 +261,7 @@ namespace BroadWorksConnector
         /// impId
         /// isAlternateImpId
         /// </summary>
-        public static async Task<SuccessResponse> UserIntegratedIMPModifyRequestAsync(this OcipClient client, UserIntegratedIMPModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserIntegratedIMPModifyRequestAsync(this OcipClientBase client, UserIntegratedIMPModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

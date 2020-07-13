@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallPickupAddInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallPickupAddInstanceRequest(this OcipClient client, GroupCallPickupAddInstanceRequest request)
+        public static async Task<SuccessResponse> GroupCallPickupAddInstanceRequest(this OcipClientBase client, GroupCallPickupAddInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Adds a Call Pickup group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallPickupAddInstanceRequestAsync(this OcipClient client, GroupCallPickupAddInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallPickupAddInstanceRequestAsync(this OcipClientBase client, GroupCallPickupAddInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallPickupDeleteInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallPickupDeleteInstanceRequest(this OcipClient client, GroupCallPickupDeleteInstanceRequest request)
+        public static async Task<SuccessResponse> GroupCallPickupDeleteInstanceRequest(this OcipClientBase client, GroupCallPickupDeleteInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Deletes a Call Pickup group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallPickupDeleteInstanceRequestAsync(this OcipClient client, GroupCallPickupDeleteInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallPickupDeleteInstanceRequestAsync(this OcipClientBase client, GroupCallPickupDeleteInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -52,7 +52,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallPickupGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallPickupGetAvailableUserListRequestAsync instead.")]
-        public static async Task<GroupCallPickupGetAvailableUserListResponse> GroupCallPickupGetAvailableUserListRequest(this OcipClient client, GroupCallPickupGetAvailableUserListRequest request)
+        public static async Task<GroupCallPickupGetAvailableUserListResponse> GroupCallPickupGetAvailableUserListRequest(this OcipClientBase client, GroupCallPickupGetAvailableUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallPickupGetAvailableUserListResponse;
         }
@@ -63,7 +63,7 @@ namespace BroadWorksConnector
         /// by not setting the name.
         /// The response is either GroupCallPickupGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallPickupGetAvailableUserListResponse> GroupCallPickupGetAvailableUserListRequestAsync(this OcipClient client, GroupCallPickupGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallPickupGetAvailableUserListResponse> GroupCallPickupGetAvailableUserListRequestAsync(this OcipClientBase client, GroupCallPickupGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallPickupGetAvailableUserListResponse;
         }
@@ -84,7 +84,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallPickupGetAvailableUserPagedSortedListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallPickupGetAvailableUserPagedSortedListRequestAsync instead.")]
-        public static async Task<GroupCallPickupGetAvailableUserPagedSortedListResponse> GroupCallPickupGetAvailableUserPagedSortedListRequest(this OcipClient client, GroupCallPickupGetAvailableUserPagedSortedListRequest request)
+        public static async Task<GroupCallPickupGetAvailableUserPagedSortedListResponse> GroupCallPickupGetAvailableUserPagedSortedListRequest(this OcipClientBase client, GroupCallPickupGetAvailableUserPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallPickupGetAvailableUserPagedSortedListResponse;
         }
@@ -105,7 +105,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either GroupCallPickupGetAvailableUserPagedSortedListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallPickupGetAvailableUserPagedSortedListResponse> GroupCallPickupGetAvailableUserPagedSortedListRequestAsync(this OcipClient client, GroupCallPickupGetAvailableUserPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallPickupGetAvailableUserPagedSortedListResponse> GroupCallPickupGetAvailableUserPagedSortedListRequestAsync(this OcipClientBase client, GroupCallPickupGetAvailableUserPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallPickupGetAvailableUserPagedSortedListResponse;
         }
@@ -114,7 +114,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallPickupGetInstanceListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallPickupGetInstanceListRequestAsync instead.")]
-        public static async Task<GroupCallPickupGetInstanceListResponse> GroupCallPickupGetInstanceListRequest(this OcipClient client, GroupCallPickupGetInstanceListRequest request)
+        public static async Task<GroupCallPickupGetInstanceListResponse> GroupCallPickupGetInstanceListRequest(this OcipClientBase client, GroupCallPickupGetInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallPickupGetInstanceListResponse;
         }
@@ -123,7 +123,7 @@ namespace BroadWorksConnector
         /// Request to get a list of Call Pickup instances within a group.
         /// The response is either GroupCallPickupGetInstanceListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallPickupGetInstanceListResponse> GroupCallPickupGetInstanceListRequestAsync(this OcipClient client, GroupCallPickupGetInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallPickupGetInstanceListResponse> GroupCallPickupGetInstanceListRequestAsync(this OcipClientBase client, GroupCallPickupGetInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallPickupGetInstanceListResponse;
         }
@@ -140,7 +140,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallPickupGetInstancePagedSortedListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallPickupGetInstancePagedSortedListRequestAsync instead.")]
-        public static async Task<GroupCallPickupGetInstancePagedSortedListResponse> GroupCallPickupGetInstancePagedSortedListRequest(this OcipClient client, GroupCallPickupGetInstancePagedSortedListRequest request)
+        public static async Task<GroupCallPickupGetInstancePagedSortedListResponse> GroupCallPickupGetInstancePagedSortedListRequest(this OcipClientBase client, GroupCallPickupGetInstancePagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallPickupGetInstancePagedSortedListResponse;
         }
@@ -157,7 +157,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either GroupCallPickupGetInstancePagedSortedListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallPickupGetInstancePagedSortedListResponse> GroupCallPickupGetInstancePagedSortedListRequestAsync(this OcipClient client, GroupCallPickupGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallPickupGetInstancePagedSortedListResponse> GroupCallPickupGetInstancePagedSortedListRequestAsync(this OcipClientBase client, GroupCallPickupGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallPickupGetInstancePagedSortedListResponse;
         }
@@ -176,7 +176,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallPickupGetInstancePagedSortedResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallPickupGetInstancePagedSortedRequestAsync instead.")]
-        public static async Task<GroupCallPickupGetInstancePagedSortedResponse> GroupCallPickupGetInstancePagedSortedRequest(this OcipClient client, GroupCallPickupGetInstancePagedSortedRequest request)
+        public static async Task<GroupCallPickupGetInstancePagedSortedResponse> GroupCallPickupGetInstancePagedSortedRequest(this OcipClientBase client, GroupCallPickupGetInstancePagedSortedRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallPickupGetInstancePagedSortedResponse;
         }
@@ -195,7 +195,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either GroupCallPickupGetInstancePagedSortedResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallPickupGetInstancePagedSortedResponse> GroupCallPickupGetInstancePagedSortedRequestAsync(this OcipClient client, GroupCallPickupGetInstancePagedSortedRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallPickupGetInstancePagedSortedResponse> GroupCallPickupGetInstancePagedSortedRequestAsync(this OcipClientBase client, GroupCallPickupGetInstancePagedSortedRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallPickupGetInstancePagedSortedResponse;
         }
@@ -204,7 +204,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallPickupGetInstanceResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallPickupGetInstanceRequestAsync instead.")]
-        public static async Task<GroupCallPickupGetInstanceResponse> GroupCallPickupGetInstanceRequest(this OcipClient client, GroupCallPickupGetInstanceRequest request)
+        public static async Task<GroupCallPickupGetInstanceResponse> GroupCallPickupGetInstanceRequest(this OcipClientBase client, GroupCallPickupGetInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallPickupGetInstanceResponse;
         }
@@ -213,7 +213,7 @@ namespace BroadWorksConnector
         /// Gets a Call Pickup group.
         /// The response is either GroupCallPickupGetInstanceResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallPickupGetInstanceResponse> GroupCallPickupGetInstanceRequestAsync(this OcipClient client, GroupCallPickupGetInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallPickupGetInstanceResponse> GroupCallPickupGetInstanceRequestAsync(this OcipClientBase client, GroupCallPickupGetInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallPickupGetInstanceResponse;
         }
@@ -222,7 +222,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallPickupModifyInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallPickupModifyInstanceRequest(this OcipClient client, GroupCallPickupModifyInstanceRequest request)
+        public static async Task<SuccessResponse> GroupCallPickupModifyInstanceRequest(this OcipClientBase client, GroupCallPickupModifyInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -231,7 +231,7 @@ namespace BroadWorksConnector
         /// Modifies a Call Pickup group. Replaces the entire list of users in the group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallPickupModifyInstanceRequestAsync(this OcipClient client, GroupCallPickupModifyInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallPickupModifyInstanceRequestAsync(this OcipClientBase client, GroupCallPickupModifyInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -241,7 +241,7 @@ namespace BroadWorksConnector
         /// The response is either UserCallPickupGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallPickupGetRequestAsync instead.")]
-        public static async Task<UserCallPickupGetResponse> UserCallPickupGetRequest(this OcipClient client, UserCallPickupGetRequest request)
+        public static async Task<UserCallPickupGetResponse> UserCallPickupGetRequest(this OcipClientBase client, UserCallPickupGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallPickupGetResponse;
         }
@@ -251,7 +251,7 @@ namespace BroadWorksConnector
         /// Any user can only belong to one Call Pickup group.
         /// The response is either UserCallPickupGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<UserCallPickupGetResponse> UserCallPickupGetRequestAsync(this OcipClient client, UserCallPickupGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallPickupGetResponse> UserCallPickupGetRequestAsync(this OcipClientBase client, UserCallPickupGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallPickupGetResponse;
         }

@@ -18,7 +18,7 @@ namespace BroadWorksConnector
         /// includeHuntGroupNameInCLID, use value "true" in XS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupAddInstanceRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupHuntGroupAddInstanceRequest20(this OcipClient client, GroupHuntGroupAddInstanceRequest20 request)
+        public static async Task<SuccessResponse> GroupHuntGroupAddInstanceRequest20(this OcipClientBase client, GroupHuntGroupAddInstanceRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -31,7 +31,7 @@ namespace BroadWorksConnector
         /// useSystemHuntGroupCLIDSetting, use value "true" in XS data mode
         /// includeHuntGroupNameInCLID, use value "true" in XS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupHuntGroupAddInstanceRequest20Async(this OcipClient client, GroupHuntGroupAddInstanceRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupHuntGroupAddInstanceRequest20Async(this OcipClientBase client, GroupHuntGroupAddInstanceRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -49,7 +49,7 @@ namespace BroadWorksConnector
         /// includeHuntGroupNameInCLID, use value "true" in XS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupConsolidatedAddInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedAddInstanceRequest(this OcipClient client, GroupHuntGroupConsolidatedAddInstanceRequest request)
+        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedAddInstanceRequest(this OcipClientBase client, GroupHuntGroupConsolidatedAddInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -67,7 +67,7 @@ namespace BroadWorksConnector
         /// useSystemHuntGroupCLIDSetting, use value "true" in XS data mode
         /// includeHuntGroupNameInCLID, use value "true" in XS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedAddInstanceRequestAsync(this OcipClient client, GroupHuntGroupConsolidatedAddInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedAddInstanceRequestAsync(this OcipClientBase client, GroupHuntGroupConsolidatedAddInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -82,7 +82,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupConsolidatedDeleteInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedDeleteInstanceRequest(this OcipClient client, GroupHuntGroupConsolidatedDeleteInstanceRequest request)
+        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedDeleteInstanceRequest(this OcipClientBase client, GroupHuntGroupConsolidatedDeleteInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -97,7 +97,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedDeleteInstanceRequestAsync(this OcipClient client, GroupHuntGroupConsolidatedDeleteInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedDeleteInstanceRequestAsync(this OcipClientBase client, GroupHuntGroupConsolidatedDeleteInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -117,7 +117,7 @@ namespace BroadWorksConnector
         /// includeHuntGroupNameInCLID
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupConsolidatedModifyInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedModifyInstanceRequest(this OcipClient client, GroupHuntGroupConsolidatedModifyInstanceRequest request)
+        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedModifyInstanceRequest(this OcipClientBase client, GroupHuntGroupConsolidatedModifyInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -137,7 +137,7 @@ namespace BroadWorksConnector
         /// useSystemHuntGroupCLIDSetting
         /// includeHuntGroupNameInCLID
         /// </summary>
-        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedModifyInstanceRequestAsync(this OcipClient client, GroupHuntGroupConsolidatedModifyInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupHuntGroupConsolidatedModifyInstanceRequestAsync(this OcipClientBase client, GroupHuntGroupConsolidatedModifyInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -146,7 +146,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupDeleteInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupHuntGroupDeleteInstanceRequest(this OcipClient client, GroupHuntGroupDeleteInstanceRequest request)
+        public static async Task<SuccessResponse> GroupHuntGroupDeleteInstanceRequest(this OcipClientBase client, GroupHuntGroupDeleteInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -155,7 +155,7 @@ namespace BroadWorksConnector
         /// Delete a Hunt Group instance from a group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupHuntGroupDeleteInstanceRequestAsync(this OcipClient client, GroupHuntGroupDeleteInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupHuntGroupDeleteInstanceRequestAsync(this OcipClientBase client, GroupHuntGroupDeleteInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -165,7 +165,7 @@ namespace BroadWorksConnector
         /// The response is either GroupHuntGroupGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupGetAvailableUserListRequestAsync instead.")]
-        public static async Task<GroupHuntGroupGetAvailableUserListResponse> GroupHuntGroupGetAvailableUserListRequest(this OcipClient client, GroupHuntGroupGetAvailableUserListRequest request)
+        public static async Task<GroupHuntGroupGetAvailableUserListResponse> GroupHuntGroupGetAvailableUserListRequest(this OcipClientBase client, GroupHuntGroupGetAvailableUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupHuntGroupGetAvailableUserListResponse;
         }
@@ -175,7 +175,7 @@ namespace BroadWorksConnector
         /// Searching for users by group only makes sense when the hunt group is part of an Enterprise.
         /// The response is either GroupHuntGroupGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupHuntGroupGetAvailableUserListResponse> GroupHuntGroupGetAvailableUserListRequestAsync(this OcipClient client, GroupHuntGroupGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupHuntGroupGetAvailableUserListResponse> GroupHuntGroupGetAvailableUserListRequestAsync(this OcipClientBase client, GroupHuntGroupGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupHuntGroupGetAvailableUserListResponse;
         }
@@ -195,7 +195,7 @@ namespace BroadWorksConnector
         /// included. Then the search criteria are logically ORed together.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupGetAvailableUserPagedSortedListRequestAsync instead.")]
-        public static async Task<GroupHuntGroupGetAvailableUserPagedSortedListResponse> GroupHuntGroupGetAvailableUserPagedSortedListRequest(this OcipClient client, GroupHuntGroupGetAvailableUserPagedSortedListRequest request)
+        public static async Task<GroupHuntGroupGetAvailableUserPagedSortedListResponse> GroupHuntGroupGetAvailableUserPagedSortedListRequest(this OcipClientBase client, GroupHuntGroupGetAvailableUserPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupHuntGroupGetAvailableUserPagedSortedListResponse;
         }
@@ -215,7 +215,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together unless the searchCriteriaModeOr option is
         /// included. Then the search criteria are logically ORed together.
         /// </summary>
-        public static async Task<GroupHuntGroupGetAvailableUserPagedSortedListResponse> GroupHuntGroupGetAvailableUserPagedSortedListRequestAsync(this OcipClient client, GroupHuntGroupGetAvailableUserPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupHuntGroupGetAvailableUserPagedSortedListResponse> GroupHuntGroupGetAvailableUserPagedSortedListRequestAsync(this OcipClientBase client, GroupHuntGroupGetAvailableUserPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupHuntGroupGetAvailableUserPagedSortedListResponse;
         }
@@ -225,7 +225,7 @@ namespace BroadWorksConnector
         /// It is possible to get the instances within a specified department.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupGetInstanceListRequestAsync instead.")]
-        public static async Task<GroupHuntGroupGetInstanceListResponse> GroupHuntGroupGetInstanceListRequest(this OcipClient client, GroupHuntGroupGetInstanceListRequest request)
+        public static async Task<GroupHuntGroupGetInstanceListResponse> GroupHuntGroupGetInstanceListRequest(this OcipClientBase client, GroupHuntGroupGetInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupHuntGroupGetInstanceListResponse;
         }
@@ -235,7 +235,7 @@ namespace BroadWorksConnector
         /// The response is either GroupHuntGroupGetInstanceListResponse or ErrorResponse.
         /// It is possible to get the instances within a specified department.
         /// </summary>
-        public static async Task<GroupHuntGroupGetInstanceListResponse> GroupHuntGroupGetInstanceListRequestAsync(this OcipClient client, GroupHuntGroupGetInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupHuntGroupGetInstanceListResponse> GroupHuntGroupGetInstanceListRequestAsync(this OcipClientBase client, GroupHuntGroupGetInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupHuntGroupGetInstanceListResponse;
         }
@@ -253,7 +253,7 @@ namespace BroadWorksConnector
         /// included. Then the search criteria are logically ORed together.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupGetInstancePagedSortedListRequestAsync instead.")]
-        public static async Task<GroupHuntGroupGetInstancePagedSortedListResponse> GroupHuntGroupGetInstancePagedSortedListRequest(this OcipClient client, GroupHuntGroupGetInstancePagedSortedListRequest request)
+        public static async Task<GroupHuntGroupGetInstancePagedSortedListResponse> GroupHuntGroupGetInstancePagedSortedListRequest(this OcipClientBase client, GroupHuntGroupGetInstancePagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupHuntGroupGetInstancePagedSortedListResponse;
         }
@@ -271,7 +271,7 @@ namespace BroadWorksConnector
         /// Multiple search criteria are logically ANDed together unless the searchCriteriaModeOr option is
         /// included. Then the search criteria are logically ORed together.
         /// </summary>
-        public static async Task<GroupHuntGroupGetInstancePagedSortedListResponse> GroupHuntGroupGetInstancePagedSortedListRequestAsync(this OcipClient client, GroupHuntGroupGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupHuntGroupGetInstancePagedSortedListResponse> GroupHuntGroupGetInstancePagedSortedListRequestAsync(this OcipClientBase client, GroupHuntGroupGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupHuntGroupGetInstancePagedSortedListResponse;
         }
@@ -280,7 +280,7 @@ namespace BroadWorksConnector
         /// The response is either GroupHuntGroupGetInstanceResponse20 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupGetInstanceRequest20Async instead.")]
-        public static async Task<GroupHuntGroupGetInstanceResponse20> GroupHuntGroupGetInstanceRequest20(this OcipClient client, GroupHuntGroupGetInstanceRequest20 request)
+        public static async Task<GroupHuntGroupGetInstanceResponse20> GroupHuntGroupGetInstanceRequest20(this OcipClientBase client, GroupHuntGroupGetInstanceRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupHuntGroupGetInstanceResponse20;
         }
@@ -289,7 +289,7 @@ namespace BroadWorksConnector
         /// Request to get all the information of a Hunt Group instance.
         /// The response is either GroupHuntGroupGetInstanceResponse20 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupHuntGroupGetInstanceResponse20> GroupHuntGroupGetInstanceRequest20Async(this OcipClient client, GroupHuntGroupGetInstanceRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupHuntGroupGetInstanceResponse20> GroupHuntGroupGetInstanceRequest20Async(this OcipClientBase client, GroupHuntGroupGetInstanceRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupHuntGroupGetInstanceResponse20;
         }
@@ -298,7 +298,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupModifyActiveInstanceListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupHuntGroupModifyActiveInstanceListRequest(this OcipClient client, GroupHuntGroupModifyActiveInstanceListRequest request)
+        public static async Task<SuccessResponse> GroupHuntGroupModifyActiveInstanceListRequest(this OcipClientBase client, GroupHuntGroupModifyActiveInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -307,7 +307,7 @@ namespace BroadWorksConnector
         /// Request to set the active status of Hunt Group instances.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupHuntGroupModifyActiveInstanceListRequestAsync(this OcipClient client, GroupHuntGroupModifyActiveInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupHuntGroupModifyActiveInstanceListRequestAsync(this OcipClientBase client, GroupHuntGroupModifyActiveInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -321,7 +321,7 @@ namespace BroadWorksConnector
         /// networkClassOfService
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupModifyInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupHuntGroupModifyInstanceRequest(this OcipClient client, GroupHuntGroupModifyInstanceRequest request)
+        public static async Task<SuccessResponse> GroupHuntGroupModifyInstanceRequest(this OcipClientBase client, GroupHuntGroupModifyInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -335,7 +335,7 @@ namespace BroadWorksConnector
         /// applyGroupBusyWhenTerminatingToAgent
         /// networkClassOfService
         /// </summary>
-        public static async Task<SuccessResponse> GroupHuntGroupModifyInstanceRequestAsync(this OcipClient client, GroupHuntGroupModifyInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupHuntGroupModifyInstanceRequestAsync(this OcipClientBase client, GroupHuntGroupModifyInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -347,7 +347,7 @@ namespace BroadWorksConnector
         /// will have their weight set to 0.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupModifyInstanceWeightedCallDistributionRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupHuntGroupModifyInstanceWeightedCallDistributionRequest(this OcipClient client, GroupHuntGroupModifyInstanceWeightedCallDistributionRequest request)
+        public static async Task<SuccessResponse> GroupHuntGroupModifyInstanceWeightedCallDistributionRequest(this OcipClientBase client, GroupHuntGroupModifyInstanceWeightedCallDistributionRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -359,7 +359,7 @@ namespace BroadWorksConnector
         /// existing weight setting. In release 14, any agents who are not in the list
         /// will have their weight set to 0.
         /// </summary>
-        public static async Task<SuccessResponse> GroupHuntGroupModifyInstanceWeightedCallDistributionRequestAsync(this OcipClient client, GroupHuntGroupModifyInstanceWeightedCallDistributionRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupHuntGroupModifyInstanceWeightedCallDistributionRequestAsync(this OcipClientBase client, GroupHuntGroupModifyInstanceWeightedCallDistributionRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -369,7 +369,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemHuntGroupGetRequest21Async instead.")]
-        public static async Task<SystemHuntGroupGetResponse21> SystemHuntGroupGetRequest21(this OcipClient client, SystemHuntGroupGetRequest21 request)
+        public static async Task<SystemHuntGroupGetResponse21> SystemHuntGroupGetRequest21(this OcipClientBase client, SystemHuntGroupGetRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemHuntGroupGetResponse21;
         }
@@ -379,7 +379,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemHuntGroupGetResponse21 or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<SystemHuntGroupGetResponse21> SystemHuntGroupGetRequest21Async(this OcipClient client, SystemHuntGroupGetRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemHuntGroupGetResponse21> SystemHuntGroupGetRequest21Async(this OcipClientBase client, SystemHuntGroupGetRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemHuntGroupGetResponse21;
         }
@@ -388,7 +388,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemHuntGroupModifyRequest21Async instead.")]
-        public static async Task<SuccessResponse> SystemHuntGroupModifyRequest21(this OcipClient client, SystemHuntGroupModifyRequest21 request)
+        public static async Task<SuccessResponse> SystemHuntGroupModifyRequest21(this OcipClientBase client, SystemHuntGroupModifyRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -397,7 +397,7 @@ namespace BroadWorksConnector
         /// Modify the system level data associated with Hunt Group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemHuntGroupModifyRequest21Async(this OcipClient client, SystemHuntGroupModifyRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemHuntGroupModifyRequest21Async(this OcipClientBase client, SystemHuntGroupModifyRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

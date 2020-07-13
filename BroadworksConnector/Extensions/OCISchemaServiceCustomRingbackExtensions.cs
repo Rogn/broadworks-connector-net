@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCustomRingbackGroupGetResponse20 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCustomRingbackGroupGetRequest20Async instead.")]
-        public static async Task<GroupCustomRingbackGroupGetResponse20> GroupCustomRingbackGroupGetRequest20(this OcipClient client, GroupCustomRingbackGroupGetRequest20 request)
+        public static async Task<GroupCustomRingbackGroupGetResponse20> GroupCustomRingbackGroupGetRequest20(this OcipClientBase client, GroupCustomRingbackGroupGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCustomRingbackGroupGetResponse20;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Get the group's custom ring back service settings.
         /// The response is either a GroupCustomRingbackGroupGetResponse20 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCustomRingbackGroupGetResponse20> GroupCustomRingbackGroupGetRequest20Async(this OcipClient client, GroupCustomRingbackGroupGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCustomRingbackGroupGetResponse20> GroupCustomRingbackGroupGetRequest20Async(this OcipClientBase client, GroupCustomRingbackGroupGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCustomRingbackGroupGetResponse20;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCustomRingbackGroupModifyRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupCustomRingbackGroupModifyRequest20(this OcipClient client, GroupCustomRingbackGroupModifyRequest20 request)
+        public static async Task<SuccessResponse> GroupCustomRingbackGroupModifyRequest20(this OcipClientBase client, GroupCustomRingbackGroupModifyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Modify the group's custom ring back service settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCustomRingbackGroupModifyRequest20Async(this OcipClient client, GroupCustomRingbackGroupModifyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCustomRingbackGroupModifyRequest20Async(this OcipClientBase client, GroupCustomRingbackGroupModifyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -51,7 +51,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCustomRingbackUserAddCriteriaRequest20Async instead.")]
-        public static async Task<SuccessResponse> UserCustomRingbackUserAddCriteriaRequest20(this OcipClient client, UserCustomRingbackUserAddCriteriaRequest20 request)
+        public static async Task<SuccessResponse> UserCustomRingbackUserAddCriteriaRequest20(this OcipClientBase client, UserCustomRingbackUserAddCriteriaRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -61,7 +61,7 @@ namespace BroadWorksConnector
         /// For the callToNumber, the extension element is not used and the number element is only used when the type is BroadWorks Mobility.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCustomRingbackUserAddCriteriaRequest20Async(this OcipClient client, UserCustomRingbackUserAddCriteriaRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCustomRingbackUserAddCriteriaRequest20Async(this OcipClientBase client, UserCustomRingbackUserAddCriteriaRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -70,7 +70,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCustomRingbackUserDeleteCriteriaRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCustomRingbackUserDeleteCriteriaRequest(this OcipClient client, UserCustomRingbackUserDeleteCriteriaRequest request)
+        public static async Task<SuccessResponse> UserCustomRingbackUserDeleteCriteriaRequest(this OcipClientBase client, UserCustomRingbackUserDeleteCriteriaRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -79,7 +79,7 @@ namespace BroadWorksConnector
         /// Delete a criteria from the user's custom ringback service.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCustomRingbackUserDeleteCriteriaRequestAsync(this OcipClient client, UserCustomRingbackUserDeleteCriteriaRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCustomRingbackUserDeleteCriteriaRequestAsync(this OcipClientBase client, UserCustomRingbackUserDeleteCriteriaRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -88,7 +88,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCustomRingbackUserGetCriteriaListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCustomRingbackUserGetCriteriaListRequestAsync instead.")]
-        public static async Task<UserCustomRingbackUserGetCriteriaListResponse> UserCustomRingbackUserGetCriteriaListRequest(this OcipClient client, UserCustomRingbackUserGetCriteriaListRequest request)
+        public static async Task<UserCustomRingbackUserGetCriteriaListResponse> UserCustomRingbackUserGetCriteriaListRequest(this OcipClientBase client, UserCustomRingbackUserGetCriteriaListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCustomRingbackUserGetCriteriaListResponse;
         }
@@ -97,7 +97,7 @@ namespace BroadWorksConnector
         /// Get the user's custom ringback service criteria listing.
         /// The response is either a UserCustomRingbackUserGetCriteriaListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCustomRingbackUserGetCriteriaListResponse> UserCustomRingbackUserGetCriteriaListRequestAsync(this OcipClient client, UserCustomRingbackUserGetCriteriaListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCustomRingbackUserGetCriteriaListResponse> UserCustomRingbackUserGetCriteriaListRequestAsync(this OcipClientBase client, UserCustomRingbackUserGetCriteriaListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCustomRingbackUserGetCriteriaListResponse;
         }
@@ -106,7 +106,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCustomRingbackUserGetCriteriaResponse21 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCustomRingbackUserGetCriteriaRequest21Async instead.")]
-        public static async Task<UserCustomRingbackUserGetCriteriaResponse21> UserCustomRingbackUserGetCriteriaRequest21(this OcipClient client, UserCustomRingbackUserGetCriteriaRequest21 request)
+        public static async Task<UserCustomRingbackUserGetCriteriaResponse21> UserCustomRingbackUserGetCriteriaRequest21(this OcipClientBase client, UserCustomRingbackUserGetCriteriaRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCustomRingbackUserGetCriteriaResponse21;
         }
@@ -115,7 +115,7 @@ namespace BroadWorksConnector
         /// Get a criteria for the user's custom ringback service.
         /// The response is either a UserCustomRingbackUserGetCriteriaResponse21 or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCustomRingbackUserGetCriteriaResponse21> UserCustomRingbackUserGetCriteriaRequest21Async(this OcipClient client, UserCustomRingbackUserGetCriteriaRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<UserCustomRingbackUserGetCriteriaResponse21> UserCustomRingbackUserGetCriteriaRequest21Async(this OcipClientBase client, UserCustomRingbackUserGetCriteriaRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCustomRingbackUserGetCriteriaResponse21;
         }
@@ -124,7 +124,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCustomRingbackUserModifyActiveCriteriaListRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCustomRingbackUserModifyActiveCriteriaListRequest(this OcipClient client, UserCustomRingbackUserModifyActiveCriteriaListRequest request)
+        public static async Task<SuccessResponse> UserCustomRingbackUserModifyActiveCriteriaListRequest(this OcipClientBase client, UserCustomRingbackUserModifyActiveCriteriaListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -133,7 +133,7 @@ namespace BroadWorksConnector
         /// Modify the user's custom ringback service criteria's active setting.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCustomRingbackUserModifyActiveCriteriaListRequestAsync(this OcipClient client, UserCustomRingbackUserModifyActiveCriteriaListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCustomRingbackUserModifyActiveCriteriaListRequestAsync(this OcipClientBase client, UserCustomRingbackUserModifyActiveCriteriaListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -143,7 +143,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCustomRingbackUserModifyCriteriaRequest20Async instead.")]
-        public static async Task<SuccessResponse> UserCustomRingbackUserModifyCriteriaRequest20(this OcipClient client, UserCustomRingbackUserModifyCriteriaRequest20 request)
+        public static async Task<SuccessResponse> UserCustomRingbackUserModifyCriteriaRequest20(this OcipClientBase client, UserCustomRingbackUserModifyCriteriaRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -153,7 +153,7 @@ namespace BroadWorksConnector
         /// For the callToNumbers in the callToNumberList, the extension element is not used and the number element is only used when the type is BroadWorks Mobility.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCustomRingbackUserModifyCriteriaRequest20Async(this OcipClient client, UserCustomRingbackUserModifyCriteriaRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCustomRingbackUserModifyCriteriaRequest20Async(this OcipClientBase client, UserCustomRingbackUserModifyCriteriaRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either UserNumberPortabilityAnnouncementGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserNumberPortabilityAnnouncementGetRequestAsync instead.")]
-        public static async Task<UserNumberPortabilityAnnouncementGetResponse> UserNumberPortabilityAnnouncementGetRequest(this OcipClient client, UserNumberPortabilityAnnouncementGetRequest request)
+        public static async Task<UserNumberPortabilityAnnouncementGetResponse> UserNumberPortabilityAnnouncementGetRequest(this OcipClientBase client, UserNumberPortabilityAnnouncementGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserNumberPortabilityAnnouncementGetResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Get the Number Portability Announcement attributes for the user.
         /// The response is either UserNumberPortabilityAnnouncementGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<UserNumberPortabilityAnnouncementGetResponse> UserNumberPortabilityAnnouncementGetRequestAsync(this OcipClient client, UserNumberPortabilityAnnouncementGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserNumberPortabilityAnnouncementGetResponse> UserNumberPortabilityAnnouncementGetRequestAsync(this OcipClientBase client, UserNumberPortabilityAnnouncementGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserNumberPortabilityAnnouncementGetResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserNumberPortabilityAnnouncementModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserNumberPortabilityAnnouncementModifyRequest(this OcipClient client, UserNumberPortabilityAnnouncementModifyRequest request)
+        public static async Task<SuccessResponse> UserNumberPortabilityAnnouncementModifyRequest(this OcipClientBase client, UserNumberPortabilityAnnouncementModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Modify the Number Portability Announcement attributes for the user.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserNumberPortabilityAnnouncementModifyRequestAsync(this OcipClient client, UserNumberPortabilityAnnouncementModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserNumberPortabilityAnnouncementModifyRequestAsync(this OcipClientBase client, UserNumberPortabilityAnnouncementModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

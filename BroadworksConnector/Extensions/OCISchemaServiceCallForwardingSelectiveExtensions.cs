@@ -18,7 +18,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingSelectiveAddCriteriaRequest16Async instead.")]
-        public static async Task<SuccessResponse> UserCallForwardingSelectiveAddCriteriaRequest16(this OcipClient client, UserCallForwardingSelectiveAddCriteriaRequest16 request)
+        public static async Task<SuccessResponse> UserCallForwardingSelectiveAddCriteriaRequest16(this OcipClientBase client, UserCallForwardingSelectiveAddCriteriaRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -31,7 +31,7 @@ namespace BroadWorksConnector
         /// For the callToNumber, the extension element is not used and the number element is only used when the type is BroadWorks Mobility.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallForwardingSelectiveAddCriteriaRequest16Async(this OcipClient client, UserCallForwardingSelectiveAddCriteriaRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallForwardingSelectiveAddCriteriaRequest16Async(this OcipClientBase client, UserCallForwardingSelectiveAddCriteriaRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -40,7 +40,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingSelectiveDeleteCriteriaRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallForwardingSelectiveDeleteCriteriaRequest(this OcipClient client, UserCallForwardingSelectiveDeleteCriteriaRequest request)
+        public static async Task<SuccessResponse> UserCallForwardingSelectiveDeleteCriteriaRequest(this OcipClientBase client, UserCallForwardingSelectiveDeleteCriteriaRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -49,7 +49,7 @@ namespace BroadWorksConnector
         /// Delete a criteria from the user's call forwarding selective service.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallForwardingSelectiveDeleteCriteriaRequestAsync(this OcipClient client, UserCallForwardingSelectiveDeleteCriteriaRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallForwardingSelectiveDeleteCriteriaRequestAsync(this OcipClientBase client, UserCallForwardingSelectiveDeleteCriteriaRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -58,7 +58,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallForwardingSelectiveGetCriteriaResponse21 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingSelectiveGetCriteriaRequest21Async instead.")]
-        public static async Task<UserCallForwardingSelectiveGetCriteriaResponse21> UserCallForwardingSelectiveGetCriteriaRequest21(this OcipClient client, UserCallForwardingSelectiveGetCriteriaRequest21 request)
+        public static async Task<UserCallForwardingSelectiveGetCriteriaResponse21> UserCallForwardingSelectiveGetCriteriaRequest21(this OcipClientBase client, UserCallForwardingSelectiveGetCriteriaRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallForwardingSelectiveGetCriteriaResponse21;
         }
@@ -67,7 +67,7 @@ namespace BroadWorksConnector
         /// Get a criteria for the user's call forwarding selective service.
         /// The response is either a UserCallForwardingSelectiveGetCriteriaResponse21 or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCallForwardingSelectiveGetCriteriaResponse21> UserCallForwardingSelectiveGetCriteriaRequest21Async(this OcipClient client, UserCallForwardingSelectiveGetCriteriaRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallForwardingSelectiveGetCriteriaResponse21> UserCallForwardingSelectiveGetCriteriaRequest21Async(this OcipClientBase client, UserCallForwardingSelectiveGetCriteriaRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallForwardingSelectiveGetCriteriaResponse21;
         }
@@ -76,7 +76,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallForwardingSelectiveGetResponse16 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingSelectiveGetRequest16Async instead.")]
-        public static async Task<UserCallForwardingSelectiveGetResponse16> UserCallForwardingSelectiveGetRequest16(this OcipClient client, UserCallForwardingSelectiveGetRequest16 request)
+        public static async Task<UserCallForwardingSelectiveGetResponse16> UserCallForwardingSelectiveGetRequest16(this OcipClientBase client, UserCallForwardingSelectiveGetRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallForwardingSelectiveGetResponse16;
         }
@@ -85,7 +85,7 @@ namespace BroadWorksConnector
         /// Get the user's call forwarding selective service setting.
         /// The response is either a UserCallForwardingSelectiveGetResponse16 or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCallForwardingSelectiveGetResponse16> UserCallForwardingSelectiveGetRequest16Async(this OcipClient client, UserCallForwardingSelectiveGetRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallForwardingSelectiveGetResponse16> UserCallForwardingSelectiveGetRequest16Async(this OcipClientBase client, UserCallForwardingSelectiveGetRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallForwardingSelectiveGetResponse16;
         }
@@ -98,7 +98,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingSelectiveModifyCriteriaRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallForwardingSelectiveModifyCriteriaRequest(this OcipClient client, UserCallForwardingSelectiveModifyCriteriaRequest request)
+        public static async Task<SuccessResponse> UserCallForwardingSelectiveModifyCriteriaRequest(this OcipClientBase client, UserCallForwardingSelectiveModifyCriteriaRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -111,7 +111,7 @@ namespace BroadWorksConnector
         /// For the callToNumbers in the callToNumberList, the extension element is not used and the number element is only used when the type is BroadWorks Mobility.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallForwardingSelectiveModifyCriteriaRequestAsync(this OcipClient client, UserCallForwardingSelectiveModifyCriteriaRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallForwardingSelectiveModifyCriteriaRequestAsync(this OcipClientBase client, UserCallForwardingSelectiveModifyCriteriaRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -120,7 +120,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingSelectiveModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallForwardingSelectiveModifyRequest(this OcipClient client, UserCallForwardingSelectiveModifyRequest request)
+        public static async Task<SuccessResponse> UserCallForwardingSelectiveModifyRequest(this OcipClientBase client, UserCallForwardingSelectiveModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -129,7 +129,7 @@ namespace BroadWorksConnector
         /// Modify the user's call forwarding selective service setting.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallForwardingSelectiveModifyRequestAsync(this OcipClient client, UserCallForwardingSelectiveModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallForwardingSelectiveModifyRequestAsync(this OcipClientBase client, UserCallForwardingSelectiveModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

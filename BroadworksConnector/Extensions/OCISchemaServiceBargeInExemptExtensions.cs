@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserBargeInExemptGetRequestAsync instead.")]
-        public static async Task<UserBargeInExemptGetResponse> UserBargeInExemptGetRequest(this OcipClient client, UserBargeInExemptGetRequest request)
+        public static async Task<UserBargeInExemptGetResponse> UserBargeInExemptGetRequest(this OcipClientBase client, UserBargeInExemptGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserBargeInExemptGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a UserBargeInExemptGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserBargeInExemptGetResponse> UserBargeInExemptGetRequestAsync(this OcipClient client, UserBargeInExemptGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserBargeInExemptGetResponse> UserBargeInExemptGetRequestAsync(this OcipClientBase client, UserBargeInExemptGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserBargeInExemptGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserBargeInExemptModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserBargeInExemptModifyRequest(this OcipClient client, UserBargeInExemptModifyRequest request)
+        public static async Task<SuccessResponse> UserBargeInExemptModifyRequest(this OcipClientBase client, UserBargeInExemptModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the user level data associated with Barge In Exempt.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserBargeInExemptModifyRequestAsync(this OcipClient client, UserBargeInExemptModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserBargeInExemptModifyRequestAsync(this OcipClientBase client, UserBargeInExemptModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

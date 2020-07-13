@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserExternalCallingLineIDDeliveryGetRequestAsync instead.")]
-        public static async Task<UserExternalCallingLineIDDeliveryGetResponse> UserExternalCallingLineIDDeliveryGetRequest(this OcipClient client, UserExternalCallingLineIDDeliveryGetRequest request)
+        public static async Task<UserExternalCallingLineIDDeliveryGetResponse> UserExternalCallingLineIDDeliveryGetRequest(this OcipClientBase client, UserExternalCallingLineIDDeliveryGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserExternalCallingLineIDDeliveryGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a UserExternalCallingLineIDDeliveryGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserExternalCallingLineIDDeliveryGetResponse> UserExternalCallingLineIDDeliveryGetRequestAsync(this OcipClient client, UserExternalCallingLineIDDeliveryGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserExternalCallingLineIDDeliveryGetResponse> UserExternalCallingLineIDDeliveryGetRequestAsync(this OcipClientBase client, UserExternalCallingLineIDDeliveryGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserExternalCallingLineIDDeliveryGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserExternalCallingLineIDDeliveryModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserExternalCallingLineIDDeliveryModifyRequest(this OcipClient client, UserExternalCallingLineIDDeliveryModifyRequest request)
+        public static async Task<SuccessResponse> UserExternalCallingLineIDDeliveryModifyRequest(this OcipClientBase client, UserExternalCallingLineIDDeliveryModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the user level data associated with External Calling Line ID Delivery.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserExternalCallingLineIDDeliveryModifyRequestAsync(this OcipClient client, UserExternalCallingLineIDDeliveryModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserExternalCallingLineIDDeliveryModifyRequestAsync(this OcipClientBase client, UserExternalCallingLineIDDeliveryModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

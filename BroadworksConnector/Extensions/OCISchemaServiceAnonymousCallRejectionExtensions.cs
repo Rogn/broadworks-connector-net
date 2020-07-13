@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemAnonymousCallRejectionGetRequestAsync instead.")]
-        public static async Task<SystemAnonymousCallRejectionGetResponse> SystemAnonymousCallRejectionGetRequest(this OcipClient client, SystemAnonymousCallRejectionGetRequest request)
+        public static async Task<SystemAnonymousCallRejectionGetResponse> SystemAnonymousCallRejectionGetRequest(this OcipClientBase client, SystemAnonymousCallRejectionGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemAnonymousCallRejectionGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemAnonymousCallRejectionGetResponse or
         /// an ErrorResponse.
         /// </summary>
-        public static async Task<SystemAnonymousCallRejectionGetResponse> SystemAnonymousCallRejectionGetRequestAsync(this OcipClient client, SystemAnonymousCallRejectionGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemAnonymousCallRejectionGetResponse> SystemAnonymousCallRejectionGetRequestAsync(this OcipClientBase client, SystemAnonymousCallRejectionGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemAnonymousCallRejectionGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemAnonymousCallRejectionModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemAnonymousCallRejectionModifyRequest(this OcipClient client, SystemAnonymousCallRejectionModifyRequest request)
+        public static async Task<SuccessResponse> SystemAnonymousCallRejectionModifyRequest(this OcipClientBase client, SystemAnonymousCallRejectionModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify a system Anonymous Call Rejection parameter.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemAnonymousCallRejectionModifyRequestAsync(this OcipClient client, SystemAnonymousCallRejectionModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemAnonymousCallRejectionModifyRequestAsync(this OcipClientBase client, SystemAnonymousCallRejectionModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -53,7 +53,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserAnonymousCallRejectionGetRequestAsync instead.")]
-        public static async Task<UserAnonymousCallRejectionGetResponse> UserAnonymousCallRejectionGetRequest(this OcipClient client, UserAnonymousCallRejectionGetRequest request)
+        public static async Task<UserAnonymousCallRejectionGetResponse> UserAnonymousCallRejectionGetRequest(this OcipClientBase client, UserAnonymousCallRejectionGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserAnonymousCallRejectionGetResponse;
         }
@@ -63,7 +63,7 @@ namespace BroadWorksConnector
         /// The response is either a UserAnonymousCallRejectionGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserAnonymousCallRejectionGetResponse> UserAnonymousCallRejectionGetRequestAsync(this OcipClient client, UserAnonymousCallRejectionGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserAnonymousCallRejectionGetResponse> UserAnonymousCallRejectionGetRequestAsync(this OcipClientBase client, UserAnonymousCallRejectionGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserAnonymousCallRejectionGetResponse;
         }
@@ -72,7 +72,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserAnonymousCallRejectionModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserAnonymousCallRejectionModifyRequest(this OcipClient client, UserAnonymousCallRejectionModifyRequest request)
+        public static async Task<SuccessResponse> UserAnonymousCallRejectionModifyRequest(this OcipClientBase client, UserAnonymousCallRejectionModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -81,7 +81,7 @@ namespace BroadWorksConnector
         /// Modify the user level data associated with Anonymous Call Rejection.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserAnonymousCallRejectionModifyRequestAsync(this OcipClient client, UserAnonymousCallRejectionModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserAnonymousCallRejectionModifyRequestAsync(this OcipClientBase client, UserAnonymousCallRejectionModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

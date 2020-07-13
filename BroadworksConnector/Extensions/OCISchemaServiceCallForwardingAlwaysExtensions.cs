@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingAlwaysGetRequestAsync instead.")]
-        public static async Task<UserCallForwardingAlwaysGetResponse> UserCallForwardingAlwaysGetRequest(this OcipClient client, UserCallForwardingAlwaysGetRequest request)
+        public static async Task<UserCallForwardingAlwaysGetResponse> UserCallForwardingAlwaysGetRequest(this OcipClientBase client, UserCallForwardingAlwaysGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallForwardingAlwaysGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallForwardingAlwaysGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCallForwardingAlwaysGetResponse> UserCallForwardingAlwaysGetRequestAsync(this OcipClient client, UserCallForwardingAlwaysGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallForwardingAlwaysGetResponse> UserCallForwardingAlwaysGetRequestAsync(this OcipClientBase client, UserCallForwardingAlwaysGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallForwardingAlwaysGetResponse;
         }
@@ -35,7 +35,7 @@ namespace BroadWorksConnector
         /// Engineering Note: This command is used internally by Call Processing.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingAlwaysModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallForwardingAlwaysModifyRequest(this OcipClient client, UserCallForwardingAlwaysModifyRequest request)
+        public static async Task<SuccessResponse> UserCallForwardingAlwaysModifyRequest(this OcipClientBase client, UserCallForwardingAlwaysModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -45,7 +45,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// Engineering Note: This command is used internally by Call Processing.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallForwardingAlwaysModifyRequestAsync(this OcipClient client, UserCallForwardingAlwaysModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallForwardingAlwaysModifyRequestAsync(this OcipClientBase client, UserCallForwardingAlwaysModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

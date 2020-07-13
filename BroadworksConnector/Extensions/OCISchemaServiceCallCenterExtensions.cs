@@ -17,7 +17,7 @@ namespace BroadWorksConnector
         /// The response is either a EnterpriseCallCenterAgentThresholdDefaultProfileGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentThresholdDefaultProfileGetRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterAgentThresholdDefaultProfileGetResponse> EnterpriseCallCenterAgentThresholdDefaultProfileGetRequest(this OcipClient client, EnterpriseCallCenterAgentThresholdDefaultProfileGetRequest request)
+        public static async Task<EnterpriseCallCenterAgentThresholdDefaultProfileGetResponse> EnterpriseCallCenterAgentThresholdDefaultProfileGetRequest(this OcipClientBase client, EnterpriseCallCenterAgentThresholdDefaultProfileGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdDefaultProfileGetResponse;
         }
@@ -29,7 +29,7 @@ namespace BroadWorksConnector
         /// list of agents to be included in the table.
         /// The response is either a EnterpriseCallCenterAgentThresholdDefaultProfileGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterAgentThresholdDefaultProfileGetResponse> EnterpriseCallCenterAgentThresholdDefaultProfileGetRequestAsync(this OcipClient client, EnterpriseCallCenterAgentThresholdDefaultProfileGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterAgentThresholdDefaultProfileGetResponse> EnterpriseCallCenterAgentThresholdDefaultProfileGetRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentThresholdDefaultProfileGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdDefaultProfileGetResponse;
         }
@@ -39,7 +39,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentThresholdProfileAddAgentListRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileAddAgentListRequest(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileAddAgentListRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileAddAgentListRequest(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileAddAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -49,7 +49,7 @@ namespace BroadWorksConnector
         /// When an agent is assigned (added) to a profile, it is automatically unassigned (deleted) from the previous profile it was assigned to.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileAddAgentListRequestAsync(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileAddAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileAddAgentListRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileAddAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -58,7 +58,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentThresholdProfileAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileAddRequest(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileAddRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileAddRequest(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -67,7 +67,7 @@ namespace BroadWorksConnector
         /// Add a new Call Center Agent Threshold Profile in an Enterprise.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileAddRequestAsync(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileAddRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -77,7 +77,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentThresholdProfileDeleteAgentListRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileDeleteAgentListRequest(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileDeleteAgentListRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileDeleteAgentListRequest(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileDeleteAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -87,7 +87,7 @@ namespace BroadWorksConnector
         /// Agents cannot be unassigned (deleted) directly from the default profile, they need to be assigned (added) to a different profile.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileDeleteAgentListRequestAsync(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileDeleteAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileDeleteAgentListRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileDeleteAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -97,7 +97,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentThresholdProfileDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileDeleteRequest(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileDeleteRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileDeleteRequest(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -107,7 +107,7 @@ namespace BroadWorksConnector
         /// The default profile cannot be deleted.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileDeleteRequestAsync(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileDeleteRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -121,7 +121,7 @@ namespace BroadWorksConnector
         /// The response is either a EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListResponse> EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListRequest(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListRequest request)
+        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListResponse> EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListRequest(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListResponse;
         }
@@ -135,7 +135,7 @@ namespace BroadWorksConnector
         /// criterion element searchCriteriaAgentThresholdProfile is specified using the same profile name.
         /// The response is either a EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListResponse> EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListRequestAsync(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListResponse> EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentListResponse;
         }
@@ -162,7 +162,7 @@ namespace BroadWorksConnector
         /// The response is either a EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse> EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest request)
+        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse> EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse;
         }
@@ -189,7 +189,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either a EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse> EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequestAsync(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse> EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse;
         }
@@ -198,7 +198,7 @@ namespace BroadWorksConnector
         /// The response is either EnterpriseCallCenterAgentThresholdProfileGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentThresholdProfileGetListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetListResponse> EnterpriseCallCenterAgentThresholdProfileGetListRequest(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileGetListRequest request)
+        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetListResponse> EnterpriseCallCenterAgentThresholdProfileGetListRequest(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdProfileGetListResponse;
         }
@@ -207,7 +207,7 @@ namespace BroadWorksConnector
         /// Get the list of Call Center Agent Threshold Profiles in the Enterprise.
         /// The response is either EnterpriseCallCenterAgentThresholdProfileGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetListResponse> EnterpriseCallCenterAgentThresholdProfileGetListRequestAsync(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetListResponse> EnterpriseCallCenterAgentThresholdProfileGetListRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdProfileGetListResponse;
         }
@@ -230,7 +230,7 @@ namespace BroadWorksConnector
         /// The response is either a EnterpriseCallCenterAgentThresholdProfileGetPagedSortedResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentThresholdProfileGetPagedSortedRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetPagedSortedResponse> EnterpriseCallCenterAgentThresholdProfileGetPagedSortedRequest(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileGetPagedSortedRequest request)
+        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetPagedSortedResponse> EnterpriseCallCenterAgentThresholdProfileGetPagedSortedRequest(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileGetPagedSortedRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdProfileGetPagedSortedResponse;
         }
@@ -253,7 +253,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either a EnterpriseCallCenterAgentThresholdProfileGetPagedSortedResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetPagedSortedResponse> EnterpriseCallCenterAgentThresholdProfileGetPagedSortedRequestAsync(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileGetPagedSortedRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetPagedSortedResponse> EnterpriseCallCenterAgentThresholdProfileGetPagedSortedRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileGetPagedSortedRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdProfileGetPagedSortedResponse;
         }
@@ -262,7 +262,7 @@ namespace BroadWorksConnector
         /// The response is either a EnterpriseCallCenterAgentThresholdProfileGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentThresholdProfileGetRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetResponse> EnterpriseCallCenterAgentThresholdProfileGetRequest(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileGetRequest request)
+        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetResponse> EnterpriseCallCenterAgentThresholdProfileGetRequest(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdProfileGetResponse;
         }
@@ -271,7 +271,7 @@ namespace BroadWorksConnector
         /// Gets an existing non-default Call Center Agent Threshold Profile in an Enterprise.
         /// The response is either a EnterpriseCallCenterAgentThresholdProfileGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetResponse> EnterpriseCallCenterAgentThresholdProfileGetRequestAsync(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterAgentThresholdProfileGetResponse> EnterpriseCallCenterAgentThresholdProfileGetRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterAgentThresholdProfileGetResponse;
         }
@@ -280,7 +280,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentThresholdProfileModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileModifyRequest(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileModifyRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileModifyRequest(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -289,7 +289,7 @@ namespace BroadWorksConnector
         /// Modifies an existing Call Center Agent Threshold Profile in the Enterprise.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileModifyRequestAsync(this OcipClient client, EnterpriseCallCenterAgentThresholdProfileModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentThresholdProfileModifyRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentThresholdProfileModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -298,7 +298,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentUnavailableCodeAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeAddRequest(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeAddRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeAddRequest(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -307,7 +307,7 @@ namespace BroadWorksConnector
         /// Add a Call Center Agent Unavailable Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeAddRequestAsync(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeAddRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -316,7 +316,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentUnavailableCodeDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeDeleteRequest(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeDeleteRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeDeleteRequest(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -325,7 +325,7 @@ namespace BroadWorksConnector
         /// Delete a Call Center Agent Unavailable Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeDeleteRequestAsync(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeDeleteRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -334,7 +334,7 @@ namespace BroadWorksConnector
         /// The response is either EnterpriseCallCenterAgentUnavailableCodeGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentUnavailableCodeGetListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterAgentUnavailableCodeGetListResponse> EnterpriseCallCenterAgentUnavailableCodeGetListRequest(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeGetListRequest request)
+        public static async Task<EnterpriseCallCenterAgentUnavailableCodeGetListResponse> EnterpriseCallCenterAgentUnavailableCodeGetListRequest(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterAgentUnavailableCodeGetListResponse;
         }
@@ -343,7 +343,7 @@ namespace BroadWorksConnector
         /// Get the list of Call Center Agent Unavailable Codes.
         /// The response is either EnterpriseCallCenterAgentUnavailableCodeGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterAgentUnavailableCodeGetListResponse> EnterpriseCallCenterAgentUnavailableCodeGetListRequestAsync(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterAgentUnavailableCodeGetListResponse> EnterpriseCallCenterAgentUnavailableCodeGetListRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterAgentUnavailableCodeGetListResponse;
         }
@@ -352,7 +352,7 @@ namespace BroadWorksConnector
         /// The response is either EnterpriseCallCenterAgentUnavailableCodeGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentUnavailableCodeGetRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterAgentUnavailableCodeGetResponse> EnterpriseCallCenterAgentUnavailableCodeGetRequest(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeGetRequest request)
+        public static async Task<EnterpriseCallCenterAgentUnavailableCodeGetResponse> EnterpriseCallCenterAgentUnavailableCodeGetRequest(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterAgentUnavailableCodeGetResponse;
         }
@@ -361,7 +361,7 @@ namespace BroadWorksConnector
         /// Get a Call Center Agent Unavailable Code.
         /// The response is either EnterpriseCallCenterAgentUnavailableCodeGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterAgentUnavailableCodeGetResponse> EnterpriseCallCenterAgentUnavailableCodeGetRequestAsync(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterAgentUnavailableCodeGetResponse> EnterpriseCallCenterAgentUnavailableCodeGetRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterAgentUnavailableCodeGetResponse;
         }
@@ -370,7 +370,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentUnavailableCodeModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeModifyRequest(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeModifyRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeModifyRequest(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -379,7 +379,7 @@ namespace BroadWorksConnector
         /// Modify a Call Center Agent Unavailable Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeModifyRequestAsync(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeModifyRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -389,7 +389,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentUnavailableCodeSettingsGetRequest17sp4Async instead.")]
-        public static async Task<EnterpriseCallCenterAgentUnavailableCodeSettingsGetResponse17sp4> EnterpriseCallCenterAgentUnavailableCodeSettingsGetRequest17sp4(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeSettingsGetRequest17sp4 request)
+        public static async Task<EnterpriseCallCenterAgentUnavailableCodeSettingsGetResponse17sp4> EnterpriseCallCenterAgentUnavailableCodeSettingsGetRequest17sp4(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeSettingsGetRequest17sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterAgentUnavailableCodeSettingsGetResponse17sp4;
         }
@@ -399,7 +399,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseCallCenterAgentUnavailableCodeSettingsGetResponse17sp4 or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterAgentUnavailableCodeSettingsGetResponse17sp4> EnterpriseCallCenterAgentUnavailableCodeSettingsGetRequest17sp4Async(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeSettingsGetRequest17sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterAgentUnavailableCodeSettingsGetResponse17sp4> EnterpriseCallCenterAgentUnavailableCodeSettingsGetRequest17sp4Async(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeSettingsGetRequest17sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterAgentUnavailableCodeSettingsGetResponse17sp4;
         }
@@ -408,7 +408,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterAgentUnavailableCodeSettingsModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeSettingsModifyRequest(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeSettingsModifyRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeSettingsModifyRequest(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeSettingsModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -417,7 +417,7 @@ namespace BroadWorksConnector
         /// Modify the enterprise level data associated with Call Center Agents Unavailable Code Settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeSettingsModifyRequestAsync(this OcipClient client, EnterpriseCallCenterAgentUnavailableCodeSettingsModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterAgentUnavailableCodeSettingsModifyRequestAsync(this OcipClientBase client, EnterpriseCallCenterAgentUnavailableCodeSettingsModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -426,7 +426,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterCallDispositionCodeAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeAddRequest(this OcipClient client, EnterpriseCallCenterCallDispositionCodeAddRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeAddRequest(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -435,7 +435,7 @@ namespace BroadWorksConnector
         /// Add a Call Center Call Disposition Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeAddRequestAsync(this OcipClient client, EnterpriseCallCenterCallDispositionCodeAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeAddRequestAsync(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -444,7 +444,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterCallDispositionCodeDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeDeleteRequest(this OcipClient client, EnterpriseCallCenterCallDispositionCodeDeleteRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeDeleteRequest(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -453,7 +453,7 @@ namespace BroadWorksConnector
         /// Delete a Call Center Call Disposition Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeDeleteRequestAsync(this OcipClient client, EnterpriseCallCenterCallDispositionCodeDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeDeleteRequestAsync(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -462,7 +462,7 @@ namespace BroadWorksConnector
         /// The response is either EnterpriseCallCenterCallDispositionCodeGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterCallDispositionCodeGetListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterCallDispositionCodeGetListResponse> EnterpriseCallCenterCallDispositionCodeGetListRequest(this OcipClient client, EnterpriseCallCenterCallDispositionCodeGetListRequest request)
+        public static async Task<EnterpriseCallCenterCallDispositionCodeGetListResponse> EnterpriseCallCenterCallDispositionCodeGetListRequest(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterCallDispositionCodeGetListResponse;
         }
@@ -471,7 +471,7 @@ namespace BroadWorksConnector
         /// Get the list of Call Center Call Disposition Codes.
         /// The response is either EnterpriseCallCenterCallDispositionCodeGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterCallDispositionCodeGetListResponse> EnterpriseCallCenterCallDispositionCodeGetListRequestAsync(this OcipClient client, EnterpriseCallCenterCallDispositionCodeGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterCallDispositionCodeGetListResponse> EnterpriseCallCenterCallDispositionCodeGetListRequestAsync(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterCallDispositionCodeGetListResponse;
         }
@@ -480,7 +480,7 @@ namespace BroadWorksConnector
         /// The response is either EnterpriseCallCenterCallDispositionCodeGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterCallDispositionCodeGetRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterCallDispositionCodeGetResponse> EnterpriseCallCenterCallDispositionCodeGetRequest(this OcipClient client, EnterpriseCallCenterCallDispositionCodeGetRequest request)
+        public static async Task<EnterpriseCallCenterCallDispositionCodeGetResponse> EnterpriseCallCenterCallDispositionCodeGetRequest(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterCallDispositionCodeGetResponse;
         }
@@ -489,7 +489,7 @@ namespace BroadWorksConnector
         /// Get a Call Center Call Disposition Code.
         /// The response is either EnterpriseCallCenterCallDispositionCodeGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterCallDispositionCodeGetResponse> EnterpriseCallCenterCallDispositionCodeGetRequestAsync(this OcipClient client, EnterpriseCallCenterCallDispositionCodeGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterCallDispositionCodeGetResponse> EnterpriseCallCenterCallDispositionCodeGetRequestAsync(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterCallDispositionCodeGetResponse;
         }
@@ -498,7 +498,7 @@ namespace BroadWorksConnector
         /// The response is either EnterpriseCallCenterCallDispositionCodeGetUsageListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterCallDispositionCodeGetUsageListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterCallDispositionCodeGetUsageListResponse> EnterpriseCallCenterCallDispositionCodeGetUsageListRequest(this OcipClient client, EnterpriseCallCenterCallDispositionCodeGetUsageListRequest request)
+        public static async Task<EnterpriseCallCenterCallDispositionCodeGetUsageListResponse> EnterpriseCallCenterCallDispositionCodeGetUsageListRequest(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeGetUsageListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterCallDispositionCodeGetUsageListResponse;
         }
@@ -507,7 +507,7 @@ namespace BroadWorksConnector
         /// Get the list of Call Centers and Route Points using the specified disposition code.
         /// The response is either EnterpriseCallCenterCallDispositionCodeGetUsageListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterCallDispositionCodeGetUsageListResponse> EnterpriseCallCenterCallDispositionCodeGetUsageListRequestAsync(this OcipClient client, EnterpriseCallCenterCallDispositionCodeGetUsageListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterCallDispositionCodeGetUsageListResponse> EnterpriseCallCenterCallDispositionCodeGetUsageListRequestAsync(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeGetUsageListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterCallDispositionCodeGetUsageListResponse;
         }
@@ -516,7 +516,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterCallDispositionCodeModifyActiveListRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeModifyActiveListRequest(this OcipClient client, EnterpriseCallCenterCallDispositionCodeModifyActiveListRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeModifyActiveListRequest(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeModifyActiveListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -525,7 +525,7 @@ namespace BroadWorksConnector
         /// Request to set the active status of Call Center Call Disposition Codes.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeModifyActiveListRequestAsync(this OcipClient client, EnterpriseCallCenterCallDispositionCodeModifyActiveListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeModifyActiveListRequestAsync(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeModifyActiveListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -534,7 +534,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterCallDispositionCodeModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeModifyRequest(this OcipClient client, EnterpriseCallCenterCallDispositionCodeModifyRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeModifyRequest(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -543,7 +543,7 @@ namespace BroadWorksConnector
         /// Modify a Call Center Call Disposition Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeModifyRequestAsync(this OcipClient client, EnterpriseCallCenterCallDispositionCodeModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterCallDispositionCodeModifyRequestAsync(this OcipClientBase client, EnterpriseCallCenterCallDispositionCodeModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -553,7 +553,7 @@ namespace BroadWorksConnector
         /// The response is either EnterpriseCallCenterCurrentAndPastAgentGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterCurrentAndPastAgentGetListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterCurrentAndPastAgentGetListResponse> EnterpriseCallCenterCurrentAndPastAgentGetListRequest(this OcipClient client, EnterpriseCallCenterCurrentAndPastAgentGetListRequest request)
+        public static async Task<EnterpriseCallCenterCurrentAndPastAgentGetListResponse> EnterpriseCallCenterCurrentAndPastAgentGetListRequest(this OcipClientBase client, EnterpriseCallCenterCurrentAndPastAgentGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterCurrentAndPastAgentGetListResponse;
         }
@@ -563,7 +563,7 @@ namespace BroadWorksConnector
         /// The searchCriteriaExactUserGroup does not apply to past agents.
         /// The response is either EnterpriseCallCenterCurrentAndPastAgentGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterCurrentAndPastAgentGetListResponse> EnterpriseCallCenterCurrentAndPastAgentGetListRequestAsync(this OcipClient client, EnterpriseCallCenterCurrentAndPastAgentGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterCurrentAndPastAgentGetListResponse> EnterpriseCallCenterCurrentAndPastAgentGetListRequestAsync(this OcipClientBase client, EnterpriseCallCenterCurrentAndPastAgentGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterCurrentAndPastAgentGetListResponse;
         }
@@ -573,7 +573,7 @@ namespace BroadWorksConnector
         /// The response is either EnterpriseCallCenterCurrentAndPastCallCenterGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterCurrentAndPastCallCenterGetListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterCurrentAndPastCallCenterGetListResponse> EnterpriseCallCenterCurrentAndPastCallCenterGetListRequest(this OcipClient client, EnterpriseCallCenterCurrentAndPastCallCenterGetListRequest request)
+        public static async Task<EnterpriseCallCenterCurrentAndPastCallCenterGetListResponse> EnterpriseCallCenterCurrentAndPastCallCenterGetListRequest(this OcipClientBase client, EnterpriseCallCenterCurrentAndPastCallCenterGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterCurrentAndPastCallCenterGetListResponse;
         }
@@ -583,7 +583,7 @@ namespace BroadWorksConnector
         /// The searchCriteriaExactUserGroup does not apply to past call centers.
         /// The response is either EnterpriseCallCenterCurrentAndPastCallCenterGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterCurrentAndPastCallCenterGetListResponse> EnterpriseCallCenterCurrentAndPastCallCenterGetListRequestAsync(this OcipClient client, EnterpriseCallCenterCurrentAndPastCallCenterGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterCurrentAndPastCallCenterGetListResponse> EnterpriseCallCenterCurrentAndPastCallCenterGetListRequestAsync(this OcipClientBase client, EnterpriseCallCenterCurrentAndPastCallCenterGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterCurrentAndPastCallCenterGetListResponse;
         }
@@ -592,7 +592,7 @@ namespace BroadWorksConnector
         /// The response is either EnterpriseCallCenterCurrentAndPastDNISGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterCurrentAndPastDNISGetListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterCurrentAndPastDNISGetListResponse> EnterpriseCallCenterCurrentAndPastDNISGetListRequest(this OcipClient client, EnterpriseCallCenterCurrentAndPastDNISGetListRequest request)
+        public static async Task<EnterpriseCallCenterCurrentAndPastDNISGetListResponse> EnterpriseCallCenterCurrentAndPastDNISGetListRequest(this OcipClientBase client, EnterpriseCallCenterCurrentAndPastDNISGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterCurrentAndPastDNISGetListResponse;
         }
@@ -601,7 +601,7 @@ namespace BroadWorksConnector
         /// Request to get all the past and current DNIS for the Call Center for the enterprise.
         /// The response is either EnterpriseCallCenterCurrentAndPastDNISGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterCurrentAndPastDNISGetListResponse> EnterpriseCallCenterCurrentAndPastDNISGetListRequestAsync(this OcipClient client, EnterpriseCallCenterCurrentAndPastDNISGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterCurrentAndPastDNISGetListResponse> EnterpriseCallCenterCurrentAndPastDNISGetListRequestAsync(this OcipClientBase client, EnterpriseCallCenterCurrentAndPastDNISGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterCurrentAndPastDNISGetListResponse;
         }
@@ -610,7 +610,7 @@ namespace BroadWorksConnector
         /// The response is either EnterpriseCallCenterEnhancedReportingBrandingGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingBrandingGetRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterEnhancedReportingBrandingGetResponse> EnterpriseCallCenterEnhancedReportingBrandingGetRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingBrandingGetRequest request)
+        public static async Task<EnterpriseCallCenterEnhancedReportingBrandingGetResponse> EnterpriseCallCenterEnhancedReportingBrandingGetRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingBrandingGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingBrandingGetResponse;
         }
@@ -619,7 +619,7 @@ namespace BroadWorksConnector
         /// Request to get the enterprise branding information.
         /// The response is either EnterpriseCallCenterEnhancedReportingBrandingGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterEnhancedReportingBrandingGetResponse> EnterpriseCallCenterEnhancedReportingBrandingGetRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingBrandingGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterEnhancedReportingBrandingGetResponse> EnterpriseCallCenterEnhancedReportingBrandingGetRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingBrandingGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingBrandingGetResponse;
         }
@@ -628,7 +628,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingBrandingModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingBrandingModifyRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingBrandingModifyRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingBrandingModifyRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingBrandingModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -637,7 +637,7 @@ namespace BroadWorksConnector
         /// Request to modify the enterprise branding configuration.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingBrandingModifyRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingBrandingModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingBrandingModifyRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingBrandingModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -646,7 +646,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListResponse> EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListRequest request)
+        public static async Task<EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListResponse> EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListResponse;
         }
@@ -655,7 +655,7 @@ namespace BroadWorksConnector
         /// Request to get all enabled call center report template for an enterprise.
         /// The response is either an EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListResponse> EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListResponse> EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingGetAvailableReportTemplateListResponse;
         }
@@ -664,7 +664,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseCallCenterEnhancedReportingGetResponse19 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingGetRequest19Async instead.")]
-        public static async Task<EnterpriseCallCenterEnhancedReportingGetResponse19> EnterpriseCallCenterEnhancedReportingGetRequest19(this OcipClient client, EnterpriseCallCenterEnhancedReportingGetRequest19 request)
+        public static async Task<EnterpriseCallCenterEnhancedReportingGetResponse19> EnterpriseCallCenterEnhancedReportingGetRequest19(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingGetRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingGetResponse19;
         }
@@ -673,7 +673,7 @@ namespace BroadWorksConnector
         /// Request to get an enterprise level call center enhanced reporting setting.
         /// The response is either an EnterpriseCallCenterEnhancedReportingGetResponse19 or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterEnhancedReportingGetResponse19> EnterpriseCallCenterEnhancedReportingGetRequest19Async(this OcipClient client, EnterpriseCallCenterEnhancedReportingGetRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterEnhancedReportingGetResponse19> EnterpriseCallCenterEnhancedReportingGetRequest19Async(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingGetRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingGetResponse19;
         }
@@ -682,7 +682,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingModifyRequest19Async instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingModifyRequest19(this OcipClient client, EnterpriseCallCenterEnhancedReportingModifyRequest19 request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingModifyRequest19(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingModifyRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -691,7 +691,7 @@ namespace BroadWorksConnector
         /// Request to modify enterprise level call center enhanced reporting settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingModifyRequest19Async(this OcipClient client, EnterpriseCallCenterEnhancedReportingModifyRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingModifyRequest19Async(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingModifyRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -700,7 +700,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingReportTemplateAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateAddRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingReportTemplateAddRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateAddRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingReportTemplateAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -709,7 +709,7 @@ namespace BroadWorksConnector
         /// Request to add an Enterprise level call center report template.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateAddRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingReportTemplateAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateAddRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingReportTemplateAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -718,7 +718,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingReportTemplateDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateDeleteRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingReportTemplateDeleteRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateDeleteRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingReportTemplateDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -727,7 +727,7 @@ namespace BroadWorksConnector
         /// Request to delete an enterprise level call center report template.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateDeleteRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingReportTemplateDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateDeleteRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingReportTemplateDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -736,7 +736,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseCallCenterEnhancedReportingReportTemplateGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingReportTemplateGetListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterEnhancedReportingReportTemplateGetListResponse> EnterpriseCallCenterEnhancedReportingReportTemplateGetListRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingReportTemplateGetListRequest request)
+        public static async Task<EnterpriseCallCenterEnhancedReportingReportTemplateGetListResponse> EnterpriseCallCenterEnhancedReportingReportTemplateGetListRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingReportTemplateGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingReportTemplateGetListResponse;
         }
@@ -745,7 +745,7 @@ namespace BroadWorksConnector
         /// Request to get enterprise level call center report template list.
         /// The response is either an EnterpriseCallCenterEnhancedReportingReportTemplateGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterEnhancedReportingReportTemplateGetListResponse> EnterpriseCallCenterEnhancedReportingReportTemplateGetListRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingReportTemplateGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterEnhancedReportingReportTemplateGetListResponse> EnterpriseCallCenterEnhancedReportingReportTemplateGetListRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingReportTemplateGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingReportTemplateGetListResponse;
         }
@@ -754,7 +754,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseCallCenterEnhancedReportingReportTemplateGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingReportTemplateGetRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterEnhancedReportingReportTemplateGetResponse> EnterpriseCallCenterEnhancedReportingReportTemplateGetRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingReportTemplateGetRequest request)
+        public static async Task<EnterpriseCallCenterEnhancedReportingReportTemplateGetResponse> EnterpriseCallCenterEnhancedReportingReportTemplateGetRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingReportTemplateGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingReportTemplateGetResponse;
         }
@@ -763,7 +763,7 @@ namespace BroadWorksConnector
         /// Request to get an enterprise level call center report template.
         /// The response is either an EnterpriseCallCenterEnhancedReportingReportTemplateGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterEnhancedReportingReportTemplateGetResponse> EnterpriseCallCenterEnhancedReportingReportTemplateGetRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingReportTemplateGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterEnhancedReportingReportTemplateGetResponse> EnterpriseCallCenterEnhancedReportingReportTemplateGetRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingReportTemplateGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingReportTemplateGetResponse;
         }
@@ -772,7 +772,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingReportTemplateModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateModifyRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingReportTemplateModifyRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateModifyRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingReportTemplateModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -781,7 +781,7 @@ namespace BroadWorksConnector
         /// Request to modify an enterprise level call center report template.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateModifyRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingReportTemplateModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingReportTemplateModifyRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingReportTemplateModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -791,7 +791,7 @@ namespace BroadWorksConnector
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after startDate.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingScheduledReportAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportAddRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportAddRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportAddRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -801,7 +801,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after startDate.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportAddRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportAddRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -810,7 +810,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingScheduledReportDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportDeleteRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportDeleteRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportDeleteRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -819,7 +819,7 @@ namespace BroadWorksConnector
         /// Request to delete an enterprise level call center reporting scheduled report.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportDeleteRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportDeleteRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -828,7 +828,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListRequest request)
+        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListResponse;
         }
@@ -837,7 +837,7 @@ namespace BroadWorksConnector
         /// Request to get a list of active enterprise level call center reporting scheduled reports.
         /// The response is either an EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingScheduledReportGetActiveListResponse;
         }
@@ -846,7 +846,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request)
+        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListResponse;
         }
@@ -855,7 +855,7 @@ namespace BroadWorksConnector
         /// Request to get a list of completed enterprise level call center reporting scheduled reports.
         /// The response is either an EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingScheduledReportGetCompletedListResponse;
         }
@@ -864,7 +864,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseCallCenterEnhancedReportingScheduledReportGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingScheduledReportGetListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetListRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportGetListRequest request)
+        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetListRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingScheduledReportGetListResponse;
         }
@@ -873,7 +873,7 @@ namespace BroadWorksConnector
         /// Request to get a list of enterprise level call center reporting scheduled reports.
         /// The response is either an EnterpriseCallCenterEnhancedReportingScheduledReportGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetListRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetListRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingScheduledReportGetListResponse;
         }
@@ -882,7 +882,7 @@ namespace BroadWorksConnector
         /// The response is either a EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request)
+        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse;
         }
@@ -891,7 +891,7 @@ namespace BroadWorksConnector
         /// Request to get all the call center reporting scheduled report in an enterprise that uses a given enterprise level report template.
         /// The response is either a EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse;
         }
@@ -900,7 +900,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseCallCenterEnhancedReportingScheduledReportGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingScheduledReportGetRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportGetRequest request)
+        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingScheduledReportGetResponse;
         }
@@ -909,7 +909,7 @@ namespace BroadWorksConnector
         /// Request to get an enterprise level call center reporting scheduled report.
         /// The response is either an EnterpriseCallCenterEnhancedReportingScheduledReportGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterEnhancedReportingScheduledReportGetResponse> EnterpriseCallCenterEnhancedReportingScheduledReportGetRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterEnhancedReportingScheduledReportGetResponse;
         }
@@ -919,7 +919,7 @@ namespace BroadWorksConnector
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after startDate.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterEnhancedReportingScheduledReportModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportModifyRequest(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportModifyRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportModifyRequest(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -929,7 +929,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after startDate.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportModifyRequestAsync(this OcipClient client, EnterpriseCallCenterEnhancedReportingScheduledReportModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterEnhancedReportingScheduledReportModifyRequestAsync(this OcipClientBase client, EnterpriseCallCenterEnhancedReportingScheduledReportModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -939,7 +939,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterGetRequest17sp4Async instead.")]
-        public static async Task<EnterpriseCallCenterGetResponse17sp4> EnterpriseCallCenterGetRequest17sp4(this OcipClient client, EnterpriseCallCenterGetRequest17sp4 request)
+        public static async Task<EnterpriseCallCenterGetResponse17sp4> EnterpriseCallCenterGetRequest17sp4(this OcipClientBase client, EnterpriseCallCenterGetRequest17sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterGetResponse17sp4;
         }
@@ -949,7 +949,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseCallCenterGetResponse17sp4 or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterGetResponse17sp4> EnterpriseCallCenterGetRequest17sp4Async(this OcipClient client, EnterpriseCallCenterGetRequest17sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterGetResponse17sp4> EnterpriseCallCenterGetRequest17sp4Async(this OcipClientBase client, EnterpriseCallCenterGetRequest17sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterGetResponse17sp4;
         }
@@ -959,7 +959,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterGetRoutingPolicyRequestAsync instead.")]
-        public static async Task<EnterpriseCallCenterGetRoutingPolicyResponse> EnterpriseCallCenterGetRoutingPolicyRequest(this OcipClient client, EnterpriseCallCenterGetRoutingPolicyRequest request)
+        public static async Task<EnterpriseCallCenterGetRoutingPolicyResponse> EnterpriseCallCenterGetRoutingPolicyRequest(this OcipClientBase client, EnterpriseCallCenterGetRoutingPolicyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterpriseCallCenterGetRoutingPolicyResponse;
         }
@@ -969,7 +969,7 @@ namespace BroadWorksConnector
         /// The response is either an EnterpriseCallCenterGetRoutingPolicyResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<EnterpriseCallCenterGetRoutingPolicyResponse> EnterpriseCallCenterGetRoutingPolicyRequestAsync(this OcipClient client, EnterpriseCallCenterGetRoutingPolicyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<EnterpriseCallCenterGetRoutingPolicyResponse> EnterpriseCallCenterGetRoutingPolicyRequestAsync(this OcipClientBase client, EnterpriseCallCenterGetRoutingPolicyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterpriseCallCenterGetRoutingPolicyResponse;
         }
@@ -986,7 +986,7 @@ namespace BroadWorksConnector
         /// forceAgentUnavailableOnNotReachable
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterModifyRequest(this OcipClient client, EnterpriseCallCenterModifyRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterModifyRequest(this OcipClientBase client, EnterpriseCallCenterModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1003,7 +1003,7 @@ namespace BroadWorksConnector
         /// numberConsecutiveBouncedCallsToForceAgentUnavailable
         /// forceAgentUnavailableOnNotReachable
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterModifyRequestAsync(this OcipClient client, EnterpriseCallCenterModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterModifyRequestAsync(this OcipClientBase client, EnterpriseCallCenterModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1012,7 +1012,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterpriseCallCenterModifyRoutingPolicyRequestAsync instead.")]
-        public static async Task<SuccessResponse> EnterpriseCallCenterModifyRoutingPolicyRequest(this OcipClient client, EnterpriseCallCenterModifyRoutingPolicyRequest request)
+        public static async Task<SuccessResponse> EnterpriseCallCenterModifyRoutingPolicyRequest(this OcipClientBase client, EnterpriseCallCenterModifyRoutingPolicyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1021,7 +1021,7 @@ namespace BroadWorksConnector
         /// Modify the enterprise call center routing policy.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> EnterpriseCallCenterModifyRoutingPolicyRequestAsync(this OcipClient client, EnterpriseCallCenterModifyRoutingPolicyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> EnterpriseCallCenterModifyRoutingPolicyRequestAsync(this OcipClientBase client, EnterpriseCallCenterModifyRoutingPolicyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1034,7 +1034,7 @@ namespace BroadWorksConnector
         /// agentSkillList
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAddAgentListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAddAgentListRequest(this OcipClient client, GroupCallCenterAddAgentListRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAddAgentListRequest(this OcipClientBase client, GroupCallCenterAddAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1047,7 +1047,7 @@ namespace BroadWorksConnector
         /// The following element is only used in AS data mode and ignored in XS data mode:
         /// agentSkillList
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAddAgentListRequestAsync(this OcipClient client, GroupCallCenterAddAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAddAgentListRequestAsync(this OcipClientBase client, GroupCallCenterAddAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1056,7 +1056,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAddDNISRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAddDNISRequest(this OcipClient client, GroupCallCenterAddDNISRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAddDNISRequest(this OcipClientBase client, GroupCallCenterAddDNISRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1065,7 +1065,7 @@ namespace BroadWorksConnector
         /// Add a Call Center DNIS
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAddDNISRequestAsync(this OcipClient client, GroupCallCenterAddDNISRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAddDNISRequestAsync(this OcipClientBase client, GroupCallCenterAddDNISRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1088,7 +1088,7 @@ namespace BroadWorksConnector
         /// networkClassOfService
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAddInstanceRequest22Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAddInstanceRequest22(this OcipClient client, GroupCallCenterAddInstanceRequest22 request)
+        public static async Task<SuccessResponse> GroupCallCenterAddInstanceRequest22(this OcipClientBase client, GroupCallCenterAddInstanceRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1111,7 +1111,7 @@ namespace BroadWorksConnector
         /// agentUnavailableCode
         /// networkClassOfService
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAddInstanceRequest22Async(this OcipClient client, GroupCallCenterAddInstanceRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAddInstanceRequest22Async(this OcipClientBase client, GroupCallCenterAddInstanceRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1120,7 +1120,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAddSupervisorListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAddSupervisorListRequest(this OcipClient client, GroupCallCenterAddSupervisorListRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAddSupervisorListRequest(this OcipClientBase client, GroupCallCenterAddSupervisorListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1129,7 +1129,7 @@ namespace BroadWorksConnector
         /// Add supervisor(s) to a call center.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAddSupervisorListRequestAsync(this OcipClient client, GroupCallCenterAddSupervisorListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAddSupervisorListRequestAsync(this OcipClientBase client, GroupCallCenterAddSupervisorListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1141,7 +1141,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterAgentThresholdDefaultProfileGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentThresholdDefaultProfileGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterAgentThresholdDefaultProfileGetResponse> GroupCallCenterAgentThresholdDefaultProfileGetRequest(this OcipClient client, GroupCallCenterAgentThresholdDefaultProfileGetRequest request)
+        public static async Task<GroupCallCenterAgentThresholdDefaultProfileGetResponse> GroupCallCenterAgentThresholdDefaultProfileGetRequest(this OcipClientBase client, GroupCallCenterAgentThresholdDefaultProfileGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterAgentThresholdDefaultProfileGetResponse;
         }
@@ -1153,7 +1153,7 @@ namespace BroadWorksConnector
         /// list of agents to be included in the table.
         /// The response is either a GroupCallCenterAgentThresholdDefaultProfileGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterAgentThresholdDefaultProfileGetResponse> GroupCallCenterAgentThresholdDefaultProfileGetRequestAsync(this OcipClient client, GroupCallCenterAgentThresholdDefaultProfileGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterAgentThresholdDefaultProfileGetResponse> GroupCallCenterAgentThresholdDefaultProfileGetRequestAsync(this OcipClientBase client, GroupCallCenterAgentThresholdDefaultProfileGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterAgentThresholdDefaultProfileGetResponse;
         }
@@ -1163,7 +1163,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentThresholdProfileAddAgentListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileAddAgentListRequest(this OcipClient client, GroupCallCenterAgentThresholdProfileAddAgentListRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileAddAgentListRequest(this OcipClientBase client, GroupCallCenterAgentThresholdProfileAddAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1173,7 +1173,7 @@ namespace BroadWorksConnector
         /// When an agent is assigned (added )to a profile, it is automatically unassigned (deleted) from the previous profile it was assigned to.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileAddAgentListRequestAsync(this OcipClient client, GroupCallCenterAgentThresholdProfileAddAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileAddAgentListRequestAsync(this OcipClientBase client, GroupCallCenterAgentThresholdProfileAddAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1182,7 +1182,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentThresholdProfileAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileAddRequest(this OcipClient client, GroupCallCenterAgentThresholdProfileAddRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileAddRequest(this OcipClientBase client, GroupCallCenterAgentThresholdProfileAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1191,7 +1191,7 @@ namespace BroadWorksConnector
         /// Add a new Call Center Agent Threshold Profile in a Group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileAddRequestAsync(this OcipClient client, GroupCallCenterAgentThresholdProfileAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileAddRequestAsync(this OcipClientBase client, GroupCallCenterAgentThresholdProfileAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1201,7 +1201,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentThresholdProfileDeleteAgentListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileDeleteAgentListRequest(this OcipClient client, GroupCallCenterAgentThresholdProfileDeleteAgentListRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileDeleteAgentListRequest(this OcipClientBase client, GroupCallCenterAgentThresholdProfileDeleteAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1211,7 +1211,7 @@ namespace BroadWorksConnector
         /// Agents cannot be unassigned (deleted) directly from the default profile, they need to be assigned (added) to a different profile.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileDeleteAgentListRequestAsync(this OcipClient client, GroupCallCenterAgentThresholdProfileDeleteAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileDeleteAgentListRequestAsync(this OcipClientBase client, GroupCallCenterAgentThresholdProfileDeleteAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1221,7 +1221,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentThresholdProfileDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileDeleteRequest(this OcipClient client, GroupCallCenterAgentThresholdProfileDeleteRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileDeleteRequest(this OcipClientBase client, GroupCallCenterAgentThresholdProfileDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1231,7 +1231,7 @@ namespace BroadWorksConnector
         /// The default profile cannot be deleted.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileDeleteRequestAsync(this OcipClient client, GroupCallCenterAgentThresholdProfileDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileDeleteRequestAsync(this OcipClientBase client, GroupCallCenterAgentThresholdProfileDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1245,7 +1245,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterAgentThresholdProfileGetAvailableAgentListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentThresholdProfileGetAvailableAgentListRequestAsync instead.")]
-        public static async Task<GroupCallCenterAgentThresholdProfileGetAvailableAgentListResponse> GroupCallCenterAgentThresholdProfileGetAvailableAgentListRequest(this OcipClient client, GroupCallCenterAgentThresholdProfileGetAvailableAgentListRequest request)
+        public static async Task<GroupCallCenterAgentThresholdProfileGetAvailableAgentListResponse> GroupCallCenterAgentThresholdProfileGetAvailableAgentListRequest(this OcipClientBase client, GroupCallCenterAgentThresholdProfileGetAvailableAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterAgentThresholdProfileGetAvailableAgentListResponse;
         }
@@ -1259,7 +1259,7 @@ namespace BroadWorksConnector
         /// criterion element searchCriteriaAgentThresholdProfile is specified using the same profile name.
         /// The response is either a GroupCallCenterAgentThresholdProfileGetAvailableAgentListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterAgentThresholdProfileGetAvailableAgentListResponse> GroupCallCenterAgentThresholdProfileGetAvailableAgentListRequestAsync(this OcipClient client, GroupCallCenterAgentThresholdProfileGetAvailableAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterAgentThresholdProfileGetAvailableAgentListResponse> GroupCallCenterAgentThresholdProfileGetAvailableAgentListRequestAsync(this OcipClientBase client, GroupCallCenterAgentThresholdProfileGetAvailableAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterAgentThresholdProfileGetAvailableAgentListResponse;
         }
@@ -1284,7 +1284,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequestAsync instead.")]
-        public static async Task<GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse> GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest(this OcipClient client, GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest request)
+        public static async Task<GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse> GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest(this OcipClientBase client, GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse;
         }
@@ -1309,7 +1309,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either a GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse> GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequestAsync(this OcipClient client, GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse> GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequestAsync(this OcipClientBase client, GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterAgentThresholdProfileGetAvailableAgentPagedSortedListResponse;
         }
@@ -1318,7 +1318,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterAgentThresholdProfileGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentThresholdProfileGetListRequestAsync instead.")]
-        public static async Task<GroupCallCenterAgentThresholdProfileGetListResponse> GroupCallCenterAgentThresholdProfileGetListRequest(this OcipClient client, GroupCallCenterAgentThresholdProfileGetListRequest request)
+        public static async Task<GroupCallCenterAgentThresholdProfileGetListResponse> GroupCallCenterAgentThresholdProfileGetListRequest(this OcipClientBase client, GroupCallCenterAgentThresholdProfileGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterAgentThresholdProfileGetListResponse;
         }
@@ -1327,7 +1327,7 @@ namespace BroadWorksConnector
         /// Get the list of Call Center Agent Threshold Profiles in the Group.
         /// The response is either GroupCallCenterAgentThresholdProfileGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterAgentThresholdProfileGetListResponse> GroupCallCenterAgentThresholdProfileGetListRequestAsync(this OcipClient client, GroupCallCenterAgentThresholdProfileGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterAgentThresholdProfileGetListResponse> GroupCallCenterAgentThresholdProfileGetListRequestAsync(this OcipClientBase client, GroupCallCenterAgentThresholdProfileGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterAgentThresholdProfileGetListResponse;
         }
@@ -1346,7 +1346,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterAgentThresholdProfileGetPagedSortedResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentThresholdProfileGetPagedSortedRequestAsync instead.")]
-        public static async Task<GroupCallCenterAgentThresholdProfileGetPagedSortedResponse> GroupCallCenterAgentThresholdProfileGetPagedSortedRequest(this OcipClient client, GroupCallCenterAgentThresholdProfileGetPagedSortedRequest request)
+        public static async Task<GroupCallCenterAgentThresholdProfileGetPagedSortedResponse> GroupCallCenterAgentThresholdProfileGetPagedSortedRequest(this OcipClientBase client, GroupCallCenterAgentThresholdProfileGetPagedSortedRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterAgentThresholdProfileGetPagedSortedResponse;
         }
@@ -1365,7 +1365,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either a GroupCallCenterAgentThresholdProfileGetPagedSortedResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterAgentThresholdProfileGetPagedSortedResponse> GroupCallCenterAgentThresholdProfileGetPagedSortedRequestAsync(this OcipClient client, GroupCallCenterAgentThresholdProfileGetPagedSortedRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterAgentThresholdProfileGetPagedSortedResponse> GroupCallCenterAgentThresholdProfileGetPagedSortedRequestAsync(this OcipClientBase client, GroupCallCenterAgentThresholdProfileGetPagedSortedRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterAgentThresholdProfileGetPagedSortedResponse;
         }
@@ -1374,7 +1374,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterAgentThresholdProfileGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentThresholdProfileGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterAgentThresholdProfileGetResponse> GroupCallCenterAgentThresholdProfileGetRequest(this OcipClient client, GroupCallCenterAgentThresholdProfileGetRequest request)
+        public static async Task<GroupCallCenterAgentThresholdProfileGetResponse> GroupCallCenterAgentThresholdProfileGetRequest(this OcipClientBase client, GroupCallCenterAgentThresholdProfileGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterAgentThresholdProfileGetResponse;
         }
@@ -1383,7 +1383,7 @@ namespace BroadWorksConnector
         /// Gets an existing non-default Call Center Agent Threshold Profile in a Group.
         /// The response is either a GroupCallCenterAgentThresholdProfileGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterAgentThresholdProfileGetResponse> GroupCallCenterAgentThresholdProfileGetRequestAsync(this OcipClient client, GroupCallCenterAgentThresholdProfileGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterAgentThresholdProfileGetResponse> GroupCallCenterAgentThresholdProfileGetRequestAsync(this OcipClientBase client, GroupCallCenterAgentThresholdProfileGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterAgentThresholdProfileGetResponse;
         }
@@ -1392,7 +1392,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentThresholdProfileModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileModifyRequest(this OcipClient client, GroupCallCenterAgentThresholdProfileModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileModifyRequest(this OcipClientBase client, GroupCallCenterAgentThresholdProfileModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1401,7 +1401,7 @@ namespace BroadWorksConnector
         /// Modifies an existing Call Center Agent Threshold Profile in the Group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileModifyRequestAsync(this OcipClient client, GroupCallCenterAgentThresholdProfileModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAgentThresholdProfileModifyRequestAsync(this OcipClientBase client, GroupCallCenterAgentThresholdProfileModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1410,7 +1410,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentUnavailableCodeAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeAddRequest(this OcipClient client, GroupCallCenterAgentUnavailableCodeAddRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeAddRequest(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1419,7 +1419,7 @@ namespace BroadWorksConnector
         /// Add a Call Center Agent Unavailable Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeAddRequestAsync(this OcipClient client, GroupCallCenterAgentUnavailableCodeAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeAddRequestAsync(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1428,7 +1428,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentUnavailableCodeDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeDeleteRequest(this OcipClient client, GroupCallCenterAgentUnavailableCodeDeleteRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeDeleteRequest(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1437,7 +1437,7 @@ namespace BroadWorksConnector
         /// Delete a Call Center Agent Unavailable Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeDeleteRequestAsync(this OcipClient client, GroupCallCenterAgentUnavailableCodeDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeDeleteRequestAsync(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1446,7 +1446,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterAgentUnavailableCodeGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentUnavailableCodeGetListRequestAsync instead.")]
-        public static async Task<GroupCallCenterAgentUnavailableCodeGetListResponse> GroupCallCenterAgentUnavailableCodeGetListRequest(this OcipClient client, GroupCallCenterAgentUnavailableCodeGetListRequest request)
+        public static async Task<GroupCallCenterAgentUnavailableCodeGetListResponse> GroupCallCenterAgentUnavailableCodeGetListRequest(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterAgentUnavailableCodeGetListResponse;
         }
@@ -1455,7 +1455,7 @@ namespace BroadWorksConnector
         /// Get the list of Call Center Agent Unavailable Codes.
         /// The response is either GroupCallCenterAgentUnavailableCodeGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterAgentUnavailableCodeGetListResponse> GroupCallCenterAgentUnavailableCodeGetListRequestAsync(this OcipClient client, GroupCallCenterAgentUnavailableCodeGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterAgentUnavailableCodeGetListResponse> GroupCallCenterAgentUnavailableCodeGetListRequestAsync(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterAgentUnavailableCodeGetListResponse;
         }
@@ -1464,7 +1464,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterAgentUnavailableCodeGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentUnavailableCodeGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterAgentUnavailableCodeGetResponse> GroupCallCenterAgentUnavailableCodeGetRequest(this OcipClient client, GroupCallCenterAgentUnavailableCodeGetRequest request)
+        public static async Task<GroupCallCenterAgentUnavailableCodeGetResponse> GroupCallCenterAgentUnavailableCodeGetRequest(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterAgentUnavailableCodeGetResponse;
         }
@@ -1473,7 +1473,7 @@ namespace BroadWorksConnector
         /// Get a Call Center Agent Unavailable Code.
         /// The response is either GroupCallCenterAgentUnavailableCodeGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterAgentUnavailableCodeGetResponse> GroupCallCenterAgentUnavailableCodeGetRequestAsync(this OcipClient client, GroupCallCenterAgentUnavailableCodeGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterAgentUnavailableCodeGetResponse> GroupCallCenterAgentUnavailableCodeGetRequestAsync(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterAgentUnavailableCodeGetResponse;
         }
@@ -1482,7 +1482,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentUnavailableCodeModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeModifyRequest(this OcipClient client, GroupCallCenterAgentUnavailableCodeModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeModifyRequest(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1491,7 +1491,7 @@ namespace BroadWorksConnector
         /// Modify a Call Center Agent Unavailable Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeModifyRequestAsync(this OcipClient client, GroupCallCenterAgentUnavailableCodeModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeModifyRequestAsync(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1501,7 +1501,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentUnavailableCodeSettingsGetRequest17sp4Async instead.")]
-        public static async Task<GroupCallCenterAgentUnavailableCodeSettingsGetResponse17sp4> GroupCallCenterAgentUnavailableCodeSettingsGetRequest17sp4(this OcipClient client, GroupCallCenterAgentUnavailableCodeSettingsGetRequest17sp4 request)
+        public static async Task<GroupCallCenterAgentUnavailableCodeSettingsGetResponse17sp4> GroupCallCenterAgentUnavailableCodeSettingsGetRequest17sp4(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeSettingsGetRequest17sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterAgentUnavailableCodeSettingsGetResponse17sp4;
         }
@@ -1511,7 +1511,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterAgentUnavailableCodeSettingsGetResponse17sp4 or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterAgentUnavailableCodeSettingsGetResponse17sp4> GroupCallCenterAgentUnavailableCodeSettingsGetRequest17sp4Async(this OcipClient client, GroupCallCenterAgentUnavailableCodeSettingsGetRequest17sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterAgentUnavailableCodeSettingsGetResponse17sp4> GroupCallCenterAgentUnavailableCodeSettingsGetRequest17sp4Async(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeSettingsGetRequest17sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterAgentUnavailableCodeSettingsGetResponse17sp4;
         }
@@ -1520,7 +1520,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterAgentUnavailableCodeSettingsModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeSettingsModifyRequest(this OcipClient client, GroupCallCenterAgentUnavailableCodeSettingsModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeSettingsModifyRequest(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeSettingsModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1529,7 +1529,7 @@ namespace BroadWorksConnector
         /// Modify the group level data associated with Call Center Agents Unavailable Code Settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeSettingsModifyRequestAsync(this OcipClient client, GroupCallCenterAgentUnavailableCodeSettingsModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterAgentUnavailableCodeSettingsModifyRequestAsync(this OcipClientBase client, GroupCallCenterAgentUnavailableCodeSettingsModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1538,7 +1538,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterBouncedCallGetResponse17 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterBouncedCallGetRequest17Async instead.")]
-        public static async Task<GroupCallCenterBouncedCallGetResponse17> GroupCallCenterBouncedCallGetRequest17(this OcipClient client, GroupCallCenterBouncedCallGetRequest17 request)
+        public static async Task<GroupCallCenterBouncedCallGetResponse17> GroupCallCenterBouncedCallGetRequest17(this OcipClientBase client, GroupCallCenterBouncedCallGetRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterBouncedCallGetResponse17;
         }
@@ -1547,7 +1547,7 @@ namespace BroadWorksConnector
         /// Get a call center's bounced call settings.
         /// The response is either a GroupCallCenterBouncedCallGetResponse17 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterBouncedCallGetResponse17> GroupCallCenterBouncedCallGetRequest17Async(this OcipClient client, GroupCallCenterBouncedCallGetRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterBouncedCallGetResponse17> GroupCallCenterBouncedCallGetRequest17Async(this OcipClientBase client, GroupCallCenterBouncedCallGetRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterBouncedCallGetResponse17;
         }
@@ -1565,7 +1565,7 @@ namespace BroadWorksConnector
         /// bounceCallCenterCallOnHoldSeconds
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterBouncedCallModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterBouncedCallModifyRequest(this OcipClient client, GroupCallCenterBouncedCallModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterBouncedCallModifyRequest(this OcipClientBase client, GroupCallCenterBouncedCallModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1583,7 +1583,7 @@ namespace BroadWorksConnector
         /// bounceCallCenterCallOnHold
         /// bounceCallCenterCallOnHoldSeconds
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterBouncedCallModifyRequestAsync(this OcipClient client, GroupCallCenterBouncedCallModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterBouncedCallModifyRequestAsync(this OcipClientBase client, GroupCallCenterBouncedCallModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1592,7 +1592,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterCallDispositionCodeAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeAddRequest(this OcipClient client, GroupCallCenterCallDispositionCodeAddRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeAddRequest(this OcipClientBase client, GroupCallCenterCallDispositionCodeAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1601,7 +1601,7 @@ namespace BroadWorksConnector
         /// Add a Call Center Call Disposition Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeAddRequestAsync(this OcipClient client, GroupCallCenterCallDispositionCodeAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeAddRequestAsync(this OcipClientBase client, GroupCallCenterCallDispositionCodeAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1610,7 +1610,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterCallDispositionCodeDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeDeleteRequest(this OcipClient client, GroupCallCenterCallDispositionCodeDeleteRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeDeleteRequest(this OcipClientBase client, GroupCallCenterCallDispositionCodeDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1619,7 +1619,7 @@ namespace BroadWorksConnector
         /// Delete a Call Center Call Disposition Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeDeleteRequestAsync(this OcipClient client, GroupCallCenterCallDispositionCodeDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeDeleteRequestAsync(this OcipClientBase client, GroupCallCenterCallDispositionCodeDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1628,7 +1628,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterCallDispositionCodeGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterCallDispositionCodeGetListRequestAsync instead.")]
-        public static async Task<GroupCallCenterCallDispositionCodeGetListResponse> GroupCallCenterCallDispositionCodeGetListRequest(this OcipClient client, GroupCallCenterCallDispositionCodeGetListRequest request)
+        public static async Task<GroupCallCenterCallDispositionCodeGetListResponse> GroupCallCenterCallDispositionCodeGetListRequest(this OcipClientBase client, GroupCallCenterCallDispositionCodeGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterCallDispositionCodeGetListResponse;
         }
@@ -1637,7 +1637,7 @@ namespace BroadWorksConnector
         /// Get the list of Call Center Call Disposition  Codes.
         /// The response is either GroupCallCenterCallDispositionCodeGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterCallDispositionCodeGetListResponse> GroupCallCenterCallDispositionCodeGetListRequestAsync(this OcipClient client, GroupCallCenterCallDispositionCodeGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterCallDispositionCodeGetListResponse> GroupCallCenterCallDispositionCodeGetListRequestAsync(this OcipClientBase client, GroupCallCenterCallDispositionCodeGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterCallDispositionCodeGetListResponse;
         }
@@ -1646,7 +1646,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterCallDispositionCodeGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterCallDispositionCodeGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterCallDispositionCodeGetResponse> GroupCallCenterCallDispositionCodeGetRequest(this OcipClient client, GroupCallCenterCallDispositionCodeGetRequest request)
+        public static async Task<GroupCallCenterCallDispositionCodeGetResponse> GroupCallCenterCallDispositionCodeGetRequest(this OcipClientBase client, GroupCallCenterCallDispositionCodeGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterCallDispositionCodeGetResponse;
         }
@@ -1655,7 +1655,7 @@ namespace BroadWorksConnector
         /// Get a Call Center Call Disposition Code.
         /// The response is either GroupCallCenterCallDispositionCodeGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterCallDispositionCodeGetResponse> GroupCallCenterCallDispositionCodeGetRequestAsync(this OcipClient client, GroupCallCenterCallDispositionCodeGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterCallDispositionCodeGetResponse> GroupCallCenterCallDispositionCodeGetRequestAsync(this OcipClientBase client, GroupCallCenterCallDispositionCodeGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterCallDispositionCodeGetResponse;
         }
@@ -1664,7 +1664,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterCallDispositionCodeGetUsageListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterCallDispositionCodeGetUsageListRequestAsync instead.")]
-        public static async Task<GroupCallCenterCallDispositionCodeGetUsageListResponse> GroupCallCenterCallDispositionCodeGetUsageListRequest(this OcipClient client, GroupCallCenterCallDispositionCodeGetUsageListRequest request)
+        public static async Task<GroupCallCenterCallDispositionCodeGetUsageListResponse> GroupCallCenterCallDispositionCodeGetUsageListRequest(this OcipClientBase client, GroupCallCenterCallDispositionCodeGetUsageListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterCallDispositionCodeGetUsageListResponse;
         }
@@ -1673,7 +1673,7 @@ namespace BroadWorksConnector
         /// Get the list of Call Centers and Route Points using the specified disposition code.
         /// The response is either GroupCallCenterCallDispositionCodeGetUsageListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterCallDispositionCodeGetUsageListResponse> GroupCallCenterCallDispositionCodeGetUsageListRequestAsync(this OcipClient client, GroupCallCenterCallDispositionCodeGetUsageListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterCallDispositionCodeGetUsageListResponse> GroupCallCenterCallDispositionCodeGetUsageListRequestAsync(this OcipClientBase client, GroupCallCenterCallDispositionCodeGetUsageListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterCallDispositionCodeGetUsageListResponse;
         }
@@ -1682,7 +1682,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterCallDispositionCodeModifyActiveListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeModifyActiveListRequest(this OcipClient client, GroupCallCenterCallDispositionCodeModifyActiveListRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeModifyActiveListRequest(this OcipClientBase client, GroupCallCenterCallDispositionCodeModifyActiveListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1691,7 +1691,7 @@ namespace BroadWorksConnector
         /// Request to set the active status of Call Center Call Disposition Codes.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeModifyActiveListRequestAsync(this OcipClient client, GroupCallCenterCallDispositionCodeModifyActiveListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeModifyActiveListRequestAsync(this OcipClientBase client, GroupCallCenterCallDispositionCodeModifyActiveListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1700,7 +1700,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterCallDispositionCodeModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeModifyRequest(this OcipClient client, GroupCallCenterCallDispositionCodeModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeModifyRequest(this OcipClientBase client, GroupCallCenterCallDispositionCodeModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1709,7 +1709,7 @@ namespace BroadWorksConnector
         /// Modify a Call Center Call Disposition Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeModifyRequestAsync(this OcipClient client, GroupCallCenterCallDispositionCodeModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterCallDispositionCodeModifyRequestAsync(this OcipClientBase client, GroupCallCenterCallDispositionCodeModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1718,7 +1718,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterComfortMessageBypassGetResponse20 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterComfortMessageBypassGetRequest20Async instead.")]
-        public static async Task<GroupCallCenterComfortMessageBypassGetResponse20> GroupCallCenterComfortMessageBypassGetRequest20(this OcipClient client, GroupCallCenterComfortMessageBypassGetRequest20 request)
+        public static async Task<GroupCallCenterComfortMessageBypassGetResponse20> GroupCallCenterComfortMessageBypassGetRequest20(this OcipClientBase client, GroupCallCenterComfortMessageBypassGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterComfortMessageBypassGetResponse20;
         }
@@ -1727,7 +1727,7 @@ namespace BroadWorksConnector
         /// Get a call center's comfort message bypass settings.
         /// The response is either a GroupCallCenterComfortMessageBypassGetResponse20 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterComfortMessageBypassGetResponse20> GroupCallCenterComfortMessageBypassGetRequest20Async(this OcipClient client, GroupCallCenterComfortMessageBypassGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterComfortMessageBypassGetResponse20> GroupCallCenterComfortMessageBypassGetRequest20Async(this OcipClientBase client, GroupCallCenterComfortMessageBypassGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterComfortMessageBypassGetResponse20;
         }
@@ -1736,7 +1736,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterComfortMessageBypassModifyRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterComfortMessageBypassModifyRequest20(this OcipClient client, GroupCallCenterComfortMessageBypassModifyRequest20 request)
+        public static async Task<SuccessResponse> GroupCallCenterComfortMessageBypassModifyRequest20(this OcipClientBase client, GroupCallCenterComfortMessageBypassModifyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1745,7 +1745,7 @@ namespace BroadWorksConnector
         /// Modify a call center's comfort message bypass settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterComfortMessageBypassModifyRequest20Async(this OcipClient client, GroupCallCenterComfortMessageBypassModifyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterComfortMessageBypassModifyRequest20Async(this OcipClientBase client, GroupCallCenterComfortMessageBypassModifyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1754,7 +1754,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterCurrentAndPastAgentGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterCurrentAndPastAgentGetListRequestAsync instead.")]
-        public static async Task<GroupCallCenterCurrentAndPastAgentGetListResponse> GroupCallCenterCurrentAndPastAgentGetListRequest(this OcipClient client, GroupCallCenterCurrentAndPastAgentGetListRequest request)
+        public static async Task<GroupCallCenterCurrentAndPastAgentGetListResponse> GroupCallCenterCurrentAndPastAgentGetListRequest(this OcipClientBase client, GroupCallCenterCurrentAndPastAgentGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterCurrentAndPastAgentGetListResponse;
         }
@@ -1763,7 +1763,7 @@ namespace BroadWorksConnector
         /// Request to get all the current and past agents for the group.
         /// The response is either GroupCallCenterCurrentAndPastAgentGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterCurrentAndPastAgentGetListResponse> GroupCallCenterCurrentAndPastAgentGetListRequestAsync(this OcipClient client, GroupCallCenterCurrentAndPastAgentGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterCurrentAndPastAgentGetListResponse> GroupCallCenterCurrentAndPastAgentGetListRequestAsync(this OcipClientBase client, GroupCallCenterCurrentAndPastAgentGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterCurrentAndPastAgentGetListResponse;
         }
@@ -1772,7 +1772,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterCurrentAndPastCallCenterGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterCurrentAndPastCallCenterGetListRequestAsync instead.")]
-        public static async Task<GroupCallCenterCurrentAndPastCallCenterGetListResponse> GroupCallCenterCurrentAndPastCallCenterGetListRequest(this OcipClient client, GroupCallCenterCurrentAndPastCallCenterGetListRequest request)
+        public static async Task<GroupCallCenterCurrentAndPastCallCenterGetListResponse> GroupCallCenterCurrentAndPastCallCenterGetListRequest(this OcipClientBase client, GroupCallCenterCurrentAndPastCallCenterGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterCurrentAndPastCallCenterGetListResponse;
         }
@@ -1781,7 +1781,7 @@ namespace BroadWorksConnector
         /// Request to get all the current and past call centers for the group.
         /// The response is either GroupCallCenterCurrentAndPastCallCenterGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterCurrentAndPastCallCenterGetListResponse> GroupCallCenterCurrentAndPastCallCenterGetListRequestAsync(this OcipClient client, GroupCallCenterCurrentAndPastCallCenterGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterCurrentAndPastCallCenterGetListResponse> GroupCallCenterCurrentAndPastCallCenterGetListRequestAsync(this OcipClientBase client, GroupCallCenterCurrentAndPastCallCenterGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterCurrentAndPastCallCenterGetListResponse;
         }
@@ -1790,7 +1790,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterCurrentAndPastDNISGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterCurrentAndPastDNISGetListRequestAsync instead.")]
-        public static async Task<GroupCallCenterCurrentAndPastDNISGetListResponse> GroupCallCenterCurrentAndPastDNISGetListRequest(this OcipClient client, GroupCallCenterCurrentAndPastDNISGetListRequest request)
+        public static async Task<GroupCallCenterCurrentAndPastDNISGetListResponse> GroupCallCenterCurrentAndPastDNISGetListRequest(this OcipClientBase client, GroupCallCenterCurrentAndPastDNISGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterCurrentAndPastDNISGetListResponse;
         }
@@ -1799,7 +1799,7 @@ namespace BroadWorksConnector
         /// Request to get all the past and current DNIS for the Call Center for the group.
         /// The response is either GroupCallCenterCurrentAndPastDNISGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterCurrentAndPastDNISGetListResponse> GroupCallCenterCurrentAndPastDNISGetListRequestAsync(this OcipClient client, GroupCallCenterCurrentAndPastDNISGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterCurrentAndPastDNISGetListResponse> GroupCallCenterCurrentAndPastDNISGetListRequestAsync(this OcipClientBase client, GroupCallCenterCurrentAndPastDNISGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterCurrentAndPastDNISGetListResponse;
         }
@@ -1808,7 +1808,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterDeleteAgentListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterDeleteAgentListRequest(this OcipClient client, GroupCallCenterDeleteAgentListRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterDeleteAgentListRequest(this OcipClientBase client, GroupCallCenterDeleteAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1817,7 +1817,7 @@ namespace BroadWorksConnector
         /// Delete agent(s) from a call center.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterDeleteAgentListRequestAsync(this OcipClient client, GroupCallCenterDeleteAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterDeleteAgentListRequestAsync(this OcipClientBase client, GroupCallCenterDeleteAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1826,7 +1826,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterDeleteDNISRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterDeleteDNISRequest(this OcipClient client, GroupCallCenterDeleteDNISRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterDeleteDNISRequest(this OcipClientBase client, GroupCallCenterDeleteDNISRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1835,7 +1835,7 @@ namespace BroadWorksConnector
         /// Delete a call center's DNIS.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterDeleteDNISRequestAsync(this OcipClient client, GroupCallCenterDeleteDNISRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterDeleteDNISRequestAsync(this OcipClientBase client, GroupCallCenterDeleteDNISRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1844,7 +1844,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterDeleteInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterDeleteInstanceRequest(this OcipClient client, GroupCallCenterDeleteInstanceRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterDeleteInstanceRequest(this OcipClientBase client, GroupCallCenterDeleteInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1853,7 +1853,7 @@ namespace BroadWorksConnector
         /// Delete a Call Center instance from a group.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterDeleteInstanceRequestAsync(this OcipClient client, GroupCallCenterDeleteInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterDeleteInstanceRequestAsync(this OcipClientBase client, GroupCallCenterDeleteInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1862,7 +1862,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterDeleteSupervisorListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterDeleteSupervisorListRequest(this OcipClient client, GroupCallCenterDeleteSupervisorListRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterDeleteSupervisorListRequest(this OcipClientBase client, GroupCallCenterDeleteSupervisorListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1871,7 +1871,7 @@ namespace BroadWorksConnector
         /// Delete supervisor(s) from a call center.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterDeleteSupervisorListRequestAsync(this OcipClient client, GroupCallCenterDeleteSupervisorListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterDeleteSupervisorListRequestAsync(this OcipClientBase client, GroupCallCenterDeleteSupervisorListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1881,7 +1881,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterDistinctiveRingingGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterDistinctiveRingingGetResponse> GroupCallCenterDistinctiveRingingGetRequest(this OcipClient client, GroupCallCenterDistinctiveRingingGetRequest request)
+        public static async Task<GroupCallCenterDistinctiveRingingGetResponse> GroupCallCenterDistinctiveRingingGetRequest(this OcipClientBase client, GroupCallCenterDistinctiveRingingGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterDistinctiveRingingGetResponse;
         }
@@ -1891,7 +1891,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterDistinctiveRingingGetResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterDistinctiveRingingGetResponse> GroupCallCenterDistinctiveRingingGetRequestAsync(this OcipClient client, GroupCallCenterDistinctiveRingingGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterDistinctiveRingingGetResponse> GroupCallCenterDistinctiveRingingGetRequestAsync(this OcipClientBase client, GroupCallCenterDistinctiveRingingGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterDistinctiveRingingGetResponse;
         }
@@ -1904,7 +1904,7 @@ namespace BroadWorksConnector
         /// distinctiveRingingForceDeliveryRingPattern
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterDistinctiveRingingModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterDistinctiveRingingModifyRequest(this OcipClient client, GroupCallCenterDistinctiveRingingModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterDistinctiveRingingModifyRequest(this OcipClientBase client, GroupCallCenterDistinctiveRingingModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1917,7 +1917,7 @@ namespace BroadWorksConnector
         /// The following element is only used in AS data mode and ignored in XS data mode:
         /// distinctiveRingingForceDeliveryRingPattern
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterDistinctiveRingingModifyRequestAsync(this OcipClient client, GroupCallCenterDistinctiveRingingModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterDistinctiveRingingModifyRequestAsync(this OcipClientBase client, GroupCallCenterDistinctiveRingingModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1926,7 +1926,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterEnhancedReportingBrandingGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingBrandingGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterEnhancedReportingBrandingGetResponse> GroupCallCenterEnhancedReportingBrandingGetRequest(this OcipClient client, GroupCallCenterEnhancedReportingBrandingGetRequest request)
+        public static async Task<GroupCallCenterEnhancedReportingBrandingGetResponse> GroupCallCenterEnhancedReportingBrandingGetRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingBrandingGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterEnhancedReportingBrandingGetResponse;
         }
@@ -1935,7 +1935,7 @@ namespace BroadWorksConnector
         /// Request to get the group branding information.
         /// The response is either GroupCallCenterEnhancedReportingBrandingGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterEnhancedReportingBrandingGetResponse> GroupCallCenterEnhancedReportingBrandingGetRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingBrandingGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterEnhancedReportingBrandingGetResponse> GroupCallCenterEnhancedReportingBrandingGetRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingBrandingGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterEnhancedReportingBrandingGetResponse;
         }
@@ -1944,7 +1944,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingBrandingModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingBrandingModifyRequest(this OcipClient client, GroupCallCenterEnhancedReportingBrandingModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingBrandingModifyRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingBrandingModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1953,7 +1953,7 @@ namespace BroadWorksConnector
         /// Request to modify the group branding configuration.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingBrandingModifyRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingBrandingModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingBrandingModifyRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingBrandingModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1962,7 +1962,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterEnhancedReportingGetAvailableReportTemplateListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingGetAvailableReportTemplateListRequestAsync instead.")]
-        public static async Task<GroupCallCenterEnhancedReportingGetAvailableReportTemplateListResponse> GroupCallCenterEnhancedReportingGetAvailableReportTemplateListRequest(this OcipClient client, GroupCallCenterEnhancedReportingGetAvailableReportTemplateListRequest request)
+        public static async Task<GroupCallCenterEnhancedReportingGetAvailableReportTemplateListResponse> GroupCallCenterEnhancedReportingGetAvailableReportTemplateListRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingGetAvailableReportTemplateListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterEnhancedReportingGetAvailableReportTemplateListResponse;
         }
@@ -1971,7 +1971,7 @@ namespace BroadWorksConnector
         /// Request to get all enabled call center report template for a group.
         /// The response is either a GroupCallCenterEnhancedReportingGetAvailableReportTemplateListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterEnhancedReportingGetAvailableReportTemplateListResponse> GroupCallCenterEnhancedReportingGetAvailableReportTemplateListRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingGetAvailableReportTemplateListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterEnhancedReportingGetAvailableReportTemplateListResponse> GroupCallCenterEnhancedReportingGetAvailableReportTemplateListRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingGetAvailableReportTemplateListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterEnhancedReportingGetAvailableReportTemplateListResponse;
         }
@@ -1980,7 +1980,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterEnhancedReportingGetResponse19 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingGetRequest19Async instead.")]
-        public static async Task<GroupCallCenterEnhancedReportingGetResponse19> GroupCallCenterEnhancedReportingGetRequest19(this OcipClient client, GroupCallCenterEnhancedReportingGetRequest19 request)
+        public static async Task<GroupCallCenterEnhancedReportingGetResponse19> GroupCallCenterEnhancedReportingGetRequest19(this OcipClientBase client, GroupCallCenterEnhancedReportingGetRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterEnhancedReportingGetResponse19;
         }
@@ -1989,7 +1989,7 @@ namespace BroadWorksConnector
         /// Request to get a group level call center enhanced reporting setting.
         /// The response is either a GroupCallCenterEnhancedReportingGetResponse19 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterEnhancedReportingGetResponse19> GroupCallCenterEnhancedReportingGetRequest19Async(this OcipClient client, GroupCallCenterEnhancedReportingGetRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterEnhancedReportingGetResponse19> GroupCallCenterEnhancedReportingGetRequest19Async(this OcipClientBase client, GroupCallCenterEnhancedReportingGetRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterEnhancedReportingGetResponse19;
         }
@@ -1998,7 +1998,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingModifyRequest19Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingModifyRequest19(this OcipClient client, GroupCallCenterEnhancedReportingModifyRequest19 request)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingModifyRequest19(this OcipClientBase client, GroupCallCenterEnhancedReportingModifyRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2007,7 +2007,7 @@ namespace BroadWorksConnector
         /// Request to modify group level call center enhanced reporting settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingModifyRequest19Async(this OcipClient client, GroupCallCenterEnhancedReportingModifyRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingModifyRequest19Async(this OcipClientBase client, GroupCallCenterEnhancedReportingModifyRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2016,7 +2016,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingReportTemplateAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateAddRequest(this OcipClient client, GroupCallCenterEnhancedReportingReportTemplateAddRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateAddRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingReportTemplateAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2025,7 +2025,7 @@ namespace BroadWorksConnector
         /// Request to add a group level call center report template.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateAddRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingReportTemplateAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateAddRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingReportTemplateAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2034,7 +2034,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingReportTemplateDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateDeleteRequest(this OcipClient client, GroupCallCenterEnhancedReportingReportTemplateDeleteRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateDeleteRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingReportTemplateDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2043,7 +2043,7 @@ namespace BroadWorksConnector
         /// Request to delete a group level call center report template.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateDeleteRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingReportTemplateDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateDeleteRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingReportTemplateDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2052,7 +2052,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterEnhancedReportingReportTemplateGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingReportTemplateGetListRequestAsync instead.")]
-        public static async Task<GroupCallCenterEnhancedReportingReportTemplateGetListResponse> GroupCallCenterEnhancedReportingReportTemplateGetListRequest(this OcipClient client, GroupCallCenterEnhancedReportingReportTemplateGetListRequest request)
+        public static async Task<GroupCallCenterEnhancedReportingReportTemplateGetListResponse> GroupCallCenterEnhancedReportingReportTemplateGetListRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingReportTemplateGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterEnhancedReportingReportTemplateGetListResponse;
         }
@@ -2061,7 +2061,7 @@ namespace BroadWorksConnector
         /// Request to get group level call center report template list.
         /// The response is either a GroupCallCenterEnhancedReportingReportTemplateGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterEnhancedReportingReportTemplateGetListResponse> GroupCallCenterEnhancedReportingReportTemplateGetListRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingReportTemplateGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterEnhancedReportingReportTemplateGetListResponse> GroupCallCenterEnhancedReportingReportTemplateGetListRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingReportTemplateGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterEnhancedReportingReportTemplateGetListResponse;
         }
@@ -2070,7 +2070,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterEnhancedReportingReportTemplateGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingReportTemplateGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterEnhancedReportingReportTemplateGetResponse> GroupCallCenterEnhancedReportingReportTemplateGetRequest(this OcipClient client, GroupCallCenterEnhancedReportingReportTemplateGetRequest request)
+        public static async Task<GroupCallCenterEnhancedReportingReportTemplateGetResponse> GroupCallCenterEnhancedReportingReportTemplateGetRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingReportTemplateGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterEnhancedReportingReportTemplateGetResponse;
         }
@@ -2079,7 +2079,7 @@ namespace BroadWorksConnector
         /// Request to get a group level call center report template.
         /// The response is either a GroupCallCenterEnhancedReportingReportTemplateGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterEnhancedReportingReportTemplateGetResponse> GroupCallCenterEnhancedReportingReportTemplateGetRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingReportTemplateGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterEnhancedReportingReportTemplateGetResponse> GroupCallCenterEnhancedReportingReportTemplateGetRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingReportTemplateGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterEnhancedReportingReportTemplateGetResponse;
         }
@@ -2088,7 +2088,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingReportTemplateModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateModifyRequest(this OcipClient client, GroupCallCenterEnhancedReportingReportTemplateModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateModifyRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingReportTemplateModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2097,7 +2097,7 @@ namespace BroadWorksConnector
         /// Request to modify a group level call center report template.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateModifyRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingReportTemplateModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingReportTemplateModifyRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingReportTemplateModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2107,7 +2107,7 @@ namespace BroadWorksConnector
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after startDate.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingScheduledReportAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportAddRequest(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportAddRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportAddRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2117,7 +2117,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after startDate.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportAddRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportAddRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2126,7 +2126,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingScheduledReportDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportDeleteRequest(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportDeleteRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportDeleteRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2135,7 +2135,7 @@ namespace BroadWorksConnector
         /// Request to delete a group level call center reporting scheduled report.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportDeleteRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportDeleteRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2144,7 +2144,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterEnhancedReportingScheduledReportGetActiveListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingScheduledReportGetActiveListRequestAsync instead.")]
-        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetActiveListResponse> GroupCallCenterEnhancedReportingScheduledReportGetActiveListRequest(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportGetActiveListRequest request)
+        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetActiveListResponse> GroupCallCenterEnhancedReportingScheduledReportGetActiveListRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportGetActiveListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterEnhancedReportingScheduledReportGetActiveListResponse;
         }
@@ -2153,7 +2153,7 @@ namespace BroadWorksConnector
         /// Request to get a list of active group level call center reporting scheduled reports.
         /// The response is either a GroupCallCenterEnhancedReportingScheduledReportGetActiveListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetActiveListResponse> GroupCallCenterEnhancedReportingScheduledReportGetActiveListRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportGetActiveListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetActiveListResponse> GroupCallCenterEnhancedReportingScheduledReportGetActiveListRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportGetActiveListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterEnhancedReportingScheduledReportGetActiveListResponse;
         }
@@ -2162,7 +2162,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterEnhancedReportingScheduledReportGetCompletedListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingScheduledReportGetCompletedListRequestAsync instead.")]
-        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> GroupCallCenterEnhancedReportingScheduledReportGetCompletedListRequest(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request)
+        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> GroupCallCenterEnhancedReportingScheduledReportGetCompletedListRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterEnhancedReportingScheduledReportGetCompletedListResponse;
         }
@@ -2171,7 +2171,7 @@ namespace BroadWorksConnector
         /// Request to get a list of completed group level call center reporting scheduled reports.
         /// The response is either a GroupCallCenterEnhancedReportingScheduledReportGetCompletedListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> GroupCallCenterEnhancedReportingScheduledReportGetCompletedListRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> GroupCallCenterEnhancedReportingScheduledReportGetCompletedListRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterEnhancedReportingScheduledReportGetCompletedListResponse;
         }
@@ -2180,7 +2180,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterEnhancedReportingScheduledReportGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingScheduledReportGetListRequestAsync instead.")]
-        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetListResponse> GroupCallCenterEnhancedReportingScheduledReportGetListRequest(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportGetListRequest request)
+        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetListResponse> GroupCallCenterEnhancedReportingScheduledReportGetListRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterEnhancedReportingScheduledReportGetListResponse;
         }
@@ -2189,7 +2189,7 @@ namespace BroadWorksConnector
         /// Request to get a list of group level call center reporting scheduled reports.
         /// The response is either a GroupCallCenterEnhancedReportingScheduledReportGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetListResponse> GroupCallCenterEnhancedReportingScheduledReportGetListRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetListResponse> GroupCallCenterEnhancedReportingScheduledReportGetListRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterEnhancedReportingScheduledReportGetListResponse;
         }
@@ -2198,7 +2198,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequestAsync instead.")]
-        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request)
+        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse;
         }
@@ -2207,7 +2207,7 @@ namespace BroadWorksConnector
         /// Request to get all the call center reporting scheduled report in a group that uses a given group level report template.
         /// The response is either a GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse;
         }
@@ -2216,7 +2216,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterEnhancedReportingScheduledReportGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingScheduledReportGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetResponse> GroupCallCenterEnhancedReportingScheduledReportGetRequest(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportGetRequest request)
+        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetResponse> GroupCallCenterEnhancedReportingScheduledReportGetRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterEnhancedReportingScheduledReportGetResponse;
         }
@@ -2225,7 +2225,7 @@ namespace BroadWorksConnector
         /// Request to get a group level call center reporting scheduled report.
         /// The response is either a GroupCallCenterEnhancedReportingScheduledReportGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetResponse> GroupCallCenterEnhancedReportingScheduledReportGetRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterEnhancedReportingScheduledReportGetResponse> GroupCallCenterEnhancedReportingScheduledReportGetRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterEnhancedReportingScheduledReportGetResponse;
         }
@@ -2235,7 +2235,7 @@ namespace BroadWorksConnector
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after startDate.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterEnhancedReportingScheduledReportModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportModifyRequest(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportModifyRequest(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2245,7 +2245,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after startDate.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportModifyRequestAsync(this OcipClient client, GroupCallCenterEnhancedReportingScheduledReportModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterEnhancedReportingScheduledReportModifyRequestAsync(this OcipClientBase client, GroupCallCenterEnhancedReportingScheduledReportModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2254,7 +2254,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterForcedForwardingGetResponse20 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterForcedForwardingGetRequest20Async instead.")]
-        public static async Task<GroupCallCenterForcedForwardingGetResponse20> GroupCallCenterForcedForwardingGetRequest20(this OcipClient client, GroupCallCenterForcedForwardingGetRequest20 request)
+        public static async Task<GroupCallCenterForcedForwardingGetResponse20> GroupCallCenterForcedForwardingGetRequest20(this OcipClientBase client, GroupCallCenterForcedForwardingGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterForcedForwardingGetResponse20;
         }
@@ -2263,7 +2263,7 @@ namespace BroadWorksConnector
         /// Get a call center's forced forwarding settings.
         /// The response is either a GroupCallCenterForcedForwardingGetResponse20 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterForcedForwardingGetResponse20> GroupCallCenterForcedForwardingGetRequest20Async(this OcipClient client, GroupCallCenterForcedForwardingGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterForcedForwardingGetResponse20> GroupCallCenterForcedForwardingGetRequest20Async(this OcipClientBase client, GroupCallCenterForcedForwardingGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterForcedForwardingGetResponse20;
         }
@@ -2272,7 +2272,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterForcedForwardingModifyRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterForcedForwardingModifyRequest20(this OcipClient client, GroupCallCenterForcedForwardingModifyRequest20 request)
+        public static async Task<SuccessResponse> GroupCallCenterForcedForwardingModifyRequest20(this OcipClientBase client, GroupCallCenterForcedForwardingModifyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2281,7 +2281,7 @@ namespace BroadWorksConnector
         /// Modify a call center's forced forwarding settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterForcedForwardingModifyRequest20Async(this OcipClient client, GroupCallCenterForcedForwardingModifyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterForcedForwardingModifyRequest20Async(this OcipClientBase client, GroupCallCenterForcedForwardingModifyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2293,7 +2293,7 @@ namespace BroadWorksConnector
         /// searchCriteriaExactSkillLevel
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetAgentListRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetAgentListResponse> GroupCallCenterGetAgentListRequest(this OcipClient client, GroupCallCenterGetAgentListRequest request)
+        public static async Task<GroupCallCenterGetAgentListResponse> GroupCallCenterGetAgentListRequest(this OcipClientBase client, GroupCallCenterGetAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetAgentListResponse;
         }
@@ -2305,7 +2305,7 @@ namespace BroadWorksConnector
         /// The following element is only used in AS data mode and ignored in XS data mode:
         /// searchCriteriaExactSkillLevel
         /// </summary>
-        public static async Task<GroupCallCenterGetAgentListResponse> GroupCallCenterGetAgentListRequestAsync(this OcipClient client, GroupCallCenterGetAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetAgentListResponse> GroupCallCenterGetAgentListRequestAsync(this OcipClientBase client, GroupCallCenterGetAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetAgentListResponse;
         }
@@ -2326,7 +2326,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterGetAgentPagedSortedListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetAgentPagedSortedListRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetAgentPagedSortedListResponse> GroupCallCenterGetAgentPagedSortedListRequest(this OcipClient client, GroupCallCenterGetAgentPagedSortedListRequest request)
+        public static async Task<GroupCallCenterGetAgentPagedSortedListResponse> GroupCallCenterGetAgentPagedSortedListRequest(this OcipClientBase client, GroupCallCenterGetAgentPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetAgentPagedSortedListResponse;
         }
@@ -2347,7 +2347,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either a GroupCallCenterGetAgentPagedSortedListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetAgentPagedSortedListResponse> GroupCallCenterGetAgentPagedSortedListRequestAsync(this OcipClient client, GroupCallCenterGetAgentPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetAgentPagedSortedListResponse> GroupCallCenterGetAgentPagedSortedListRequestAsync(this OcipClientBase client, GroupCallCenterGetAgentPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetAgentPagedSortedListResponse;
         }
@@ -2356,7 +2356,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterGetAnnouncementResponse22 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetAnnouncementRequest22Async instead.")]
-        public static async Task<GroupCallCenterGetAnnouncementResponse22> GroupCallCenterGetAnnouncementRequest22(this OcipClient client, GroupCallCenterGetAnnouncementRequest22 request)
+        public static async Task<GroupCallCenterGetAnnouncementResponse22> GroupCallCenterGetAnnouncementRequest22(this OcipClientBase client, GroupCallCenterGetAnnouncementRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetAnnouncementResponse22;
         }
@@ -2365,7 +2365,7 @@ namespace BroadWorksConnector
         /// Get a call center's announcement settings.
         /// The response is either a GroupCallCenterGetAnnouncementResponse22 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetAnnouncementResponse22> GroupCallCenterGetAnnouncementRequest22Async(this OcipClient client, GroupCallCenterGetAnnouncementRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetAnnouncementResponse22> GroupCallCenterGetAnnouncementRequest22Async(this OcipClientBase client, GroupCallCenterGetAnnouncementRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetAnnouncementResponse22;
         }
@@ -2375,7 +2375,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterGetAvailableAgentListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetAvailableAgentListRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetAvailableAgentListResponse> GroupCallCenterGetAvailableAgentListRequest(this OcipClient client, GroupCallCenterGetAvailableAgentListRequest request)
+        public static async Task<GroupCallCenterGetAvailableAgentListResponse> GroupCallCenterGetAvailableAgentListRequest(this OcipClientBase client, GroupCallCenterGetAvailableAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetAvailableAgentListResponse;
         }
@@ -2385,7 +2385,7 @@ namespace BroadWorksConnector
         /// Searching for users by group only makes sense when the call center is part of an Enterprise.
         /// The response is either GroupCallCenterGetAvailableAgentListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetAvailableAgentListResponse> GroupCallCenterGetAvailableAgentListRequestAsync(this OcipClient client, GroupCallCenterGetAvailableAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetAvailableAgentListResponse> GroupCallCenterGetAvailableAgentListRequestAsync(this OcipClientBase client, GroupCallCenterGetAvailableAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetAvailableAgentListResponse;
         }
@@ -2407,7 +2407,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterGetAvailableAgentPagedSortedListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetAvailableAgentPagedSortedListRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetAvailableAgentPagedSortedListResponse> GroupCallCenterGetAvailableAgentPagedSortedListRequest(this OcipClient client, GroupCallCenterGetAvailableAgentPagedSortedListRequest request)
+        public static async Task<GroupCallCenterGetAvailableAgentPagedSortedListResponse> GroupCallCenterGetAvailableAgentPagedSortedListRequest(this OcipClientBase client, GroupCallCenterGetAvailableAgentPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetAvailableAgentPagedSortedListResponse;
         }
@@ -2429,7 +2429,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either GroupCallCenterGetAvailableAgentPagedSortedListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetAvailableAgentPagedSortedListResponse> GroupCallCenterGetAvailableAgentPagedSortedListRequestAsync(this OcipClient client, GroupCallCenterGetAvailableAgentPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetAvailableAgentPagedSortedListResponse> GroupCallCenterGetAvailableAgentPagedSortedListRequestAsync(this OcipClientBase client, GroupCallCenterGetAvailableAgentPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetAvailableAgentPagedSortedListResponse;
         }
@@ -2439,7 +2439,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterGetAvailableSupervisorListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetAvailableSupervisorListRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetAvailableSupervisorListResponse> GroupCallCenterGetAvailableSupervisorListRequest(this OcipClient client, GroupCallCenterGetAvailableSupervisorListRequest request)
+        public static async Task<GroupCallCenterGetAvailableSupervisorListResponse> GroupCallCenterGetAvailableSupervisorListRequest(this OcipClientBase client, GroupCallCenterGetAvailableSupervisorListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetAvailableSupervisorListResponse;
         }
@@ -2449,7 +2449,7 @@ namespace BroadWorksConnector
         /// Searching for users by group only makes sense when the call center is part of an Enterprise.
         /// The response is either GroupCallCenterGetAvailableSupervisorListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetAvailableSupervisorListResponse> GroupCallCenterGetAvailableSupervisorListRequestAsync(this OcipClient client, GroupCallCenterGetAvailableSupervisorListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetAvailableSupervisorListResponse> GroupCallCenterGetAvailableSupervisorListRequestAsync(this OcipClientBase client, GroupCallCenterGetAvailableSupervisorListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetAvailableSupervisorListResponse;
         }
@@ -2459,7 +2459,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetDistinctiveRingingRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetDistinctiveRingingResponse> GroupCallCenterGetDistinctiveRingingRequest(this OcipClient client, GroupCallCenterGetDistinctiveRingingRequest request)
+        public static async Task<GroupCallCenterGetDistinctiveRingingResponse> GroupCallCenterGetDistinctiveRingingRequest(this OcipClientBase client, GroupCallCenterGetDistinctiveRingingRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetDistinctiveRingingResponse;
         }
@@ -2469,7 +2469,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterGetDistinctiveRingingResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetDistinctiveRingingResponse> GroupCallCenterGetDistinctiveRingingRequestAsync(this OcipClient client, GroupCallCenterGetDistinctiveRingingRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetDistinctiveRingingResponse> GroupCallCenterGetDistinctiveRingingRequestAsync(this OcipClientBase client, GroupCallCenterGetDistinctiveRingingRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetDistinctiveRingingResponse;
         }
@@ -2478,7 +2478,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterGetDNISAgentListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetDNISAgentListRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetDNISAgentListResponse> GroupCallCenterGetDNISAgentListRequest(this OcipClient client, GroupCallCenterGetDNISAgentListRequest request)
+        public static async Task<GroupCallCenterGetDNISAgentListResponse> GroupCallCenterGetDNISAgentListRequest(this OcipClientBase client, GroupCallCenterGetDNISAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetDNISAgentListResponse;
         }
@@ -2487,7 +2487,7 @@ namespace BroadWorksConnector
         /// Get a list of agent who selected the DNIS as the outgoing call.
         /// The response is either GroupCallCenterGetDNISAgentListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetDNISAgentListResponse> GroupCallCenterGetDNISAgentListRequestAsync(this OcipClient client, GroupCallCenterGetDNISAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetDNISAgentListResponse> GroupCallCenterGetDNISAgentListRequestAsync(this OcipClientBase client, GroupCallCenterGetDNISAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetDNISAgentListResponse;
         }
@@ -2496,7 +2496,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterGetDNISAnnouncementResponse20 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetDNISAnnouncementRequest20Async instead.")]
-        public static async Task<GroupCallCenterGetDNISAnnouncementResponse20> GroupCallCenterGetDNISAnnouncementRequest20(this OcipClient client, GroupCallCenterGetDNISAnnouncementRequest20 request)
+        public static async Task<GroupCallCenterGetDNISAnnouncementResponse20> GroupCallCenterGetDNISAnnouncementRequest20(this OcipClientBase client, GroupCallCenterGetDNISAnnouncementRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetDNISAnnouncementResponse20;
         }
@@ -2505,7 +2505,7 @@ namespace BroadWorksConnector
         /// Get a call center's DNIS Announcements
         /// The response is either a GroupCallCenterGetDNISAnnouncementResponse20 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetDNISAnnouncementResponse20> GroupCallCenterGetDNISAnnouncementRequest20Async(this OcipClient client, GroupCallCenterGetDNISAnnouncementRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetDNISAnnouncementResponse20> GroupCallCenterGetDNISAnnouncementRequest20Async(this OcipClientBase client, GroupCallCenterGetDNISAnnouncementRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetDNISAnnouncementResponse20;
         }
@@ -2514,7 +2514,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterGetDNISAnnouncementResponse22 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetDNISAnnouncementRequest22Async instead.")]
-        public static async Task<GroupCallCenterGetDNISAnnouncementResponse22> GroupCallCenterGetDNISAnnouncementRequest22(this OcipClient client, GroupCallCenterGetDNISAnnouncementRequest22 request)
+        public static async Task<GroupCallCenterGetDNISAnnouncementResponse22> GroupCallCenterGetDNISAnnouncementRequest22(this OcipClientBase client, GroupCallCenterGetDNISAnnouncementRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetDNISAnnouncementResponse22;
         }
@@ -2523,7 +2523,7 @@ namespace BroadWorksConnector
         /// Get a call center's DNIS Announcements
         /// The response is either a GroupCallCenterGetDNISAnnouncementResponse22 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetDNISAnnouncementResponse22> GroupCallCenterGetDNISAnnouncementRequest22Async(this OcipClient client, GroupCallCenterGetDNISAnnouncementRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetDNISAnnouncementResponse22> GroupCallCenterGetDNISAnnouncementRequest22Async(this OcipClientBase client, GroupCallCenterGetDNISAnnouncementRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetDNISAnnouncementResponse22;
         }
@@ -2532,7 +2532,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterGetDNISListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetDNISListRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetDNISListResponse> GroupCallCenterGetDNISListRequest(this OcipClient client, GroupCallCenterGetDNISListRequest request)
+        public static async Task<GroupCallCenterGetDNISListResponse> GroupCallCenterGetDNISListRequest(this OcipClientBase client, GroupCallCenterGetDNISListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetDNISListResponse;
         }
@@ -2541,7 +2541,7 @@ namespace BroadWorksConnector
         /// Get a list of DNIS that are configured for a Call Center.
         /// The response is either GroupCallCenterGetDNISListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetDNISListResponse> GroupCallCenterGetDNISListRequestAsync(this OcipClient client, GroupCallCenterGetDNISListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetDNISListResponse> GroupCallCenterGetDNISListRequestAsync(this OcipClientBase client, GroupCallCenterGetDNISListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetDNISListResponse;
         }
@@ -2550,7 +2550,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterGetDNISResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetDNISRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetDNISResponse> GroupCallCenterGetDNISRequest(this OcipClient client, GroupCallCenterGetDNISRequest request)
+        public static async Task<GroupCallCenterGetDNISResponse> GroupCallCenterGetDNISRequest(this OcipClientBase client, GroupCallCenterGetDNISRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetDNISResponse;
         }
@@ -2559,7 +2559,7 @@ namespace BroadWorksConnector
         /// Get a call center's DNIS.
         /// The response is either a GroupCallCenterGetDNISResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetDNISResponse> GroupCallCenterGetDNISRequestAsync(this OcipClient client, GroupCallCenterGetDNISRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetDNISResponse> GroupCallCenterGetDNISRequestAsync(this OcipClientBase client, GroupCallCenterGetDNISRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetDNISResponse;
         }
@@ -2569,7 +2569,7 @@ namespace BroadWorksConnector
         /// It is possible to get the instances within a specified department.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetInstanceListRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetInstanceListResponse> GroupCallCenterGetInstanceListRequest(this OcipClient client, GroupCallCenterGetInstanceListRequest request)
+        public static async Task<GroupCallCenterGetInstanceListResponse> GroupCallCenterGetInstanceListRequest(this OcipClientBase client, GroupCallCenterGetInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetInstanceListResponse;
         }
@@ -2579,7 +2579,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterGetInstanceListResponse or ErrorResponse.
         /// It is possible to get the instances within a specified department.
         /// </summary>
-        public static async Task<GroupCallCenterGetInstanceListResponse> GroupCallCenterGetInstanceListRequestAsync(this OcipClient client, GroupCallCenterGetInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetInstanceListResponse> GroupCallCenterGetInstanceListRequestAsync(this OcipClientBase client, GroupCallCenterGetInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetInstanceListResponse;
         }
@@ -2600,7 +2600,7 @@ namespace BroadWorksConnector
         /// ErrorResponse is returned if searchCriteriaExactHuntPolicy or searchCriteriaExactCallCenterType have multiple entries and searchCriteriaModeOr is not include.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetInstancePagedSortedListRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetInstancePagedSortedListResponse> GroupCallCenterGetInstancePagedSortedListRequest(this OcipClient client, GroupCallCenterGetInstancePagedSortedListRequest request)
+        public static async Task<GroupCallCenterGetInstancePagedSortedListResponse> GroupCallCenterGetInstancePagedSortedListRequest(this OcipClientBase client, GroupCallCenterGetInstancePagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetInstancePagedSortedListResponse;
         }
@@ -2621,7 +2621,7 @@ namespace BroadWorksConnector
         /// 
         /// ErrorResponse is returned if searchCriteriaExactHuntPolicy or searchCriteriaExactCallCenterType have multiple entries and searchCriteriaModeOr is not include.
         /// </summary>
-        public static async Task<GroupCallCenterGetInstancePagedSortedListResponse> GroupCallCenterGetInstancePagedSortedListRequestAsync(this OcipClient client, GroupCallCenterGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetInstancePagedSortedListResponse> GroupCallCenterGetInstancePagedSortedListRequestAsync(this OcipClientBase client, GroupCallCenterGetInstancePagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetInstancePagedSortedListResponse;
         }
@@ -2630,7 +2630,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterGetInstanceQueueStatusResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetInstanceQueueStatusRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetInstanceQueueStatusResponse> GroupCallCenterGetInstanceQueueStatusRequest(this OcipClient client, GroupCallCenterGetInstanceQueueStatusRequest request)
+        public static async Task<GroupCallCenterGetInstanceQueueStatusResponse> GroupCallCenterGetInstanceQueueStatusRequest(this OcipClientBase client, GroupCallCenterGetInstanceQueueStatusRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetInstanceQueueStatusResponse;
         }
@@ -2639,7 +2639,7 @@ namespace BroadWorksConnector
         /// Get Call Center queue status.
         /// The response is either GroupCallCenterGetInstanceQueueStatusResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetInstanceQueueStatusResponse> GroupCallCenterGetInstanceQueueStatusRequestAsync(this OcipClient client, GroupCallCenterGetInstanceQueueStatusRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetInstanceQueueStatusResponse> GroupCallCenterGetInstanceQueueStatusRequestAsync(this OcipClientBase client, GroupCallCenterGetInstanceQueueStatusRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetInstanceQueueStatusResponse;
         }
@@ -2648,7 +2648,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterGetInstanceResponse22 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetInstanceRequest22Async instead.")]
-        public static async Task<GroupCallCenterGetInstanceResponse22> GroupCallCenterGetInstanceRequest22(this OcipClient client, GroupCallCenterGetInstanceRequest22 request)
+        public static async Task<GroupCallCenterGetInstanceResponse22> GroupCallCenterGetInstanceRequest22(this OcipClientBase client, GroupCallCenterGetInstanceRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetInstanceResponse22;
         }
@@ -2657,7 +2657,7 @@ namespace BroadWorksConnector
         /// Request to get all the information of a Call Center instance.
         /// The response is either GroupCallCenterGetInstanceResponse22 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetInstanceResponse22> GroupCallCenterGetInstanceRequest22Async(this OcipClient client, GroupCallCenterGetInstanceRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetInstanceResponse22> GroupCallCenterGetInstanceRequest22Async(this OcipClientBase client, GroupCallCenterGetInstanceRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetInstanceResponse22;
         }
@@ -2666,7 +2666,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterGetInstanceStatisticsReportingResponse17sp1 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetInstanceStatisticsReportingRequest17sp1Async instead.")]
-        public static async Task<GroupCallCenterGetInstanceStatisticsReportingResponse17sp1> GroupCallCenterGetInstanceStatisticsReportingRequest17sp1(this OcipClient client, GroupCallCenterGetInstanceStatisticsReportingRequest17sp1 request)
+        public static async Task<GroupCallCenterGetInstanceStatisticsReportingResponse17sp1> GroupCallCenterGetInstanceStatisticsReportingRequest17sp1(this OcipClientBase client, GroupCallCenterGetInstanceStatisticsReportingRequest17sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetInstanceStatisticsReportingResponse17sp1;
         }
@@ -2675,7 +2675,7 @@ namespace BroadWorksConnector
         /// Request to get the call center statistics reporting settings.
         /// The response is either GroupCallCenterGetInstanceStatisticsReportingResponse17sp1 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetInstanceStatisticsReportingResponse17sp1> GroupCallCenterGetInstanceStatisticsReportingRequest17sp1Async(this OcipClient client, GroupCallCenterGetInstanceStatisticsReportingRequest17sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetInstanceStatisticsReportingResponse17sp1> GroupCallCenterGetInstanceStatisticsReportingRequest17sp1Async(this OcipClientBase client, GroupCallCenterGetInstanceStatisticsReportingRequest17sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetInstanceStatisticsReportingResponse17sp1;
         }
@@ -2684,7 +2684,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterGetInstanceStatisticsResponse14sp9 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetInstanceStatisticsRequest14sp9Async instead.")]
-        public static async Task<GroupCallCenterGetInstanceStatisticsResponse14sp9> GroupCallCenterGetInstanceStatisticsRequest14sp9(this OcipClient client, GroupCallCenterGetInstanceStatisticsRequest14sp9 request)
+        public static async Task<GroupCallCenterGetInstanceStatisticsResponse14sp9> GroupCallCenterGetInstanceStatisticsRequest14sp9(this OcipClientBase client, GroupCallCenterGetInstanceStatisticsRequest14sp9 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetInstanceStatisticsResponse14sp9;
         }
@@ -2693,7 +2693,7 @@ namespace BroadWorksConnector
         /// Get Call Center queue and agent statistics.
         /// The response is either GroupCallCenterGetInstanceStatisticsResponse14sp9 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetInstanceStatisticsResponse14sp9> GroupCallCenterGetInstanceStatisticsRequest14sp9Async(this OcipClient client, GroupCallCenterGetInstanceStatisticsRequest14sp9 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetInstanceStatisticsResponse14sp9> GroupCallCenterGetInstanceStatisticsRequest14sp9Async(this OcipClientBase client, GroupCallCenterGetInstanceStatisticsRequest14sp9 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetInstanceStatisticsResponse14sp9;
         }
@@ -2703,7 +2703,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetRequest17sp4Async instead.")]
-        public static async Task<GroupCallCenterGetResponse17sp4> GroupCallCenterGetRequest17sp4(this OcipClient client, GroupCallCenterGetRequest17sp4 request)
+        public static async Task<GroupCallCenterGetResponse17sp4> GroupCallCenterGetRequest17sp4(this OcipClientBase client, GroupCallCenterGetRequest17sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetResponse17sp4;
         }
@@ -2713,7 +2713,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterGetResponse17sp4 or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetResponse17sp4> GroupCallCenterGetRequest17sp4Async(this OcipClient client, GroupCallCenterGetRequest17sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetResponse17sp4> GroupCallCenterGetRequest17sp4Async(this OcipClientBase client, GroupCallCenterGetRequest17sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetResponse17sp4;
         }
@@ -2723,7 +2723,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetRoutingPolicyRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetRoutingPolicyResponse> GroupCallCenterGetRoutingPolicyRequest(this OcipClient client, GroupCallCenterGetRoutingPolicyRequest request)
+        public static async Task<GroupCallCenterGetRoutingPolicyResponse> GroupCallCenterGetRoutingPolicyRequest(this OcipClientBase client, GroupCallCenterGetRoutingPolicyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetRoutingPolicyResponse;
         }
@@ -2733,7 +2733,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterGetRoutingPolicyResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetRoutingPolicyResponse> GroupCallCenterGetRoutingPolicyRequestAsync(this OcipClient client, GroupCallCenterGetRoutingPolicyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetRoutingPolicyResponse> GroupCallCenterGetRoutingPolicyRequestAsync(this OcipClientBase client, GroupCallCenterGetRoutingPolicyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetRoutingPolicyResponse;
         }
@@ -2742,7 +2742,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterGetSupervisorListResponse16 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetSupervisorListRequest16Async instead.")]
-        public static async Task<GroupCallCenterGetSupervisorListResponse16> GroupCallCenterGetSupervisorListRequest16(this OcipClient client, GroupCallCenterGetSupervisorListRequest16 request)
+        public static async Task<GroupCallCenterGetSupervisorListResponse16> GroupCallCenterGetSupervisorListRequest16(this OcipClientBase client, GroupCallCenterGetSupervisorListRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetSupervisorListResponse16;
         }
@@ -2751,7 +2751,7 @@ namespace BroadWorksConnector
         /// Get a list of supervisors assigned to a call center.
         /// The response is either a GroupCallCenterGetSupervisorListResponse16 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetSupervisorListResponse16> GroupCallCenterGetSupervisorListRequest16Async(this OcipClient client, GroupCallCenterGetSupervisorListRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetSupervisorListResponse16> GroupCallCenterGetSupervisorListRequest16Async(this OcipClientBase client, GroupCallCenterGetSupervisorListRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetSupervisorListResponse16;
         }
@@ -2760,7 +2760,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterGetUnlicensedAgentListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetUnlicensedAgentListRequestAsync instead.")]
-        public static async Task<GroupCallCenterGetUnlicensedAgentListResponse> GroupCallCenterGetUnlicensedAgentListRequest(this OcipClient client, GroupCallCenterGetUnlicensedAgentListRequest request)
+        public static async Task<GroupCallCenterGetUnlicensedAgentListResponse> GroupCallCenterGetUnlicensedAgentListRequest(this OcipClientBase client, GroupCallCenterGetUnlicensedAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetUnlicensedAgentListResponse;
         }
@@ -2769,7 +2769,7 @@ namespace BroadWorksConnector
         /// Get a list of unlicensed users who are preventing the Call Center from upgrading to another type.
         /// The response is either GroupCallCenterGetUnlicensedAgentListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetUnlicensedAgentListResponse> GroupCallCenterGetUnlicensedAgentListRequestAsync(this OcipClient client, GroupCallCenterGetUnlicensedAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetUnlicensedAgentListResponse> GroupCallCenterGetUnlicensedAgentListRequestAsync(this OcipClientBase client, GroupCallCenterGetUnlicensedAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetUnlicensedAgentListResponse;
         }
@@ -2778,7 +2778,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterHolidayServiceGetResponse20 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterHolidayServiceGetRequest20Async instead.")]
-        public static async Task<GroupCallCenterHolidayServiceGetResponse20> GroupCallCenterHolidayServiceGetRequest20(this OcipClient client, GroupCallCenterHolidayServiceGetRequest20 request)
+        public static async Task<GroupCallCenterHolidayServiceGetResponse20> GroupCallCenterHolidayServiceGetRequest20(this OcipClientBase client, GroupCallCenterHolidayServiceGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterHolidayServiceGetResponse20;
         }
@@ -2787,7 +2787,7 @@ namespace BroadWorksConnector
         /// Get a call center's holiday service settings.
         /// The response is either a GroupCallCenterHolidayServiceGetResponse20 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterHolidayServiceGetResponse20> GroupCallCenterHolidayServiceGetRequest20Async(this OcipClient client, GroupCallCenterHolidayServiceGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterHolidayServiceGetResponse20> GroupCallCenterHolidayServiceGetRequest20Async(this OcipClientBase client, GroupCallCenterHolidayServiceGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterHolidayServiceGetResponse20;
         }
@@ -2797,7 +2797,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterHolidayServiceModifyRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterHolidayServiceModifyRequest20(this OcipClient client, GroupCallCenterHolidayServiceModifyRequest20 request)
+        public static async Task<SuccessResponse> GroupCallCenterHolidayServiceModifyRequest20(this OcipClientBase client, GroupCallCenterHolidayServiceModifyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2807,7 +2807,7 @@ namespace BroadWorksConnector
         /// Only Group and Enterprise level schedules are accepted.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterHolidayServiceModifyRequest20Async(this OcipClient client, GroupCallCenterHolidayServiceModifyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterHolidayServiceModifyRequest20Async(this OcipClientBase client, GroupCallCenterHolidayServiceModifyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2816,7 +2816,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyActiveInstanceListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyActiveInstanceListRequest(this OcipClient client, GroupCallCenterModifyActiveInstanceListRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyActiveInstanceListRequest(this OcipClientBase client, GroupCallCenterModifyActiveInstanceListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2825,7 +2825,7 @@ namespace BroadWorksConnector
         /// Request to set the active status of Call Center instances.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyActiveInstanceListRequestAsync(this OcipClient client, GroupCallCenterModifyActiveInstanceListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyActiveInstanceListRequestAsync(this OcipClientBase client, GroupCallCenterModifyActiveInstanceListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2839,7 +2839,7 @@ namespace BroadWorksConnector
         /// skilledAgentUserIdList
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyAgentListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyAgentListRequest(this OcipClient client, GroupCallCenterModifyAgentListRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyAgentListRequest(this OcipClientBase client, GroupCallCenterModifyAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2853,7 +2853,7 @@ namespace BroadWorksConnector
         /// The following element is only used in AS data mode and ignored in XS data mode:
         /// skilledAgentUserIdList
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyAgentListRequestAsync(this OcipClient client, GroupCallCenterModifyAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyAgentListRequestAsync(this OcipClientBase client, GroupCallCenterModifyAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2862,7 +2862,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyAnnouncementRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyAnnouncementRequest20(this OcipClient client, GroupCallCenterModifyAnnouncementRequest20 request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyAnnouncementRequest20(this OcipClientBase client, GroupCallCenterModifyAnnouncementRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2871,7 +2871,7 @@ namespace BroadWorksConnector
         /// Modify a call center's announcement settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyAnnouncementRequest20Async(this OcipClient client, GroupCallCenterModifyAnnouncementRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyAnnouncementRequest20Async(this OcipClientBase client, GroupCallCenterModifyAnnouncementRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2880,7 +2880,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyDistinctiveRingingRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyDistinctiveRingingRequest(this OcipClient client, GroupCallCenterModifyDistinctiveRingingRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyDistinctiveRingingRequest(this OcipClientBase client, GroupCallCenterModifyDistinctiveRingingRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2889,7 +2889,7 @@ namespace BroadWorksConnector
         /// Modify the distinctive ringing configuration values for call center.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyDistinctiveRingingRequestAsync(this OcipClient client, GroupCallCenterModifyDistinctiveRingingRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyDistinctiveRingingRequestAsync(this OcipClientBase client, GroupCallCenterModifyDistinctiveRingingRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2898,7 +2898,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyDNISAnnouncementRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyDNISAnnouncementRequest20(this OcipClient client, GroupCallCenterModifyDNISAnnouncementRequest20 request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyDNISAnnouncementRequest20(this OcipClientBase client, GroupCallCenterModifyDNISAnnouncementRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2907,7 +2907,7 @@ namespace BroadWorksConnector
         /// Modify a call center DNIS announcement settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyDNISAnnouncementRequest20Async(this OcipClient client, GroupCallCenterModifyDNISAnnouncementRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyDNISAnnouncementRequest20Async(this OcipClientBase client, GroupCallCenterModifyDNISAnnouncementRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2916,7 +2916,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyDNISParametersRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyDNISParametersRequest(this OcipClient client, GroupCallCenterModifyDNISParametersRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyDNISParametersRequest(this OcipClientBase client, GroupCallCenterModifyDNISParametersRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2925,7 +2925,7 @@ namespace BroadWorksConnector
         /// Modify the setting that are configured for all the DNIS in a Call Center.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyDNISParametersRequestAsync(this OcipClient client, GroupCallCenterModifyDNISParametersRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyDNISParametersRequestAsync(this OcipClientBase client, GroupCallCenterModifyDNISParametersRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2934,7 +2934,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyDNISRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyDNISRequest(this OcipClient client, GroupCallCenterModifyDNISRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyDNISRequest(this OcipClientBase client, GroupCallCenterModifyDNISRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2943,7 +2943,7 @@ namespace BroadWorksConnector
         /// Modify a call center's DNIS settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyDNISRequestAsync(this OcipClient client, GroupCallCenterModifyDNISRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyDNISRequestAsync(this OcipClientBase client, GroupCallCenterModifyDNISRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2966,7 +2966,7 @@ namespace BroadWorksConnector
         /// networkClassOfService
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyInstanceRequest22Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceRequest22(this OcipClient client, GroupCallCenterModifyInstanceRequest22 request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceRequest22(this OcipClientBase client, GroupCallCenterModifyInstanceRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2989,7 +2989,7 @@ namespace BroadWorksConnector
         /// callCenterQueueThresholdsIsActive
         /// networkClassOfService
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceRequest22Async(this OcipClient client, GroupCallCenterModifyInstanceRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceRequest22Async(this OcipClientBase client, GroupCallCenterModifyInstanceRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2998,7 +2998,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyInstanceStatisticsReportingRequest17sp1Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceStatisticsReportingRequest17sp1(this OcipClient client, GroupCallCenterModifyInstanceStatisticsReportingRequest17sp1 request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceStatisticsReportingRequest17sp1(this OcipClientBase client, GroupCallCenterModifyInstanceStatisticsReportingRequest17sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3007,7 +3007,7 @@ namespace BroadWorksConnector
         /// Modify the Call Center statistics reporting frequency and destination.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceStatisticsReportingRequest17sp1Async(this OcipClient client, GroupCallCenterModifyInstanceStatisticsReportingRequest17sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceStatisticsReportingRequest17sp1Async(this OcipClientBase client, GroupCallCenterModifyInstanceStatisticsReportingRequest17sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3016,7 +3016,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyInstanceWeightedCallDistributionRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceWeightedCallDistributionRequest(this OcipClient client, GroupCallCenterModifyInstanceWeightedCallDistributionRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceWeightedCallDistributionRequest(this OcipClientBase client, GroupCallCenterModifyInstanceWeightedCallDistributionRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3025,7 +3025,7 @@ namespace BroadWorksConnector
         /// Request to modify the weighted call distribution of a Call Center instance.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceWeightedCallDistributionRequestAsync(this OcipClient client, GroupCallCenterModifyInstanceWeightedCallDistributionRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyInstanceWeightedCallDistributionRequestAsync(this OcipClientBase client, GroupCallCenterModifyInstanceWeightedCallDistributionRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3043,7 +3043,7 @@ namespace BroadWorksConnector
         /// forceAgentUnavailableOnNotReachable
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyRequest(this OcipClient client, GroupCallCenterModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyRequest(this OcipClientBase client, GroupCallCenterModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3061,7 +3061,7 @@ namespace BroadWorksConnector
         /// numberConsecutiveBouncedCallsToForceAgentUnavailable
         /// forceAgentUnavailableOnNotReachable
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyRequestAsync(this OcipClient client, GroupCallCenterModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyRequestAsync(this OcipClientBase client, GroupCallCenterModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3070,7 +3070,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyRoutingPolicyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyRoutingPolicyRequest(this OcipClient client, GroupCallCenterModifyRoutingPolicyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyRoutingPolicyRequest(this OcipClientBase client, GroupCallCenterModifyRoutingPolicyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3079,7 +3079,7 @@ namespace BroadWorksConnector
         /// Modify the group call center routing policy.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyRoutingPolicyRequestAsync(this OcipClient client, GroupCallCenterModifyRoutingPolicyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyRoutingPolicyRequestAsync(this OcipClientBase client, GroupCallCenterModifyRoutingPolicyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3088,7 +3088,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifySupervisorListRequest16Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifySupervisorListRequest16(this OcipClient client, GroupCallCenterModifySupervisorListRequest16 request)
+        public static async Task<SuccessResponse> GroupCallCenterModifySupervisorListRequest16(this OcipClientBase client, GroupCallCenterModifySupervisorListRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3097,7 +3097,7 @@ namespace BroadWorksConnector
         /// Request to modify the supervisor list for a call center.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifySupervisorListRequest16Async(this OcipClient client, GroupCallCenterModifySupervisorListRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifySupervisorListRequest16Async(this OcipClientBase client, GroupCallCenterModifySupervisorListRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3106,7 +3106,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterNightServiceGetResponse20 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterNightServiceGetRequest20Async instead.")]
-        public static async Task<GroupCallCenterNightServiceGetResponse20> GroupCallCenterNightServiceGetRequest20(this OcipClient client, GroupCallCenterNightServiceGetRequest20 request)
+        public static async Task<GroupCallCenterNightServiceGetResponse20> GroupCallCenterNightServiceGetRequest20(this OcipClientBase client, GroupCallCenterNightServiceGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterNightServiceGetResponse20;
         }
@@ -3115,7 +3115,7 @@ namespace BroadWorksConnector
         /// Get a call center's night service settings.
         /// The response is either a GroupCallCenterNightServiceGetResponse20 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterNightServiceGetResponse20> GroupCallCenterNightServiceGetRequest20Async(this OcipClient client, GroupCallCenterNightServiceGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterNightServiceGetResponse20> GroupCallCenterNightServiceGetRequest20Async(this OcipClientBase client, GroupCallCenterNightServiceGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterNightServiceGetResponse20;
         }
@@ -3125,7 +3125,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterNightServiceModifyRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterNightServiceModifyRequest20(this OcipClient client, GroupCallCenterNightServiceModifyRequest20 request)
+        public static async Task<SuccessResponse> GroupCallCenterNightServiceModifyRequest20(this OcipClientBase client, GroupCallCenterNightServiceModifyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3135,7 +3135,7 @@ namespace BroadWorksConnector
         /// Only Group and Enterprise level schedules are accepted.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterNightServiceModifyRequest20Async(this OcipClient client, GroupCallCenterNightServiceModifyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterNightServiceModifyRequest20Async(this OcipClientBase client, GroupCallCenterNightServiceModifyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3144,7 +3144,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterOverflowGetResponse20 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterOverflowGetRequest20Async instead.")]
-        public static async Task<GroupCallCenterOverflowGetResponse20> GroupCallCenterOverflowGetRequest20(this OcipClient client, GroupCallCenterOverflowGetRequest20 request)
+        public static async Task<GroupCallCenterOverflowGetResponse20> GroupCallCenterOverflowGetRequest20(this OcipClientBase client, GroupCallCenterOverflowGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterOverflowGetResponse20;
         }
@@ -3153,7 +3153,7 @@ namespace BroadWorksConnector
         /// Get a call center's overflow settings.
         /// The response is either a GroupCallCenterOverflowGetResponse20 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterOverflowGetResponse20> GroupCallCenterOverflowGetRequest20Async(this OcipClient client, GroupCallCenterOverflowGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterOverflowGetResponse20> GroupCallCenterOverflowGetRequest20Async(this OcipClientBase client, GroupCallCenterOverflowGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterOverflowGetResponse20;
         }
@@ -3162,7 +3162,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterOverflowModifyRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterOverflowModifyRequest20(this OcipClient client, GroupCallCenterOverflowModifyRequest20 request)
+        public static async Task<SuccessResponse> GroupCallCenterOverflowModifyRequest20(this OcipClientBase client, GroupCallCenterOverflowModifyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3171,7 +3171,7 @@ namespace BroadWorksConnector
         /// Modify a call center's overflow settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterOverflowModifyRequest20Async(this OcipClient client, GroupCallCenterOverflowModifyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterOverflowModifyRequest20Async(this OcipClientBase client, GroupCallCenterOverflowModifyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3180,7 +3180,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterQueueCallDispositionCodeAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeAddRequest(this OcipClient client, GroupCallCenterQueueCallDispositionCodeAddRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeAddRequest(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3189,7 +3189,7 @@ namespace BroadWorksConnector
         /// Add a Call Center Call Disposition Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeAddRequestAsync(this OcipClient client, GroupCallCenterQueueCallDispositionCodeAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeAddRequestAsync(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3198,7 +3198,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterQueueCallDispositionCodeDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeDeleteRequest(this OcipClient client, GroupCallCenterQueueCallDispositionCodeDeleteRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeDeleteRequest(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3207,7 +3207,7 @@ namespace BroadWorksConnector
         /// Delete a Call Center Call Disposition Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeDeleteRequestAsync(this OcipClient client, GroupCallCenterQueueCallDispositionCodeDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeDeleteRequestAsync(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3216,7 +3216,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterQueueCallDispositionCodeGetListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterQueueCallDispositionCodeGetListRequestAsync instead.")]
-        public static async Task<GroupCallCenterQueueCallDispositionCodeGetListResponse> GroupCallCenterQueueCallDispositionCodeGetListRequest(this OcipClient client, GroupCallCenterQueueCallDispositionCodeGetListRequest request)
+        public static async Task<GroupCallCenterQueueCallDispositionCodeGetListResponse> GroupCallCenterQueueCallDispositionCodeGetListRequest(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterQueueCallDispositionCodeGetListResponse;
         }
@@ -3225,7 +3225,7 @@ namespace BroadWorksConnector
         /// Get the list of Call Center Level and Organization Level Call Disposition Codes.
         /// The response is either GroupCallCenterQueueCallDispositionCodeGetListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterQueueCallDispositionCodeGetListResponse> GroupCallCenterQueueCallDispositionCodeGetListRequestAsync(this OcipClient client, GroupCallCenterQueueCallDispositionCodeGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterQueueCallDispositionCodeGetListResponse> GroupCallCenterQueueCallDispositionCodeGetListRequestAsync(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterQueueCallDispositionCodeGetListResponse;
         }
@@ -3234,7 +3234,7 @@ namespace BroadWorksConnector
         /// The response is either GroupCallCenterQueueCallDispositionCodeGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterQueueCallDispositionCodeGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterQueueCallDispositionCodeGetResponse> GroupCallCenterQueueCallDispositionCodeGetRequest(this OcipClient client, GroupCallCenterQueueCallDispositionCodeGetRequest request)
+        public static async Task<GroupCallCenterQueueCallDispositionCodeGetResponse> GroupCallCenterQueueCallDispositionCodeGetRequest(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterQueueCallDispositionCodeGetResponse;
         }
@@ -3243,7 +3243,7 @@ namespace BroadWorksConnector
         /// Get a Call Center Call Disposition Code.
         /// The response is either GroupCallCenterQueueCallDispositionCodeGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterQueueCallDispositionCodeGetResponse> GroupCallCenterQueueCallDispositionCodeGetRequestAsync(this OcipClient client, GroupCallCenterQueueCallDispositionCodeGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterQueueCallDispositionCodeGetResponse> GroupCallCenterQueueCallDispositionCodeGetRequestAsync(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterQueueCallDispositionCodeGetResponse;
         }
@@ -3252,7 +3252,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterQueueCallDispositionCodeModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeModifyRequest(this OcipClient client, GroupCallCenterQueueCallDispositionCodeModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeModifyRequest(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3261,7 +3261,7 @@ namespace BroadWorksConnector
         /// Modify a Call Center Call Disposition Code.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeModifyRequestAsync(this OcipClient client, GroupCallCenterQueueCallDispositionCodeModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeModifyRequestAsync(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3271,7 +3271,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterQueueCallDispositionCodeSettingsGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterQueueCallDispositionCodeSettingsGetResponse> GroupCallCenterQueueCallDispositionCodeSettingsGetRequest(this OcipClient client, GroupCallCenterQueueCallDispositionCodeSettingsGetRequest request)
+        public static async Task<GroupCallCenterQueueCallDispositionCodeSettingsGetResponse> GroupCallCenterQueueCallDispositionCodeSettingsGetRequest(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeSettingsGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterQueueCallDispositionCodeSettingsGetResponse;
         }
@@ -3281,7 +3281,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterQueueCallDispositionCodeSettingsGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterQueueCallDispositionCodeSettingsGetResponse> GroupCallCenterQueueCallDispositionCodeSettingsGetRequestAsync(this OcipClient client, GroupCallCenterQueueCallDispositionCodeSettingsGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterQueueCallDispositionCodeSettingsGetResponse> GroupCallCenterQueueCallDispositionCodeSettingsGetRequestAsync(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeSettingsGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterQueueCallDispositionCodeSettingsGetResponse;
         }
@@ -3290,7 +3290,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterQueueCallDispositionCodeSettingsModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeSettingsModifyRequest(this OcipClient client, GroupCallCenterQueueCallDispositionCodeSettingsModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeSettingsModifyRequest(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeSettingsModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3299,7 +3299,7 @@ namespace BroadWorksConnector
         /// Modify the enterprise level data associated with Call Center Agents Unavailable Code Settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeSettingsModifyRequestAsync(this OcipClient client, GroupCallCenterQueueCallDispositionCodeSettingsModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterQueueCallDispositionCodeSettingsModifyRequestAsync(this OcipClientBase client, GroupCallCenterQueueCallDispositionCodeSettingsModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3308,7 +3308,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterQueueStatusNotificationGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterQueueStatusNotificationGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterQueueStatusNotificationGetResponse> GroupCallCenterQueueStatusNotificationGetRequest(this OcipClient client, GroupCallCenterQueueStatusNotificationGetRequest request)
+        public static async Task<GroupCallCenterQueueStatusNotificationGetResponse> GroupCallCenterQueueStatusNotificationGetRequest(this OcipClientBase client, GroupCallCenterQueueStatusNotificationGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterQueueStatusNotificationGetResponse;
         }
@@ -3317,7 +3317,7 @@ namespace BroadWorksConnector
         /// Get the status configuration for a given call center.
         /// The response is either a GroupCallCenterQueueStatusNotificationGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterQueueStatusNotificationGetResponse> GroupCallCenterQueueStatusNotificationGetRequestAsync(this OcipClient client, GroupCallCenterQueueStatusNotificationGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterQueueStatusNotificationGetResponse> GroupCallCenterQueueStatusNotificationGetRequestAsync(this OcipClientBase client, GroupCallCenterQueueStatusNotificationGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterQueueStatusNotificationGetResponse;
         }
@@ -3326,7 +3326,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterQueueStatusNotificationModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterQueueStatusNotificationModifyRequest(this OcipClient client, GroupCallCenterQueueStatusNotificationModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterQueueStatusNotificationModifyRequest(this OcipClientBase client, GroupCallCenterQueueStatusNotificationModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3335,7 +3335,7 @@ namespace BroadWorksConnector
         /// Set the status configuration for a given call center.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterQueueStatusNotificationModifyRequestAsync(this OcipClient client, GroupCallCenterQueueStatusNotificationModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterQueueStatusNotificationModifyRequestAsync(this OcipClientBase client, GroupCallCenterQueueStatusNotificationModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3344,7 +3344,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterQueueThresholdsGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterQueueThresholdsGetRequestAsync instead.")]
-        public static async Task<GroupCallCenterQueueThresholdsGetResponse> GroupCallCenterQueueThresholdsGetRequest(this OcipClient client, GroupCallCenterQueueThresholdsGetRequest request)
+        public static async Task<GroupCallCenterQueueThresholdsGetResponse> GroupCallCenterQueueThresholdsGetRequest(this OcipClientBase client, GroupCallCenterQueueThresholdsGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterQueueThresholdsGetResponse;
         }
@@ -3353,7 +3353,7 @@ namespace BroadWorksConnector
         /// Get a call center's queue Thresholds settings.
         /// The response is either a GroupCallCenterQueueThresholdsGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterQueueThresholdsGetResponse> GroupCallCenterQueueThresholdsGetRequestAsync(this OcipClient client, GroupCallCenterQueueThresholdsGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterQueueThresholdsGetResponse> GroupCallCenterQueueThresholdsGetRequestAsync(this OcipClientBase client, GroupCallCenterQueueThresholdsGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterQueueThresholdsGetResponse;
         }
@@ -3362,7 +3362,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterQueueThresholdsModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterQueueThresholdsModifyRequest(this OcipClient client, GroupCallCenterQueueThresholdsModifyRequest request)
+        public static async Task<SuccessResponse> GroupCallCenterQueueThresholdsModifyRequest(this OcipClientBase client, GroupCallCenterQueueThresholdsModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3371,7 +3371,7 @@ namespace BroadWorksConnector
         /// Modify a call center's queue Thresholds settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterQueueThresholdsModifyRequestAsync(this OcipClient client, GroupCallCenterQueueThresholdsModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterQueueThresholdsModifyRequestAsync(this OcipClientBase client, GroupCallCenterQueueThresholdsModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3380,7 +3380,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterStrandedCallGetResponse20 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterStrandedCallGetRequest20Async instead.")]
-        public static async Task<GroupCallCenterStrandedCallGetResponse20> GroupCallCenterStrandedCallGetRequest20(this OcipClient client, GroupCallCenterStrandedCallGetRequest20 request)
+        public static async Task<GroupCallCenterStrandedCallGetResponse20> GroupCallCenterStrandedCallGetRequest20(this OcipClientBase client, GroupCallCenterStrandedCallGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterStrandedCallGetResponse20;
         }
@@ -3389,7 +3389,7 @@ namespace BroadWorksConnector
         /// Get a call center's stranded call settings.
         /// The response is either a GroupCallCenterStrandedCallGetResponse20 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterStrandedCallGetResponse20> GroupCallCenterStrandedCallGetRequest20Async(this OcipClient client, GroupCallCenterStrandedCallGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterStrandedCallGetResponse20> GroupCallCenterStrandedCallGetRequest20Async(this OcipClientBase client, GroupCallCenterStrandedCallGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterStrandedCallGetResponse20;
         }
@@ -3398,7 +3398,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterStrandedCallModifyRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterStrandedCallModifyRequest20(this OcipClient client, GroupCallCenterStrandedCallModifyRequest20 request)
+        public static async Task<SuccessResponse> GroupCallCenterStrandedCallModifyRequest20(this OcipClientBase client, GroupCallCenterStrandedCallModifyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3407,7 +3407,7 @@ namespace BroadWorksConnector
         /// Modify a call center's stranded call settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterStrandedCallModifyRequest20Async(this OcipClient client, GroupCallCenterStrandedCallModifyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterStrandedCallModifyRequest20Async(this OcipClientBase client, GroupCallCenterStrandedCallModifyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3416,7 +3416,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterStrandedCallUnavailableGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterStrandedCallUnavailableGetRequest20Async instead.")]
-        public static async Task<GroupCallCenterStrandedCallUnavailableGetResponse> GroupCallCenterStrandedCallUnavailableGetRequest20(this OcipClient client, GroupCallCenterStrandedCallUnavailableGetRequest20 request)
+        public static async Task<GroupCallCenterStrandedCallUnavailableGetResponse> GroupCallCenterStrandedCallUnavailableGetRequest20(this OcipClientBase client, GroupCallCenterStrandedCallUnavailableGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterStrandedCallUnavailableGetResponse;
         }
@@ -3425,7 +3425,7 @@ namespace BroadWorksConnector
         /// Get a call center's stranded calls - unavailable settings.
         /// The response is either a GroupCallCenterStrandedCallUnavailableGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterStrandedCallUnavailableGetResponse> GroupCallCenterStrandedCallUnavailableGetRequest20Async(this OcipClient client, GroupCallCenterStrandedCallUnavailableGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterStrandedCallUnavailableGetResponse> GroupCallCenterStrandedCallUnavailableGetRequest20Async(this OcipClientBase client, GroupCallCenterStrandedCallUnavailableGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterStrandedCallUnavailableGetResponse;
         }
@@ -3434,7 +3434,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterStrandedCallUnavailableModifyRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterStrandedCallUnavailableModifyRequest20(this OcipClient client, GroupCallCenterStrandedCallUnavailableModifyRequest20 request)
+        public static async Task<SuccessResponse> GroupCallCenterStrandedCallUnavailableModifyRequest20(this OcipClientBase client, GroupCallCenterStrandedCallUnavailableModifyRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3443,7 +3443,7 @@ namespace BroadWorksConnector
         /// Modify a call center's stranded calls - unavailable settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterStrandedCallUnavailableModifyRequest20Async(this OcipClient client, GroupCallCenterStrandedCallUnavailableModifyRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterStrandedCallUnavailableModifyRequest20Async(this OcipClientBase client, GroupCallCenterStrandedCallUnavailableModifyRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3453,7 +3453,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ResellerCallCenterGetRequestAsync instead.")]
-        public static async Task<ResellerCallCenterGetResponse> ResellerCallCenterGetRequest(this OcipClient client, ResellerCallCenterGetRequest request)
+        public static async Task<ResellerCallCenterGetResponse> ResellerCallCenterGetRequest(this OcipClientBase client, ResellerCallCenterGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ResellerCallCenterGetResponse;
         }
@@ -3463,7 +3463,7 @@ namespace BroadWorksConnector
         /// The response is either a ResellerCallCenterGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<ResellerCallCenterGetResponse> ResellerCallCenterGetRequestAsync(this OcipClient client, ResellerCallCenterGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ResellerCallCenterGetResponse> ResellerCallCenterGetRequestAsync(this OcipClientBase client, ResellerCallCenterGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ResellerCallCenterGetResponse;
         }
@@ -3472,7 +3472,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ResellerCallCenterModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> ResellerCallCenterModifyRequest(this OcipClient client, ResellerCallCenterModifyRequest request)
+        public static async Task<SuccessResponse> ResellerCallCenterModifyRequest(this OcipClientBase client, ResellerCallCenterModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3481,7 +3481,7 @@ namespace BroadWorksConnector
         /// Modify the reseller level data associated with Call Center.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ResellerCallCenterModifyRequestAsync(this OcipClient client, ResellerCallCenterModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ResellerCallCenterModifyRequestAsync(this OcipClientBase client, ResellerCallCenterModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3490,7 +3490,7 @@ namespace BroadWorksConnector
         /// The response is either SystemCallCenterEnhancedReportingBrandingGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingBrandingGetRequestAsync instead.")]
-        public static async Task<SystemCallCenterEnhancedReportingBrandingGetResponse> SystemCallCenterEnhancedReportingBrandingGetRequest(this OcipClient client, SystemCallCenterEnhancedReportingBrandingGetRequest request)
+        public static async Task<SystemCallCenterEnhancedReportingBrandingGetResponse> SystemCallCenterEnhancedReportingBrandingGetRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingBrandingGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallCenterEnhancedReportingBrandingGetResponse;
         }
@@ -3499,7 +3499,7 @@ namespace BroadWorksConnector
         /// Request to get the system branding information.
         /// The response is either SystemCallCenterEnhancedReportingBrandingGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallCenterEnhancedReportingBrandingGetResponse> SystemCallCenterEnhancedReportingBrandingGetRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingBrandingGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallCenterEnhancedReportingBrandingGetResponse> SystemCallCenterEnhancedReportingBrandingGetRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingBrandingGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallCenterEnhancedReportingBrandingGetResponse;
         }
@@ -3508,7 +3508,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingBrandingModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingBrandingModifyRequest(this OcipClient client, SystemCallCenterEnhancedReportingBrandingModifyRequest request)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingBrandingModifyRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingBrandingModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3517,7 +3517,7 @@ namespace BroadWorksConnector
         /// Request to modify the system branding configuration.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingBrandingModifyRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingBrandingModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingBrandingModifyRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingBrandingModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3526,7 +3526,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCallCenterEnhancedReportingDataTemplateGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingDataTemplateGetListRequestAsync instead.")]
-        public static async Task<SystemCallCenterEnhancedReportingDataTemplateGetListResponse> SystemCallCenterEnhancedReportingDataTemplateGetListRequest(this OcipClient client, SystemCallCenterEnhancedReportingDataTemplateGetListRequest request)
+        public static async Task<SystemCallCenterEnhancedReportingDataTemplateGetListResponse> SystemCallCenterEnhancedReportingDataTemplateGetListRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingDataTemplateGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallCenterEnhancedReportingDataTemplateGetListResponse;
         }
@@ -3535,7 +3535,7 @@ namespace BroadWorksConnector
         /// Request to get the list of data template and the corresponding information in the system.
         /// The response is either a SystemCallCenterEnhancedReportingDataTemplateGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallCenterEnhancedReportingDataTemplateGetListResponse> SystemCallCenterEnhancedReportingDataTemplateGetListRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingDataTemplateGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallCenterEnhancedReportingDataTemplateGetListResponse> SystemCallCenterEnhancedReportingDataTemplateGetListRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingDataTemplateGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallCenterEnhancedReportingDataTemplateGetListResponse;
         }
@@ -3544,7 +3544,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCallCenterEnhancedReportingGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingGetRequestAsync instead.")]
-        public static async Task<SystemCallCenterEnhancedReportingGetResponse> SystemCallCenterEnhancedReportingGetRequest(this OcipClient client, SystemCallCenterEnhancedReportingGetRequest request)
+        public static async Task<SystemCallCenterEnhancedReportingGetResponse> SystemCallCenterEnhancedReportingGetRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallCenterEnhancedReportingGetResponse;
         }
@@ -3553,7 +3553,7 @@ namespace BroadWorksConnector
         /// Request to get the call center enhanced reporting system settings.
         /// The response is either a SystemCallCenterEnhancedReportingGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallCenterEnhancedReportingGetResponse> SystemCallCenterEnhancedReportingGetRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallCenterEnhancedReportingGetResponse> SystemCallCenterEnhancedReportingGetRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallCenterEnhancedReportingGetResponse;
         }
@@ -3562,7 +3562,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingModifyRequest(this OcipClient client, SystemCallCenterEnhancedReportingModifyRequest request)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingModifyRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3571,7 +3571,7 @@ namespace BroadWorksConnector
         /// Modify the system settings for call center enhanced reporting.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingModifyRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingModifyRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3580,7 +3580,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingReportTemplateAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateAddRequest(this OcipClient client, SystemCallCenterEnhancedReportingReportTemplateAddRequest request)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateAddRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingReportTemplateAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3589,7 +3589,7 @@ namespace BroadWorksConnector
         /// Request to add a system level call center report template.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateAddRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingReportTemplateAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateAddRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingReportTemplateAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3598,7 +3598,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingReportTemplateDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateDeleteRequest(this OcipClient client, SystemCallCenterEnhancedReportingReportTemplateDeleteRequest request)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateDeleteRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingReportTemplateDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3607,7 +3607,7 @@ namespace BroadWorksConnector
         /// Request to delete a system level call center report template.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateDeleteRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingReportTemplateDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateDeleteRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingReportTemplateDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3616,7 +3616,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCallCenterEnhancedReportingReportTemplateGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingReportTemplateGetListRequestAsync instead.")]
-        public static async Task<SystemCallCenterEnhancedReportingReportTemplateGetListResponse> SystemCallCenterEnhancedReportingReportTemplateGetListRequest(this OcipClient client, SystemCallCenterEnhancedReportingReportTemplateGetListRequest request)
+        public static async Task<SystemCallCenterEnhancedReportingReportTemplateGetListResponse> SystemCallCenterEnhancedReportingReportTemplateGetListRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingReportTemplateGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallCenterEnhancedReportingReportTemplateGetListResponse;
         }
@@ -3625,7 +3625,7 @@ namespace BroadWorksConnector
         /// Request to get system level call center report template list.
         /// The response is either a SystemCallCenterEnhancedReportingReportTemplateGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallCenterEnhancedReportingReportTemplateGetListResponse> SystemCallCenterEnhancedReportingReportTemplateGetListRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingReportTemplateGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallCenterEnhancedReportingReportTemplateGetListResponse> SystemCallCenterEnhancedReportingReportTemplateGetListRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingReportTemplateGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallCenterEnhancedReportingReportTemplateGetListResponse;
         }
@@ -3634,7 +3634,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCallCenterEnhancedReportingReportTemplateGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingReportTemplateGetRequestAsync instead.")]
-        public static async Task<SystemCallCenterEnhancedReportingReportTemplateGetResponse> SystemCallCenterEnhancedReportingReportTemplateGetRequest(this OcipClient client, SystemCallCenterEnhancedReportingReportTemplateGetRequest request)
+        public static async Task<SystemCallCenterEnhancedReportingReportTemplateGetResponse> SystemCallCenterEnhancedReportingReportTemplateGetRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingReportTemplateGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallCenterEnhancedReportingReportTemplateGetResponse;
         }
@@ -3643,7 +3643,7 @@ namespace BroadWorksConnector
         /// Request to get a system level call center report template.
         /// The response is either a SystemCallCenterEnhancedReportingReportTemplateGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallCenterEnhancedReportingReportTemplateGetResponse> SystemCallCenterEnhancedReportingReportTemplateGetRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingReportTemplateGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallCenterEnhancedReportingReportTemplateGetResponse> SystemCallCenterEnhancedReportingReportTemplateGetRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingReportTemplateGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallCenterEnhancedReportingReportTemplateGetResponse;
         }
@@ -3652,7 +3652,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingReportTemplateModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateModifyRequest(this OcipClient client, SystemCallCenterEnhancedReportingReportTemplateModifyRequest request)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateModifyRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingReportTemplateModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3661,7 +3661,7 @@ namespace BroadWorksConnector
         /// Request to modify a system level call center report template.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateModifyRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingReportTemplateModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingReportTemplateModifyRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingReportTemplateModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3670,7 +3670,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCallCenterEnhancedReportingScheduledReportGetActiveListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingScheduledReportGetActiveListRequestAsync instead.")]
-        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetActiveListResponse> SystemCallCenterEnhancedReportingScheduledReportGetActiveListRequest(this OcipClient client, SystemCallCenterEnhancedReportingScheduledReportGetActiveListRequest request)
+        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetActiveListResponse> SystemCallCenterEnhancedReportingScheduledReportGetActiveListRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledReportGetActiveListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallCenterEnhancedReportingScheduledReportGetActiveListResponse;
         }
@@ -3679,7 +3679,7 @@ namespace BroadWorksConnector
         /// Request to get the list of all active call center reporting scheduled reports in the system.
         /// The response is either a SystemCallCenterEnhancedReportingScheduledReportGetActiveListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetActiveListResponse> SystemCallCenterEnhancedReportingScheduledReportGetActiveListRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingScheduledReportGetActiveListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetActiveListResponse> SystemCallCenterEnhancedReportingScheduledReportGetActiveListRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledReportGetActiveListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallCenterEnhancedReportingScheduledReportGetActiveListResponse;
         }
@@ -3688,7 +3688,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCallCenterEnhancedReportingScheduledReportGetCompletedListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingScheduledReportGetCompletedListRequestAsync instead.")]
-        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> SystemCallCenterEnhancedReportingScheduledReportGetCompletedListRequest(this OcipClient client, SystemCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request)
+        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> SystemCallCenterEnhancedReportingScheduledReportGetCompletedListRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallCenterEnhancedReportingScheduledReportGetCompletedListResponse;
         }
@@ -3697,7 +3697,7 @@ namespace BroadWorksConnector
         /// Request to get the list of all completed call center reporting scheduled reports in the system.
         /// The response is either a SystemCallCenterEnhancedReportingScheduledReportGetCompletedListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> SystemCallCenterEnhancedReportingScheduledReportGetCompletedListRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetCompletedListResponse> SystemCallCenterEnhancedReportingScheduledReportGetCompletedListRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledReportGetCompletedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallCenterEnhancedReportingScheduledReportGetCompletedListResponse;
         }
@@ -3706,7 +3706,7 @@ namespace BroadWorksConnector
         /// The response is either an SystemCallCenterEnhancedReportingScheduledReportGetListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingScheduledReportGetListRequestAsync instead.")]
-        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetListResponse> SystemCallCenterEnhancedReportingScheduledReportGetListRequest(this OcipClient client, SystemCallCenterEnhancedReportingScheduledReportGetListRequest request)
+        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetListResponse> SystemCallCenterEnhancedReportingScheduledReportGetListRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledReportGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallCenterEnhancedReportingScheduledReportGetListResponse;
         }
@@ -3715,7 +3715,7 @@ namespace BroadWorksConnector
         /// Request to get the list of all call center reporting scheduled reports in the system.
         /// The response is either an SystemCallCenterEnhancedReportingScheduledReportGetListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetListResponse> SystemCallCenterEnhancedReportingScheduledReportGetListRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingScheduledReportGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetListResponse> SystemCallCenterEnhancedReportingScheduledReportGetListRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledReportGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallCenterEnhancedReportingScheduledReportGetListResponse;
         }
@@ -3726,7 +3726,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequestAsync instead.")]
-        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest(this OcipClient client, SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request)
+        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse;
         }
@@ -3737,7 +3737,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse> SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallCenterEnhancedReportingScheduledReportGetReportTemplateUsageListResponse;
         }
@@ -3746,7 +3746,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCallCenterEnhancedReportingScheduledTaskParametersGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingScheduledTaskParametersGetRequestAsync instead.")]
-        public static async Task<SystemCallCenterEnhancedReportingScheduledTaskParametersGetResponse> SystemCallCenterEnhancedReportingScheduledTaskParametersGetRequest(this OcipClient client, SystemCallCenterEnhancedReportingScheduledTaskParametersGetRequest request)
+        public static async Task<SystemCallCenterEnhancedReportingScheduledTaskParametersGetResponse> SystemCallCenterEnhancedReportingScheduledTaskParametersGetRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledTaskParametersGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallCenterEnhancedReportingScheduledTaskParametersGetResponse;
         }
@@ -3755,7 +3755,7 @@ namespace BroadWorksConnector
         /// Request to get the system settings for the call center enhanced reporting scheduling tasks.
         /// The response is either a SystemCallCenterEnhancedReportingScheduledTaskParametersGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallCenterEnhancedReportingScheduledTaskParametersGetResponse> SystemCallCenterEnhancedReportingScheduledTaskParametersGetRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingScheduledTaskParametersGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallCenterEnhancedReportingScheduledTaskParametersGetResponse> SystemCallCenterEnhancedReportingScheduledTaskParametersGetRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledTaskParametersGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallCenterEnhancedReportingScheduledTaskParametersGetResponse;
         }
@@ -3764,7 +3764,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterEnhancedReportingScheduledTaskParametersModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingScheduledTaskParametersModifyRequest(this OcipClient client, SystemCallCenterEnhancedReportingScheduledTaskParametersModifyRequest request)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingScheduledTaskParametersModifyRequest(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledTaskParametersModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3773,7 +3773,7 @@ namespace BroadWorksConnector
         /// Modify the system settings for the call center enhanced reporting scheduling tasks.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingScheduledTaskParametersModifyRequestAsync(this OcipClient client, SystemCallCenterEnhancedReportingScheduledTaskParametersModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCallCenterEnhancedReportingScheduledTaskParametersModifyRequestAsync(this OcipClientBase client, SystemCallCenterEnhancedReportingScheduledTaskParametersModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3783,7 +3783,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterGetRequest21Async instead.")]
-        public static async Task<SystemCallCenterGetResponse21> SystemCallCenterGetRequest21(this OcipClient client, SystemCallCenterGetRequest21 request)
+        public static async Task<SystemCallCenterGetResponse21> SystemCallCenterGetRequest21(this OcipClientBase client, SystemCallCenterGetRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallCenterGetResponse21;
         }
@@ -3793,7 +3793,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCallCenterGetResponse21 or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallCenterGetResponse21> SystemCallCenterGetRequest21Async(this OcipClient client, SystemCallCenterGetRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallCenterGetResponse21> SystemCallCenterGetRequest21Async(this OcipClientBase client, SystemCallCenterGetRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallCenterGetResponse21;
         }
@@ -3807,7 +3807,7 @@ namespace BroadWorksConnector
         /// thresholdCrossingNotificationEmailGuardTimerSeconds
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallCenterModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemCallCenterModifyRequest(this OcipClient client, SystemCallCenterModifyRequest request)
+        public static async Task<SuccessResponse> SystemCallCenterModifyRequest(this OcipClientBase client, SystemCallCenterModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3821,7 +3821,7 @@ namespace BroadWorksConnector
         /// callHandlingMinimumSamplingSize
         /// thresholdCrossingNotificationEmailGuardTimerSeconds
         /// </summary>
-        public static async Task<SuccessResponse> SystemCallCenterModifyRequestAsync(this OcipClient client, SystemCallCenterModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCallCenterModifyRequestAsync(this OcipClientBase client, SystemCallCenterModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3830,7 +3830,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterAddSupervisedAgentListRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallCenterAddSupervisedAgentListRequest(this OcipClient client, UserCallCenterAddSupervisedAgentListRequest request)
+        public static async Task<SuccessResponse> UserCallCenterAddSupervisedAgentListRequest(this OcipClientBase client, UserCallCenterAddSupervisedAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3839,7 +3839,7 @@ namespace BroadWorksConnector
         /// Assign agent(s) to a call center supervisor.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallCenterAddSupervisedAgentListRequestAsync(this OcipClient client, UserCallCenterAddSupervisedAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallCenterAddSupervisedAgentListRequestAsync(this OcipClientBase client, UserCallCenterAddSupervisedAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3849,7 +3849,7 @@ namespace BroadWorksConnector
         /// The response is either UserCallCenterAgentDetailsGetResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterAgentDetailsGetRequestAsync instead.")]
-        public static async Task<UserCallCenterAgentDetailsGetResponse> UserCallCenterAgentDetailsGetRequest(this OcipClient client, UserCallCenterAgentDetailsGetRequest request)
+        public static async Task<UserCallCenterAgentDetailsGetResponse> UserCallCenterAgentDetailsGetRequest(this OcipClientBase client, UserCallCenterAgentDetailsGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterAgentDetailsGetResponse;
         }
@@ -3859,7 +3859,7 @@ namespace BroadWorksConnector
         /// itself can send this command.
         /// The response is either UserCallCenterAgentDetailsGetResponse or ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterAgentDetailsGetResponse> UserCallCenterAgentDetailsGetRequestAsync(this OcipClient client, UserCallCenterAgentDetailsGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterAgentDetailsGetResponse> UserCallCenterAgentDetailsGetRequestAsync(this OcipClientBase client, UserCallCenterAgentDetailsGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterAgentDetailsGetResponse;
         }
@@ -3874,7 +3874,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallCenterAgentSignOutResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterAgentSignOutRequestAsync instead.")]
-        public static async Task<UserCallCenterAgentSignOutResponse> UserCallCenterAgentSignOutRequest(this OcipClient client, UserCallCenterAgentSignOutRequest request)
+        public static async Task<UserCallCenterAgentSignOutResponse> UserCallCenterAgentSignOutRequest(this OcipClientBase client, UserCallCenterAgentSignOutRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterAgentSignOutResponse;
         }
@@ -3889,7 +3889,7 @@ namespace BroadWorksConnector
         /// the agents ACD state without checking if the agent is the last signed-in agent.
         /// The response is either a UserCallCenterAgentSignOutResponse or ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterAgentSignOutResponse> UserCallCenterAgentSignOutRequestAsync(this OcipClient client, UserCallCenterAgentSignOutRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterAgentSignOutResponse> UserCallCenterAgentSignOutRequestAsync(this OcipClientBase client, UserCallCenterAgentSignOutRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterAgentSignOutResponse;
         }
@@ -3898,7 +3898,7 @@ namespace BroadWorksConnector
         /// The response is either UserCallCenterCallDispositionCodeGetAvailableListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterCallDispositionCodeGetAvailableListRequestAsync instead.")]
-        public static async Task<UserCallCenterCallDispositionCodeGetAvailableListResponse> UserCallCenterCallDispositionCodeGetAvailableListRequest(this OcipClient client, UserCallCenterCallDispositionCodeGetAvailableListRequest request)
+        public static async Task<UserCallCenterCallDispositionCodeGetAvailableListResponse> UserCallCenterCallDispositionCodeGetAvailableListRequest(this OcipClientBase client, UserCallCenterCallDispositionCodeGetAvailableListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterCallDispositionCodeGetAvailableListResponse;
         }
@@ -3907,7 +3907,7 @@ namespace BroadWorksConnector
         /// Get the list of available Call Center Call Disposition Codes to be used by a client.
         /// The response is either UserCallCenterCallDispositionCodeGetAvailableListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterCallDispositionCodeGetAvailableListResponse> UserCallCenterCallDispositionCodeGetAvailableListRequestAsync(this OcipClient client, UserCallCenterCallDispositionCodeGetAvailableListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterCallDispositionCodeGetAvailableListResponse> UserCallCenterCallDispositionCodeGetAvailableListRequestAsync(this OcipClientBase client, UserCallCenterCallDispositionCodeGetAvailableListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterCallDispositionCodeGetAvailableListResponse;
         }
@@ -3916,7 +3916,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterDeleteSupervisedAgentListRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallCenterDeleteSupervisedAgentListRequest(this OcipClient client, UserCallCenterDeleteSupervisedAgentListRequest request)
+        public static async Task<SuccessResponse> UserCallCenterDeleteSupervisedAgentListRequest(this OcipClientBase client, UserCallCenterDeleteSupervisedAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3925,7 +3925,7 @@ namespace BroadWorksConnector
         /// Delete agent(s) from a call center supervisor.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallCenterDeleteSupervisedAgentListRequestAsync(this OcipClient client, UserCallCenterDeleteSupervisedAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallCenterDeleteSupervisedAgentListRequestAsync(this OcipClientBase client, UserCallCenterDeleteSupervisedAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3934,7 +3934,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallCenterEnhancedReportingReportTemplateParamInfoGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterEnhancedReportingReportTemplateParamInfoGetRequestAsync instead.")]
-        public static async Task<UserCallCenterEnhancedReportingReportTemplateParamInfoGetResponse> UserCallCenterEnhancedReportingReportTemplateParamInfoGetRequest(this OcipClient client, UserCallCenterEnhancedReportingReportTemplateParamInfoGetRequest request)
+        public static async Task<UserCallCenterEnhancedReportingReportTemplateParamInfoGetResponse> UserCallCenterEnhancedReportingReportTemplateParamInfoGetRequest(this OcipClientBase client, UserCallCenterEnhancedReportingReportTemplateParamInfoGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterEnhancedReportingReportTemplateParamInfoGetResponse;
         }
@@ -3943,7 +3943,7 @@ namespace BroadWorksConnector
         /// Request to get the input parameter info for a call center report template.
         /// The response is either a UserCallCenterEnhancedReportingReportTemplateParamInfoGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterEnhancedReportingReportTemplateParamInfoGetResponse> UserCallCenterEnhancedReportingReportTemplateParamInfoGetRequestAsync(this OcipClient client, UserCallCenterEnhancedReportingReportTemplateParamInfoGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterEnhancedReportingReportTemplateParamInfoGetResponse> UserCallCenterEnhancedReportingReportTemplateParamInfoGetRequestAsync(this OcipClientBase client, UserCallCenterEnhancedReportingReportTemplateParamInfoGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterEnhancedReportingReportTemplateParamInfoGetResponse;
         }
@@ -3952,7 +3952,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterEnhancedReportingScheduledReportDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallCenterEnhancedReportingScheduledReportDeleteRequest(this OcipClient client, UserCallCenterEnhancedReportingScheduledReportDeleteRequest request)
+        public static async Task<SuccessResponse> UserCallCenterEnhancedReportingScheduledReportDeleteRequest(this OcipClientBase client, UserCallCenterEnhancedReportingScheduledReportDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3961,7 +3961,7 @@ namespace BroadWorksConnector
         /// Request to delete a call center reporting scheduled report created by a supervisor.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallCenterEnhancedReportingScheduledReportDeleteRequestAsync(this OcipClient client, UserCallCenterEnhancedReportingScheduledReportDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallCenterEnhancedReportingScheduledReportDeleteRequestAsync(this OcipClientBase client, UserCallCenterEnhancedReportingScheduledReportDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3970,7 +3970,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallCenterEnhancedReportingScheduledReportGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterEnhancedReportingScheduledReportGetRequestAsync instead.")]
-        public static async Task<UserCallCenterEnhancedReportingScheduledReportGetResponse> UserCallCenterEnhancedReportingScheduledReportGetRequest(this OcipClient client, UserCallCenterEnhancedReportingScheduledReportGetRequest request)
+        public static async Task<UserCallCenterEnhancedReportingScheduledReportGetResponse> UserCallCenterEnhancedReportingScheduledReportGetRequest(this OcipClientBase client, UserCallCenterEnhancedReportingScheduledReportGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterEnhancedReportingScheduledReportGetResponse;
         }
@@ -3979,7 +3979,7 @@ namespace BroadWorksConnector
         /// Request to get a call center reporting scheduled report created by supervisor.
         /// The response is either a UserCallCenterEnhancedReportingScheduledReportGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterEnhancedReportingScheduledReportGetResponse> UserCallCenterEnhancedReportingScheduledReportGetRequestAsync(this OcipClient client, UserCallCenterEnhancedReportingScheduledReportGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterEnhancedReportingScheduledReportGetResponse> UserCallCenterEnhancedReportingScheduledReportGetRequestAsync(this OcipClientBase client, UserCallCenterEnhancedReportingScheduledReportGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterEnhancedReportingScheduledReportGetResponse;
         }
@@ -3989,7 +3989,7 @@ namespace BroadWorksConnector
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after startDate.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterEnhancedReportingScheduledReportModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallCenterEnhancedReportingScheduledReportModifyRequest(this OcipClient client, UserCallCenterEnhancedReportingScheduledReportModifyRequest request)
+        public static async Task<SuccessResponse> UserCallCenterEnhancedReportingScheduledReportModifyRequest(this OcipClientBase client, UserCallCenterEnhancedReportingScheduledReportModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3999,7 +3999,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// The startDate element is adjusted to the first occurrence of the recurrent schedule that comes at or after startDate.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallCenterEnhancedReportingScheduledReportModifyRequestAsync(this OcipClient client, UserCallCenterEnhancedReportingScheduledReportModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallCenterEnhancedReportingScheduledReportModifyRequestAsync(this OcipClientBase client, UserCallCenterEnhancedReportingScheduledReportModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -4009,7 +4009,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterGetAgentSupervisorListRequestAsync instead.")]
-        public static async Task<UserCallCenterGetAgentSupervisorListResponse> UserCallCenterGetAgentSupervisorListRequest(this OcipClient client, UserCallCenterGetAgentSupervisorListRequest request)
+        public static async Task<UserCallCenterGetAgentSupervisorListResponse> UserCallCenterGetAgentSupervisorListRequest(this OcipClientBase client, UserCallCenterGetAgentSupervisorListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterGetAgentSupervisorListResponse;
         }
@@ -4019,7 +4019,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallCenterGetAgentSupervisorListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterGetAgentSupervisorListResponse> UserCallCenterGetAgentSupervisorListRequestAsync(this OcipClient client, UserCallCenterGetAgentSupervisorListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterGetAgentSupervisorListResponse> UserCallCenterGetAgentSupervisorListRequestAsync(this OcipClientBase client, UserCallCenterGetAgentSupervisorListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterGetAgentSupervisorListResponse;
         }
@@ -4030,7 +4030,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallCenterGetAvailableCallCenterListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterGetAvailableCallCenterListRequestAsync instead.")]
-        public static async Task<UserCallCenterGetAvailableCallCenterListResponse> UserCallCenterGetAvailableCallCenterListRequest(this OcipClient client, UserCallCenterGetAvailableCallCenterListRequest request)
+        public static async Task<UserCallCenterGetAvailableCallCenterListResponse> UserCallCenterGetAvailableCallCenterListRequest(this OcipClientBase client, UserCallCenterGetAvailableCallCenterListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterGetAvailableCallCenterListResponse;
         }
@@ -4041,7 +4041,7 @@ namespace BroadWorksConnector
         /// responsibility to discard the call centers that the user is already an agent of.
         /// The response is either a UserCallCenterGetAvailableCallCenterListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterGetAvailableCallCenterListResponse> UserCallCenterGetAvailableCallCenterListRequestAsync(this OcipClient client, UserCallCenterGetAvailableCallCenterListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterGetAvailableCallCenterListResponse> UserCallCenterGetAvailableCallCenterListRequestAsync(this OcipClientBase client, UserCallCenterGetAvailableCallCenterListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterGetAvailableCallCenterListResponse;
         }
@@ -4060,7 +4060,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallCenterGetAvailableCallCenterPagedSortedListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterGetAvailableCallCenterPagedSortedListRequestAsync instead.")]
-        public static async Task<UserCallCenterGetAvailableCallCenterPagedSortedListResponse> UserCallCenterGetAvailableCallCenterPagedSortedListRequest(this OcipClient client, UserCallCenterGetAvailableCallCenterPagedSortedListRequest request)
+        public static async Task<UserCallCenterGetAvailableCallCenterPagedSortedListResponse> UserCallCenterGetAvailableCallCenterPagedSortedListRequest(this OcipClientBase client, UserCallCenterGetAvailableCallCenterPagedSortedListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterGetAvailableCallCenterPagedSortedListResponse;
         }
@@ -4079,7 +4079,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is either a UserCallCenterGetAvailableCallCenterPagedSortedListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterGetAvailableCallCenterPagedSortedListResponse> UserCallCenterGetAvailableCallCenterPagedSortedListRequestAsync(this OcipClient client, UserCallCenterGetAvailableCallCenterPagedSortedListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterGetAvailableCallCenterPagedSortedListResponse> UserCallCenterGetAvailableCallCenterPagedSortedListRequestAsync(this OcipClientBase client, UserCallCenterGetAvailableCallCenterPagedSortedListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterGetAvailableCallCenterPagedSortedListResponse;
         }
@@ -4088,7 +4088,7 @@ namespace BroadWorksConnector
         /// The response is either UserCallCenterGetAvailableDNISListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterGetAvailableDNISListRequestAsync instead.")]
-        public static async Task<UserCallCenterGetAvailableDNISListResponse> UserCallCenterGetAvailableDNISListRequest(this OcipClient client, UserCallCenterGetAvailableDNISListRequest request)
+        public static async Task<UserCallCenterGetAvailableDNISListResponse> UserCallCenterGetAvailableDNISListRequest(this OcipClientBase client, UserCallCenterGetAvailableDNISListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterGetAvailableDNISListResponse;
         }
@@ -4097,7 +4097,7 @@ namespace BroadWorksConnector
         /// Request a list of available DNIS for agent to select.
         /// The response is either UserCallCenterGetAvailableDNISListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterGetAvailableDNISListResponse> UserCallCenterGetAvailableDNISListRequestAsync(this OcipClient client, UserCallCenterGetAvailableDNISListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterGetAvailableDNISListResponse> UserCallCenterGetAvailableDNISListRequestAsync(this OcipClientBase client, UserCallCenterGetAvailableDNISListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterGetAvailableDNISListResponse;
         }
@@ -4106,7 +4106,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallCenterGetResponse19 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterGetRequest19Async instead.")]
-        public static async Task<UserCallCenterGetResponse19> UserCallCenterGetRequest19(this OcipClient client, UserCallCenterGetRequest19 request)
+        public static async Task<UserCallCenterGetResponse19> UserCallCenterGetRequest19(this OcipClientBase client, UserCallCenterGetRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterGetResponse19;
         }
@@ -4115,7 +4115,7 @@ namespace BroadWorksConnector
         /// Get the user's call center settings and the list of call centers the specified user belongs to.
         /// The response is either a UserCallCenterGetResponse19 or an ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterGetResponse19> UserCallCenterGetRequest19Async(this OcipClient client, UserCallCenterGetRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterGetResponse19> UserCallCenterGetRequest19Async(this OcipClientBase client, UserCallCenterGetRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterGetResponse19;
         }
@@ -4133,7 +4133,7 @@ namespace BroadWorksConnector
         /// Specifying searchCriteriaModeOr without any search criteria results in an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterGetSupervisedAgentListRequestAsync instead.")]
-        public static async Task<UserCallCenterGetSupervisedAgentListResponse> UserCallCenterGetSupervisedAgentListRequest(this OcipClient client, UserCallCenterGetSupervisedAgentListRequest request)
+        public static async Task<UserCallCenterGetSupervisedAgentListResponse> UserCallCenterGetSupervisedAgentListRequest(this OcipClientBase client, UserCallCenterGetSupervisedAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterGetSupervisedAgentListResponse;
         }
@@ -4151,7 +4151,7 @@ namespace BroadWorksConnector
         /// ErrorResponse is returned.
         /// Specifying searchCriteriaModeOr without any search criteria results in an ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterGetSupervisedAgentListResponse> UserCallCenterGetSupervisedAgentListRequestAsync(this OcipClient client, UserCallCenterGetSupervisedAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterGetSupervisedAgentListResponse> UserCallCenterGetSupervisedAgentListRequestAsync(this OcipClientBase client, UserCallCenterGetSupervisedAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterGetSupervisedAgentListResponse;
         }
@@ -4161,7 +4161,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterGetSupervisorCallCenterListRequestAsync instead.")]
-        public static async Task<UserCallCenterGetSupervisorCallCenterListResponse> UserCallCenterGetSupervisorCallCenterListRequest(this OcipClient client, UserCallCenterGetSupervisorCallCenterListRequest request)
+        public static async Task<UserCallCenterGetSupervisorCallCenterListResponse> UserCallCenterGetSupervisorCallCenterListRequest(this OcipClientBase client, UserCallCenterGetSupervisorCallCenterListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallCenterGetSupervisorCallCenterListResponse;
         }
@@ -4171,7 +4171,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallCenterGetSupervisorCallCenterListResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<UserCallCenterGetSupervisorCallCenterListResponse> UserCallCenterGetSupervisorCallCenterListRequestAsync(this OcipClient client, UserCallCenterGetSupervisorCallCenterListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallCenterGetSupervisorCallCenterListResponse> UserCallCenterGetSupervisorCallCenterListRequestAsync(this OcipClientBase client, UserCallCenterGetSupervisorCallCenterListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallCenterGetSupervisorCallCenterListResponse;
         }
@@ -4180,7 +4180,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterModifyCallCenterListRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallCenterModifyCallCenterListRequest(this OcipClient client, UserCallCenterModifyCallCenterListRequest request)
+        public static async Task<SuccessResponse> UserCallCenterModifyCallCenterListRequest(this OcipClientBase client, UserCallCenterModifyCallCenterListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -4189,7 +4189,7 @@ namespace BroadWorksConnector
         /// Request to modify the call center list for an agent.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallCenterModifyCallCenterListRequestAsync(this OcipClient client, UserCallCenterModifyCallCenterListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallCenterModifyCallCenterListRequestAsync(this OcipClientBase client, UserCallCenterModifyCallCenterListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -4214,7 +4214,7 @@ namespace BroadWorksConnector
         /// outgoingCallDNIS
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterModifyRequest19Async instead.")]
-        public static async Task<SuccessResponse> UserCallCenterModifyRequest19(this OcipClient client, UserCallCenterModifyRequest19 request)
+        public static async Task<SuccessResponse> UserCallCenterModifyRequest19(this OcipClientBase client, UserCallCenterModifyRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -4239,7 +4239,7 @@ namespace BroadWorksConnector
         /// makeOutgoingCallsAsCallCenter
         /// outgoingCallDNIS
         /// </summary>
-        public static async Task<SuccessResponse> UserCallCenterModifyRequest19Async(this OcipClient client, UserCallCenterModifyRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallCenterModifyRequest19Async(this OcipClientBase client, UserCallCenterModifyRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -4248,7 +4248,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallCenterModifySupervisedAgentListRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserCallCenterModifySupervisedAgentListRequest(this OcipClient client, UserCallCenterModifySupervisedAgentListRequest request)
+        public static async Task<SuccessResponse> UserCallCenterModifySupervisedAgentListRequest(this OcipClientBase client, UserCallCenterModifySupervisedAgentListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -4257,7 +4257,7 @@ namespace BroadWorksConnector
         /// Modifies a list of users to be supervised by a supervisor on a call center.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserCallCenterModifySupervisedAgentListRequestAsync(this OcipClient client, UserCallCenterModifySupervisedAgentListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserCallCenterModifySupervisedAgentListRequestAsync(this OcipClientBase client, UserCallCenterModifySupervisedAgentListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

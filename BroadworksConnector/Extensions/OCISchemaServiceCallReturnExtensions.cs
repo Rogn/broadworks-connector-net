@@ -15,7 +15,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallReturnGetRequestAsync instead.")]
-        public static async Task<SystemCallReturnGetResponse> SystemCallReturnGetRequest(this OcipClient client, SystemCallReturnGetRequest request)
+        public static async Task<SystemCallReturnGetResponse> SystemCallReturnGetRequest(this OcipClientBase client, SystemCallReturnGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallReturnGetResponse;
         }
@@ -25,7 +25,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemCallReturnGetResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<SystemCallReturnGetResponse> SystemCallReturnGetRequestAsync(this OcipClient client, SystemCallReturnGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallReturnGetResponse> SystemCallReturnGetRequestAsync(this OcipClientBase client, SystemCallReturnGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallReturnGetResponse;
         }
@@ -34,7 +34,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallReturnModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemCallReturnModifyRequest(this OcipClient client, SystemCallReturnModifyRequest request)
+        public static async Task<SuccessResponse> SystemCallReturnModifyRequest(this OcipClientBase client, SystemCallReturnModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -43,7 +43,7 @@ namespace BroadWorksConnector
         /// Modify the system level data associated with Call Return.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> SystemCallReturnModifyRequestAsync(this OcipClient client, SystemCallReturnModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCallReturnModifyRequestAsync(this OcipClientBase client, SystemCallReturnModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

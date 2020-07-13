@@ -19,7 +19,7 @@ namespace BroadWorksConnector
         /// The response is a AuthenticationVerifyResponse22V2 or an ErrorResponse
         /// </summary>
         [Obsolete("This method is deprecated. Use AuthenticationVerifyRequest22V2Async instead.")]
-        public static async Task<AuthenticationVerifyResponse22V2> AuthenticationVerifyRequest22V2(this OcipClient client, AuthenticationVerifyRequest22V2 request)
+        public static async Task<AuthenticationVerifyResponse22V2> AuthenticationVerifyRequest22V2(this OcipClientBase client, AuthenticationVerifyRequest22V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as AuthenticationVerifyResponse22V2;
         }
@@ -33,7 +33,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is a AuthenticationVerifyResponse22V2 or an ErrorResponse
         /// </summary>
-        public static async Task<AuthenticationVerifyResponse22V2> AuthenticationVerifyRequest22V2Async(this OcipClient client, AuthenticationVerifyRequest22V2 request, CancellationToken cancellationToken = default)
+        public static async Task<AuthenticationVerifyResponse22V2> AuthenticationVerifyRequest22V2Async(this OcipClientBase client, AuthenticationVerifyRequest22V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as AuthenticationVerifyResponse22V2;
         }
@@ -42,7 +42,7 @@ namespace BroadWorksConnector
         /// or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use AvailabilityTestRequestAsync instead.")]
-        public static async Task<SuccessResponse> AvailabilityTestRequest(this OcipClient client, AvailabilityTestRequest request)
+        public static async Task<SuccessResponse> AvailabilityTestRequest(this OcipClientBase client, AvailabilityTestRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -51,7 +51,7 @@ namespace BroadWorksConnector
         /// AvailabilityTestRequest is for high-availability support. The response is either SuccessResponse
         /// or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> AvailabilityTestRequestAsync(this OcipClient client, AvailabilityTestRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> AvailabilityTestRequestAsync(this OcipClientBase client, AvailabilityTestRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -63,7 +63,7 @@ namespace BroadWorksConnector
         /// deviceToken
         /// </summary>
         [Obsolete("This method is deprecated. Use DeviceManagementFileAuthLocationGetRequest21sp1Async instead.")]
-        public static async Task<DeviceManagementFileAuthLocationGetResponse21sp1> DeviceManagementFileAuthLocationGetRequest21sp1(this OcipClient client, DeviceManagementFileAuthLocationGetRequest21sp1 request)
+        public static async Task<DeviceManagementFileAuthLocationGetResponse21sp1> DeviceManagementFileAuthLocationGetRequest21sp1(this OcipClientBase client, DeviceManagementFileAuthLocationGetRequest21sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as DeviceManagementFileAuthLocationGetResponse21sp1;
         }
@@ -75,7 +75,7 @@ namespace BroadWorksConnector
         /// The following elements are only used in AS data mode and will fail in XS data mode:
         /// deviceToken
         /// </summary>
-        public static async Task<DeviceManagementFileAuthLocationGetResponse21sp1> DeviceManagementFileAuthLocationGetRequest21sp1Async(this OcipClient client, DeviceManagementFileAuthLocationGetRequest21sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<DeviceManagementFileAuthLocationGetResponse21sp1> DeviceManagementFileAuthLocationGetRequest21sp1Async(this OcipClientBase client, DeviceManagementFileAuthLocationGetRequest21sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as DeviceManagementFileAuthLocationGetResponse21sp1;
         }
@@ -90,7 +90,7 @@ namespace BroadWorksConnector
         /// fileNameOnDisk
         /// </summary>
         [Obsolete("This method is deprecated. Use DeviceManagementFileAuthLocationGetRequest22V2Async instead.")]
-        public static async Task<DeviceManagementFileAuthLocationGetResponse22V2> DeviceManagementFileAuthLocationGetRequest22V2(this OcipClient client, DeviceManagementFileAuthLocationGetRequest22V2 request)
+        public static async Task<DeviceManagementFileAuthLocationGetResponse22V2> DeviceManagementFileAuthLocationGetRequest22V2(this OcipClientBase client, DeviceManagementFileAuthLocationGetRequest22V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as DeviceManagementFileAuthLocationGetResponse22V2;
         }
@@ -105,7 +105,7 @@ namespace BroadWorksConnector
         /// fileNameLookup
         /// fileNameOnDisk
         /// </summary>
-        public static async Task<DeviceManagementFileAuthLocationGetResponse22V2> DeviceManagementFileAuthLocationGetRequest22V2Async(this OcipClient client, DeviceManagementFileAuthLocationGetRequest22V2 request, CancellationToken cancellationToken = default)
+        public static async Task<DeviceManagementFileAuthLocationGetResponse22V2> DeviceManagementFileAuthLocationGetRequest22V2Async(this OcipClientBase client, DeviceManagementFileAuthLocationGetRequest22V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as DeviceManagementFileAuthLocationGetResponse22V2;
         }
@@ -113,7 +113,7 @@ namespace BroadWorksConnector
         /// Informs BroadWorks that a file was uploaded to the repository. The response is always a SuccessResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use DeviceManagementPutFileRequestAsync instead.")]
-        public static async Task<SuccessResponse> DeviceManagementPutFileRequest(this OcipClient client, DeviceManagementPutFileRequest request)
+        public static async Task<SuccessResponse> DeviceManagementPutFileRequest(this OcipClientBase client, DeviceManagementPutFileRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -121,7 +121,7 @@ namespace BroadWorksConnector
         /// <summary>
         /// Informs BroadWorks that a file was uploaded to the repository. The response is always a SuccessResponse.
         /// </summary>
-        public static async Task<SuccessResponse> DeviceManagementPutFileRequestAsync(this OcipClient client, DeviceManagementPutFileRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> DeviceManagementPutFileRequestAsync(this OcipClientBase client, DeviceManagementPutFileRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -132,7 +132,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ExternalAuthenticationAuthorizeTokenRequest22Async instead.")]
-        public static async Task<SuccessResponse> ExternalAuthenticationAuthorizeTokenRequest22(this OcipClient client, ExternalAuthenticationAuthorizeTokenRequest22 request)
+        public static async Task<SuccessResponse> ExternalAuthenticationAuthorizeTokenRequest22(this OcipClientBase client, ExternalAuthenticationAuthorizeTokenRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -143,7 +143,7 @@ namespace BroadWorksConnector
         /// The hashed password value in the request is supported only when the request is sent from the CommPilot web portal.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> ExternalAuthenticationAuthorizeTokenRequest22Async(this OcipClient client, ExternalAuthenticationAuthorizeTokenRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ExternalAuthenticationAuthorizeTokenRequest22Async(this OcipClientBase client, ExternalAuthenticationAuthorizeTokenRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -154,7 +154,7 @@ namespace BroadWorksConnector
         /// or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use ExternalAuthenticationCreateLoginTokenRequestAsync instead.")]
-        public static async Task<ExternalAuthenticationCreateLoginTokenResponse> ExternalAuthenticationCreateLoginTokenRequest(this OcipClient client, ExternalAuthenticationCreateLoginTokenRequest request)
+        public static async Task<ExternalAuthenticationCreateLoginTokenResponse> ExternalAuthenticationCreateLoginTokenRequest(this OcipClientBase client, ExternalAuthenticationCreateLoginTokenRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ExternalAuthenticationCreateLoginTokenResponse;
         }
@@ -165,7 +165,7 @@ namespace BroadWorksConnector
         /// The response is either ExternalAuthenticationCreateLoginTokenResponse
         /// or ErrorResponse.
         /// </summary>
-        public static async Task<ExternalAuthenticationCreateLoginTokenResponse> ExternalAuthenticationCreateLoginTokenRequestAsync(this OcipClient client, ExternalAuthenticationCreateLoginTokenRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ExternalAuthenticationCreateLoginTokenResponse> ExternalAuthenticationCreateLoginTokenRequestAsync(this OcipClientBase client, ExternalAuthenticationCreateLoginTokenRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ExternalAuthenticationCreateLoginTokenResponse;
         }
@@ -175,7 +175,7 @@ namespace BroadWorksConnector
         /// The response is LoginResponse22V3 or ErrorResponse
         /// </summary>
         [Obsolete("This method is deprecated. Use LoginRequest22V3Async instead.")]
-        public static async Task<LoginResponse22V3> LoginRequest22V3(this OcipClient client, LoginRequest22V3 request)
+        public static async Task<LoginResponse22V3> LoginRequest22V3(this OcipClientBase client, LoginRequest22V3 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as LoginResponse22V3;
         }
@@ -185,7 +185,7 @@ namespace BroadWorksConnector
         /// password is not required for external authentication login from a trusted host (ACL).
         /// The response is LoginResponse22V3 or ErrorResponse
         /// </summary>
-        public static async Task<LoginResponse22V3> LoginRequest22V3Async(this OcipClient client, LoginRequest22V3 request, CancellationToken cancellationToken = default)
+        public static async Task<LoginResponse22V3> LoginRequest22V3Async(this OcipClientBase client, LoginRequest22V3 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as LoginResponse22V3;
         }
@@ -195,7 +195,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use LogoutRequestAsync instead.")]
-        public static async Task<SuccessResponse> LogoutRequest(this OcipClient client, LogoutRequest request)
+        public static async Task<SuccessResponse> LogoutRequest(this OcipClientBase client, LogoutRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -205,7 +205,7 @@ namespace BroadWorksConnector
         /// This command can be sent either to the server, or to the client from OCS.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> LogoutRequestAsync(this OcipClient client, LogoutRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> LogoutRequestAsync(this OcipClientBase client, LogoutRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -216,7 +216,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use LongLivedTokenRevokeRequestAsync instead.")]
-        public static async Task<SuccessResponse> LongLivedTokenRevokeRequest(this OcipClient client, LongLivedTokenRevokeRequest request)
+        public static async Task<SuccessResponse> LongLivedTokenRevokeRequest(this OcipClientBase client, LongLivedTokenRevokeRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -227,7 +227,7 @@ namespace BroadWorksConnector
         /// If the userId is specified, revoke all tokens issued to the user.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> LongLivedTokenRevokeRequestAsync(this OcipClient client, LongLivedTokenRevokeRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> LongLivedTokenRevokeRequestAsync(this OcipClientBase client, LongLivedTokenRevokeRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -236,7 +236,7 @@ namespace BroadWorksConnector
         /// The response is either PasswordGenerateResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use PasswordGenerateRequestAsync instead.")]
-        public static async Task<PasswordGenerateResponse> PasswordGenerateRequest(this OcipClient client, PasswordGenerateRequest request)
+        public static async Task<PasswordGenerateResponse> PasswordGenerateRequest(this OcipClientBase client, PasswordGenerateRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as PasswordGenerateResponse;
         }
@@ -245,7 +245,7 @@ namespace BroadWorksConnector
         /// Generate passwords based on the corresponding password/passcode rules.
         /// The response is either PasswordGenerateResponse or ErrorResponse.
         /// </summary>
-        public static async Task<PasswordGenerateResponse> PasswordGenerateRequestAsync(this OcipClient client, PasswordGenerateRequest request, CancellationToken cancellationToken = default)
+        public static async Task<PasswordGenerateResponse> PasswordGenerateRequestAsync(this OcipClientBase client, PasswordGenerateRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as PasswordGenerateResponse;
         }
@@ -256,7 +256,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use PasswordModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> PasswordModifyRequest(this OcipClient client, PasswordModifyRequest request)
+        public static async Task<SuccessResponse> PasswordModifyRequest(this OcipClientBase client, PasswordModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -267,7 +267,7 @@ namespace BroadWorksConnector
         /// any password rule related to old password does not apply.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> PasswordModifyRequestAsync(this OcipClient client, PasswordModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> PasswordModifyRequestAsync(this OcipClientBase client, PasswordModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -276,7 +276,7 @@ namespace BroadWorksConnector
         /// The response is either PrimaryInfoGetResponse or ErrorResponse
         /// </summary>
         [Obsolete("This method is deprecated. Use PrimaryInfoGetRequestAsync instead.")]
-        public static async Task<PrimaryInfoGetResponse> PrimaryInfoGetRequest(this OcipClient client, PrimaryInfoGetRequest request)
+        public static async Task<PrimaryInfoGetResponse> PrimaryInfoGetRequest(this OcipClientBase client, PrimaryInfoGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as PrimaryInfoGetResponse;
         }
@@ -285,7 +285,7 @@ namespace BroadWorksConnector
         /// Requests information about the primary server for high-availability support.
         /// The response is either PrimaryInfoGetResponse or ErrorResponse
         /// </summary>
-        public static async Task<PrimaryInfoGetResponse> PrimaryInfoGetRequestAsync(this OcipClient client, PrimaryInfoGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<PrimaryInfoGetResponse> PrimaryInfoGetRequestAsync(this OcipClientBase client, PrimaryInfoGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as PrimaryInfoGetResponse;
         }
@@ -295,7 +295,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use PublicClusterGetFullyQualifiedDomainNameRequestAsync instead.")]
-        public static async Task<PublicClusterGetFullyQualifiedDomainNameResponse> PublicClusterGetFullyQualifiedDomainNameRequest(this OcipClient client, PublicClusterGetFullyQualifiedDomainNameRequest request)
+        public static async Task<PublicClusterGetFullyQualifiedDomainNameResponse> PublicClusterGetFullyQualifiedDomainNameRequest(this OcipClientBase client, PublicClusterGetFullyQualifiedDomainNameRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as PublicClusterGetFullyQualifiedDomainNameResponse;
         }
@@ -305,7 +305,7 @@ namespace BroadWorksConnector
         /// The response is either a PublicClusterGetFullyQualifiedDomainNameResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<PublicClusterGetFullyQualifiedDomainNameResponse> PublicClusterGetFullyQualifiedDomainNameRequestAsync(this OcipClient client, PublicClusterGetFullyQualifiedDomainNameRequest request, CancellationToken cancellationToken = default)
+        public static async Task<PublicClusterGetFullyQualifiedDomainNameResponse> PublicClusterGetFullyQualifiedDomainNameRequestAsync(this OcipClientBase client, PublicClusterGetFullyQualifiedDomainNameRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as PublicClusterGetFullyQualifiedDomainNameResponse;
         }
@@ -314,7 +314,7 @@ namespace BroadWorksConnector
         /// The response is either a TutorialFlagGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use TutorialFlagGetRequestAsync instead.")]
-        public static async Task<TutorialFlagGetResponse> TutorialFlagGetRequest(this OcipClient client, TutorialFlagGetRequest request)
+        public static async Task<TutorialFlagGetResponse> TutorialFlagGetRequest(this OcipClientBase client, TutorialFlagGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as TutorialFlagGetResponse;
         }
@@ -323,7 +323,7 @@ namespace BroadWorksConnector
         /// Get the tutorial flag setting for a user or admin.
         /// The response is either a TutorialFlagGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<TutorialFlagGetResponse> TutorialFlagGetRequestAsync(this OcipClient client, TutorialFlagGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<TutorialFlagGetResponse> TutorialFlagGetRequestAsync(this OcipClientBase client, TutorialFlagGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as TutorialFlagGetResponse;
         }
@@ -332,7 +332,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use TutorialFlagModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> TutorialFlagModifyRequest(this OcipClient client, TutorialFlagModifyRequest request)
+        public static async Task<SuccessResponse> TutorialFlagModifyRequest(this OcipClientBase client, TutorialFlagModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -341,7 +341,7 @@ namespace BroadWorksConnector
         /// Modify the tutorial flag setting for a user or admin.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> TutorialFlagModifyRequestAsync(this OcipClient client, TutorialFlagModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> TutorialFlagModifyRequestAsync(this OcipClientBase client, TutorialFlagModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -354,7 +354,7 @@ namespace BroadWorksConnector
         /// The response is a UserGetLoginInfoResponse22V2 or an ErrorResponse
         /// </summary>
         [Obsolete("This method is deprecated. Use UserGetLoginInfoRequest22V2Async instead.")]
-        public static async Task<UserGetLoginInfoResponse22V2> UserGetLoginInfoRequest22V2(this OcipClient client, UserGetLoginInfoRequest22V2 request)
+        public static async Task<UserGetLoginInfoResponse22V2> UserGetLoginInfoRequest22V2(this OcipClientBase client, UserGetLoginInfoRequest22V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserGetLoginInfoResponse22V2;
         }
@@ -367,7 +367,7 @@ namespace BroadWorksConnector
         /// 
         /// The response is a UserGetLoginInfoResponse22V2 or an ErrorResponse
         /// </summary>
-        public static async Task<UserGetLoginInfoResponse22V2> UserGetLoginInfoRequest22V2Async(this OcipClient client, UserGetLoginInfoRequest22V2 request, CancellationToken cancellationToken = default)
+        public static async Task<UserGetLoginInfoResponse22V2> UserGetLoginInfoRequest22V2Async(this OcipClientBase client, UserGetLoginInfoRequest22V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserGetLoginInfoResponse22V2;
         }
@@ -383,7 +383,7 @@ namespace BroadWorksConnector
         /// or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSingleSignOnCreateDeviceTokenRequestAsync instead.")]
-        public static async Task<UserSingleSignOnCreateDeviceTokenResponse> UserSingleSignOnCreateDeviceTokenRequest(this OcipClient client, UserSingleSignOnCreateDeviceTokenRequest request)
+        public static async Task<UserSingleSignOnCreateDeviceTokenResponse> UserSingleSignOnCreateDeviceTokenRequest(this OcipClientBase client, UserSingleSignOnCreateDeviceTokenRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserSingleSignOnCreateDeviceTokenResponse;
         }
@@ -399,7 +399,7 @@ namespace BroadWorksConnector
         /// The response is either UserSingleSignOnCreateDeviceTokenResponse
         /// or ErrorResponse.
         /// </summary>
-        public static async Task<UserSingleSignOnCreateDeviceTokenResponse> UserSingleSignOnCreateDeviceTokenRequestAsync(this OcipClient client, UserSingleSignOnCreateDeviceTokenRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserSingleSignOnCreateDeviceTokenResponse> UserSingleSignOnCreateDeviceTokenRequestAsync(this OcipClientBase client, UserSingleSignOnCreateDeviceTokenRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserSingleSignOnCreateDeviceTokenResponse;
         }
@@ -410,7 +410,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use VerifySessionIsValidRequestAsync instead.")]
-        public static async Task<SuccessResponse> VerifySessionIsValidRequest(this OcipClient client, VerifySessionIsValidRequest request)
+        public static async Task<SuccessResponse> VerifySessionIsValidRequest(this OcipClientBase client, VerifySessionIsValidRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -421,7 +421,7 @@ namespace BroadWorksConnector
         /// verifies the session is authorized for all commands.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> VerifySessionIsValidRequestAsync(this OcipClient client, VerifySessionIsValidRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> VerifySessionIsValidRequestAsync(this OcipClientBase client, VerifySessionIsValidRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

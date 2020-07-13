@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSharedCallAppearanceAddEndpointRequest14sp2Async instead.")]
-        public static async Task<SuccessResponse> UserSharedCallAppearanceAddEndpointRequest14sp2(this OcipClient client, UserSharedCallAppearanceAddEndpointRequest14sp2 request)
+        public static async Task<SuccessResponse> UserSharedCallAppearanceAddEndpointRequest14sp2(this OcipClientBase client, UserSharedCallAppearanceAddEndpointRequest14sp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Associate an access device instance to the user's Shared Call Appearance.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserSharedCallAppearanceAddEndpointRequest14sp2Async(this OcipClient client, UserSharedCallAppearanceAddEndpointRequest14sp2 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserSharedCallAppearanceAddEndpointRequest14sp2Async(this OcipClientBase client, UserSharedCallAppearanceAddEndpointRequest14sp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSharedCallAppearanceDeleteEndpointListRequest14Async instead.")]
-        public static async Task<SuccessResponse> UserSharedCallAppearanceDeleteEndpointListRequest14(this OcipClient client, UserSharedCallAppearanceDeleteEndpointListRequest14 request)
+        public static async Task<SuccessResponse> UserSharedCallAppearanceDeleteEndpointListRequest14(this OcipClientBase client, UserSharedCallAppearanceDeleteEndpointListRequest14 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Disassociate one or more of a user's Shared Call Appearance endpoints.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserSharedCallAppearanceDeleteEndpointListRequest14Async(this OcipClient client, UserSharedCallAppearanceDeleteEndpointListRequest14 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserSharedCallAppearanceDeleteEndpointListRequest14Async(this OcipClientBase client, UserSharedCallAppearanceDeleteEndpointListRequest14 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -50,7 +50,7 @@ namespace BroadWorksConnector
         /// The response is either a UserSharedCallAppearanceGetEndpointResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSharedCallAppearanceGetEndpointRequestAsync instead.")]
-        public static async Task<UserSharedCallAppearanceGetEndpointResponse> UserSharedCallAppearanceGetEndpointRequest(this OcipClient client, UserSharedCallAppearanceGetEndpointRequest request)
+        public static async Task<UserSharedCallAppearanceGetEndpointResponse> UserSharedCallAppearanceGetEndpointRequest(this OcipClientBase client, UserSharedCallAppearanceGetEndpointRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserSharedCallAppearanceGetEndpointResponse;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// Get the user's Shared Call Appearance endpoint setting.
         /// The response is either a UserSharedCallAppearanceGetEndpointResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserSharedCallAppearanceGetEndpointResponse> UserSharedCallAppearanceGetEndpointRequestAsync(this OcipClient client, UserSharedCallAppearanceGetEndpointRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserSharedCallAppearanceGetEndpointResponse> UserSharedCallAppearanceGetEndpointRequestAsync(this OcipClientBase client, UserSharedCallAppearanceGetEndpointRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserSharedCallAppearanceGetEndpointResponse;
         }
@@ -68,7 +68,7 @@ namespace BroadWorksConnector
         /// The response is either a UserSharedCallAppearanceGetResponse21sp1 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSharedCallAppearanceGetRequest21sp1Async instead.")]
-        public static async Task<UserSharedCallAppearanceGetResponse21sp1> UserSharedCallAppearanceGetRequest21sp1(this OcipClient client, UserSharedCallAppearanceGetRequest21sp1 request)
+        public static async Task<UserSharedCallAppearanceGetResponse21sp1> UserSharedCallAppearanceGetRequest21sp1(this OcipClientBase client, UserSharedCallAppearanceGetRequest21sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserSharedCallAppearanceGetResponse21sp1;
         }
@@ -77,7 +77,7 @@ namespace BroadWorksConnector
         /// Get the user's Shared Call Appearance service setting.
         /// The response is either a UserSharedCallAppearanceGetResponse21sp1 or an ErrorResponse.
         /// </summary>
-        public static async Task<UserSharedCallAppearanceGetResponse21sp1> UserSharedCallAppearanceGetRequest21sp1Async(this OcipClient client, UserSharedCallAppearanceGetRequest21sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<UserSharedCallAppearanceGetResponse21sp1> UserSharedCallAppearanceGetRequest21sp1Async(this OcipClientBase client, UserSharedCallAppearanceGetRequest21sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserSharedCallAppearanceGetResponse21sp1;
         }
@@ -86,7 +86,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSharedCallAppearanceModifyEndpointRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserSharedCallAppearanceModifyEndpointRequest(this OcipClient client, UserSharedCallAppearanceModifyEndpointRequest request)
+        public static async Task<SuccessResponse> UserSharedCallAppearanceModifyEndpointRequest(this OcipClientBase client, UserSharedCallAppearanceModifyEndpointRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -95,7 +95,7 @@ namespace BroadWorksConnector
         /// Associate/Disassociate an access device instance to the user's Shared Call Appearance.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserSharedCallAppearanceModifyEndpointRequestAsync(this OcipClient client, UserSharedCallAppearanceModifyEndpointRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserSharedCallAppearanceModifyEndpointRequestAsync(this OcipClientBase client, UserSharedCallAppearanceModifyEndpointRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -110,7 +110,7 @@ namespace BroadWorksConnector
         /// restrictCallBridgingOfPrimary
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSharedCallAppearanceModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserSharedCallAppearanceModifyRequest(this OcipClient client, UserSharedCallAppearanceModifyRequest request)
+        public static async Task<SuccessResponse> UserSharedCallAppearanceModifyRequest(this OcipClientBase client, UserSharedCallAppearanceModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -125,7 +125,7 @@ namespace BroadWorksConnector
         /// restrictCallRetrieveOfPrimary
         /// restrictCallBridgingOfPrimary
         /// </summary>
-        public static async Task<SuccessResponse> UserSharedCallAppearanceModifyRequestAsync(this OcipClient client, UserSharedCallAppearanceModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserSharedCallAppearanceModifyRequestAsync(this OcipClientBase client, UserSharedCallAppearanceModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

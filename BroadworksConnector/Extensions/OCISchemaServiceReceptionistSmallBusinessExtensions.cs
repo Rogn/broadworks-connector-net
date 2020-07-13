@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either UserBroadWorksReceptionistSmallBusinessGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserBroadWorksReceptionistSmallBusinessGetAvailableUserListRequestAsync instead.")]
-        public static async Task<UserBroadWorksReceptionistSmallBusinessGetAvailableUserListResponse> UserBroadWorksReceptionistSmallBusinessGetAvailableUserListRequest(this OcipClient client, UserBroadWorksReceptionistSmallBusinessGetAvailableUserListRequest request)
+        public static async Task<UserBroadWorksReceptionistSmallBusinessGetAvailableUserListResponse> UserBroadWorksReceptionistSmallBusinessGetAvailableUserListRequest(this OcipClientBase client, UserBroadWorksReceptionistSmallBusinessGetAvailableUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserBroadWorksReceptionistSmallBusinessGetAvailableUserListResponse;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Get a list of available users for the Receptionist Small Business service.
         /// The response is either UserBroadWorksReceptionistSmallBusinessGetAvailableUserListResponse or ErrorResponse.
         /// </summary>
-        public static async Task<UserBroadWorksReceptionistSmallBusinessGetAvailableUserListResponse> UserBroadWorksReceptionistSmallBusinessGetAvailableUserListRequestAsync(this OcipClient client, UserBroadWorksReceptionistSmallBusinessGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserBroadWorksReceptionistSmallBusinessGetAvailableUserListResponse> UserBroadWorksReceptionistSmallBusinessGetAvailableUserListRequestAsync(this OcipClientBase client, UserBroadWorksReceptionistSmallBusinessGetAvailableUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserBroadWorksReceptionistSmallBusinessGetAvailableUserListResponse;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either a UserBroadWorksReceptionistSmallBusinessGetResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserBroadWorksReceptionistSmallBusinessGetRequestAsync instead.")]
-        public static async Task<UserBroadWorksReceptionistSmallBusinessGetResponse> UserBroadWorksReceptionistSmallBusinessGetRequest(this OcipClient client, UserBroadWorksReceptionistSmallBusinessGetRequest request)
+        public static async Task<UserBroadWorksReceptionistSmallBusinessGetResponse> UserBroadWorksReceptionistSmallBusinessGetRequest(this OcipClientBase client, UserBroadWorksReceptionistSmallBusinessGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserBroadWorksReceptionistSmallBusinessGetResponse;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Request the Receptionist Small Business parameters.
         /// The response is either a UserBroadWorksReceptionistSmallBusinessGetResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserBroadWorksReceptionistSmallBusinessGetResponse> UserBroadWorksReceptionistSmallBusinessGetRequestAsync(this OcipClient client, UserBroadWorksReceptionistSmallBusinessGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserBroadWorksReceptionistSmallBusinessGetResponse> UserBroadWorksReceptionistSmallBusinessGetRequestAsync(this OcipClientBase client, UserBroadWorksReceptionistSmallBusinessGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserBroadWorksReceptionistSmallBusinessGetResponse;
         }
@@ -50,7 +50,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserBroadWorksReceptionistSmallBusinessModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserBroadWorksReceptionistSmallBusinessModifyRequest(this OcipClient client, UserBroadWorksReceptionistSmallBusinessModifyRequest request)
+        public static async Task<SuccessResponse> UserBroadWorksReceptionistSmallBusinessModifyRequest(this OcipClientBase client, UserBroadWorksReceptionistSmallBusinessModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -59,7 +59,7 @@ namespace BroadWorksConnector
         /// Replace the Receptionist Small Business monitored user list.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserBroadWorksReceptionistSmallBusinessModifyRequestAsync(this OcipClient client, UserBroadWorksReceptionistSmallBusinessModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserBroadWorksReceptionistSmallBusinessModifyRequestAsync(this OcipClientBase client, UserBroadWorksReceptionistSmallBusinessModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }

@@ -14,7 +14,7 @@ namespace BroadWorksConnector
         /// The response is either GroupAdminGetPolicyResponse18 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAdminGetPolicyRequest18Async instead.")]
-        public static async Task<GroupAdminGetPolicyResponse18> GroupAdminGetPolicyRequest18(this OcipClient client, GroupAdminGetPolicyRequest18 request)
+        public static async Task<GroupAdminGetPolicyResponse18> GroupAdminGetPolicyRequest18(this OcipClientBase client, GroupAdminGetPolicyRequest18 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAdminGetPolicyResponse18;
         }
@@ -23,7 +23,7 @@ namespace BroadWorksConnector
         /// Requests the Group administrator's policy settings.
         /// The response is either GroupAdminGetPolicyResponse18 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupAdminGetPolicyResponse18> GroupAdminGetPolicyRequest18Async(this OcipClient client, GroupAdminGetPolicyRequest18 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAdminGetPolicyResponse18> GroupAdminGetPolicyRequest18Async(this OcipClientBase client, GroupAdminGetPolicyRequest18 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAdminGetPolicyResponse18;
         }
@@ -32,7 +32,7 @@ namespace BroadWorksConnector
         /// The response is either GroupAdminGetPolicyResponse19sp1 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAdminGetPolicyRequest19sp1Async instead.")]
-        public static async Task<GroupAdminGetPolicyResponse19sp1> GroupAdminGetPolicyRequest19sp1(this OcipClient client, GroupAdminGetPolicyRequest19sp1 request)
+        public static async Task<GroupAdminGetPolicyResponse19sp1> GroupAdminGetPolicyRequest19sp1(this OcipClientBase client, GroupAdminGetPolicyRequest19sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAdminGetPolicyResponse19sp1;
         }
@@ -41,7 +41,7 @@ namespace BroadWorksConnector
         /// Requests the Group administrator's policy settings.
         /// The response is either GroupAdminGetPolicyResponse19sp1 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupAdminGetPolicyResponse19sp1> GroupAdminGetPolicyRequest19sp1Async(this OcipClient client, GroupAdminGetPolicyRequest19sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAdminGetPolicyResponse19sp1> GroupAdminGetPolicyRequest19sp1Async(this OcipClientBase client, GroupAdminGetPolicyRequest19sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAdminGetPolicyResponse19sp1;
         }
@@ -60,7 +60,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupAutoAttendantAddInstanceRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantAddInstanceRequest19Async instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantAddInstanceRequest19(this OcipClient client, GroupAutoAttendantAddInstanceRequest19 request)
+        public static async Task<SuccessResponse> GroupAutoAttendantAddInstanceRequest19(this OcipClientBase client, GroupAutoAttendantAddInstanceRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -79,7 +79,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupAutoAttendantAddInstanceRequest20 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantAddInstanceRequest19Async(this OcipClient client, GroupAutoAttendantAddInstanceRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantAddInstanceRequest19Async(this OcipClientBase client, GroupAutoAttendantAddInstanceRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -90,7 +90,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupAutoAttendantGetInstanceRequest19sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantGetInstanceRequest19Async instead.")]
-        public static async Task<GroupAutoAttendantGetInstanceResponse19> GroupAutoAttendantGetInstanceRequest19(this OcipClient client, GroupAutoAttendantGetInstanceRequest19 request)
+        public static async Task<GroupAutoAttendantGetInstanceResponse19> GroupAutoAttendantGetInstanceRequest19(this OcipClientBase client, GroupAutoAttendantGetInstanceRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAutoAttendantGetInstanceResponse19;
         }
@@ -101,7 +101,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupAutoAttendantGetInstanceRequest19sp1 in AS data mode
         /// </summary>
-        public static async Task<GroupAutoAttendantGetInstanceResponse19> GroupAutoAttendantGetInstanceRequest19Async(this OcipClient client, GroupAutoAttendantGetInstanceRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAutoAttendantGetInstanceResponse19> GroupAutoAttendantGetInstanceRequest19Async(this OcipClientBase client, GroupAutoAttendantGetInstanceRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAutoAttendantGetInstanceResponse19;
         }
@@ -112,7 +112,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupAutoAttendantGetInstanceRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantGetInstanceRequest19sp1Async instead.")]
-        public static async Task<GroupAutoAttendantGetInstanceResponse19sp1> GroupAutoAttendantGetInstanceRequest19sp1(this OcipClient client, GroupAutoAttendantGetInstanceRequest19sp1 request)
+        public static async Task<GroupAutoAttendantGetInstanceResponse19sp1> GroupAutoAttendantGetInstanceRequest19sp1(this OcipClientBase client, GroupAutoAttendantGetInstanceRequest19sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAutoAttendantGetInstanceResponse19sp1;
         }
@@ -123,7 +123,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupAutoAttendantGetInstanceRequest20 in AS data mode
         /// </summary>
-        public static async Task<GroupAutoAttendantGetInstanceResponse19sp1> GroupAutoAttendantGetInstanceRequest19sp1Async(this OcipClient client, GroupAutoAttendantGetInstanceRequest19sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAutoAttendantGetInstanceResponse19sp1> GroupAutoAttendantGetInstanceRequest19sp1Async(this OcipClientBase client, GroupAutoAttendantGetInstanceRequest19sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAutoAttendantGetInstanceResponse19sp1;
         }
@@ -139,7 +139,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupAutoAttendantModifyInstanceRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantModifyInstanceRequest17sp1Async instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantModifyInstanceRequest17sp1(this OcipClient client, GroupAutoAttendantModifyInstanceRequest17sp1 request)
+        public static async Task<SuccessResponse> GroupAutoAttendantModifyInstanceRequest17sp1(this OcipClientBase client, GroupAutoAttendantModifyInstanceRequest17sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -155,7 +155,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupAutoAttendantModifyInstanceRequest20 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantModifyInstanceRequest17sp1Async(this OcipClient client, GroupAutoAttendantModifyInstanceRequest17sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantModifyInstanceRequest17sp1Async(this OcipClientBase client, GroupAutoAttendantModifyInstanceRequest17sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -167,7 +167,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupAutoAttendantSubmenuAddRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantSubmenuAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuAddRequest(this OcipClient client, GroupAutoAttendantSubmenuAddRequest request)
+        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuAddRequest(this OcipClientBase client, GroupAutoAttendantSubmenuAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -179,7 +179,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupAutoAttendantSubmenuAddRequest20 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuAddRequestAsync(this OcipClient client, GroupAutoAttendantSubmenuAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuAddRequestAsync(this OcipClientBase client, GroupAutoAttendantSubmenuAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -191,7 +191,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupAutoAttendantSubmenuGetRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantSubmenuGetRequestAsync instead.")]
-        public static async Task<GroupAutoAttendantSubmenuGetResponse> GroupAutoAttendantSubmenuGetRequest(this OcipClient client, GroupAutoAttendantSubmenuGetRequest request)
+        public static async Task<GroupAutoAttendantSubmenuGetResponse> GroupAutoAttendantSubmenuGetRequest(this OcipClientBase client, GroupAutoAttendantSubmenuGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAutoAttendantSubmenuGetResponse;
         }
@@ -203,7 +203,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupAutoAttendantSubmenuGetRequest20 in AS data mode
         /// </summary>
-        public static async Task<GroupAutoAttendantSubmenuGetResponse> GroupAutoAttendantSubmenuGetRequestAsync(this OcipClient client, GroupAutoAttendantSubmenuGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAutoAttendantSubmenuGetResponse> GroupAutoAttendantSubmenuGetRequestAsync(this OcipClientBase client, GroupAutoAttendantSubmenuGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAutoAttendantSubmenuGetResponse;
         }
@@ -215,7 +215,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupAutoAttendantSubmenuModifyRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAutoAttendantSubmenuModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuModifyRequest(this OcipClient client, GroupAutoAttendantSubmenuModifyRequest request)
+        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuModifyRequest(this OcipClientBase client, GroupAutoAttendantSubmenuModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -227,7 +227,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupAutoAttendantSubmenuModifyRequest20 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuModifyRequestAsync(this OcipClient client, GroupAutoAttendantSubmenuModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupAutoAttendantSubmenuModifyRequestAsync(this OcipClientBase client, GroupAutoAttendantSubmenuModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -238,7 +238,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupBroadWorksAnywhereGetInstanceRequest19sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupBroadWorksAnywhereGetInstanceRequest17Async instead.")]
-        public static async Task<GroupBroadWorksAnywhereGetInstanceResponse17> GroupBroadWorksAnywhereGetInstanceRequest17(this OcipClient client, GroupBroadWorksAnywhereGetInstanceRequest17 request)
+        public static async Task<GroupBroadWorksAnywhereGetInstanceResponse17> GroupBroadWorksAnywhereGetInstanceRequest17(this OcipClientBase client, GroupBroadWorksAnywhereGetInstanceRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupBroadWorksAnywhereGetInstanceResponse17;
         }
@@ -249,7 +249,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupBroadWorksAnywhereGetInstanceRequest19sp1 in AS data mode
         /// </summary>
-        public static async Task<GroupBroadWorksAnywhereGetInstanceResponse17> GroupBroadWorksAnywhereGetInstanceRequest17Async(this OcipClient client, GroupBroadWorksAnywhereGetInstanceRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupBroadWorksAnywhereGetInstanceResponse17> GroupBroadWorksAnywhereGetInstanceRequest17Async(this OcipClientBase client, GroupBroadWorksAnywhereGetInstanceRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupBroadWorksAnywhereGetInstanceResponse17;
         }
@@ -260,7 +260,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupCustomRingbackGroupGetRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCustomRingbackGroupGetRequest16Async instead.")]
-        public static async Task<GroupCustomRingbackGroupGetResponse16> GroupCustomRingbackGroupGetRequest16(this OcipClient client, GroupCustomRingbackGroupGetRequest16 request)
+        public static async Task<GroupCustomRingbackGroupGetResponse16> GroupCustomRingbackGroupGetRequest16(this OcipClientBase client, GroupCustomRingbackGroupGetRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCustomRingbackGroupGetResponse16;
         }
@@ -271,7 +271,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupCustomRingbackGroupGetRequest20 in AS data mode
         /// </summary>
-        public static async Task<GroupCustomRingbackGroupGetResponse16> GroupCustomRingbackGroupGetRequest16Async(this OcipClient client, GroupCustomRingbackGroupGetRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCustomRingbackGroupGetResponse16> GroupCustomRingbackGroupGetRequest16Async(this OcipClientBase client, GroupCustomRingbackGroupGetRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCustomRingbackGroupGetResponse16;
         }
@@ -282,7 +282,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupCustomRingbackGroupModifyRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCustomRingbackGroupModifyRequest16Async instead.")]
-        public static async Task<SuccessResponse> GroupCustomRingbackGroupModifyRequest16(this OcipClient client, GroupCustomRingbackGroupModifyRequest16 request)
+        public static async Task<SuccessResponse> GroupCustomRingbackGroupModifyRequest16(this OcipClientBase client, GroupCustomRingbackGroupModifyRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -293,7 +293,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupCustomRingbackGroupModifyRequest20 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupCustomRingbackGroupModifyRequest16Async(this OcipClient client, GroupCustomRingbackGroupModifyRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCustomRingbackGroupModifyRequest16Async(this OcipClientBase client, GroupCustomRingbackGroupModifyRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -308,7 +308,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupHuntGroupAddInstanceRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupAddInstanceRequest19Async instead.")]
-        public static async Task<SuccessResponse> GroupHuntGroupAddInstanceRequest19(this OcipClient client, GroupHuntGroupAddInstanceRequest19 request)
+        public static async Task<SuccessResponse> GroupHuntGroupAddInstanceRequest19(this OcipClientBase client, GroupHuntGroupAddInstanceRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -323,7 +323,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupHuntGroupAddInstanceRequest20 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupHuntGroupAddInstanceRequest19Async(this OcipClient client, GroupHuntGroupAddInstanceRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupHuntGroupAddInstanceRequest19Async(this OcipClientBase client, GroupHuntGroupAddInstanceRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -334,7 +334,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupHuntGroupGetInstanceRequest19sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupHuntGroupGetInstanceRequest19Async instead.")]
-        public static async Task<GroupHuntGroupGetInstanceResponse19> GroupHuntGroupGetInstanceRequest19(this OcipClient client, GroupHuntGroupGetInstanceRequest19 request)
+        public static async Task<GroupHuntGroupGetInstanceResponse19> GroupHuntGroupGetInstanceRequest19(this OcipClientBase client, GroupHuntGroupGetInstanceRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupHuntGroupGetInstanceResponse19;
         }
@@ -345,7 +345,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupHuntGroupGetInstanceRequest19sp1 in AS data mode
         /// </summary>
-        public static async Task<GroupHuntGroupGetInstanceResponse19> GroupHuntGroupGetInstanceRequest19Async(this OcipClient client, GroupHuntGroupGetInstanceRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupHuntGroupGetInstanceResponse19> GroupHuntGroupGetInstanceRequest19Async(this OcipClientBase client, GroupHuntGroupGetInstanceRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupHuntGroupGetInstanceResponse19;
         }
@@ -354,7 +354,7 @@ namespace BroadWorksConnector
         /// The response is either GroupMusicOnHoldGetInstanceResponse19 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupMusicOnHoldGetInstanceRequest19Async instead.")]
-        public static async Task<GroupMusicOnHoldGetInstanceResponse19> GroupMusicOnHoldGetInstanceRequest19(this OcipClient client, GroupMusicOnHoldGetInstanceRequest19 request)
+        public static async Task<GroupMusicOnHoldGetInstanceResponse19> GroupMusicOnHoldGetInstanceRequest19(this OcipClientBase client, GroupMusicOnHoldGetInstanceRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupMusicOnHoldGetInstanceResponse19;
         }
@@ -363,7 +363,7 @@ namespace BroadWorksConnector
         /// Get a Music On Hold data for a group or department instance.
         /// The response is either GroupMusicOnHoldGetInstanceResponse19 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupMusicOnHoldGetInstanceResponse19> GroupMusicOnHoldGetInstanceRequest19Async(this OcipClient client, GroupMusicOnHoldGetInstanceRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupMusicOnHoldGetInstanceResponse19> GroupMusicOnHoldGetInstanceRequest19Async(this OcipClientBase client, GroupMusicOnHoldGetInstanceRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupMusicOnHoldGetInstanceResponse19;
         }
@@ -374,7 +374,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupPolicyGetRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupPolicyGetRequest17Async instead.")]
-        public static async Task<GroupPolicyGetResponse17> GroupPolicyGetRequest17(this OcipClient client, GroupPolicyGetRequest17 request)
+        public static async Task<GroupPolicyGetResponse17> GroupPolicyGetRequest17(this OcipClientBase client, GroupPolicyGetRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupPolicyGetResponse17;
         }
@@ -385,7 +385,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupPolicyGetRequest20 in AS data mode
         /// </summary>
-        public static async Task<GroupPolicyGetResponse17> GroupPolicyGetRequest17Async(this OcipClient client, GroupPolicyGetRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupPolicyGetResponse17> GroupPolicyGetRequest17Async(this OcipClientBase client, GroupPolicyGetRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupPolicyGetResponse17;
         }
@@ -394,7 +394,7 @@ namespace BroadWorksConnector
         /// The response is either GroupPolicyGetResponse20 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupPolicyGetRequest20Async instead.")]
-        public static async Task<GroupPolicyGetResponse20> GroupPolicyGetRequest20(this OcipClient client, GroupPolicyGetRequest20 request)
+        public static async Task<GroupPolicyGetResponse20> GroupPolicyGetRequest20(this OcipClientBase client, GroupPolicyGetRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupPolicyGetResponse20;
         }
@@ -403,7 +403,7 @@ namespace BroadWorksConnector
         /// Requests the Group's policy settings.
         /// The response is either GroupPolicyGetResponse20 or ErrorResponse.
         /// </summary>
-        public static async Task<GroupPolicyGetResponse20> GroupPolicyGetRequest20Async(this OcipClient client, GroupPolicyGetRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupPolicyGetResponse20> GroupPolicyGetRequest20Async(this OcipClientBase client, GroupPolicyGetRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupPolicyGetResponse20;
         }
@@ -417,7 +417,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupPolicyModifyRequest22 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupPolicyModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupPolicyModifyRequest(this OcipClient client, GroupPolicyModifyRequest request)
+        public static async Task<SuccessResponse> GroupPolicyModifyRequest(this OcipClientBase client, GroupPolicyModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -431,7 +431,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupPolicyModifyRequest22 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupPolicyModifyRequestAsync(this OcipClient client, GroupPolicyModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupPolicyModifyRequestAsync(this OcipClientBase client, GroupPolicyModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -442,7 +442,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupPreAlertingAnnouncementGetRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupPreAlertingAnnouncementGetRequestAsync instead.")]
-        public static async Task<GroupPreAlertingAnnouncementGetResponse> GroupPreAlertingAnnouncementGetRequest(this OcipClient client, GroupPreAlertingAnnouncementGetRequest request)
+        public static async Task<GroupPreAlertingAnnouncementGetResponse> GroupPreAlertingAnnouncementGetRequest(this OcipClientBase client, GroupPreAlertingAnnouncementGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupPreAlertingAnnouncementGetResponse;
         }
@@ -453,7 +453,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupPreAlertingAnnouncementGetRequest20 in AS data mode
         /// </summary>
-        public static async Task<GroupPreAlertingAnnouncementGetResponse> GroupPreAlertingAnnouncementGetRequestAsync(this OcipClient client, GroupPreAlertingAnnouncementGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupPreAlertingAnnouncementGetResponse> GroupPreAlertingAnnouncementGetRequestAsync(this OcipClientBase client, GroupPreAlertingAnnouncementGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupPreAlertingAnnouncementGetResponse;
         }
@@ -464,7 +464,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupPreAlertingAnnouncementModifyRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupPreAlertingAnnouncementModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupPreAlertingAnnouncementModifyRequest(this OcipClient client, GroupPreAlertingAnnouncementModifyRequest request)
+        public static async Task<SuccessResponse> GroupPreAlertingAnnouncementModifyRequest(this OcipClientBase client, GroupPreAlertingAnnouncementModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -475,7 +475,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupPreAlertingAnnouncementModifyRequest20 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupPreAlertingAnnouncementModifyRequestAsync(this OcipClient client, GroupPreAlertingAnnouncementModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupPreAlertingAnnouncementModifyRequestAsync(this OcipClientBase client, GroupPreAlertingAnnouncementModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -486,7 +486,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupVoiceMessagingGroupGetVoicePortalBrandingRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceMessagingGroupGetVoicePortalBrandingRequest16Async instead.")]
-        public static async Task<GroupVoiceMessagingGroupGetVoicePortalBrandingResponse16> GroupVoiceMessagingGroupGetVoicePortalBrandingRequest16(this OcipClient client, GroupVoiceMessagingGroupGetVoicePortalBrandingRequest16 request)
+        public static async Task<GroupVoiceMessagingGroupGetVoicePortalBrandingResponse16> GroupVoiceMessagingGroupGetVoicePortalBrandingRequest16(this OcipClientBase client, GroupVoiceMessagingGroupGetVoicePortalBrandingRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupVoiceMessagingGroupGetVoicePortalBrandingResponse16;
         }
@@ -497,7 +497,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupVoiceMessagingGroupGetVoicePortalBrandingRequest20 in AS data mode
         /// </summary>
-        public static async Task<GroupVoiceMessagingGroupGetVoicePortalBrandingResponse16> GroupVoiceMessagingGroupGetVoicePortalBrandingRequest16Async(this OcipClient client, GroupVoiceMessagingGroupGetVoicePortalBrandingRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupVoiceMessagingGroupGetVoicePortalBrandingResponse16> GroupVoiceMessagingGroupGetVoicePortalBrandingRequest16Async(this OcipClientBase client, GroupVoiceMessagingGroupGetVoicePortalBrandingRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupVoiceMessagingGroupGetVoicePortalBrandingResponse16;
         }
@@ -508,7 +508,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupVoiceMessagingGroupGetVoicePortalRequest19sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceMessagingGroupGetVoicePortalRequest17sp4Async instead.")]
-        public static async Task<GroupVoiceMessagingGroupGetVoicePortalResponse17sp4> GroupVoiceMessagingGroupGetVoicePortalRequest17sp4(this OcipClient client, GroupVoiceMessagingGroupGetVoicePortalRequest17sp4 request)
+        public static async Task<GroupVoiceMessagingGroupGetVoicePortalResponse17sp4> GroupVoiceMessagingGroupGetVoicePortalRequest17sp4(this OcipClientBase client, GroupVoiceMessagingGroupGetVoicePortalRequest17sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupVoiceMessagingGroupGetVoicePortalResponse17sp4;
         }
@@ -519,7 +519,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupVoiceMessagingGroupGetVoicePortalRequest19sp1 in AS data mode
         /// </summary>
-        public static async Task<GroupVoiceMessagingGroupGetVoicePortalResponse17sp4> GroupVoiceMessagingGroupGetVoicePortalRequest17sp4Async(this OcipClient client, GroupVoiceMessagingGroupGetVoicePortalRequest17sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupVoiceMessagingGroupGetVoicePortalResponse17sp4> GroupVoiceMessagingGroupGetVoicePortalRequest17sp4Async(this OcipClientBase client, GroupVoiceMessagingGroupGetVoicePortalRequest17sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupVoiceMessagingGroupGetVoicePortalResponse17sp4;
         }
@@ -530,7 +530,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupVoiceMessagingGroupModifyVoicePortalBrandingRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceMessagingGroupModifyVoicePortalBrandingRequest16Async instead.")]
-        public static async Task<SuccessResponse> GroupVoiceMessagingGroupModifyVoicePortalBrandingRequest16(this OcipClient client, GroupVoiceMessagingGroupModifyVoicePortalBrandingRequest16 request)
+        public static async Task<SuccessResponse> GroupVoiceMessagingGroupModifyVoicePortalBrandingRequest16(this OcipClientBase client, GroupVoiceMessagingGroupModifyVoicePortalBrandingRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -541,7 +541,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupVoiceMessagingGroupModifyVoicePortalBrandingRequest20 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupVoiceMessagingGroupModifyVoicePortalBrandingRequest16Async(this OcipClient client, GroupVoiceMessagingGroupModifyVoicePortalBrandingRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupVoiceMessagingGroupModifyVoicePortalBrandingRequest16Async(this OcipClientBase client, GroupVoiceMessagingGroupModifyVoicePortalBrandingRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -552,7 +552,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupVoiceXmlGetInstanceRequest19sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceXmlGetInstanceRequestAsync instead.")]
-        public static async Task<GroupVoiceXmlGetInstanceResponse> GroupVoiceXmlGetInstanceRequest(this OcipClient client, GroupVoiceXmlGetInstanceRequest request)
+        public static async Task<GroupVoiceXmlGetInstanceResponse> GroupVoiceXmlGetInstanceRequest(this OcipClientBase client, GroupVoiceXmlGetInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupVoiceXmlGetInstanceResponse;
         }
@@ -563,7 +563,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupVoiceXmlGetInstanceRequest19sp1 in AS data mode
         /// </summary>
-        public static async Task<GroupVoiceXmlGetInstanceResponse> GroupVoiceXmlGetInstanceRequestAsync(this OcipClient client, GroupVoiceXmlGetInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupVoiceXmlGetInstanceResponse> GroupVoiceXmlGetInstanceRequestAsync(this OcipClientBase client, GroupVoiceXmlGetInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupVoiceXmlGetInstanceResponse;
         }
@@ -574,7 +574,7 @@ namespace BroadWorksConnector
         /// Replaced by: ServiceProviderAdminGetPolicyRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAdminGetPolicyRequest18Async instead.")]
-        public static async Task<ServiceProviderAdminGetPolicyResponse18> ServiceProviderAdminGetPolicyRequest18(this OcipClient client, ServiceProviderAdminGetPolicyRequest18 request)
+        public static async Task<ServiceProviderAdminGetPolicyResponse18> ServiceProviderAdminGetPolicyRequest18(this OcipClientBase client, ServiceProviderAdminGetPolicyRequest18 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAdminGetPolicyResponse18;
         }
@@ -585,7 +585,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: ServiceProviderAdminGetPolicyRequest20 in AS data mode
         /// </summary>
-        public static async Task<ServiceProviderAdminGetPolicyResponse18> ServiceProviderAdminGetPolicyRequest18Async(this OcipClient client, ServiceProviderAdminGetPolicyRequest18 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAdminGetPolicyResponse18> ServiceProviderAdminGetPolicyRequest18Async(this OcipClientBase client, ServiceProviderAdminGetPolicyRequest18 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAdminGetPolicyResponse18;
         }
@@ -602,7 +602,7 @@ namespace BroadWorksConnector
         /// Replaced By : ServiceProviderCommunicationBarringProfileAddRequest19sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileAddRequest17sp3Async instead.")]
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileAddRequest17sp3(this OcipClient client, ServiceProviderCommunicationBarringProfileAddRequest17sp3 request)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileAddRequest17sp3(this OcipClientBase client, ServiceProviderCommunicationBarringProfileAddRequest17sp3 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -619,7 +619,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced By : ServiceProviderCommunicationBarringProfileAddRequest19sp1 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileAddRequest17sp3Async(this OcipClient client, ServiceProviderCommunicationBarringProfileAddRequest17sp3 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderCommunicationBarringProfileAddRequest17sp3Async(this OcipClientBase client, ServiceProviderCommunicationBarringProfileAddRequest17sp3 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -631,7 +631,7 @@ namespace BroadWorksConnector
         /// Replaced By : ServiceProviderCommunicationBarringProfileGetRequest19sp1V2 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileGetRequest17sp3Async instead.")]
-        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse17sp3> ServiceProviderCommunicationBarringProfileGetRequest17sp3(this OcipClient client, ServiceProviderCommunicationBarringProfileGetRequest17sp3 request)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse17sp3> ServiceProviderCommunicationBarringProfileGetRequest17sp3(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetRequest17sp3 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetResponse17sp3;
         }
@@ -643,7 +643,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced By : ServiceProviderCommunicationBarringProfileGetRequest19sp1V2 in AS data mode
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse17sp3> ServiceProviderCommunicationBarringProfileGetRequest17sp3Async(this OcipClient client, ServiceProviderCommunicationBarringProfileGetRequest17sp3 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse17sp3> ServiceProviderCommunicationBarringProfileGetRequest17sp3Async(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetRequest17sp3 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetResponse17sp3;
         }
@@ -655,7 +655,7 @@ namespace BroadWorksConnector
         /// Replaced By : ServiceProviderCommunicationBarringProfileGetRequest19sp1V2 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCommunicationBarringProfileGetRequest19sp1Async instead.")]
-        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse19sp1> ServiceProviderCommunicationBarringProfileGetRequest19sp1(this OcipClient client, ServiceProviderCommunicationBarringProfileGetRequest19sp1 request)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse19sp1> ServiceProviderCommunicationBarringProfileGetRequest19sp1(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetRequest19sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetResponse19sp1;
         }
@@ -667,7 +667,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced By : ServiceProviderCommunicationBarringProfileGetRequest19sp1V2 in AS data mode
         /// </summary>
-        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse19sp1> ServiceProviderCommunicationBarringProfileGetRequest19sp1Async(this OcipClient client, ServiceProviderCommunicationBarringProfileGetRequest19sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCommunicationBarringProfileGetResponse19sp1> ServiceProviderCommunicationBarringProfileGetRequest19sp1Async(this OcipClientBase client, ServiceProviderCommunicationBarringProfileGetRequest19sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCommunicationBarringProfileGetResponse19sp1;
         }
@@ -678,7 +678,7 @@ namespace BroadWorksConnector
         /// Replaced By : ServiceProviderFeatureAccessCodeGetListRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderFeatureAccessCodeGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderFeatureAccessCodeGetListResponse> ServiceProviderFeatureAccessCodeGetListRequest(this OcipClient client, ServiceProviderFeatureAccessCodeGetListRequest request)
+        public static async Task<ServiceProviderFeatureAccessCodeGetListResponse> ServiceProviderFeatureAccessCodeGetListRequest(this OcipClientBase client, ServiceProviderFeatureAccessCodeGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderFeatureAccessCodeGetListResponse;
         }
@@ -689,7 +689,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced By : ServiceProviderFeatureAccessCodeGetListRequest20 in AS data mode
         /// </summary>
-        public static async Task<ServiceProviderFeatureAccessCodeGetListResponse> ServiceProviderFeatureAccessCodeGetListRequestAsync(this OcipClient client, ServiceProviderFeatureAccessCodeGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderFeatureAccessCodeGetListResponse> ServiceProviderFeatureAccessCodeGetListRequestAsync(this OcipClientBase client, ServiceProviderFeatureAccessCodeGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderFeatureAccessCodeGetListResponse;
         }
@@ -699,7 +699,7 @@ namespace BroadWorksConnector
         /// Replaced By : ServiceProviderFeatureAccessCodeModifyListRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderFeatureAccessCodeModifyListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderFeatureAccessCodeModifyListRequest(this OcipClient client, ServiceProviderFeatureAccessCodeModifyListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderFeatureAccessCodeModifyListRequest(this OcipClientBase client, ServiceProviderFeatureAccessCodeModifyListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -709,7 +709,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// Replaced By : ServiceProviderFeatureAccessCodeModifyListRequest20 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderFeatureAccessCodeModifyListRequestAsync(this OcipClient client, ServiceProviderFeatureAccessCodeModifyListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderFeatureAccessCodeModifyListRequestAsync(this OcipClientBase client, ServiceProviderFeatureAccessCodeModifyListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -726,7 +726,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemCommunicationBarringProfileAddRequest19sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCommunicationBarringProfileAddRequest17sp3Async instead.")]
-        public static async Task<SuccessResponse> SystemCommunicationBarringProfileAddRequest17sp3(this OcipClient client, SystemCommunicationBarringProfileAddRequest17sp3 request)
+        public static async Task<SuccessResponse> SystemCommunicationBarringProfileAddRequest17sp3(this OcipClientBase client, SystemCommunicationBarringProfileAddRequest17sp3 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -743,7 +743,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemCommunicationBarringProfileAddRequest19sp1 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemCommunicationBarringProfileAddRequest17sp3Async(this OcipClient client, SystemCommunicationBarringProfileAddRequest17sp3 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemCommunicationBarringProfileAddRequest17sp3Async(this OcipClientBase client, SystemCommunicationBarringProfileAddRequest17sp3 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -755,7 +755,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemCommunicationBarringProfileGetRequest19sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCommunicationBarringProfileGetRequest17sp3Async instead.")]
-        public static async Task<SystemCommunicationBarringProfileGetResponse17sp3> SystemCommunicationBarringProfileGetRequest17sp3(this OcipClient client, SystemCommunicationBarringProfileGetRequest17sp3 request)
+        public static async Task<SystemCommunicationBarringProfileGetResponse17sp3> SystemCommunicationBarringProfileGetRequest17sp3(this OcipClientBase client, SystemCommunicationBarringProfileGetRequest17sp3 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCommunicationBarringProfileGetResponse17sp3;
         }
@@ -767,7 +767,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemCommunicationBarringProfileGetRequest19sp1 in AS data mode
         /// </summary>
-        public static async Task<SystemCommunicationBarringProfileGetResponse17sp3> SystemCommunicationBarringProfileGetRequest17sp3Async(this OcipClient client, SystemCommunicationBarringProfileGetRequest17sp3 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCommunicationBarringProfileGetResponse17sp3> SystemCommunicationBarringProfileGetRequest17sp3Async(this OcipClientBase client, SystemCommunicationBarringProfileGetRequest17sp3 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCommunicationBarringProfileGetResponse17sp3;
         }
@@ -779,7 +779,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemCommunicationBarringProfileGetRequest19sp1V2 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCommunicationBarringProfileGetRequest19sp1Async instead.")]
-        public static async Task<SystemCommunicationBarringProfileGetResponse19sp1> SystemCommunicationBarringProfileGetRequest19sp1(this OcipClient client, SystemCommunicationBarringProfileGetRequest19sp1 request)
+        public static async Task<SystemCommunicationBarringProfileGetResponse19sp1> SystemCommunicationBarringProfileGetRequest19sp1(this OcipClientBase client, SystemCommunicationBarringProfileGetRequest19sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCommunicationBarringProfileGetResponse19sp1;
         }
@@ -791,7 +791,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemCommunicationBarringProfileGetRequest19sp1V2 in AS data mode
         /// </summary>
-        public static async Task<SystemCommunicationBarringProfileGetResponse19sp1> SystemCommunicationBarringProfileGetRequest19sp1Async(this OcipClient client, SystemCommunicationBarringProfileGetRequest19sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCommunicationBarringProfileGetResponse19sp1> SystemCommunicationBarringProfileGetRequest19sp1Async(this OcipClientBase client, SystemCommunicationBarringProfileGetRequest19sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCommunicationBarringProfileGetResponse19sp1;
         }
@@ -801,7 +801,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemConfigurableFileSystemGetRequest23
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemConfigurableFileSystemGetRequestAsync instead.")]
-        public static async Task<SystemConfigurableFileSystemGetResponse> SystemConfigurableFileSystemGetRequest(this OcipClient client, SystemConfigurableFileSystemGetRequest request)
+        public static async Task<SystemConfigurableFileSystemGetResponse> SystemConfigurableFileSystemGetRequest(this OcipClientBase client, SystemConfigurableFileSystemGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemConfigurableFileSystemGetResponse;
         }
@@ -811,7 +811,7 @@ namespace BroadWorksConnector
         /// The response is either SystemConfigurableFileSystemGetResponse or ErrorResponse.
         /// Replaced by: SystemConfigurableFileSystemGetRequest23
         /// </summary>
-        public static async Task<SystemConfigurableFileSystemGetResponse> SystemConfigurableFileSystemGetRequestAsync(this OcipClient client, SystemConfigurableFileSystemGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemConfigurableFileSystemGetResponse> SystemConfigurableFileSystemGetRequestAsync(this OcipClientBase client, SystemConfigurableFileSystemGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemConfigurableFileSystemGetResponse;
         }
@@ -823,7 +823,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemNetworkClassOfServiceGetRequest19sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemNetworkClassOfServiceGetRequest17Async instead.")]
-        public static async Task<SystemNetworkClassOfServiceGetResponse17> SystemNetworkClassOfServiceGetRequest17(this OcipClient client, SystemNetworkClassOfServiceGetRequest17 request)
+        public static async Task<SystemNetworkClassOfServiceGetResponse17> SystemNetworkClassOfServiceGetRequest17(this OcipClientBase client, SystemNetworkClassOfServiceGetRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemNetworkClassOfServiceGetResponse17;
         }
@@ -835,7 +835,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemNetworkClassOfServiceGetRequest19sp1 in AS data mode
         /// </summary>
-        public static async Task<SystemNetworkClassOfServiceGetResponse17> SystemNetworkClassOfServiceGetRequest17Async(this OcipClient client, SystemNetworkClassOfServiceGetRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemNetworkClassOfServiceGetResponse17> SystemNetworkClassOfServiceGetRequest17Async(this OcipClientBase client, SystemNetworkClassOfServiceGetRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemNetworkClassOfServiceGetResponse17;
         }
@@ -846,7 +846,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemPolicyGetDefaultRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPolicyGetDefaultRequest18Async instead.")]
-        public static async Task<SystemPolicyGetDefaultResponse18> SystemPolicyGetDefaultRequest18(this OcipClient client, SystemPolicyGetDefaultRequest18 request)
+        public static async Task<SystemPolicyGetDefaultResponse18> SystemPolicyGetDefaultRequest18(this OcipClientBase client, SystemPolicyGetDefaultRequest18 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemPolicyGetDefaultResponse18;
         }
@@ -857,7 +857,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemPolicyGetDefaultRequest20 in AS data mode
         /// </summary>
-        public static async Task<SystemPolicyGetDefaultResponse18> SystemPolicyGetDefaultRequest18Async(this OcipClient client, SystemPolicyGetDefaultRequest18 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemPolicyGetDefaultResponse18> SystemPolicyGetDefaultRequest18Async(this OcipClientBase client, SystemPolicyGetDefaultRequest18 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemPolicyGetDefaultResponse18;
         }
@@ -868,7 +868,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemPolicyGetDefaultRequest20 in AS mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPolicyGetDefaultRequest19sp1Async instead.")]
-        public static async Task<SystemPolicyGetDefaultResponse19sp1> SystemPolicyGetDefaultRequest19sp1(this OcipClient client, SystemPolicyGetDefaultRequest19sp1 request)
+        public static async Task<SystemPolicyGetDefaultResponse19sp1> SystemPolicyGetDefaultRequest19sp1(this OcipClientBase client, SystemPolicyGetDefaultRequest19sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemPolicyGetDefaultResponse19sp1;
         }
@@ -879,7 +879,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemPolicyGetDefaultRequest20 in AS mode
         /// </summary>
-        public static async Task<SystemPolicyGetDefaultResponse19sp1> SystemPolicyGetDefaultRequest19sp1Async(this OcipClient client, SystemPolicyGetDefaultRequest19sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemPolicyGetDefaultResponse19sp1> SystemPolicyGetDefaultRequest19sp1Async(this OcipClientBase client, SystemPolicyGetDefaultRequest19sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemPolicyGetDefaultResponse19sp1;
         }
@@ -890,7 +890,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemPolicyGetDefaultRequest22 in AS mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPolicyGetDefaultRequest20Async instead.")]
-        public static async Task<SystemPolicyGetDefaultResponse20> SystemPolicyGetDefaultRequest20(this OcipClient client, SystemPolicyGetDefaultRequest20 request)
+        public static async Task<SystemPolicyGetDefaultResponse20> SystemPolicyGetDefaultRequest20(this OcipClientBase client, SystemPolicyGetDefaultRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemPolicyGetDefaultResponse20;
         }
@@ -901,7 +901,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemPolicyGetDefaultRequest22 in AS mode
         /// </summary>
-        public static async Task<SystemPolicyGetDefaultResponse20> SystemPolicyGetDefaultRequest20Async(this OcipClient client, SystemPolicyGetDefaultRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemPolicyGetDefaultResponse20> SystemPolicyGetDefaultRequest20Async(this OcipClientBase client, SystemPolicyGetDefaultRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemPolicyGetDefaultResponse20;
         }
@@ -921,7 +921,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemPolicyModifyDefaultRequest22 in AS mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPolicyModifyDefaultRequest14Async instead.")]
-        public static async Task<SuccessResponse> SystemPolicyModifyDefaultRequest14(this OcipClient client, SystemPolicyModifyDefaultRequest14 request)
+        public static async Task<SuccessResponse> SystemPolicyModifyDefaultRequest14(this OcipClientBase client, SystemPolicyModifyDefaultRequest14 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -941,7 +941,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemPolicyModifyDefaultRequest22 in AS mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemPolicyModifyDefaultRequest14Async(this OcipClient client, SystemPolicyModifyDefaultRequest14 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemPolicyModifyDefaultRequest14Async(this OcipClientBase client, SystemPolicyModifyDefaultRequest14 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -952,7 +952,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTimeZoneGetListRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTimeZoneGetListRequestAsync instead.")]
-        public static async Task<SystemTimeZoneGetListResponse> SystemTimeZoneGetListRequest(this OcipClient client, SystemTimeZoneGetListRequest request)
+        public static async Task<SystemTimeZoneGetListResponse> SystemTimeZoneGetListRequest(this OcipClientBase client, SystemTimeZoneGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemTimeZoneGetListResponse;
         }
@@ -963,7 +963,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemTimeZoneGetListRequest20 in AS data mode
         /// </summary>
-        public static async Task<SystemTimeZoneGetListResponse> SystemTimeZoneGetListRequestAsync(this OcipClient client, SystemTimeZoneGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemTimeZoneGetListResponse> SystemTimeZoneGetListRequestAsync(this OcipClientBase client, SystemTimeZoneGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemTimeZoneGetListResponse;
         }
@@ -974,7 +974,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemVoiceMessagingGroupGetRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemVoiceMessagingGroupGetRequest16sp2Async instead.")]
-        public static async Task<SystemVoiceMessagingGroupGetResponse16sp2> SystemVoiceMessagingGroupGetRequest16sp2(this OcipClient client, SystemVoiceMessagingGroupGetRequest16sp2 request)
+        public static async Task<SystemVoiceMessagingGroupGetResponse16sp2> SystemVoiceMessagingGroupGetRequest16sp2(this OcipClientBase client, SystemVoiceMessagingGroupGetRequest16sp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemVoiceMessagingGroupGetResponse16sp2;
         }
@@ -985,7 +985,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemVoiceMessagingGroupGetRequest20 in AS data mode
         /// </summary>
-        public static async Task<SystemVoiceMessagingGroupGetResponse16sp2> SystemVoiceMessagingGroupGetRequest16sp2Async(this OcipClient client, SystemVoiceMessagingGroupGetRequest16sp2 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemVoiceMessagingGroupGetResponse16sp2> SystemVoiceMessagingGroupGetRequest16sp2Async(this OcipClientBase client, SystemVoiceMessagingGroupGetRequest16sp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemVoiceMessagingGroupGetResponse16sp2;
         }
@@ -997,7 +997,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserCallPoliciesGetRequest19sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallPoliciesGetRequest17Async instead.")]
-        public static async Task<UserCallPoliciesGetResponse17> UserCallPoliciesGetRequest17(this OcipClient client, UserCallPoliciesGetRequest17 request)
+        public static async Task<UserCallPoliciesGetResponse17> UserCallPoliciesGetRequest17(this OcipClientBase client, UserCallPoliciesGetRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallPoliciesGetResponse17;
         }
@@ -1009,7 +1009,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserCallPoliciesGetRequest19sp1 in AS data mode
         /// </summary>
-        public static async Task<UserCallPoliciesGetResponse17> UserCallPoliciesGetRequest17Async(this OcipClient client, UserCallPoliciesGetRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallPoliciesGetResponse17> UserCallPoliciesGetRequest17Async(this OcipClientBase client, UserCallPoliciesGetRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallPoliciesGetResponse17;
         }
@@ -1020,7 +1020,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserFeatureAccessCodeGetListRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserFeatureAccessCodeGetListRequestAsync instead.")]
-        public static async Task<UserFeatureAccessCodeGetListResponse> UserFeatureAccessCodeGetListRequest(this OcipClient client, UserFeatureAccessCodeGetListRequest request)
+        public static async Task<UserFeatureAccessCodeGetListResponse> UserFeatureAccessCodeGetListRequest(this OcipClientBase client, UserFeatureAccessCodeGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserFeatureAccessCodeGetListResponse;
         }
@@ -1031,7 +1031,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserFeatureAccessCodeGetListRequest20 in AS data mode
         /// </summary>
-        public static async Task<UserFeatureAccessCodeGetListResponse> UserFeatureAccessCodeGetListRequestAsync(this OcipClient client, UserFeatureAccessCodeGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserFeatureAccessCodeGetListResponse> UserFeatureAccessCodeGetListRequestAsync(this OcipClientBase client, UserFeatureAccessCodeGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserFeatureAccessCodeGetListResponse;
         }
@@ -1042,7 +1042,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserMusicOnHoldUserGetRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserMusicOnHoldUserGetRequest16Async instead.")]
-        public static async Task<UserMusicOnHoldUserGetResponse16> UserMusicOnHoldUserGetRequest16(this OcipClient client, UserMusicOnHoldUserGetRequest16 request)
+        public static async Task<UserMusicOnHoldUserGetResponse16> UserMusicOnHoldUserGetRequest16(this OcipClientBase client, UserMusicOnHoldUserGetRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserMusicOnHoldUserGetResponse16;
         }
@@ -1053,7 +1053,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserMusicOnHoldUserGetRequest20 in AS data mode
         /// </summary>
-        public static async Task<UserMusicOnHoldUserGetResponse16> UserMusicOnHoldUserGetRequest16Async(this OcipClient client, UserMusicOnHoldUserGetRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<UserMusicOnHoldUserGetResponse16> UserMusicOnHoldUserGetRequest16Async(this OcipClientBase client, UserMusicOnHoldUserGetRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserMusicOnHoldUserGetResponse16;
         }
@@ -1064,7 +1064,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserMusicOnHoldUserModifyRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserMusicOnHoldUserModifyRequest16Async instead.")]
-        public static async Task<SuccessResponse> UserMusicOnHoldUserModifyRequest16(this OcipClient client, UserMusicOnHoldUserModifyRequest16 request)
+        public static async Task<SuccessResponse> UserMusicOnHoldUserModifyRequest16(this OcipClientBase client, UserMusicOnHoldUserModifyRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1075,7 +1075,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserMusicOnHoldUserModifyRequest20 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> UserMusicOnHoldUserModifyRequest16Async(this OcipClient client, UserMusicOnHoldUserModifyRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserMusicOnHoldUserModifyRequest16Async(this OcipClientBase client, UserMusicOnHoldUserModifyRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1086,7 +1086,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserPreAlertingAnnouncementGetRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPreAlertingAnnouncementGetRequestAsync instead.")]
-        public static async Task<UserPreAlertingAnnouncementGetResponse> UserPreAlertingAnnouncementGetRequest(this OcipClient client, UserPreAlertingAnnouncementGetRequest request)
+        public static async Task<UserPreAlertingAnnouncementGetResponse> UserPreAlertingAnnouncementGetRequest(this OcipClientBase client, UserPreAlertingAnnouncementGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserPreAlertingAnnouncementGetResponse;
         }
@@ -1097,7 +1097,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserPreAlertingAnnouncementGetRequest20 in AS data mode
         /// </summary>
-        public static async Task<UserPreAlertingAnnouncementGetResponse> UserPreAlertingAnnouncementGetRequestAsync(this OcipClient client, UserPreAlertingAnnouncementGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserPreAlertingAnnouncementGetResponse> UserPreAlertingAnnouncementGetRequestAsync(this OcipClientBase client, UserPreAlertingAnnouncementGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserPreAlertingAnnouncementGetResponse;
         }
@@ -1108,7 +1108,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserPreAlertingAnnouncementModifyRequest20 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPreAlertingAnnouncementModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyRequest(this OcipClient client, UserPreAlertingAnnouncementModifyRequest request)
+        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyRequest(this OcipClientBase client, UserPreAlertingAnnouncementModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1119,7 +1119,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserPreAlertingAnnouncementModifyRequest20 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyRequestAsync(this OcipClient client, UserPreAlertingAnnouncementModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserPreAlertingAnnouncementModifyRequestAsync(this OcipClientBase client, UserPreAlertingAnnouncementModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1130,7 +1130,7 @@ namespace BroadWorksConnector
         /// Replaced by UserVoiceMessagingUserGetGreetingRequest18sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserVoiceMessagingUserGetGreetingRequest18Async instead.")]
-        public static async Task<UserVoiceMessagingUserGetGreetingResponse18> UserVoiceMessagingUserGetGreetingRequest18(this OcipClient client, UserVoiceMessagingUserGetGreetingRequest18 request)
+        public static async Task<UserVoiceMessagingUserGetGreetingResponse18> UserVoiceMessagingUserGetGreetingRequest18(this OcipClientBase client, UserVoiceMessagingUserGetGreetingRequest18 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserVoiceMessagingUserGetGreetingResponse18;
         }
@@ -1141,7 +1141,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by UserVoiceMessagingUserGetGreetingRequest18sp1 in AS data mode
         /// </summary>
-        public static async Task<UserVoiceMessagingUserGetGreetingResponse18> UserVoiceMessagingUserGetGreetingRequest18Async(this OcipClient client, UserVoiceMessagingUserGetGreetingRequest18 request, CancellationToken cancellationToken = default)
+        public static async Task<UserVoiceMessagingUserGetGreetingResponse18> UserVoiceMessagingUserGetGreetingRequest18Async(this OcipClientBase client, UserVoiceMessagingUserGetGreetingRequest18 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserVoiceMessagingUserGetGreetingResponse18;
         }
@@ -1153,7 +1153,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupFeatureAccessCodeGetRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFeatureAccessCodeGetRequestAsync instead.")]
-        public static async Task<GroupFeatureAccessCodeGetResponse> GroupFeatureAccessCodeGetRequest(this OcipClient client, GroupFeatureAccessCodeGetRequest request)
+        public static async Task<GroupFeatureAccessCodeGetResponse> GroupFeatureAccessCodeGetRequest(this OcipClientBase client, GroupFeatureAccessCodeGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupFeatureAccessCodeGetResponse;
         }
@@ -1165,7 +1165,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupFeatureAccessCodeGetRequest21 in AS data mode
         /// </summary>
-        public static async Task<GroupFeatureAccessCodeGetResponse> GroupFeatureAccessCodeGetRequestAsync(this OcipClient client, GroupFeatureAccessCodeGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupFeatureAccessCodeGetResponse> GroupFeatureAccessCodeGetRequestAsync(this OcipClientBase client, GroupFeatureAccessCodeGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupFeatureAccessCodeGetResponse;
         }
@@ -1177,7 +1177,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupFeatureAccessCodeModifyRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupFeatureAccessCodeModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupFeatureAccessCodeModifyRequest(this OcipClient client, GroupFeatureAccessCodeModifyRequest request)
+        public static async Task<SuccessResponse> GroupFeatureAccessCodeModifyRequest(this OcipClientBase client, GroupFeatureAccessCodeModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1189,7 +1189,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupFeatureAccessCodeModifyRequest21 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupFeatureAccessCodeModifyRequestAsync(this OcipClient client, GroupFeatureAccessCodeModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupFeatureAccessCodeModifyRequestAsync(this OcipClientBase client, GroupFeatureAccessCodeModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1199,7 +1199,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupMusicOnHoldAddInstanceRequest21
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupMusicOnHoldAddInstanceRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupMusicOnHoldAddInstanceRequest20(this OcipClient client, GroupMusicOnHoldAddInstanceRequest20 request)
+        public static async Task<SuccessResponse> GroupMusicOnHoldAddInstanceRequest20(this OcipClientBase client, GroupMusicOnHoldAddInstanceRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1209,7 +1209,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// Replaced by: GroupMusicOnHoldAddInstanceRequest21
         /// </summary>
-        public static async Task<SuccessResponse> GroupMusicOnHoldAddInstanceRequest20Async(this OcipClient client, GroupMusicOnHoldAddInstanceRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupMusicOnHoldAddInstanceRequest20Async(this OcipClientBase client, GroupMusicOnHoldAddInstanceRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1219,7 +1219,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupMusicOnHoldGetInstanceRequest21
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupMusicOnHoldGetInstanceRequest20Async instead.")]
-        public static async Task<GroupMusicOnHoldGetInstanceResponse20> GroupMusicOnHoldGetInstanceRequest20(this OcipClient client, GroupMusicOnHoldGetInstanceRequest20 request)
+        public static async Task<GroupMusicOnHoldGetInstanceResponse20> GroupMusicOnHoldGetInstanceRequest20(this OcipClientBase client, GroupMusicOnHoldGetInstanceRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupMusicOnHoldGetInstanceResponse20;
         }
@@ -1229,7 +1229,7 @@ namespace BroadWorksConnector
         /// The response is either GroupMusicOnHoldGetInstanceResponse20 or ErrorResponse.
         /// Replaced by: GroupMusicOnHoldGetInstanceRequest21
         /// </summary>
-        public static async Task<GroupMusicOnHoldGetInstanceResponse20> GroupMusicOnHoldGetInstanceRequest20Async(this OcipClient client, GroupMusicOnHoldGetInstanceRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupMusicOnHoldGetInstanceResponse20> GroupMusicOnHoldGetInstanceRequest20Async(this OcipClientBase client, GroupMusicOnHoldGetInstanceRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupMusicOnHoldGetInstanceResponse20;
         }
@@ -1239,7 +1239,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupMusicOnHoldModifyInstanceRequest21
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupMusicOnHoldModifyInstanceRequest20Async instead.")]
-        public static async Task<SuccessResponse> GroupMusicOnHoldModifyInstanceRequest20(this OcipClient client, GroupMusicOnHoldModifyInstanceRequest20 request)
+        public static async Task<SuccessResponse> GroupMusicOnHoldModifyInstanceRequest20(this OcipClientBase client, GroupMusicOnHoldModifyInstanceRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1249,7 +1249,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// Replaced by: GroupMusicOnHoldModifyInstanceRequest21
         /// </summary>
-        public static async Task<SuccessResponse> GroupMusicOnHoldModifyInstanceRequest20Async(this OcipClient client, GroupMusicOnHoldModifyInstanceRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupMusicOnHoldModifyInstanceRequest20Async(this OcipClientBase client, GroupMusicOnHoldModifyInstanceRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1260,7 +1260,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupNetworkClassOfServiceAssignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupNetworkClassOfServiceAssignListRequest(this OcipClient client, GroupNetworkClassOfServiceAssignListRequest request)
+        public static async Task<SuccessResponse> GroupNetworkClassOfServiceAssignListRequest(this OcipClientBase client, GroupNetworkClassOfServiceAssignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1271,7 +1271,7 @@ namespace BroadWorksConnector
         /// assignment, for subsequent assignments it is optional.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupNetworkClassOfServiceAssignListRequestAsync(this OcipClient client, GroupNetworkClassOfServiceAssignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupNetworkClassOfServiceAssignListRequestAsync(this OcipClientBase client, GroupNetworkClassOfServiceAssignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1282,7 +1282,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupNetworkClassOfServiceGetAssignedUserListRequestAsync instead.")]
-        public static async Task<GroupNetworkClassOfServiceGetAssignedUserListResponse> GroupNetworkClassOfServiceGetAssignedUserListRequest(this OcipClient client, GroupNetworkClassOfServiceGetAssignedUserListRequest request)
+        public static async Task<GroupNetworkClassOfServiceGetAssignedUserListResponse> GroupNetworkClassOfServiceGetAssignedUserListRequest(this OcipClientBase client, GroupNetworkClassOfServiceGetAssignedUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupNetworkClassOfServiceGetAssignedUserListResponse;
         }
@@ -1293,7 +1293,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupNetworkClassOfServiceGetAssignedUserListResponse
         /// or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupNetworkClassOfServiceGetAssignedUserListResponse> GroupNetworkClassOfServiceGetAssignedUserListRequestAsync(this OcipClient client, GroupNetworkClassOfServiceGetAssignedUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupNetworkClassOfServiceGetAssignedUserListResponse> GroupNetworkClassOfServiceGetAssignedUserListRequestAsync(this OcipClientBase client, GroupNetworkClassOfServiceGetAssignedUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupNetworkClassOfServiceGetAssignedUserListResponse;
         }
@@ -1302,7 +1302,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupNetworkClassOfServiceUnassignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupNetworkClassOfServiceUnassignListRequest(this OcipClient client, GroupNetworkClassOfServiceUnassignListRequest request)
+        public static async Task<SuccessResponse> GroupNetworkClassOfServiceUnassignListRequest(this OcipClientBase client, GroupNetworkClassOfServiceUnassignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1311,7 +1311,7 @@ namespace BroadWorksConnector
         /// Unassign a list of Network Classes of Service from a group.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupNetworkClassOfServiceUnassignListRequestAsync(this OcipClient client, GroupNetworkClassOfServiceUnassignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupNetworkClassOfServiceUnassignListRequestAsync(this OcipClientBase client, GroupNetworkClassOfServiceUnassignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1335,7 +1335,7 @@ namespace BroadWorksConnector
         /// Replaced By: GroupPhoneDirectoryGetPagedSortedListRequest
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupPhoneDirectoryGetListRequest18Async instead.")]
-        public static async Task<GroupPhoneDirectoryGetListResponse18> GroupPhoneDirectoryGetListRequest18(this OcipClient client, GroupPhoneDirectoryGetListRequest18 request)
+        public static async Task<GroupPhoneDirectoryGetListResponse18> GroupPhoneDirectoryGetListRequest18(this OcipClientBase client, GroupPhoneDirectoryGetListRequest18 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupPhoneDirectoryGetListResponse18;
         }
@@ -1359,7 +1359,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced By: GroupPhoneDirectoryGetPagedSortedListRequest
         /// </summary>
-        public static async Task<GroupPhoneDirectoryGetListResponse18> GroupPhoneDirectoryGetListRequest18Async(this OcipClient client, GroupPhoneDirectoryGetListRequest18 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupPhoneDirectoryGetListResponse18> GroupPhoneDirectoryGetListRequest18Async(this OcipClientBase client, GroupPhoneDirectoryGetListRequest18 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupPhoneDirectoryGetListResponse18;
         }
@@ -1369,7 +1369,7 @@ namespace BroadWorksConnector
         /// Replaced by: ServiceProviderIntegratedIMPGetRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderIntegratedIMPGetRequestAsync instead.")]
-        public static async Task<ServiceProviderIntegratedIMPGetResponse> ServiceProviderIntegratedIMPGetRequest(this OcipClient client, ServiceProviderIntegratedIMPGetRequest request)
+        public static async Task<ServiceProviderIntegratedIMPGetResponse> ServiceProviderIntegratedIMPGetRequest(this OcipClientBase client, ServiceProviderIntegratedIMPGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderIntegratedIMPGetResponse;
         }
@@ -1379,7 +1379,7 @@ namespace BroadWorksConnector
         /// The response is either ServiceProviderIntegratedIMPGetResponse or ErrorResponse.
         /// Replaced by: ServiceProviderIntegratedIMPGetRequest21 in AS data mode
         /// </summary>
-        public static async Task<ServiceProviderIntegratedIMPGetResponse> ServiceProviderIntegratedIMPGetRequestAsync(this OcipClient client, ServiceProviderIntegratedIMPGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderIntegratedIMPGetResponse> ServiceProviderIntegratedIMPGetRequestAsync(this OcipClientBase client, ServiceProviderIntegratedIMPGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderIntegratedIMPGetResponse;
         }
@@ -1393,7 +1393,7 @@ namespace BroadWorksConnector
         /// Replaced By : ServiceProviderNetworkClassOfServiceAssignListRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNetworkClassOfServiceAssignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListRequest(this OcipClient client, ServiceProviderNetworkClassOfServiceAssignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListRequest(this OcipClientBase client, ServiceProviderNetworkClassOfServiceAssignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1407,7 +1407,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced By : ServiceProviderNetworkClassOfServiceAssignListRequest21 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListRequestAsync(this OcipClient client, ServiceProviderNetworkClassOfServiceAssignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceAssignListRequestAsync(this OcipClientBase client, ServiceProviderNetworkClassOfServiceAssignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1418,7 +1418,7 @@ namespace BroadWorksConnector
         /// Replaced By : ServiceProviderNetworkClassOfServiceUnassignListRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderNetworkClassOfServiceUnassignListRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceUnassignListRequest(this OcipClient client, ServiceProviderNetworkClassOfServiceUnassignListRequest request)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceUnassignListRequest(this OcipClientBase client, ServiceProviderNetworkClassOfServiceUnassignListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1429,7 +1429,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced By : ServiceProviderNetworkClassOfServiceUnassignListRequest21 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceUnassignListRequestAsync(this OcipClient client, ServiceProviderNetworkClassOfServiceUnassignListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderNetworkClassOfServiceUnassignListRequestAsync(this OcipClientBase client, ServiceProviderNetworkClassOfServiceUnassignListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1440,7 +1440,7 @@ namespace BroadWorksConnector
         /// Replaced By: ServiceProviderServicePackMigrationTaskAddRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskAddRequest(this OcipClient client, ServiceProviderServicePackMigrationTaskAddRequest request)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskAddRequest(this OcipClientBase client, ServiceProviderServicePackMigrationTaskAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1451,7 +1451,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced By: ServiceProviderServicePackMigrationTaskAddRequest21 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskAddRequestAsync(this OcipClient client, ServiceProviderServicePackMigrationTaskAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> ServiceProviderServicePackMigrationTaskAddRequestAsync(this OcipClientBase client, ServiceProviderServicePackMigrationTaskAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1463,7 +1463,7 @@ namespace BroadWorksConnector
         /// Replaced By: ServiceProviderServicePackMigrationTaskGetListRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskGetListRequestAsync instead.")]
-        public static async Task<ServiceProviderServicePackMigrationTaskGetListResponse> ServiceProviderServicePackMigrationTaskGetListRequest(this OcipClient client, ServiceProviderServicePackMigrationTaskGetListRequest request)
+        public static async Task<ServiceProviderServicePackMigrationTaskGetListResponse> ServiceProviderServicePackMigrationTaskGetListRequest(this OcipClientBase client, ServiceProviderServicePackMigrationTaskGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServicePackMigrationTaskGetListResponse;
         }
@@ -1475,7 +1475,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced By: ServiceProviderServicePackMigrationTaskGetListRequest21 in AS data mode
         /// </summary>
-        public static async Task<ServiceProviderServicePackMigrationTaskGetListResponse> ServiceProviderServicePackMigrationTaskGetListRequestAsync(this OcipClient client, ServiceProviderServicePackMigrationTaskGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServicePackMigrationTaskGetListResponse> ServiceProviderServicePackMigrationTaskGetListRequestAsync(this OcipClientBase client, ServiceProviderServicePackMigrationTaskGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServicePackMigrationTaskGetListResponse;
         }
@@ -1487,7 +1487,7 @@ namespace BroadWorksConnector
         /// Replaced By: ServiceProviderServicePackMigrationTaskGetRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderServicePackMigrationTaskGetRequest14sp4Async instead.")]
-        public static async Task<ServiceProviderServicePackMigrationTaskGetResponse14sp4> ServiceProviderServicePackMigrationTaskGetRequest14sp4(this OcipClient client, ServiceProviderServicePackMigrationTaskGetRequest14sp4 request)
+        public static async Task<ServiceProviderServicePackMigrationTaskGetResponse14sp4> ServiceProviderServicePackMigrationTaskGetRequest14sp4(this OcipClientBase client, ServiceProviderServicePackMigrationTaskGetRequest14sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderServicePackMigrationTaskGetResponse14sp4;
         }
@@ -1499,7 +1499,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced By: ServiceProviderServicePackMigrationTaskGetRequest21 in AS data mode
         /// </summary>
-        public static async Task<ServiceProviderServicePackMigrationTaskGetResponse14sp4> ServiceProviderServicePackMigrationTaskGetRequest14sp4Async(this OcipClient client, ServiceProviderServicePackMigrationTaskGetRequest14sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderServicePackMigrationTaskGetResponse14sp4> ServiceProviderServicePackMigrationTaskGetRequest14sp4Async(this OcipClientBase client, ServiceProviderServicePackMigrationTaskGetRequest14sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderServicePackMigrationTaskGetResponse14sp4;
         }
@@ -1509,7 +1509,7 @@ namespace BroadWorksConnector
         /// Replaced by:SystemEnhancedCallLogsGetRequest20sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemEnhancedCallLogsGetRequest17sp4Async instead.")]
-        public static async Task<SystemEnhancedCallLogsGetResponse17sp4> SystemEnhancedCallLogsGetRequest17sp4(this OcipClient client, SystemEnhancedCallLogsGetRequest17sp4 request)
+        public static async Task<SystemEnhancedCallLogsGetResponse17sp4> SystemEnhancedCallLogsGetRequest17sp4(this OcipClientBase client, SystemEnhancedCallLogsGetRequest17sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemEnhancedCallLogsGetResponse17sp4;
         }
@@ -1519,7 +1519,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemEnhancedCallLogsGetResponse17sp4 or an ErrorResponse.
         /// Replaced by:SystemEnhancedCallLogsGetRequest20sp1 in AS data mode
         /// </summary>
-        public static async Task<SystemEnhancedCallLogsGetResponse17sp4> SystemEnhancedCallLogsGetRequest17sp4Async(this OcipClient client, SystemEnhancedCallLogsGetRequest17sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemEnhancedCallLogsGetResponse17sp4> SystemEnhancedCallLogsGetRequest17sp4Async(this OcipClientBase client, SystemEnhancedCallLogsGetRequest17sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemEnhancedCallLogsGetResponse17sp4;
         }
@@ -1530,7 +1530,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemFeatureAccessCodeGetListRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemFeatureAccessCodeGetListRequestAsync instead.")]
-        public static async Task<SystemFeatureAccessCodeGetListResponse> SystemFeatureAccessCodeGetListRequest(this OcipClient client, SystemFeatureAccessCodeGetListRequest request)
+        public static async Task<SystemFeatureAccessCodeGetListResponse> SystemFeatureAccessCodeGetListRequest(this OcipClientBase client, SystemFeatureAccessCodeGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemFeatureAccessCodeGetListResponse;
         }
@@ -1541,7 +1541,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemFeatureAccessCodeGetListRequest21 in AS data mode
         /// </summary>
-        public static async Task<SystemFeatureAccessCodeGetListResponse> SystemFeatureAccessCodeGetListRequestAsync(this OcipClient client, SystemFeatureAccessCodeGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemFeatureAccessCodeGetListResponse> SystemFeatureAccessCodeGetListRequestAsync(this OcipClientBase client, SystemFeatureAccessCodeGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemFeatureAccessCodeGetListResponse;
         }
@@ -1552,7 +1552,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemFeatureAccessCodeModifyListRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemFeatureAccessCodeModifyListRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemFeatureAccessCodeModifyListRequest(this OcipClient client, SystemFeatureAccessCodeModifyListRequest request)
+        public static async Task<SuccessResponse> SystemFeatureAccessCodeModifyListRequest(this OcipClientBase client, SystemFeatureAccessCodeModifyListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1563,7 +1563,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemFeatureAccessCodeModifyListRequest21 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemFeatureAccessCodeModifyListRequestAsync(this OcipClient client, SystemFeatureAccessCodeModifyListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemFeatureAccessCodeModifyListRequestAsync(this OcipClientBase client, SystemFeatureAccessCodeModifyListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1573,7 +1573,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemHuntGroupGetRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemHuntGroupGetRequest17Async instead.")]
-        public static async Task<SystemHuntGroupGetResponse> SystemHuntGroupGetRequest17(this OcipClient client, SystemHuntGroupGetRequest17 request)
+        public static async Task<SystemHuntGroupGetResponse> SystemHuntGroupGetRequest17(this OcipClientBase client, SystemHuntGroupGetRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemHuntGroupGetResponse;
         }
@@ -1583,7 +1583,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemHuntGroupGetResponse or an ErrorResponse.
         /// Replaced by: SystemHuntGroupGetRequest21 in AS data mode
         /// </summary>
-        public static async Task<SystemHuntGroupGetResponse> SystemHuntGroupGetRequest17Async(this OcipClient client, SystemHuntGroupGetRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemHuntGroupGetResponse> SystemHuntGroupGetRequest17Async(this OcipClientBase client, SystemHuntGroupGetRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemHuntGroupGetResponse;
         }
@@ -1593,7 +1593,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemHuntGroupModifyRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemHuntGroupModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemHuntGroupModifyRequest(this OcipClient client, SystemHuntGroupModifyRequest request)
+        public static async Task<SuccessResponse> SystemHuntGroupModifyRequest(this OcipClientBase client, SystemHuntGroupModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1603,7 +1603,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// Replaced by: SystemHuntGroupModifyRequest21 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemHuntGroupModifyRequestAsync(this OcipClient client, SystemHuntGroupModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemHuntGroupModifyRequestAsync(this OcipClientBase client, SystemHuntGroupModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1614,7 +1614,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemIntegratedIMPGetRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemIntegratedIMPGetRequest19Async instead.")]
-        public static async Task<SystemIntegratedIMPGetResponse19> SystemIntegratedIMPGetRequest19(this OcipClient client, SystemIntegratedIMPGetRequest19 request)
+        public static async Task<SystemIntegratedIMPGetResponse19> SystemIntegratedIMPGetRequest19(this OcipClientBase client, SystemIntegratedIMPGetRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemIntegratedIMPGetResponse19;
         }
@@ -1625,7 +1625,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemIntegratedIMPGetRequest21 in AS data mode
         /// </summary>
-        public static async Task<SystemIntegratedIMPGetResponse19> SystemIntegratedIMPGetRequest19Async(this OcipClient client, SystemIntegratedIMPGetRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemIntegratedIMPGetResponse19> SystemIntegratedIMPGetRequest19Async(this OcipClientBase client, SystemIntegratedIMPGetRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemIntegratedIMPGetResponse19;
         }
@@ -1636,7 +1636,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemLicensingGetSystemLicenseListRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemLicensingGetSystemLicenseListRequestAsync instead.")]
-        public static async Task<SystemLicensingGetSystemLicenseListResponse> SystemLicensingGetSystemLicenseListRequest(this OcipClient client, SystemLicensingGetSystemLicenseListRequest request)
+        public static async Task<SystemLicensingGetSystemLicenseListResponse> SystemLicensingGetSystemLicenseListRequest(this OcipClientBase client, SystemLicensingGetSystemLicenseListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemLicensingGetSystemLicenseListResponse;
         }
@@ -1647,7 +1647,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemLicensingGetSystemLicenseListRequest21 in AS data mode
         /// </summary>
-        public static async Task<SystemLicensingGetSystemLicenseListResponse> SystemLicensingGetSystemLicenseListRequestAsync(this OcipClient client, SystemLicensingGetSystemLicenseListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemLicensingGetSystemLicenseListResponse> SystemLicensingGetSystemLicenseListRequestAsync(this OcipClientBase client, SystemLicensingGetSystemLicenseListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemLicensingGetSystemLicenseListResponse;
         }
@@ -1658,7 +1658,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemLicensingGetSystemLicenseListRequest21sp1.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemLicensingGetSystemLicenseListRequest19sp1Async instead.")]
-        public static async Task<SystemLicensingGetSystemLicenseListResponse21> SystemLicensingGetSystemLicenseListRequest19sp1(this OcipClient client, SystemLicensingGetSystemLicenseListRequest19sp1 request)
+        public static async Task<SystemLicensingGetSystemLicenseListResponse21> SystemLicensingGetSystemLicenseListRequest19sp1(this OcipClientBase client, SystemLicensingGetSystemLicenseListRequest19sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemLicensingGetSystemLicenseListResponse21;
         }
@@ -1669,7 +1669,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemLicensingGetSystemLicenseListRequest21sp1.
         /// </summary>
-        public static async Task<SystemLicensingGetSystemLicenseListResponse21> SystemLicensingGetSystemLicenseListRequest19sp1Async(this OcipClient client, SystemLicensingGetSystemLicenseListRequest19sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemLicensingGetSystemLicenseListResponse21> SystemLicensingGetSystemLicenseListRequest19sp1Async(this OcipClientBase client, SystemLicensingGetSystemLicenseListRequest19sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemLicensingGetSystemLicenseListResponse21;
         }
@@ -1680,7 +1680,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemLicensingGetSystemLicenseListRequest21p1.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemLicensingGetSystemLicenseListRequest21Async instead.")]
-        public static async Task<SystemLicensingGetSystemLicenseListResponse21> SystemLicensingGetSystemLicenseListRequest21(this OcipClient client, SystemLicensingGetSystemLicenseListRequest21 request)
+        public static async Task<SystemLicensingGetSystemLicenseListResponse21> SystemLicensingGetSystemLicenseListRequest21(this OcipClientBase client, SystemLicensingGetSystemLicenseListRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemLicensingGetSystemLicenseListResponse21;
         }
@@ -1691,7 +1691,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemLicensingGetSystemLicenseListRequest21p1.
         /// </summary>
-        public static async Task<SystemLicensingGetSystemLicenseListResponse21> SystemLicensingGetSystemLicenseListRequest21Async(this OcipClient client, SystemLicensingGetSystemLicenseListRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemLicensingGetSystemLicenseListResponse21> SystemLicensingGetSystemLicenseListRequest21Async(this OcipClientBase client, SystemLicensingGetSystemLicenseListRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemLicensingGetSystemLicenseListResponse21;
         }
@@ -1702,7 +1702,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemLicensingGetSystemLicenseListRequest22.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemLicensingGetSystemLicenseListRequest21sp1Async instead.")]
-        public static async Task<SystemLicensingGetSystemLicenseListResponse21sp1> SystemLicensingGetSystemLicenseListRequest21sp1(this OcipClient client, SystemLicensingGetSystemLicenseListRequest21sp1 request)
+        public static async Task<SystemLicensingGetSystemLicenseListResponse21sp1> SystemLicensingGetSystemLicenseListRequest21sp1(this OcipClientBase client, SystemLicensingGetSystemLicenseListRequest21sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemLicensingGetSystemLicenseListResponse21sp1;
         }
@@ -1713,7 +1713,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemLicensingGetSystemLicenseListRequest22.
         /// </summary>
-        public static async Task<SystemLicensingGetSystemLicenseListResponse21sp1> SystemLicensingGetSystemLicenseListRequest21sp1Async(this OcipClient client, SystemLicensingGetSystemLicenseListRequest21sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemLicensingGetSystemLicenseListResponse21sp1> SystemLicensingGetSystemLicenseListRequest21sp1Async(this OcipClientBase client, SystemLicensingGetSystemLicenseListRequest21sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemLicensingGetSystemLicenseListResponse21sp1;
         }
@@ -1723,7 +1723,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemNumberActivationGetRequest21
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemNumberActivationGetRequest18sp1Async instead.")]
-        public static async Task<SystemNumberActivationGetResponse18sp1> SystemNumberActivationGetRequest18sp1(this OcipClient client, SystemNumberActivationGetRequest18sp1 request)
+        public static async Task<SystemNumberActivationGetResponse18sp1> SystemNumberActivationGetRequest18sp1(this OcipClientBase client, SystemNumberActivationGetRequest18sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemNumberActivationGetResponse18sp1;
         }
@@ -1733,7 +1733,7 @@ namespace BroadWorksConnector
         /// The response is either SystemNumberActivationGetResponse18sp1 or ErrorResponse.
         /// Replaced by: SystemNumberActivationGetRequest21
         /// </summary>
-        public static async Task<SystemNumberActivationGetResponse18sp1> SystemNumberActivationGetRequest18sp1Async(this OcipClient client, SystemNumberActivationGetRequest18sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemNumberActivationGetResponse18sp1> SystemNumberActivationGetRequest18sp1Async(this OcipClientBase client, SystemNumberActivationGetRequest18sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemNumberActivationGetResponse18sp1;
         }
@@ -1744,7 +1744,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemSMPPGetRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemSMPPGetRequest14sp5Async instead.")]
-        public static async Task<SystemSMPPGetResponse14sp5> SystemSMPPGetRequest14sp5(this OcipClient client, SystemSMPPGetRequest14sp5 request)
+        public static async Task<SystemSMPPGetResponse14sp5> SystemSMPPGetRequest14sp5(this OcipClientBase client, SystemSMPPGetRequest14sp5 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemSMPPGetResponse14sp5;
         }
@@ -1755,7 +1755,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemSMPPGetRequest21 in AS data mode
         /// </summary>
-        public static async Task<SystemSMPPGetResponse14sp5> SystemSMPPGetRequest14sp5Async(this OcipClient client, SystemSMPPGetRequest14sp5 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemSMPPGetResponse14sp5> SystemSMPPGetRequest14sp5Async(this OcipClientBase client, SystemSMPPGetRequest14sp5 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemSMPPGetResponse14sp5;
         }
@@ -1766,7 +1766,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserAlternateNumbersGetRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserAlternateNumbersGetRequest17Async instead.")]
-        public static async Task<UserAlternateNumbersGetResponse17> UserAlternateNumbersGetRequest17(this OcipClient client, UserAlternateNumbersGetRequest17 request)
+        public static async Task<UserAlternateNumbersGetResponse17> UserAlternateNumbersGetRequest17(this OcipClientBase client, UserAlternateNumbersGetRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserAlternateNumbersGetResponse17;
         }
@@ -1777,7 +1777,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserAlternateNumbersGetRequest21 in AS data mode
         /// </summary>
-        public static async Task<UserAlternateNumbersGetResponse17> UserAlternateNumbersGetRequest17Async(this OcipClient client, UserAlternateNumbersGetRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<UserAlternateNumbersGetResponse17> UserAlternateNumbersGetRequest17Async(this OcipClientBase client, UserAlternateNumbersGetRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserAlternateNumbersGetResponse17;
         }
@@ -1787,7 +1787,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserBroadWorksAnywhereGetSelectiveCriteriaRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserBroadWorksAnywhereGetSelectiveCriteriaRequest16Async instead.")]
-        public static async Task<UserBroadWorksAnywhereGetSelectiveCriteriaResponse16> UserBroadWorksAnywhereGetSelectiveCriteriaRequest16(this OcipClient client, UserBroadWorksAnywhereGetSelectiveCriteriaRequest16 request)
+        public static async Task<UserBroadWorksAnywhereGetSelectiveCriteriaResponse16> UserBroadWorksAnywhereGetSelectiveCriteriaRequest16(this OcipClientBase client, UserBroadWorksAnywhereGetSelectiveCriteriaRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserBroadWorksAnywhereGetSelectiveCriteriaResponse16;
         }
@@ -1797,7 +1797,7 @@ namespace BroadWorksConnector
         /// The response is either a UserBroadWorksAnywhereGetSelectiveCriteriaResponse16 or an ErrorResponse.
         /// Replaced by: UserBroadWorksAnywhereGetSelectiveCriteriaRequest21 in AS data mode
         /// </summary>
-        public static async Task<UserBroadWorksAnywhereGetSelectiveCriteriaResponse16> UserBroadWorksAnywhereGetSelectiveCriteriaRequest16Async(this OcipClient client, UserBroadWorksAnywhereGetSelectiveCriteriaRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<UserBroadWorksAnywhereGetSelectiveCriteriaResponse16> UserBroadWorksAnywhereGetSelectiveCriteriaRequest16Async(this OcipClientBase client, UserBroadWorksAnywhereGetSelectiveCriteriaRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserBroadWorksAnywhereGetSelectiveCriteriaResponse16;
         }
@@ -1807,7 +1807,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserCallForwardingSelectiveGetCriteriaRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallForwardingSelectiveGetCriteriaRequest16Async instead.")]
-        public static async Task<UserCallForwardingSelectiveGetCriteriaResponse16> UserCallForwardingSelectiveGetCriteriaRequest16(this OcipClient client, UserCallForwardingSelectiveGetCriteriaRequest16 request)
+        public static async Task<UserCallForwardingSelectiveGetCriteriaResponse16> UserCallForwardingSelectiveGetCriteriaRequest16(this OcipClientBase client, UserCallForwardingSelectiveGetCriteriaRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallForwardingSelectiveGetCriteriaResponse16;
         }
@@ -1817,7 +1817,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallForwardingSelectiveGetCriteriaResponse16 or an ErrorResponse.
         /// Replaced by: UserCallForwardingSelectiveGetCriteriaRequest21 in AS data mode
         /// </summary>
-        public static async Task<UserCallForwardingSelectiveGetCriteriaResponse16> UserCallForwardingSelectiveGetCriteriaRequest16Async(this OcipClient client, UserCallForwardingSelectiveGetCriteriaRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallForwardingSelectiveGetCriteriaResponse16> UserCallForwardingSelectiveGetCriteriaRequest16Async(this OcipClientBase client, UserCallForwardingSelectiveGetCriteriaRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallForwardingSelectiveGetCriteriaResponse16;
         }
@@ -1827,7 +1827,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserCallNotifyGetCriteriaRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallNotifyGetCriteriaRequest16Async instead.")]
-        public static async Task<UserCallNotifyGetCriteriaResponse16> UserCallNotifyGetCriteriaRequest16(this OcipClient client, UserCallNotifyGetCriteriaRequest16 request)
+        public static async Task<UserCallNotifyGetCriteriaResponse16> UserCallNotifyGetCriteriaRequest16(this OcipClientBase client, UserCallNotifyGetCriteriaRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallNotifyGetCriteriaResponse16;
         }
@@ -1837,7 +1837,7 @@ namespace BroadWorksConnector
         /// The response is either a UserCallNotifyGetCriteriaResponse16 or an ErrorResponse.
         /// Replaced by: UserCallNotifyGetCriteriaRequest21 in AS data mode
         /// </summary>
-        public static async Task<UserCallNotifyGetCriteriaResponse16> UserCallNotifyGetCriteriaRequest16Async(this OcipClient client, UserCallNotifyGetCriteriaRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallNotifyGetCriteriaResponse16> UserCallNotifyGetCriteriaRequest16Async(this OcipClientBase client, UserCallNotifyGetCriteriaRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallNotifyGetCriteriaResponse16;
         }
@@ -1849,7 +1849,7 @@ namespace BroadWorksConnector
         /// Replaced by UserHotelingGuestModifyRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserHotelingGuestModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserHotelingGuestModifyRequest(this OcipClient client, UserHotelingGuestModifyRequest request)
+        public static async Task<SuccessResponse> UserHotelingGuestModifyRequest(this OcipClientBase client, UserHotelingGuestModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1861,7 +1861,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by UserHotelingGuestModifyRequest21 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> UserHotelingGuestModifyRequestAsync(this OcipClient client, UserHotelingGuestModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserHotelingGuestModifyRequestAsync(this OcipClientBase client, UserHotelingGuestModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -1871,7 +1871,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserPreAlertingAnnouncementGetCriteriaRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPreAlertingAnnouncementGetCriteriaRequestAsync instead.")]
-        public static async Task<UserPreAlertingAnnouncementGetCriteriaResponse> UserPreAlertingAnnouncementGetCriteriaRequest(this OcipClient client, UserPreAlertingAnnouncementGetCriteriaRequest request)
+        public static async Task<UserPreAlertingAnnouncementGetCriteriaResponse> UserPreAlertingAnnouncementGetCriteriaRequest(this OcipClientBase client, UserPreAlertingAnnouncementGetCriteriaRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserPreAlertingAnnouncementGetCriteriaResponse;
         }
@@ -1881,7 +1881,7 @@ namespace BroadWorksConnector
         /// The response is either a UserPreAlertingAnnouncementGetCriteriaResponse or an ErrorResponse.
         /// Replaced by: UserPreAlertingAnnouncementGetCriteriaRequest21 in AS data mode
         /// </summary>
-        public static async Task<UserPreAlertingAnnouncementGetCriteriaResponse> UserPreAlertingAnnouncementGetCriteriaRequestAsync(this OcipClient client, UserPreAlertingAnnouncementGetCriteriaRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserPreAlertingAnnouncementGetCriteriaResponse> UserPreAlertingAnnouncementGetCriteriaRequestAsync(this OcipClientBase client, UserPreAlertingAnnouncementGetCriteriaRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserPreAlertingAnnouncementGetCriteriaResponse;
         }
@@ -1891,7 +1891,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserPriorityAlertGetCriteriaRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserPriorityAlertGetCriteriaRequest16Async instead.")]
-        public static async Task<UserPriorityAlertGetCriteriaResponse16> UserPriorityAlertGetCriteriaRequest16(this OcipClient client, UserPriorityAlertGetCriteriaRequest16 request)
+        public static async Task<UserPriorityAlertGetCriteriaResponse16> UserPriorityAlertGetCriteriaRequest16(this OcipClientBase client, UserPriorityAlertGetCriteriaRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserPriorityAlertGetCriteriaResponse16;
         }
@@ -1901,7 +1901,7 @@ namespace BroadWorksConnector
         /// The response is either a UserPriorityAlertGetCriteriaResponse16 or an ErrorResponse.
         /// Replaced by: UserPriorityAlertGetCriteriaRequest21 in AS data mode
         /// </summary>
-        public static async Task<UserPriorityAlertGetCriteriaResponse16> UserPriorityAlertGetCriteriaRequest16Async(this OcipClient client, UserPriorityAlertGetCriteriaRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<UserPriorityAlertGetCriteriaResponse16> UserPriorityAlertGetCriteriaRequest16Async(this OcipClientBase client, UserPriorityAlertGetCriteriaRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserPriorityAlertGetCriteriaResponse16;
         }
@@ -1912,7 +1912,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserRouteListGetRequest22
         /// </summary>
         [Obsolete("This method is deprecated. Use UserRouteListGetRequestAsync instead.")]
-        public static async Task<UserRouteListGetResponse> UserRouteListGetRequest(this OcipClient client, UserRouteListGetRequest request)
+        public static async Task<UserRouteListGetResponse> UserRouteListGetRequest(this OcipClientBase client, UserRouteListGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserRouteListGetResponse;
         }
@@ -1923,7 +1923,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserRouteListGetRequest22
         /// </summary>
-        public static async Task<UserRouteListGetResponse> UserRouteListGetRequestAsync(this OcipClient client, UserRouteListGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserRouteListGetResponse> UserRouteListGetRequestAsync(this OcipClientBase client, UserRouteListGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserRouteListGetResponse;
         }
@@ -1933,7 +1933,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserSelectiveCallAcceptanceGetCriteriaRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSelectiveCallAcceptanceGetCriteriaRequest16Async instead.")]
-        public static async Task<UserSelectiveCallAcceptanceGetCriteriaResponse16> UserSelectiveCallAcceptanceGetCriteriaRequest16(this OcipClient client, UserSelectiveCallAcceptanceGetCriteriaRequest16 request)
+        public static async Task<UserSelectiveCallAcceptanceGetCriteriaResponse16> UserSelectiveCallAcceptanceGetCriteriaRequest16(this OcipClientBase client, UserSelectiveCallAcceptanceGetCriteriaRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserSelectiveCallAcceptanceGetCriteriaResponse16;
         }
@@ -1943,7 +1943,7 @@ namespace BroadWorksConnector
         /// The response is either a UserSelectiveCallAcceptanceGetCriteriaResponse16 or an ErrorResponse.
         /// Replaced by: UserSelectiveCallAcceptanceGetCriteriaRequest21 in AS data mode
         /// </summary>
-        public static async Task<UserSelectiveCallAcceptanceGetCriteriaResponse16> UserSelectiveCallAcceptanceGetCriteriaRequest16Async(this OcipClient client, UserSelectiveCallAcceptanceGetCriteriaRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<UserSelectiveCallAcceptanceGetCriteriaResponse16> UserSelectiveCallAcceptanceGetCriteriaRequest16Async(this OcipClientBase client, UserSelectiveCallAcceptanceGetCriteriaRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserSelectiveCallAcceptanceGetCriteriaResponse16;
         }
@@ -1953,7 +1953,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserSelectiveCallRejectionGetCriteriaRequest21 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSelectiveCallRejectionGetCriteriaRequest16sp1Async instead.")]
-        public static async Task<UserSelectiveCallRejectionGetCriteriaResponse16sp1> UserSelectiveCallRejectionGetCriteriaRequest16sp1(this OcipClient client, UserSelectiveCallRejectionGetCriteriaRequest16sp1 request)
+        public static async Task<UserSelectiveCallRejectionGetCriteriaResponse16sp1> UserSelectiveCallRejectionGetCriteriaRequest16sp1(this OcipClientBase client, UserSelectiveCallRejectionGetCriteriaRequest16sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserSelectiveCallRejectionGetCriteriaResponse16sp1;
         }
@@ -1963,7 +1963,7 @@ namespace BroadWorksConnector
         /// The response is either a UserSelectiveCallRejectionGetCriteriaResponse16sp1 or an ErrorResponse.
         /// Replaced by: UserSelectiveCallRejectionGetCriteriaRequest21 in AS data mode
         /// </summary>
-        public static async Task<UserSelectiveCallRejectionGetCriteriaResponse16sp1> UserSelectiveCallRejectionGetCriteriaRequest16sp1Async(this OcipClient client, UserSelectiveCallRejectionGetCriteriaRequest16sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<UserSelectiveCallRejectionGetCriteriaResponse16sp1> UserSelectiveCallRejectionGetCriteriaRequest16sp1Async(this OcipClientBase client, UserSelectiveCallRejectionGetCriteriaRequest16sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserSelectiveCallRejectionGetCriteriaResponse16sp1;
         }
@@ -1972,7 +1972,7 @@ namespace BroadWorksConnector
         /// The response is either AuthenticationResponse or ErrorResponse
         /// </summary>
         [Obsolete("This method is deprecated. Use AuthenticationRequestAsync instead.")]
-        public static async Task<AuthenticationResponse> AuthenticationRequest(this OcipClient client, AuthenticationRequest request)
+        public static async Task<AuthenticationResponse> AuthenticationRequest(this OcipClientBase client, AuthenticationRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as AuthenticationResponse;
         }
@@ -1981,7 +1981,7 @@ namespace BroadWorksConnector
         /// AuthenticationRequest is 1st stage of the 2 stage OCI login process.
         /// The response is either AuthenticationResponse or ErrorResponse
         /// </summary>
-        public static async Task<AuthenticationResponse> AuthenticationRequestAsync(this OcipClient client, AuthenticationRequest request, CancellationToken cancellationToken = default)
+        public static async Task<AuthenticationResponse> AuthenticationRequestAsync(this OcipClientBase client, AuthenticationRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as AuthenticationResponse;
         }
@@ -1995,7 +1995,7 @@ namespace BroadWorksConnector
         /// Replaced By: EnterprisePhoneDirectoryGetPagedSortedListRequest
         /// </summary>
         [Obsolete("This method is deprecated. Use EnterprisePhoneDirectoryGetListRequest18Async instead.")]
-        public static async Task<EnterprisePhoneDirectoryGetListResponse18> EnterprisePhoneDirectoryGetListRequest18(this OcipClient client, EnterprisePhoneDirectoryGetListRequest18 request)
+        public static async Task<EnterprisePhoneDirectoryGetListResponse18> EnterprisePhoneDirectoryGetListRequest18(this OcipClientBase client, EnterprisePhoneDirectoryGetListRequest18 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as EnterprisePhoneDirectoryGetListResponse18;
         }
@@ -2009,7 +2009,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced By: EnterprisePhoneDirectoryGetPagedSortedListRequest
         /// </summary>
-        public static async Task<EnterprisePhoneDirectoryGetListResponse18> EnterprisePhoneDirectoryGetListRequest18Async(this OcipClient client, EnterprisePhoneDirectoryGetListRequest18 request, CancellationToken cancellationToken = default)
+        public static async Task<EnterprisePhoneDirectoryGetListResponse18> EnterprisePhoneDirectoryGetListRequest18Async(this OcipClientBase client, EnterprisePhoneDirectoryGetListRequest18 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as EnterprisePhoneDirectoryGetListResponse18;
         }
@@ -2022,7 +2022,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupAccessDeviceGetUserListRequest21sp1 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAccessDeviceGetUserListRequestAsync instead.")]
-        public static async Task<GroupAccessDeviceGetUserListResponse> GroupAccessDeviceGetUserListRequest(this OcipClient client, GroupAccessDeviceGetUserListRequest request)
+        public static async Task<GroupAccessDeviceGetUserListResponse> GroupAccessDeviceGetUserListRequest(this OcipClientBase client, GroupAccessDeviceGetUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAccessDeviceGetUserListResponse;
         }
@@ -2035,7 +2035,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupAccessDeviceGetUserListRequest21sp1 in AS data mode.
         /// </summary>
-        public static async Task<GroupAccessDeviceGetUserListResponse> GroupAccessDeviceGetUserListRequestAsync(this OcipClient client, GroupAccessDeviceGetUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAccessDeviceGetUserListResponse> GroupAccessDeviceGetUserListRequestAsync(this OcipClientBase client, GroupAccessDeviceGetUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAccessDeviceGetUserListResponse;
         }
@@ -2045,7 +2045,7 @@ namespace BroadWorksConnector
         /// Replaced by GroupAdminGetRequest21sp1.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupAdminGetRequestAsync instead.")]
-        public static async Task<GroupAdminGetResponse> GroupAdminGetRequest(this OcipClient client, GroupAdminGetRequest request)
+        public static async Task<GroupAdminGetResponse> GroupAdminGetRequest(this OcipClientBase client, GroupAdminGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupAdminGetResponse;
         }
@@ -2055,7 +2055,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupAdminGetResponse or an ErrorResponse.
         /// Replaced by GroupAdminGetRequest21sp1.
         /// </summary>
-        public static async Task<GroupAdminGetResponse> GroupAdminGetRequestAsync(this OcipClient client, GroupAdminGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupAdminGetResponse> GroupAdminGetRequestAsync(this OcipClientBase client, GroupAdminGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupAdminGetResponse;
         }
@@ -2064,7 +2064,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterGetAnnouncementResponse19 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetAnnouncementRequest19Async instead.")]
-        public static async Task<GroupCallCenterGetAnnouncementResponse19> GroupCallCenterGetAnnouncementRequest19(this OcipClient client, GroupCallCenterGetAnnouncementRequest19 request)
+        public static async Task<GroupCallCenterGetAnnouncementResponse19> GroupCallCenterGetAnnouncementRequest19(this OcipClientBase client, GroupCallCenterGetAnnouncementRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetAnnouncementResponse19;
         }
@@ -2073,7 +2073,7 @@ namespace BroadWorksConnector
         /// Get a call center's announcement settings.
         /// The response is either a GroupCallCenterGetAnnouncementResponse19 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetAnnouncementResponse19> GroupCallCenterGetAnnouncementRequest19Async(this OcipClient client, GroupCallCenterGetAnnouncementRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetAnnouncementResponse19> GroupCallCenterGetAnnouncementRequest19Async(this OcipClientBase client, GroupCallCenterGetAnnouncementRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetAnnouncementResponse19;
         }
@@ -2082,7 +2082,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterGetAnnouncementResponse20 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterGetAnnouncementRequest20Async instead.")]
-        public static async Task<GroupCallCenterGetAnnouncementResponse20> GroupCallCenterGetAnnouncementRequest20(this OcipClient client, GroupCallCenterGetAnnouncementRequest20 request)
+        public static async Task<GroupCallCenterGetAnnouncementResponse20> GroupCallCenterGetAnnouncementRequest20(this OcipClientBase client, GroupCallCenterGetAnnouncementRequest20 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterGetAnnouncementResponse20;
         }
@@ -2091,7 +2091,7 @@ namespace BroadWorksConnector
         /// Get a call center's announcement settings.
         /// The response is either a GroupCallCenterGetAnnouncementResponse20 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterGetAnnouncementResponse20> GroupCallCenterGetAnnouncementRequest20Async(this OcipClient client, GroupCallCenterGetAnnouncementRequest20 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterGetAnnouncementResponse20> GroupCallCenterGetAnnouncementRequest20Async(this OcipClientBase client, GroupCallCenterGetAnnouncementRequest20 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterGetAnnouncementResponse20;
         }
@@ -2101,7 +2101,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterModifyAnnouncementRequest17Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterModifyAnnouncementRequest17(this OcipClient client, GroupCallCenterModifyAnnouncementRequest17 request)
+        public static async Task<SuccessResponse> GroupCallCenterModifyAnnouncementRequest17(this OcipClientBase client, GroupCallCenterModifyAnnouncementRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2111,7 +2111,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an
         /// ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterModifyAnnouncementRequest17Async(this OcipClient client, GroupCallCenterModifyAnnouncementRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterModifyAnnouncementRequest17Async(this OcipClientBase client, GroupCallCenterModifyAnnouncementRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2120,7 +2120,7 @@ namespace BroadWorksConnector
         /// The response is either a GroupCallCenterOverflowGetResponse17 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterOverflowGetRequest17Async instead.")]
-        public static async Task<GroupCallCenterOverflowGetResponse17> GroupCallCenterOverflowGetRequest17(this OcipClient client, GroupCallCenterOverflowGetRequest17 request)
+        public static async Task<GroupCallCenterOverflowGetResponse17> GroupCallCenterOverflowGetRequest17(this OcipClientBase client, GroupCallCenterOverflowGetRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallCenterOverflowGetResponse17;
         }
@@ -2129,7 +2129,7 @@ namespace BroadWorksConnector
         /// Get a call center's overflow settings.
         /// The response is either a GroupCallCenterOverflowGetResponse17 or an ErrorResponse.
         /// </summary>
-        public static async Task<GroupCallCenterOverflowGetResponse17> GroupCallCenterOverflowGetRequest17Async(this OcipClient client, GroupCallCenterOverflowGetRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallCenterOverflowGetResponse17> GroupCallCenterOverflowGetRequest17Async(this OcipClientBase client, GroupCallCenterOverflowGetRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallCenterOverflowGetResponse17;
         }
@@ -2138,7 +2138,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallCenterOverflowModifyRequest17Async instead.")]
-        public static async Task<SuccessResponse> GroupCallCenterOverflowModifyRequest17(this OcipClient client, GroupCallCenterOverflowModifyRequest17 request)
+        public static async Task<SuccessResponse> GroupCallCenterOverflowModifyRequest17(this OcipClientBase client, GroupCallCenterOverflowModifyRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2147,7 +2147,7 @@ namespace BroadWorksConnector
         /// Modify a call center's overflow settings.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupCallCenterOverflowModifyRequest17Async(this OcipClient client, GroupCallCenterOverflowModifyRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCallCenterOverflowModifyRequest17Async(this OcipClientBase client, GroupCallCenterOverflowModifyRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2169,7 +2169,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupCallProcessingGetPolicyRequest22 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallProcessingGetPolicyRequest21sp2Async instead.")]
-        public static async Task<GroupCallProcessingGetPolicyResponse21sp2> GroupCallProcessingGetPolicyRequest21sp2(this OcipClient client, GroupCallProcessingGetPolicyRequest21sp2 request)
+        public static async Task<GroupCallProcessingGetPolicyResponse21sp2> GroupCallProcessingGetPolicyRequest21sp2(this OcipClientBase client, GroupCallProcessingGetPolicyRequest21sp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallProcessingGetPolicyResponse21sp2;
         }
@@ -2191,7 +2191,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupCallProcessingGetPolicyRequest22 in AS data mode
         /// </summary>
-        public static async Task<GroupCallProcessingGetPolicyResponse21sp2> GroupCallProcessingGetPolicyRequest21sp2Async(this OcipClient client, GroupCallProcessingGetPolicyRequest21sp2 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallProcessingGetPolicyResponse21sp2> GroupCallProcessingGetPolicyRequest21sp2Async(this OcipClientBase client, GroupCallProcessingGetPolicyRequest21sp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallProcessingGetPolicyResponse21sp2;
         }
@@ -2216,7 +2216,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupCallProcessingGetPolicyRequest22V2 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCallProcessingGetPolicyRequest22Async instead.")]
-        public static async Task<GroupCallProcessingGetPolicyResponse22> GroupCallProcessingGetPolicyRequest22(this OcipClient client, GroupCallProcessingGetPolicyRequest22 request)
+        public static async Task<GroupCallProcessingGetPolicyResponse22> GroupCallProcessingGetPolicyRequest22(this OcipClientBase client, GroupCallProcessingGetPolicyRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCallProcessingGetPolicyResponse22;
         }
@@ -2241,7 +2241,7 @@ namespace BroadWorksConnector
         /// allowEnterpriseGroupCallTypingForPrivateDialingPlan, allowEnterpriseGroupCallTypingForPublicDialingPlan, overrideCLIDRestrictionForExternalCallsViaPrivateDialingPlan, enableEnterpriseExtensionDialing)
         /// Replaced by: GroupCallProcessingGetPolicyRequest22V2 in AS data mode.
         /// </summary>
-        public static async Task<GroupCallProcessingGetPolicyResponse22> GroupCallProcessingGetPolicyRequest22Async(this OcipClient client, GroupCallProcessingGetPolicyRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCallProcessingGetPolicyResponse22> GroupCallProcessingGetPolicyRequest22Async(this OcipClientBase client, GroupCallProcessingGetPolicyRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCallProcessingGetPolicyResponse22;
         }
@@ -2252,7 +2252,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupCommunicationBarringAuthorizationCodeAddListRequest21sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCommunicationBarringAuthorizationCodeAddListRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupCommunicationBarringAuthorizationCodeAddListRequest(this OcipClient client, GroupCommunicationBarringAuthorizationCodeAddListRequest request)
+        public static async Task<SuccessResponse> GroupCommunicationBarringAuthorizationCodeAddListRequest(this OcipClientBase client, GroupCommunicationBarringAuthorizationCodeAddListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2263,7 +2263,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupCommunicationBarringAuthorizationCodeAddListRequest21sp1 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupCommunicationBarringAuthorizationCodeAddListRequestAsync(this OcipClient client, GroupCommunicationBarringAuthorizationCodeAddListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupCommunicationBarringAuthorizationCodeAddListRequestAsync(this OcipClientBase client, GroupCommunicationBarringAuthorizationCodeAddListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2275,7 +2275,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupCommunicationBarringAuthorizationCodeGetListRequest21sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupCommunicationBarringAuthorizationCodeGetListRequestAsync instead.")]
-        public static async Task<GroupCommunicationBarringAuthorizationCodeGetListResponse> GroupCommunicationBarringAuthorizationCodeGetListRequest(this OcipClient client, GroupCommunicationBarringAuthorizationCodeGetListRequest request)
+        public static async Task<GroupCommunicationBarringAuthorizationCodeGetListResponse> GroupCommunicationBarringAuthorizationCodeGetListRequest(this OcipClientBase client, GroupCommunicationBarringAuthorizationCodeGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupCommunicationBarringAuthorizationCodeGetListResponse;
         }
@@ -2287,7 +2287,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupCommunicationBarringAuthorizationCodeGetListRequest21sp1 in AS data mode
         /// </summary>
-        public static async Task<GroupCommunicationBarringAuthorizationCodeGetListResponse> GroupCommunicationBarringAuthorizationCodeGetListRequestAsync(this OcipClient client, GroupCommunicationBarringAuthorizationCodeGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupCommunicationBarringAuthorizationCodeGetListResponse> GroupCommunicationBarringAuthorizationCodeGetListRequestAsync(this OcipClientBase client, GroupCommunicationBarringAuthorizationCodeGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupCommunicationBarringAuthorizationCodeGetListResponse;
         }
@@ -2298,7 +2298,7 @@ namespace BroadWorksConnector
         /// Replaced by GroupGetRequest22V2 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupGetRequest22Async instead.")]
-        public static async Task<GroupGetResponse22> GroupGetRequest22(this OcipClient client, GroupGetRequest22 request)
+        public static async Task<GroupGetResponse22> GroupGetRequest22(this OcipClientBase client, GroupGetRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupGetResponse22;
         }
@@ -2309,7 +2309,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by GroupGetRequest22V2 in AS data mode.
         /// </summary>
-        public static async Task<GroupGetResponse22> GroupGetRequest22Async(this OcipClient client, GroupGetRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupGetResponse22> GroupGetRequest22Async(this OcipClientBase client, GroupGetRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupGetResponse22;
         }
@@ -2320,7 +2320,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupIntegratedIMPGetRequest21sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupIntegratedIMPGetRequestAsync instead.")]
-        public static async Task<GroupIntegratedIMPGetResponse> GroupIntegratedIMPGetRequest(this OcipClient client, GroupIntegratedIMPGetRequest request)
+        public static async Task<GroupIntegratedIMPGetResponse> GroupIntegratedIMPGetRequest(this OcipClientBase client, GroupIntegratedIMPGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupIntegratedIMPGetResponse;
         }
@@ -2331,7 +2331,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupIntegratedIMPGetRequest21sp1 in AS data mode
         /// </summary>
-        public static async Task<GroupIntegratedIMPGetResponse> GroupIntegratedIMPGetRequestAsync(this OcipClient client, GroupIntegratedIMPGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupIntegratedIMPGetResponse> GroupIntegratedIMPGetRequestAsync(this OcipClientBase client, GroupIntegratedIMPGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupIntegratedIMPGetResponse;
         }
@@ -2342,7 +2342,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupInterceptGroupGetRequest21sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupInterceptGroupGetRequest16sp1Async instead.")]
-        public static async Task<GroupInterceptGroupGetResponse16sp1> GroupInterceptGroupGetRequest16sp1(this OcipClient client, GroupInterceptGroupGetRequest16sp1 request)
+        public static async Task<GroupInterceptGroupGetResponse16sp1> GroupInterceptGroupGetRequest16sp1(this OcipClientBase client, GroupInterceptGroupGetRequest16sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupInterceptGroupGetResponse16sp1;
         }
@@ -2353,7 +2353,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupInterceptGroupGetRequest21sp1 in AS data mode
         /// </summary>
-        public static async Task<GroupInterceptGroupGetResponse16sp1> GroupInterceptGroupGetRequest16sp1Async(this OcipClient client, GroupInterceptGroupGetRequest16sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupInterceptGroupGetResponse16sp1> GroupInterceptGroupGetRequest16sp1Async(this OcipClientBase client, GroupInterceptGroupGetRequest16sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupInterceptGroupGetResponse16sp1;
         }
@@ -2364,7 +2364,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupInterceptGroupModifyResponse21sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupInterceptGroupModifyRequest16Async instead.")]
-        public static async Task<SuccessResponse> GroupInterceptGroupModifyRequest16(this OcipClient client, GroupInterceptGroupModifyRequest16 request)
+        public static async Task<SuccessResponse> GroupInterceptGroupModifyRequest16(this OcipClientBase client, GroupInterceptGroupModifyRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2375,7 +2375,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupInterceptGroupModifyResponse21sp1 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> GroupInterceptGroupModifyRequest16Async(this OcipClient client, GroupInterceptGroupModifyRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupInterceptGroupModifyRequest16Async(this OcipClientBase client, GroupInterceptGroupModifyRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2385,7 +2385,7 @@ namespace BroadWorksConnector
         /// Replaced by GroupMusicOnHoldAddInstanceRequest22.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupMusicOnHoldAddInstanceRequest21Async instead.")]
-        public static async Task<SuccessResponse> GroupMusicOnHoldAddInstanceRequest21(this OcipClient client, GroupMusicOnHoldAddInstanceRequest21 request)
+        public static async Task<SuccessResponse> GroupMusicOnHoldAddInstanceRequest21(this OcipClientBase client, GroupMusicOnHoldAddInstanceRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2395,7 +2395,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// Replaced by GroupMusicOnHoldAddInstanceRequest22.
         /// </summary>
-        public static async Task<SuccessResponse> GroupMusicOnHoldAddInstanceRequest21Async(this OcipClient client, GroupMusicOnHoldAddInstanceRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupMusicOnHoldAddInstanceRequest21Async(this OcipClientBase client, GroupMusicOnHoldAddInstanceRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2405,7 +2405,7 @@ namespace BroadWorksConnector
         /// Replaced by GroupMusicOnHoldGetInstanceRequest22
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupMusicOnHoldGetInstanceRequest21Async instead.")]
-        public static async Task<GroupMusicOnHoldGetInstanceResponse21> GroupMusicOnHoldGetInstanceRequest21(this OcipClient client, GroupMusicOnHoldGetInstanceRequest21 request)
+        public static async Task<GroupMusicOnHoldGetInstanceResponse21> GroupMusicOnHoldGetInstanceRequest21(this OcipClientBase client, GroupMusicOnHoldGetInstanceRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupMusicOnHoldGetInstanceResponse21;
         }
@@ -2415,7 +2415,7 @@ namespace BroadWorksConnector
         /// The response is either GroupMusicOnHoldGetInstanceResponse21 or ErrorResponse.
         /// Replaced by GroupMusicOnHoldGetInstanceRequest22
         /// </summary>
-        public static async Task<GroupMusicOnHoldGetInstanceResponse21> GroupMusicOnHoldGetInstanceRequest21Async(this OcipClient client, GroupMusicOnHoldGetInstanceRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupMusicOnHoldGetInstanceResponse21> GroupMusicOnHoldGetInstanceRequest21Async(this OcipClientBase client, GroupMusicOnHoldGetInstanceRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupMusicOnHoldGetInstanceResponse21;
         }
@@ -2426,7 +2426,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupMusicOnHoldGetInstanceRequest22V2 in AS mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupMusicOnHoldGetInstanceRequest22Async instead.")]
-        public static async Task<GroupMusicOnHoldGetInstanceResponse22> GroupMusicOnHoldGetInstanceRequest22(this OcipClient client, GroupMusicOnHoldGetInstanceRequest22 request)
+        public static async Task<GroupMusicOnHoldGetInstanceResponse22> GroupMusicOnHoldGetInstanceRequest22(this OcipClientBase client, GroupMusicOnHoldGetInstanceRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupMusicOnHoldGetInstanceResponse22;
         }
@@ -2437,7 +2437,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupMusicOnHoldGetInstanceRequest22V2 in AS mode
         /// </summary>
-        public static async Task<GroupMusicOnHoldGetInstanceResponse22> GroupMusicOnHoldGetInstanceRequest22Async(this OcipClient client, GroupMusicOnHoldGetInstanceRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupMusicOnHoldGetInstanceResponse22> GroupMusicOnHoldGetInstanceRequest22Async(this OcipClientBase client, GroupMusicOnHoldGetInstanceRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupMusicOnHoldGetInstanceResponse22;
         }
@@ -2446,7 +2446,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupMusicOnHoldModifyInstanceRequest21Async instead.")]
-        public static async Task<SuccessResponse> GroupMusicOnHoldModifyInstanceRequest21(this OcipClient client, GroupMusicOnHoldModifyInstanceRequest21 request)
+        public static async Task<SuccessResponse> GroupMusicOnHoldModifyInstanceRequest21(this OcipClientBase client, GroupMusicOnHoldModifyInstanceRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2455,7 +2455,7 @@ namespace BroadWorksConnector
         /// Modify data for a group or department Music On Hold Instance.
         /// The response is either SuccessResponse or ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> GroupMusicOnHoldModifyInstanceRequest21Async(this OcipClient client, GroupMusicOnHoldModifyInstanceRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupMusicOnHoldModifyInstanceRequest21Async(this OcipClientBase client, GroupMusicOnHoldModifyInstanceRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2467,7 +2467,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupPasswordRulesGetRequest22 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupPasswordRulesGetRequest16Async instead.")]
-        public static async Task<GroupPasswordRulesGetResponse16> GroupPasswordRulesGetRequest16(this OcipClient client, GroupPasswordRulesGetRequest16 request)
+        public static async Task<GroupPasswordRulesGetResponse16> GroupPasswordRulesGetRequest16(this OcipClientBase client, GroupPasswordRulesGetRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupPasswordRulesGetResponse16;
         }
@@ -2479,7 +2479,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupPasswordRulesGetRequest22 in AS data mode.
         /// </summary>
-        public static async Task<GroupPasswordRulesGetResponse16> GroupPasswordRulesGetRequest16Async(this OcipClient client, GroupPasswordRulesGetRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupPasswordRulesGetResponse16> GroupPasswordRulesGetRequest16Async(this OcipClientBase client, GroupPasswordRulesGetRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupPasswordRulesGetResponse16;
         }
@@ -2493,7 +2493,7 @@ namespace BroadWorksConnector
         /// Replace by GroupRoutePointAddInstanceRequest22
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupRoutePointAddInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupRoutePointAddInstanceRequest(this OcipClient client, GroupRoutePointAddInstanceRequest request)
+        public static async Task<SuccessResponse> GroupRoutePointAddInstanceRequest(this OcipClientBase client, GroupRoutePointAddInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2507,7 +2507,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// Replace by GroupRoutePointAddInstanceRequest22
         /// </summary>
-        public static async Task<SuccessResponse> GroupRoutePointAddInstanceRequestAsync(this OcipClient client, GroupRoutePointAddInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupRoutePointAddInstanceRequestAsync(this OcipClientBase client, GroupRoutePointAddInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2517,7 +2517,7 @@ namespace BroadWorksConnector
         /// Replace by GroupRoutePointGetInstanceRequest22.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupRoutePointGetInstanceRequest19sp1Async instead.")]
-        public static async Task<GroupRoutePointGetInstanceResponse19sp1> GroupRoutePointGetInstanceRequest19sp1(this OcipClient client, GroupRoutePointGetInstanceRequest19sp1 request)
+        public static async Task<GroupRoutePointGetInstanceResponse19sp1> GroupRoutePointGetInstanceRequest19sp1(this OcipClientBase client, GroupRoutePointGetInstanceRequest19sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupRoutePointGetInstanceResponse19sp1;
         }
@@ -2527,7 +2527,7 @@ namespace BroadWorksConnector
         /// The response is either GroupRoutePointGetInstanceResponse19sp1 or ErrorResponse.
         /// Replace by GroupRoutePointGetInstanceRequest22.
         /// </summary>
-        public static async Task<GroupRoutePointGetInstanceResponse19sp1> GroupRoutePointGetInstanceRequest19sp1Async(this OcipClient client, GroupRoutePointGetInstanceRequest19sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupRoutePointGetInstanceResponse19sp1> GroupRoutePointGetInstanceRequest19sp1Async(this OcipClientBase client, GroupRoutePointGetInstanceRequest19sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupRoutePointGetInstanceResponse19sp1;
         }
@@ -2537,7 +2537,7 @@ namespace BroadWorksConnector
         /// Replaced by GroupRoutePointModifyInstanceRequest22.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupRoutePointModifyInstanceRequestAsync instead.")]
-        public static async Task<SuccessResponse> GroupRoutePointModifyInstanceRequest(this OcipClient client, GroupRoutePointModifyInstanceRequest request)
+        public static async Task<SuccessResponse> GroupRoutePointModifyInstanceRequest(this OcipClientBase client, GroupRoutePointModifyInstanceRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2547,7 +2547,7 @@ namespace BroadWorksConnector
         /// The response is either SuccessResponse or ErrorResponse.
         /// Replaced by GroupRoutePointModifyInstanceRequest22.
         /// </summary>
-        public static async Task<SuccessResponse> GroupRoutePointModifyInstanceRequestAsync(this OcipClient client, GroupRoutePointModifyInstanceRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> GroupRoutePointModifyInstanceRequestAsync(this OcipClientBase client, GroupRoutePointModifyInstanceRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -2558,7 +2558,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupShInterfaceGetUserListRequest21sp1 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupShInterfaceGetUserListRequestAsync instead.")]
-        public static async Task<GroupShInterfaceGetUserListResponse> GroupShInterfaceGetUserListRequest(this OcipClient client, GroupShInterfaceGetUserListRequest request)
+        public static async Task<GroupShInterfaceGetUserListResponse> GroupShInterfaceGetUserListRequest(this OcipClientBase client, GroupShInterfaceGetUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupShInterfaceGetUserListResponse;
         }
@@ -2569,7 +2569,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupShInterfaceGetUserListRequest21sp1 in AS data mode.
         /// </summary>
-        public static async Task<GroupShInterfaceGetUserListResponse> GroupShInterfaceGetUserListRequestAsync(this OcipClient client, GroupShInterfaceGetUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<GroupShInterfaceGetUserListResponse> GroupShInterfaceGetUserListRequestAsync(this OcipClientBase client, GroupShInterfaceGetUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupShInterfaceGetUserListResponse;
         }
@@ -2580,7 +2580,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupVoiceMessagingGroupGetVoicePortalRequest21sp1 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceMessagingGroupGetVoicePortalRequest19sp1Async instead.")]
-        public static async Task<GroupVoiceMessagingGroupGetVoicePortalResponse19sp1> GroupVoiceMessagingGroupGetVoicePortalRequest19sp1(this OcipClient client, GroupVoiceMessagingGroupGetVoicePortalRequest19sp1 request)
+        public static async Task<GroupVoiceMessagingGroupGetVoicePortalResponse19sp1> GroupVoiceMessagingGroupGetVoicePortalRequest19sp1(this OcipClientBase client, GroupVoiceMessagingGroupGetVoicePortalRequest19sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupVoiceMessagingGroupGetVoicePortalResponse19sp1;
         }
@@ -2591,7 +2591,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupVoiceMessagingGroupGetVoicePortalRequest21sp1 in AS data mode.
         /// </summary>
-        public static async Task<GroupVoiceMessagingGroupGetVoicePortalResponse19sp1> GroupVoiceMessagingGroupGetVoicePortalRequest19sp1Async(this OcipClient client, GroupVoiceMessagingGroupGetVoicePortalRequest19sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupVoiceMessagingGroupGetVoicePortalResponse19sp1> GroupVoiceMessagingGroupGetVoicePortalRequest19sp1Async(this OcipClientBase client, GroupVoiceMessagingGroupGetVoicePortalRequest19sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupVoiceMessagingGroupGetVoicePortalResponse19sp1;
         }
@@ -2602,7 +2602,7 @@ namespace BroadWorksConnector
         /// Replaced by: GroupVoiceXmlGetInstanceRequest22 in AS mode
         /// </summary>
         [Obsolete("This method is deprecated. Use GroupVoiceXmlGetInstanceRequest19sp1Async instead.")]
-        public static async Task<GroupVoiceXmlGetInstanceResponse19sp1> GroupVoiceXmlGetInstanceRequest19sp1(this OcipClient client, GroupVoiceXmlGetInstanceRequest19sp1 request)
+        public static async Task<GroupVoiceXmlGetInstanceResponse19sp1> GroupVoiceXmlGetInstanceRequest19sp1(this OcipClientBase client, GroupVoiceXmlGetInstanceRequest19sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as GroupVoiceXmlGetInstanceResponse19sp1;
         }
@@ -2613,7 +2613,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: GroupVoiceXmlGetInstanceRequest22 in AS mode
         /// </summary>
-        public static async Task<GroupVoiceXmlGetInstanceResponse19sp1> GroupVoiceXmlGetInstanceRequest19sp1Async(this OcipClient client, GroupVoiceXmlGetInstanceRequest19sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<GroupVoiceXmlGetInstanceResponse19sp1> GroupVoiceXmlGetInstanceRequest19sp1Async(this OcipClientBase client, GroupVoiceXmlGetInstanceRequest19sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as GroupVoiceXmlGetInstanceResponse19sp1;
         }
@@ -2625,7 +2625,7 @@ namespace BroadWorksConnector
         /// Replaced by: LoginRequest22 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use LoginRequest14sp4Async instead.")]
-        public static async Task<LoginResponse14sp4> LoginRequest14sp4(this OcipClient client, LoginRequest14sp4 request)
+        public static async Task<LoginResponse14sp4> LoginRequest14sp4(this OcipClientBase client, LoginRequest14sp4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as LoginResponse14sp4;
         }
@@ -2637,7 +2637,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: LoginRequest22 in AS data mode.
         /// </summary>
-        public static async Task<LoginResponse14sp4> LoginRequest14sp4Async(this OcipClient client, LoginRequest14sp4 request, CancellationToken cancellationToken = default)
+        public static async Task<LoginResponse14sp4> LoginRequest14sp4Async(this OcipClientBase client, LoginRequest14sp4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as LoginResponse14sp4;
         }
@@ -2648,7 +2648,7 @@ namespace BroadWorksConnector
         /// Replaced by LoginRequest22V3 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use LoginRequest21sp1Async instead.")]
-        public static async Task<LoginResponse21sp1> LoginRequest21sp1(this OcipClient client, LoginRequest21sp1 request)
+        public static async Task<LoginResponse21sp1> LoginRequest21sp1(this OcipClientBase client, LoginRequest21sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as LoginResponse21sp1;
         }
@@ -2659,7 +2659,7 @@ namespace BroadWorksConnector
         /// The response is either LoginResponse21sp1 or ErrorResponse
         /// Replaced by LoginRequest22V3 in AS data mode.
         /// </summary>
-        public static async Task<LoginResponse21sp1> LoginRequest21sp1Async(this OcipClient client, LoginRequest21sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<LoginResponse21sp1> LoginRequest21sp1Async(this OcipClientBase client, LoginRequest21sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as LoginResponse21sp1;
         }
@@ -2671,7 +2671,7 @@ namespace BroadWorksConnector
         /// Replaced by LoginRequest22V2 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use LoginRequest22Async instead.")]
-        public static async Task<LoginResponse22> LoginRequest22(this OcipClient client, LoginRequest22 request)
+        public static async Task<LoginResponse22> LoginRequest22(this OcipClientBase client, LoginRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as LoginResponse22;
         }
@@ -2683,7 +2683,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by LoginRequest22V2 in AS data mode.
         /// </summary>
-        public static async Task<LoginResponse22> LoginRequest22Async(this OcipClient client, LoginRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<LoginResponse22> LoginRequest22Async(this OcipClientBase client, LoginRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as LoginResponse22;
         }
@@ -2695,7 +2695,7 @@ namespace BroadWorksConnector
         /// Replaced by LoginRequest22V3 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use LoginRequest22V2Async instead.")]
-        public static async Task<LoginResponse22V2> LoginRequest22V2(this OcipClient client, LoginRequest22V2 request)
+        public static async Task<LoginResponse22V2> LoginRequest22V2(this OcipClientBase client, LoginRequest22V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as LoginResponse22V2;
         }
@@ -2707,7 +2707,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by LoginRequest22V3 in AS data mode.
         /// </summary>
-        public static async Task<LoginResponse22V2> LoginRequest22V2Async(this OcipClient client, LoginRequest22V2 request, CancellationToken cancellationToken = default)
+        public static async Task<LoginResponse22V2> LoginRequest22V2Async(this OcipClientBase client, LoginRequest22V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as LoginResponse22V2;
         }
@@ -2718,7 +2718,7 @@ namespace BroadWorksConnector
         /// Replaced by: ResellerIntegratedIMPGetRequest22 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ResellerIntegratedIMPGetRequestAsync instead.")]
-        public static async Task<ResellerIntegratedIMPGetResponse> ResellerIntegratedIMPGetRequest(this OcipClient client, ResellerIntegratedIMPGetRequest request)
+        public static async Task<ResellerIntegratedIMPGetResponse> ResellerIntegratedIMPGetRequest(this OcipClientBase client, ResellerIntegratedIMPGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ResellerIntegratedIMPGetResponse;
         }
@@ -2729,7 +2729,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: ResellerIntegratedIMPGetRequest22 in AS data mode
         /// </summary>
-        public static async Task<ResellerIntegratedIMPGetResponse> ResellerIntegratedIMPGetRequestAsync(this OcipClient client, ResellerIntegratedIMPGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ResellerIntegratedIMPGetResponse> ResellerIntegratedIMPGetRequestAsync(this OcipClientBase client, ResellerIntegratedIMPGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ResellerIntegratedIMPGetResponse;
         }
@@ -2742,7 +2742,7 @@ namespace BroadWorksConnector
         /// Replaced by: ServiceProviderAccessDeviceGetUserListRequest21sp1 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAccessDeviceGetUserListRequestAsync instead.")]
-        public static async Task<ServiceProviderAccessDeviceGetUserListResponse> ServiceProviderAccessDeviceGetUserListRequest(this OcipClient client, ServiceProviderAccessDeviceGetUserListRequest request)
+        public static async Task<ServiceProviderAccessDeviceGetUserListResponse> ServiceProviderAccessDeviceGetUserListRequest(this OcipClientBase client, ServiceProviderAccessDeviceGetUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAccessDeviceGetUserListResponse;
         }
@@ -2755,7 +2755,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: ServiceProviderAccessDeviceGetUserListRequest21sp1 in AS data mode.
         /// </summary>
-        public static async Task<ServiceProviderAccessDeviceGetUserListResponse> ServiceProviderAccessDeviceGetUserListRequestAsync(this OcipClient client, ServiceProviderAccessDeviceGetUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAccessDeviceGetUserListResponse> ServiceProviderAccessDeviceGetUserListRequestAsync(this OcipClientBase client, ServiceProviderAccessDeviceGetUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAccessDeviceGetUserListResponse;
         }
@@ -2765,7 +2765,7 @@ namespace BroadWorksConnector
         /// Replaced by ServiceProviderAdminGetRequest21sp1.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderAdminGetRequest14Async instead.")]
-        public static async Task<ServiceProviderAdminGetResponse14> ServiceProviderAdminGetRequest14(this OcipClient client, ServiceProviderAdminGetRequest14 request)
+        public static async Task<ServiceProviderAdminGetResponse14> ServiceProviderAdminGetRequest14(this OcipClientBase client, ServiceProviderAdminGetRequest14 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderAdminGetResponse14;
         }
@@ -2775,7 +2775,7 @@ namespace BroadWorksConnector
         /// The response is either a ServiceProviderAdminGetResponse14 or an ErrorResponse.
         /// Replaced by ServiceProviderAdminGetRequest21sp1.
         /// </summary>
-        public static async Task<ServiceProviderAdminGetResponse14> ServiceProviderAdminGetRequest14Async(this OcipClient client, ServiceProviderAdminGetRequest14 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderAdminGetResponse14> ServiceProviderAdminGetRequest14Async(this OcipClientBase client, ServiceProviderAdminGetRequest14 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderAdminGetResponse14;
         }
@@ -2785,7 +2785,7 @@ namespace BroadWorksConnector
         /// Replaced by: ServiceProviderCallProcessingGetPolicyRequest22 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCallProcessingGetPolicyRequest21sp2Async instead.")]
-        public static async Task<ServiceProviderCallProcessingGetPolicyResponse21sp2> ServiceProviderCallProcessingGetPolicyRequest21sp2(this OcipClient client, ServiceProviderCallProcessingGetPolicyRequest21sp2 request)
+        public static async Task<ServiceProviderCallProcessingGetPolicyResponse21sp2> ServiceProviderCallProcessingGetPolicyRequest21sp2(this OcipClientBase client, ServiceProviderCallProcessingGetPolicyRequest21sp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCallProcessingGetPolicyResponse21sp2;
         }
@@ -2795,7 +2795,7 @@ namespace BroadWorksConnector
         /// Policy. The response is either a ServiceProviderCallProcessingGetPolicyResponse21sp2 or an ErrorResponse.
         /// Replaced by: ServiceProviderCallProcessingGetPolicyRequest22 in AS data mode
         /// </summary>
-        public static async Task<ServiceProviderCallProcessingGetPolicyResponse21sp2> ServiceProviderCallProcessingGetPolicyRequest21sp2Async(this OcipClient client, ServiceProviderCallProcessingGetPolicyRequest21sp2 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCallProcessingGetPolicyResponse21sp2> ServiceProviderCallProcessingGetPolicyRequest21sp2Async(this OcipClientBase client, ServiceProviderCallProcessingGetPolicyRequest21sp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCallProcessingGetPolicyResponse21sp2;
         }
@@ -2806,7 +2806,7 @@ namespace BroadWorksConnector
         /// Replaced by: ServiceProviderCallProcessingGetPolicyRequest22V2 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderCallProcessingGetPolicyRequest22Async instead.")]
-        public static async Task<ServiceProviderCallProcessingGetPolicyResponse22> ServiceProviderCallProcessingGetPolicyRequest22(this OcipClient client, ServiceProviderCallProcessingGetPolicyRequest22 request)
+        public static async Task<ServiceProviderCallProcessingGetPolicyResponse22> ServiceProviderCallProcessingGetPolicyRequest22(this OcipClientBase client, ServiceProviderCallProcessingGetPolicyRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderCallProcessingGetPolicyResponse22;
         }
@@ -2817,7 +2817,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: ServiceProviderCallProcessingGetPolicyRequest22V2 in AS data mode.
         /// </summary>
-        public static async Task<ServiceProviderCallProcessingGetPolicyResponse22> ServiceProviderCallProcessingGetPolicyRequest22Async(this OcipClient client, ServiceProviderCallProcessingGetPolicyRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderCallProcessingGetPolicyResponse22> ServiceProviderCallProcessingGetPolicyRequest22Async(this OcipClientBase client, ServiceProviderCallProcessingGetPolicyRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderCallProcessingGetPolicyResponse22;
         }
@@ -2828,7 +2828,7 @@ namespace BroadWorksConnector
         /// Replaced by: ServiceProviderIntegratedIMPGetRequest21sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderIntegratedIMPGetRequest21Async instead.")]
-        public static async Task<ServiceProviderIntegratedIMPGetResponse21> ServiceProviderIntegratedIMPGetRequest21(this OcipClient client, ServiceProviderIntegratedIMPGetRequest21 request)
+        public static async Task<ServiceProviderIntegratedIMPGetResponse21> ServiceProviderIntegratedIMPGetRequest21(this OcipClientBase client, ServiceProviderIntegratedIMPGetRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderIntegratedIMPGetResponse21;
         }
@@ -2839,7 +2839,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: ServiceProviderIntegratedIMPGetRequest21sp1 in AS data mode
         /// </summary>
-        public static async Task<ServiceProviderIntegratedIMPGetResponse21> ServiceProviderIntegratedIMPGetRequest21Async(this OcipClient client, ServiceProviderIntegratedIMPGetRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderIntegratedIMPGetResponse21> ServiceProviderIntegratedIMPGetRequest21Async(this OcipClientBase client, ServiceProviderIntegratedIMPGetRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderIntegratedIMPGetResponse21;
         }
@@ -2850,7 +2850,7 @@ namespace BroadWorksConnector
         /// Replaced by: ServiceProviderIntegratedIMPGetRequest22 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderIntegratedIMPGetRequest21sp1Async instead.")]
-        public static async Task<ServiceProviderIntegratedIMPGetResponse21sp1> ServiceProviderIntegratedIMPGetRequest21sp1(this OcipClient client, ServiceProviderIntegratedIMPGetRequest21sp1 request)
+        public static async Task<ServiceProviderIntegratedIMPGetResponse21sp1> ServiceProviderIntegratedIMPGetRequest21sp1(this OcipClientBase client, ServiceProviderIntegratedIMPGetRequest21sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderIntegratedIMPGetResponse21sp1;
         }
@@ -2861,7 +2861,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: ServiceProviderIntegratedIMPGetRequest22 in AS data mode
         /// </summary>
-        public static async Task<ServiceProviderIntegratedIMPGetResponse21sp1> ServiceProviderIntegratedIMPGetRequest21sp1Async(this OcipClient client, ServiceProviderIntegratedIMPGetRequest21sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderIntegratedIMPGetResponse21sp1> ServiceProviderIntegratedIMPGetRequest21sp1Async(this OcipClientBase client, ServiceProviderIntegratedIMPGetRequest21sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderIntegratedIMPGetResponse21sp1;
         }
@@ -2873,7 +2873,7 @@ namespace BroadWorksConnector
         /// Replaced by: ServiceProviderPasswordRulesGetRequest22 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use ServiceProviderPasswordRulesGetRequest16Async instead.")]
-        public static async Task<ServiceProviderPasswordRulesGetResponse16> ServiceProviderPasswordRulesGetRequest16(this OcipClient client, ServiceProviderPasswordRulesGetRequest16 request)
+        public static async Task<ServiceProviderPasswordRulesGetResponse16> ServiceProviderPasswordRulesGetRequest16(this OcipClientBase client, ServiceProviderPasswordRulesGetRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as ServiceProviderPasswordRulesGetResponse16;
         }
@@ -2885,7 +2885,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: ServiceProviderPasswordRulesGetRequest22 in AS data mode.
         /// </summary>
-        public static async Task<ServiceProviderPasswordRulesGetResponse16> ServiceProviderPasswordRulesGetRequest16Async(this OcipClient client, ServiceProviderPasswordRulesGetRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<ServiceProviderPasswordRulesGetResponse16> ServiceProviderPasswordRulesGetRequest16Async(this OcipClientBase client, ServiceProviderPasswordRulesGetRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as ServiceProviderPasswordRulesGetResponse16;
         }
@@ -2898,7 +2898,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemAccessDeviceGetUserListRequest21sp1 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemAccessDeviceGetUserListRequestAsync instead.")]
-        public static async Task<SystemAccessDeviceGetUserListResponse> SystemAccessDeviceGetUserListRequest(this OcipClient client, SystemAccessDeviceGetUserListRequest request)
+        public static async Task<SystemAccessDeviceGetUserListResponse> SystemAccessDeviceGetUserListRequest(this OcipClientBase client, SystemAccessDeviceGetUserListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemAccessDeviceGetUserListResponse;
         }
@@ -2911,7 +2911,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemAccessDeviceGetUserListRequest21sp1 in AS data mode.
         /// </summary>
-        public static async Task<SystemAccessDeviceGetUserListResponse> SystemAccessDeviceGetUserListRequestAsync(this OcipClient client, SystemAccessDeviceGetUserListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemAccessDeviceGetUserListResponse> SystemAccessDeviceGetUserListRequestAsync(this OcipClientBase client, SystemAccessDeviceGetUserListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemAccessDeviceGetUserListResponse;
         }
@@ -2921,7 +2921,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemCallProcessingGetPolicyRequest22 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallProcessingGetPolicyRequest21sp2Async instead.")]
-        public static async Task<SystemCallProcessingGetPolicyResponse21sp2> SystemCallProcessingGetPolicyRequest21sp2(this OcipClient client, SystemCallProcessingGetPolicyRequest21sp2 request)
+        public static async Task<SystemCallProcessingGetPolicyResponse21sp2> SystemCallProcessingGetPolicyRequest21sp2(this OcipClientBase client, SystemCallProcessingGetPolicyRequest21sp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallProcessingGetPolicyResponse21sp2;
         }
@@ -2931,7 +2931,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// Replaced by: SystemCallProcessingGetPolicyRequest22 in AS data mode.
         /// </summary>
-        public static async Task<SystemCallProcessingGetPolicyResponse21sp2> SystemCallProcessingGetPolicyRequest21sp2Async(this OcipClient client, SystemCallProcessingGetPolicyRequest21sp2 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallProcessingGetPolicyResponse21sp2> SystemCallProcessingGetPolicyRequest21sp2Async(this OcipClientBase client, SystemCallProcessingGetPolicyRequest21sp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallProcessingGetPolicyResponse21sp2;
         }
@@ -2942,7 +2942,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemCallProcessingGetPolicyRequest22V2 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallProcessingGetPolicyRequest22Async instead.")]
-        public static async Task<SystemCallProcessingGetPolicyResponse22> SystemCallProcessingGetPolicyRequest22(this OcipClient client, SystemCallProcessingGetPolicyRequest22 request)
+        public static async Task<SystemCallProcessingGetPolicyResponse22> SystemCallProcessingGetPolicyRequest22(this OcipClientBase client, SystemCallProcessingGetPolicyRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallProcessingGetPolicyResponse22;
         }
@@ -2953,7 +2953,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemCallProcessingGetPolicyRequest22V2 in AS data mode.
         /// </summary>
-        public static async Task<SystemCallProcessingGetPolicyResponse22> SystemCallProcessingGetPolicyRequest22Async(this OcipClient client, SystemCallProcessingGetPolicyRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallProcessingGetPolicyResponse22> SystemCallProcessingGetPolicyRequest22Async(this OcipClientBase client, SystemCallProcessingGetPolicyRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallProcessingGetPolicyResponse22;
         }
@@ -2964,7 +2964,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemCallProcessingGetPolicyRequest23 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCallProcessingGetPolicyRequest22V2Async instead.")]
-        public static async Task<SystemCallProcessingGetPolicyResponse22V2> SystemCallProcessingGetPolicyRequest22V2(this OcipClient client, SystemCallProcessingGetPolicyRequest22V2 request)
+        public static async Task<SystemCallProcessingGetPolicyResponse22V2> SystemCallProcessingGetPolicyRequest22V2(this OcipClientBase client, SystemCallProcessingGetPolicyRequest22V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCallProcessingGetPolicyResponse22V2;
         }
@@ -2975,7 +2975,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemCallProcessingGetPolicyRequest23 in AS data mode.
         /// </summary>
-        public static async Task<SystemCallProcessingGetPolicyResponse22V2> SystemCallProcessingGetPolicyRequest22V2Async(this OcipClient client, SystemCallProcessingGetPolicyRequest22V2 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCallProcessingGetPolicyResponse22V2> SystemCallProcessingGetPolicyRequest22V2Async(this OcipClientBase client, SystemCallProcessingGetPolicyRequest22V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCallProcessingGetPolicyResponse22V2;
         }
@@ -2986,7 +2986,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemCommunicationBarringGetRequest21sp1 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemCommunicationBarringGetRequestAsync instead.")]
-        public static async Task<SystemCommunicationBarringGetResponse> SystemCommunicationBarringGetRequest(this OcipClient client, SystemCommunicationBarringGetRequest request)
+        public static async Task<SystemCommunicationBarringGetResponse> SystemCommunicationBarringGetRequest(this OcipClientBase client, SystemCommunicationBarringGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemCommunicationBarringGetResponse;
         }
@@ -2997,7 +2997,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemCommunicationBarringGetRequest21sp1 in AS data mode.
         /// </summary>
-        public static async Task<SystemCommunicationBarringGetResponse> SystemCommunicationBarringGetRequestAsync(this OcipClient client, SystemCommunicationBarringGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemCommunicationBarringGetResponse> SystemCommunicationBarringGetRequestAsync(this OcipClientBase client, SystemCommunicationBarringGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemCommunicationBarringGetResponse;
         }
@@ -3008,7 +3008,7 @@ namespace BroadWorksConnector
         /// Replaced by SystemDeviceManagementTagSetGetListRequest22 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemDeviceManagementTagSetGetListRequestAsync instead.")]
-        public static async Task<SystemDeviceManagementTagSetGetListResponse> SystemDeviceManagementTagSetGetListRequest(this OcipClient client, SystemDeviceManagementTagSetGetListRequest request)
+        public static async Task<SystemDeviceManagementTagSetGetListResponse> SystemDeviceManagementTagSetGetListRequest(this OcipClientBase client, SystemDeviceManagementTagSetGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemDeviceManagementTagSetGetListResponse;
         }
@@ -3019,7 +3019,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by SystemDeviceManagementTagSetGetListRequest22 in AS data mode.
         /// </summary>
-        public static async Task<SystemDeviceManagementTagSetGetListResponse> SystemDeviceManagementTagSetGetListRequestAsync(this OcipClient client, SystemDeviceManagementTagSetGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemDeviceManagementTagSetGetListResponse> SystemDeviceManagementTagSetGetListRequestAsync(this OcipClientBase client, SystemDeviceManagementTagSetGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemDeviceManagementTagSetGetListResponse;
         }
@@ -3032,7 +3032,7 @@ namespace BroadWorksConnector
         /// Replaced by SystemDeviceTypeGetAvailableListRequest22 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemDeviceTypeGetAvailableListRequest19Async instead.")]
-        public static async Task<SystemDeviceTypeGetAvailableListResponse19> SystemDeviceTypeGetAvailableListRequest19(this OcipClient client, SystemDeviceTypeGetAvailableListRequest19 request)
+        public static async Task<SystemDeviceTypeGetAvailableListResponse19> SystemDeviceTypeGetAvailableListRequest19(this OcipClientBase client, SystemDeviceTypeGetAvailableListRequest19 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemDeviceTypeGetAvailableListResponse19;
         }
@@ -3045,7 +3045,7 @@ namespace BroadWorksConnector
         /// The response is either SystemDeviceTypeGetAvailableListResponse19 or ErrorResponse.
         /// Replaced by SystemDeviceTypeGetAvailableListRequest22 in AS data mode.
         /// </summary>
-        public static async Task<SystemDeviceTypeGetAvailableListResponse19> SystemDeviceTypeGetAvailableListRequest19Async(this OcipClient client, SystemDeviceTypeGetAvailableListRequest19 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemDeviceTypeGetAvailableListResponse19> SystemDeviceTypeGetAvailableListRequest19Async(this OcipClientBase client, SystemDeviceTypeGetAvailableListRequest19 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemDeviceTypeGetAvailableListResponse19;
         }
@@ -3056,7 +3056,7 @@ namespace BroadWorksConnector
         /// Replaced by SystemDomainGetListRequest22 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemDomainGetListRequestAsync instead.")]
-        public static async Task<SystemDomainGetListResponse> SystemDomainGetListRequest(this OcipClient client, SystemDomainGetListRequest request)
+        public static async Task<SystemDomainGetListResponse> SystemDomainGetListRequest(this OcipClientBase client, SystemDomainGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemDomainGetListResponse;
         }
@@ -3067,7 +3067,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by SystemDomainGetListRequest22 in AS data mode.
         /// </summary>
-        public static async Task<SystemDomainGetListResponse> SystemDomainGetListRequestAsync(this OcipClient client, SystemDomainGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemDomainGetListResponse> SystemDomainGetListRequestAsync(this OcipClientBase client, SystemDomainGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemDomainGetListResponse;
         }
@@ -3078,7 +3078,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemOCICallControlApplicationAddRequest22
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemOCICallControlApplicationAddRequest17Async instead.")]
-        public static async Task<SuccessResponse> SystemOCICallControlApplicationAddRequest17(this OcipClient client, SystemOCICallControlApplicationAddRequest17 request)
+        public static async Task<SuccessResponse> SystemOCICallControlApplicationAddRequest17(this OcipClientBase client, SystemOCICallControlApplicationAddRequest17 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3089,7 +3089,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemOCICallControlApplicationAddRequest22
         /// </summary>
-        public static async Task<SuccessResponse> SystemOCICallControlApplicationAddRequest17Async(this OcipClient client, SystemOCICallControlApplicationAddRequest17 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemOCICallControlApplicationAddRequest17Async(this OcipClientBase client, SystemOCICallControlApplicationAddRequest17 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3102,7 +3102,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemPasswordRulesGetRequest22 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemPasswordRulesGetRequest16Async instead.")]
-        public static async Task<SystemPasswordRulesGetResponse16> SystemPasswordRulesGetRequest16(this OcipClient client, SystemPasswordRulesGetRequest16 request)
+        public static async Task<SystemPasswordRulesGetResponse16> SystemPasswordRulesGetRequest16(this OcipClientBase client, SystemPasswordRulesGetRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemPasswordRulesGetResponse16;
         }
@@ -3115,7 +3115,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemPasswordRulesGetRequest22 in AS data mode.
         /// </summary>
-        public static async Task<SystemPasswordRulesGetResponse16> SystemPasswordRulesGetRequest16Async(this OcipClient client, SystemPasswordRulesGetRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemPasswordRulesGetResponse16> SystemPasswordRulesGetRequest16Async(this OcipClientBase client, SystemPasswordRulesGetRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemPasswordRulesGetResponse16;
         }
@@ -3124,7 +3124,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemProvisioningValidationGetResponse14sp2 or ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemProvisioningValidationGetRequest14sp2Async instead.")]
-        public static async Task<SystemProvisioningValidationGetResponse14sp2> SystemProvisioningValidationGetRequest14sp2(this OcipClient client, SystemProvisioningValidationGetRequest14sp2 request)
+        public static async Task<SystemProvisioningValidationGetResponse14sp2> SystemProvisioningValidationGetRequest14sp2(this OcipClientBase client, SystemProvisioningValidationGetRequest14sp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemProvisioningValidationGetResponse14sp2;
         }
@@ -3133,7 +3133,7 @@ namespace BroadWorksConnector
         /// Request to get the system's provisioning validation attributes.
         /// The response is either a SystemProvisioningValidationGetResponse14sp2 or ErrorResponse.
         /// </summary>
-        public static async Task<SystemProvisioningValidationGetResponse14sp2> SystemProvisioningValidationGetRequest14sp2Async(this OcipClient client, SystemProvisioningValidationGetRequest14sp2 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemProvisioningValidationGetResponse14sp2> SystemProvisioningValidationGetRequest14sp2Async(this OcipClientBase client, SystemProvisioningValidationGetRequest14sp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemProvisioningValidationGetResponse14sp2;
         }
@@ -3145,7 +3145,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemSessionAuditGetRequest23 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemSessionAuditGetRequest17sp3Async instead.")]
-        public static async Task<SystemSessionAuditGetResponse17sp3> SystemSessionAuditGetRequest17sp3(this OcipClient client, SystemSessionAuditGetRequest17sp3 request)
+        public static async Task<SystemSessionAuditGetResponse17sp3> SystemSessionAuditGetRequest17sp3(this OcipClientBase client, SystemSessionAuditGetRequest17sp3 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemSessionAuditGetResponse17sp3;
         }
@@ -3157,7 +3157,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemSessionAuditGetRequest23 in AS data mode.
         /// </summary>
-        public static async Task<SystemSessionAuditGetResponse17sp3> SystemSessionAuditGetRequest17sp3Async(this OcipClient client, SystemSessionAuditGetRequest17sp3 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemSessionAuditGetResponse17sp3> SystemSessionAuditGetRequest17sp3Async(this OcipClientBase client, SystemSessionAuditGetRequest17sp3 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemSessionAuditGetResponse17sp3;
         }
@@ -3166,7 +3166,7 @@ namespace BroadWorksConnector
         /// The response is either a SystemSMPPGetResponse21 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemSMPPGetRequest21Async instead.")]
-        public static async Task<SystemSMPPGetResponse21> SystemSMPPGetRequest21(this OcipClient client, SystemSMPPGetRequest21 request)
+        public static async Task<SystemSMPPGetResponse21> SystemSMPPGetRequest21(this OcipClientBase client, SystemSMPPGetRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemSMPPGetResponse21;
         }
@@ -3175,7 +3175,7 @@ namespace BroadWorksConnector
         /// Request the system level data associated with SMPP external interface.
         /// The response is either a SystemSMPPGetResponse21 or an ErrorResponse.
         /// </summary>
-        public static async Task<SystemSMPPGetResponse21> SystemSMPPGetRequest21Async(this OcipClient client, SystemSMPPGetRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemSMPPGetResponse21> SystemSMPPGetRequest21Async(this OcipClientBase client, SystemSMPPGetRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemSMPPGetResponse21;
         }
@@ -3186,7 +3186,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceAddRequest22 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTreatmentMappingCallBlockingServiceAddRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequest(this OcipClient client, SystemTreatmentMappingCallBlockingServiceAddRequest request)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequest(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceAddRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3197,7 +3197,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceAddRequest22 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequestAsync(this OcipClient client, SystemTreatmentMappingCallBlockingServiceAddRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequestAsync(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceAddRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3208,7 +3208,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceAddRequest22V2 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTreatmentMappingCallBlockingServiceAddRequest22Async instead.")]
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequest22(this OcipClient client, SystemTreatmentMappingCallBlockingServiceAddRequest22 request)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequest22(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceAddRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3219,7 +3219,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceAddRequest22V2 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequest22Async(this OcipClient client, SystemTreatmentMappingCallBlockingServiceAddRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequest22Async(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceAddRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3230,7 +3230,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceAddRequest23 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTreatmentMappingCallBlockingServiceAddRequest22V2Async instead.")]
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequest22V2(this OcipClient client, SystemTreatmentMappingCallBlockingServiceAddRequest22V2 request)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequest22V2(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceAddRequest22V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3241,7 +3241,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceAddRequest23 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequest22V2Async(this OcipClient client, SystemTreatmentMappingCallBlockingServiceAddRequest22V2 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceAddRequest22V2Async(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceAddRequest22V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3252,7 +3252,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceDeleteRequest22 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTreatmentMappingCallBlockingServiceDeleteRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequest(this OcipClient client, SystemTreatmentMappingCallBlockingServiceDeleteRequest request)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequest(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceDeleteRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3263,7 +3263,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceDeleteRequest22 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequestAsync(this OcipClient client, SystemTreatmentMappingCallBlockingServiceDeleteRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequestAsync(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceDeleteRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3274,7 +3274,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceDeleteRequest22V2 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTreatmentMappingCallBlockingServiceDeleteRequest22Async instead.")]
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequest22(this OcipClient client, SystemTreatmentMappingCallBlockingServiceDeleteRequest22 request)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequest22(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceDeleteRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3285,7 +3285,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceDeleteRequest22V2 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequest22Async(this OcipClient client, SystemTreatmentMappingCallBlockingServiceDeleteRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequest22Async(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceDeleteRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3296,7 +3296,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceDeleteRequest23 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTreatmentMappingCallBlockingServiceDeleteRequest22V2Async instead.")]
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequest22V2(this OcipClient client, SystemTreatmentMappingCallBlockingServiceDeleteRequest22V2 request)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequest22V2(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceDeleteRequest22V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3307,7 +3307,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceDeleteRequest23 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequest22V2Async(this OcipClient client, SystemTreatmentMappingCallBlockingServiceDeleteRequest22V2 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceDeleteRequest22V2Async(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceDeleteRequest22V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3319,7 +3319,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceGetListRequest19sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTreatmentMappingCallBlockingServiceGetListRequestAsync instead.")]
-        public static async Task<SystemTreatmentMappingCallBlockingServiceGetListResponse> SystemTreatmentMappingCallBlockingServiceGetListRequest(this OcipClient client, SystemTreatmentMappingCallBlockingServiceGetListRequest request)
+        public static async Task<SystemTreatmentMappingCallBlockingServiceGetListResponse> SystemTreatmentMappingCallBlockingServiceGetListRequest(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceGetListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemTreatmentMappingCallBlockingServiceGetListResponse;
         }
@@ -3331,7 +3331,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceGetListRequest19sp1 in AS data mode
         /// </summary>
-        public static async Task<SystemTreatmentMappingCallBlockingServiceGetListResponse> SystemTreatmentMappingCallBlockingServiceGetListRequestAsync(this OcipClient client, SystemTreatmentMappingCallBlockingServiceGetListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SystemTreatmentMappingCallBlockingServiceGetListResponse> SystemTreatmentMappingCallBlockingServiceGetListRequestAsync(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceGetListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemTreatmentMappingCallBlockingServiceGetListResponse;
         }
@@ -3342,7 +3342,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceGetListRequest23
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTreatmentMappingCallBlockingServiceGetListRequest22Async instead.")]
-        public static async Task<SystemTreatmentMappingCallBlockingServiceGetListResponse22> SystemTreatmentMappingCallBlockingServiceGetListRequest22(this OcipClient client, SystemTreatmentMappingCallBlockingServiceGetListRequest22 request)
+        public static async Task<SystemTreatmentMappingCallBlockingServiceGetListResponse22> SystemTreatmentMappingCallBlockingServiceGetListRequest22(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceGetListRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemTreatmentMappingCallBlockingServiceGetListResponse22;
         }
@@ -3353,7 +3353,7 @@ namespace BroadWorksConnector
         /// or an ErrorResponse.
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceGetListRequest23
         /// </summary>
-        public static async Task<SystemTreatmentMappingCallBlockingServiceGetListResponse22> SystemTreatmentMappingCallBlockingServiceGetListRequest22Async(this OcipClient client, SystemTreatmentMappingCallBlockingServiceGetListRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemTreatmentMappingCallBlockingServiceGetListResponse22> SystemTreatmentMappingCallBlockingServiceGetListRequest22Async(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceGetListRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemTreatmentMappingCallBlockingServiceGetListResponse22;
         }
@@ -3364,7 +3364,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceModifyRequest22 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTreatmentMappingCallBlockingServiceModifyRequestAsync instead.")]
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequest(this OcipClient client, SystemTreatmentMappingCallBlockingServiceModifyRequest request)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequest(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceModifyRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3375,7 +3375,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceModifyRequest22 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequestAsync(this OcipClient client, SystemTreatmentMappingCallBlockingServiceModifyRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequestAsync(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceModifyRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3386,7 +3386,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceModifyRequest22V2 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTreatmentMappingCallBlockingServiceModifyRequest22Async instead.")]
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequest22(this OcipClient client, SystemTreatmentMappingCallBlockingServiceModifyRequest22 request)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequest22(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceModifyRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3397,7 +3397,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceModifyRequest22V2 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequest22Async(this OcipClient client, SystemTreatmentMappingCallBlockingServiceModifyRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequest22Async(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceModifyRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3408,7 +3408,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceModifyRequest23 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemTreatmentMappingCallBlockingServiceModifyRequest22V2Async instead.")]
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequest22V2(this OcipClient client, SystemTreatmentMappingCallBlockingServiceModifyRequest22V2 request)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequest22V2(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceModifyRequest22V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3419,7 +3419,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemTreatmentMappingCallBlockingServiceModifyRequest23 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequest22V2Async(this OcipClient client, SystemTreatmentMappingCallBlockingServiceModifyRequest22V2 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> SystemTreatmentMappingCallBlockingServiceModifyRequest22V2Async(this OcipClientBase client, SystemTreatmentMappingCallBlockingServiceModifyRequest22V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3430,7 +3430,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemVoiceMessagingGroupGetRequest22 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemVoiceMessagingGroupGetRequest21Async instead.")]
-        public static async Task<SystemVoiceMessagingGroupGetResponse21> SystemVoiceMessagingGroupGetRequest21(this OcipClient client, SystemVoiceMessagingGroupGetRequest21 request)
+        public static async Task<SystemVoiceMessagingGroupGetResponse21> SystemVoiceMessagingGroupGetRequest21(this OcipClientBase client, SystemVoiceMessagingGroupGetRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemVoiceMessagingGroupGetResponse21;
         }
@@ -3441,7 +3441,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemVoiceMessagingGroupGetRequest22 in AS data mode
         /// </summary>
-        public static async Task<SystemVoiceMessagingGroupGetResponse21> SystemVoiceMessagingGroupGetRequest21Async(this OcipClient client, SystemVoiceMessagingGroupGetRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemVoiceMessagingGroupGetResponse21> SystemVoiceMessagingGroupGetRequest21Async(this OcipClientBase client, SystemVoiceMessagingGroupGetRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemVoiceMessagingGroupGetResponse21;
         }
@@ -3451,7 +3451,7 @@ namespace BroadWorksConnector
         /// Replaced by: SystemVoiceMessagingGroupGetRequest22V2.
         /// </summary>
         [Obsolete("This method is deprecated. Use SystemVoiceMessagingGroupGetRequest22Async instead.")]
-        public static async Task<SystemVoiceMessagingGroupGetResponse22> SystemVoiceMessagingGroupGetRequest22(this OcipClient client, SystemVoiceMessagingGroupGetRequest22 request)
+        public static async Task<SystemVoiceMessagingGroupGetResponse22> SystemVoiceMessagingGroupGetRequest22(this OcipClientBase client, SystemVoiceMessagingGroupGetRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SystemVoiceMessagingGroupGetResponse22;
         }
@@ -3461,7 +3461,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: SystemVoiceMessagingGroupGetRequest22V2.
         /// </summary>
-        public static async Task<SystemVoiceMessagingGroupGetResponse22> SystemVoiceMessagingGroupGetRequest22Async(this OcipClient client, SystemVoiceMessagingGroupGetRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<SystemVoiceMessagingGroupGetResponse22> SystemVoiceMessagingGroupGetRequest22Async(this OcipClientBase client, SystemVoiceMessagingGroupGetRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SystemVoiceMessagingGroupGetResponse22;
         }
@@ -3487,7 +3487,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserAddRequest22 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserAddRequest21Async instead.")]
-        public static async Task<SuccessResponse> UserAddRequest21(this OcipClient client, UserAddRequest21 request)
+        public static async Task<SuccessResponse> UserAddRequest21(this OcipClientBase client, UserAddRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3513,7 +3513,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserAddRequest22 in AS data mode.
         /// </summary>
-        public static async Task<SuccessResponse> UserAddRequest21Async(this OcipClient client, UserAddRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserAddRequest21Async(this OcipClientBase client, UserAddRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3523,7 +3523,7 @@ namespace BroadWorksConnector
         /// Replaced by UserBroadWorksAnywhereGetAvailablePortalListRequest21sp1
         /// </summary>
         [Obsolete("This method is deprecated. Use UserBroadWorksAnywhereGetAvailablePortalListRequestAsync instead.")]
-        public static async Task<UserBroadWorksAnywhereGetAvailablePortalListResponse> UserBroadWorksAnywhereGetAvailablePortalListRequest(this OcipClient client, UserBroadWorksAnywhereGetAvailablePortalListRequest request)
+        public static async Task<UserBroadWorksAnywhereGetAvailablePortalListResponse> UserBroadWorksAnywhereGetAvailablePortalListRequest(this OcipClientBase client, UserBroadWorksAnywhereGetAvailablePortalListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserBroadWorksAnywhereGetAvailablePortalListResponse;
         }
@@ -3533,7 +3533,7 @@ namespace BroadWorksConnector
         /// The response is either UserBroadWorksAnywhereGetAvailablePortalListResponse or ErrorResponse.
         /// Replaced by UserBroadWorksAnywhereGetAvailablePortalListRequest21sp1
         /// </summary>
-        public static async Task<UserBroadWorksAnywhereGetAvailablePortalListResponse> UserBroadWorksAnywhereGetAvailablePortalListRequestAsync(this OcipClient client, UserBroadWorksAnywhereGetAvailablePortalListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserBroadWorksAnywhereGetAvailablePortalListResponse> UserBroadWorksAnywhereGetAvailablePortalListRequestAsync(this OcipClientBase client, UserBroadWorksAnywhereGetAvailablePortalListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserBroadWorksAnywhereGetAvailablePortalListResponse;
         }
@@ -3544,7 +3544,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserCallProcessingGetPolicyRequest22 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallProcessingGetPolicyRequest21sp2Async instead.")]
-        public static async Task<UserCallProcessingGetPolicyResponse21sp2> UserCallProcessingGetPolicyRequest21sp2(this OcipClient client, UserCallProcessingGetPolicyRequest21sp2 request)
+        public static async Task<UserCallProcessingGetPolicyResponse21sp2> UserCallProcessingGetPolicyRequest21sp2(this OcipClientBase client, UserCallProcessingGetPolicyRequest21sp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallProcessingGetPolicyResponse21sp2;
         }
@@ -3555,7 +3555,7 @@ namespace BroadWorksConnector
         /// ErrorResponse.
         /// Replaced by: UserCallProcessingGetPolicyRequest22 in AS data mode
         /// </summary>
-        public static async Task<UserCallProcessingGetPolicyResponse21sp2> UserCallProcessingGetPolicyRequest21sp2Async(this OcipClient client, UserCallProcessingGetPolicyRequest21sp2 request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallProcessingGetPolicyResponse21sp2> UserCallProcessingGetPolicyRequest21sp2Async(this OcipClientBase client, UserCallProcessingGetPolicyRequest21sp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallProcessingGetPolicyResponse21sp2;
         }
@@ -3567,7 +3567,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserCallProcessingGetPolicyRequest22V2 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserCallProcessingGetPolicyRequest22Async instead.")]
-        public static async Task<UserCallProcessingGetPolicyResponse22> UserCallProcessingGetPolicyRequest22(this OcipClient client, UserCallProcessingGetPolicyRequest22 request)
+        public static async Task<UserCallProcessingGetPolicyResponse22> UserCallProcessingGetPolicyRequest22(this OcipClientBase client, UserCallProcessingGetPolicyRequest22 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserCallProcessingGetPolicyResponse22;
         }
@@ -3579,7 +3579,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserCallProcessingGetPolicyRequest22V2 in AS data mode.
         /// </summary>
-        public static async Task<UserCallProcessingGetPolicyResponse22> UserCallProcessingGetPolicyRequest22Async(this OcipClient client, UserCallProcessingGetPolicyRequest22 request, CancellationToken cancellationToken = default)
+        public static async Task<UserCallProcessingGetPolicyResponse22> UserCallProcessingGetPolicyRequest22Async(this OcipClientBase client, UserCallProcessingGetPolicyRequest22 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserCallProcessingGetPolicyResponse22;
         }
@@ -3600,7 +3600,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserEnhancedCallLogsGetListRequest21Sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserEnhancedCallLogsGetListRequest21Async instead.")]
-        public static async Task<UserEnhancedCallLogsGetListResponse21> UserEnhancedCallLogsGetListRequest21(this OcipClient client, UserEnhancedCallLogsGetListRequest21 request)
+        public static async Task<UserEnhancedCallLogsGetListResponse21> UserEnhancedCallLogsGetListRequest21(this OcipClientBase client, UserEnhancedCallLogsGetListRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserEnhancedCallLogsGetListResponse21;
         }
@@ -3621,7 +3621,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserEnhancedCallLogsGetListRequest21Sp1 in AS data mode
         /// </summary>
-        public static async Task<UserEnhancedCallLogsGetListResponse21> UserEnhancedCallLogsGetListRequest21Async(this OcipClient client, UserEnhancedCallLogsGetListRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<UserEnhancedCallLogsGetListResponse21> UserEnhancedCallLogsGetListRequest21Async(this OcipClientBase client, UserEnhancedCallLogsGetListRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserEnhancedCallLogsGetListResponse21;
         }
@@ -3642,7 +3642,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserEnhancedCallLogsGetListRequest21Sp1V2 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserEnhancedCallLogsGetListRequest21sp1Async instead.")]
-        public static async Task<UserEnhancedCallLogsGetListResponse21sp1> UserEnhancedCallLogsGetListRequest21sp1(this OcipClient client, UserEnhancedCallLogsGetListRequest21sp1 request)
+        public static async Task<UserEnhancedCallLogsGetListResponse21sp1> UserEnhancedCallLogsGetListRequest21sp1(this OcipClientBase client, UserEnhancedCallLogsGetListRequest21sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserEnhancedCallLogsGetListResponse21sp1;
         }
@@ -3663,7 +3663,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserEnhancedCallLogsGetListRequest21Sp1V2 in AS data mode
         /// </summary>
-        public static async Task<UserEnhancedCallLogsGetListResponse21sp1> UserEnhancedCallLogsGetListRequest21sp1Async(this OcipClient client, UserEnhancedCallLogsGetListRequest21sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<UserEnhancedCallLogsGetListResponse21sp1> UserEnhancedCallLogsGetListRequest21sp1Async(this OcipClientBase client, UserEnhancedCallLogsGetListRequest21sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserEnhancedCallLogsGetListResponse21sp1;
         }
@@ -3682,7 +3682,7 @@ namespace BroadWorksConnector
         /// callAuthorizationCodeFilter
         /// </summary>
         [Obsolete("This method is deprecated. Use UserEnhancedCallLogsGetListRequest21sp1V2Async instead.")]
-        public static async Task<UserEnhancedCallLogsGetListResponse21sp1V2> UserEnhancedCallLogsGetListRequest21sp1V2(this OcipClient client, UserEnhancedCallLogsGetListRequest21sp1V2 request)
+        public static async Task<UserEnhancedCallLogsGetListResponse21sp1V2> UserEnhancedCallLogsGetListRequest21sp1V2(this OcipClientBase client, UserEnhancedCallLogsGetListRequest21sp1V2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserEnhancedCallLogsGetListResponse21sp1V2;
         }
@@ -3701,7 +3701,7 @@ namespace BroadWorksConnector
         /// The following elements are only used in AS data mode and ignored in XS data mode:
         /// callAuthorizationCodeFilter
         /// </summary>
-        public static async Task<UserEnhancedCallLogsGetListResponse21sp1V2> UserEnhancedCallLogsGetListRequest21sp1V2Async(this OcipClient client, UserEnhancedCallLogsGetListRequest21sp1V2 request, CancellationToken cancellationToken = default)
+        public static async Task<UserEnhancedCallLogsGetListResponse21sp1V2> UserEnhancedCallLogsGetListRequest21sp1V2Async(this OcipClientBase client, UserEnhancedCallLogsGetListRequest21sp1V2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserEnhancedCallLogsGetListResponse21sp1V2;
         }
@@ -3711,7 +3711,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserGetResponse22V5 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserGetRequest22V4Async instead.")]
-        public static async Task<UserGetResponse22V4> UserGetRequest22V4(this OcipClient client, UserGetRequest22V4 request)
+        public static async Task<UserGetResponse22V4> UserGetRequest22V4(this OcipClientBase client, UserGetRequest22V4 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserGetResponse22V4;
         }
@@ -3721,7 +3721,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserGetResponse22V5 in AS data mode
         /// </summary>
-        public static async Task<UserGetResponse22V4> UserGetRequest22V4Async(this OcipClient client, UserGetRequest22V4 request, CancellationToken cancellationToken = default)
+        public static async Task<UserGetResponse22V4> UserGetRequest22V4Async(this OcipClientBase client, UserGetRequest22V4 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserGetResponse22V4;
         }
@@ -3732,7 +3732,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserIntegratedIMPGetRequest21sp1
         /// </summary>
         [Obsolete("This method is deprecated. Use UserIntegratedIMPGetRequestAsync instead.")]
-        public static async Task<UserIntegratedIMPGetResponse> UserIntegratedIMPGetRequest(this OcipClient client, UserIntegratedIMPGetRequest request)
+        public static async Task<UserIntegratedIMPGetResponse> UserIntegratedIMPGetRequest(this OcipClientBase client, UserIntegratedIMPGetRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserIntegratedIMPGetResponse;
         }
@@ -3743,7 +3743,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserIntegratedIMPGetRequest21sp1
         /// </summary>
-        public static async Task<UserIntegratedIMPGetResponse> UserIntegratedIMPGetRequestAsync(this OcipClient client, UserIntegratedIMPGetRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserIntegratedIMPGetResponse> UserIntegratedIMPGetRequestAsync(this OcipClientBase client, UserIntegratedIMPGetRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserIntegratedIMPGetResponse;
         }
@@ -3754,7 +3754,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserInterceptUserGetRequest21sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserInterceptUserGetRequest16sp1Async instead.")]
-        public static async Task<UserInterceptUserGetResponse16sp1> UserInterceptUserGetRequest16sp1(this OcipClient client, UserInterceptUserGetRequest16sp1 request)
+        public static async Task<UserInterceptUserGetResponse16sp1> UserInterceptUserGetRequest16sp1(this OcipClientBase client, UserInterceptUserGetRequest16sp1 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserInterceptUserGetResponse16sp1;
         }
@@ -3765,7 +3765,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserInterceptUserGetRequest21sp1 in AS data mode
         /// </summary>
-        public static async Task<UserInterceptUserGetResponse16sp1> UserInterceptUserGetRequest16sp1Async(this OcipClient client, UserInterceptUserGetRequest16sp1 request, CancellationToken cancellationToken = default)
+        public static async Task<UserInterceptUserGetResponse16sp1> UserInterceptUserGetRequest16sp1Async(this OcipClientBase client, UserInterceptUserGetRequest16sp1 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserInterceptUserGetResponse16sp1;
         }
@@ -3776,7 +3776,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserInterceptUserModifyResponse21sp1 in AS data mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserInterceptUserModifyRequest16Async instead.")]
-        public static async Task<SuccessResponse> UserInterceptUserModifyRequest16(this OcipClient client, UserInterceptUserModifyRequest16 request)
+        public static async Task<SuccessResponse> UserInterceptUserModifyRequest16(this OcipClientBase client, UserInterceptUserModifyRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3787,7 +3787,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserInterceptUserModifyResponse21sp1 in AS data mode
         /// </summary>
-        public static async Task<SuccessResponse> UserInterceptUserModifyRequest16Async(this OcipClient client, UserInterceptUserModifyRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserInterceptUserModifyRequest16Async(this OcipClientBase client, UserInterceptUserModifyRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3814,7 +3814,7 @@ namespace BroadWorksConnector
         /// Replaced by : UserAddRequest22 in AS mode
         /// </summary>
         [Obsolete("This method is deprecated. Use UserModifyRequest21Async instead.")]
-        public static async Task<SuccessResponse> UserModifyRequest21(this OcipClient client, UserModifyRequest21 request)
+        public static async Task<SuccessResponse> UserModifyRequest21(this OcipClientBase client, UserModifyRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3841,7 +3841,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by : UserAddRequest22 in AS mode
         /// </summary>
-        public static async Task<SuccessResponse> UserModifyRequest21Async(this OcipClient client, UserModifyRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserModifyRequest21Async(this OcipClientBase client, UserModifyRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -3851,7 +3851,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserSharedCallAppearanceGetRequest21sp1.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSharedCallAppearanceGetRequest16sp2Async instead.")]
-        public static async Task<UserSharedCallAppearanceGetResponse16sp2> UserSharedCallAppearanceGetRequest16sp2(this OcipClient client, UserSharedCallAppearanceGetRequest16sp2 request)
+        public static async Task<UserSharedCallAppearanceGetResponse16sp2> UserSharedCallAppearanceGetRequest16sp2(this OcipClientBase client, UserSharedCallAppearanceGetRequest16sp2 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserSharedCallAppearanceGetResponse16sp2;
         }
@@ -3861,7 +3861,7 @@ namespace BroadWorksConnector
         /// The response is either a UserSharedCallAppearanceGetResponse16sp2 or an ErrorResponse.
         /// Replaced by: UserSharedCallAppearanceGetRequest21sp1.
         /// </summary>
-        public static async Task<UserSharedCallAppearanceGetResponse16sp2> UserSharedCallAppearanceGetRequest16sp2Async(this OcipClient client, UserSharedCallAppearanceGetRequest16sp2 request, CancellationToken cancellationToken = default)
+        public static async Task<UserSharedCallAppearanceGetResponse16sp2> UserSharedCallAppearanceGetRequest16sp2Async(this OcipClientBase client, UserSharedCallAppearanceGetRequest16sp2 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserSharedCallAppearanceGetResponse16sp2;
         }
@@ -3873,7 +3873,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserShInterfaceGetPublicIdDataRequest21sp1.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserShInterfaceGetPublicIdDataRequestAsync instead.")]
-        public static async Task<UserShInterfaceGetPublicIdDataResponse> UserShInterfaceGetPublicIdDataRequest(this OcipClient client, UserShInterfaceGetPublicIdDataRequest request)
+        public static async Task<UserShInterfaceGetPublicIdDataResponse> UserShInterfaceGetPublicIdDataRequest(this OcipClientBase client, UserShInterfaceGetPublicIdDataRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserShInterfaceGetPublicIdDataResponse;
         }
@@ -3885,7 +3885,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserShInterfaceGetPublicIdDataRequest21sp1.
         /// </summary>
-        public static async Task<UserShInterfaceGetPublicIdDataResponse> UserShInterfaceGetPublicIdDataRequestAsync(this OcipClient client, UserShInterfaceGetPublicIdDataRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserShInterfaceGetPublicIdDataResponse> UserShInterfaceGetPublicIdDataRequestAsync(this OcipClientBase client, UserShInterfaceGetPublicIdDataRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserShInterfaceGetPublicIdDataResponse;
         }
@@ -3896,7 +3896,7 @@ namespace BroadWorksConnector
         /// Replaced by: UserShInterfaceGetUserIdDataRequest21sp1 in AS data mode.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserShInterfaceGetUserIdDataRequestAsync instead.")]
-        public static async Task<UserShInterfaceGetUserIdDataResponse> UserShInterfaceGetUserIdDataRequest(this OcipClient client, UserShInterfaceGetUserIdDataRequest request)
+        public static async Task<UserShInterfaceGetUserIdDataResponse> UserShInterfaceGetUserIdDataRequest(this OcipClientBase client, UserShInterfaceGetUserIdDataRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserShInterfaceGetUserIdDataResponse;
         }
@@ -3907,7 +3907,7 @@ namespace BroadWorksConnector
         /// 
         /// Replaced by: UserShInterfaceGetUserIdDataRequest21sp1 in AS data mode.
         /// </summary>
-        public static async Task<UserShInterfaceGetUserIdDataResponse> UserShInterfaceGetUserIdDataRequestAsync(this OcipClient client, UserShInterfaceGetUserIdDataRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserShInterfaceGetUserIdDataResponse> UserShInterfaceGetUserIdDataRequestAsync(this OcipClientBase client, UserShInterfaceGetUserIdDataRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserShInterfaceGetUserIdDataResponse;
         }

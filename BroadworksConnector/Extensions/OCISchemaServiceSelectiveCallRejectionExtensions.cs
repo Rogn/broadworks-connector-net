@@ -18,7 +18,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSelectiveCallRejectionAddCriteriaRequest16Async instead.")]
-        public static async Task<SuccessResponse> UserSelectiveCallRejectionAddCriteriaRequest16(this OcipClient client, UserSelectiveCallRejectionAddCriteriaRequest16 request)
+        public static async Task<SuccessResponse> UserSelectiveCallRejectionAddCriteriaRequest16(this OcipClientBase client, UserSelectiveCallRejectionAddCriteriaRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -31,7 +31,7 @@ namespace BroadWorksConnector
         /// For the callToNumber, the extension element is not used and the number element is only used when the type is BroadWorks Mobility.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserSelectiveCallRejectionAddCriteriaRequest16Async(this OcipClient client, UserSelectiveCallRejectionAddCriteriaRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserSelectiveCallRejectionAddCriteriaRequest16Async(this OcipClientBase client, UserSelectiveCallRejectionAddCriteriaRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -40,7 +40,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSelectiveCallRejectionDeleteCriteriaRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserSelectiveCallRejectionDeleteCriteriaRequest(this OcipClient client, UserSelectiveCallRejectionDeleteCriteriaRequest request)
+        public static async Task<SuccessResponse> UserSelectiveCallRejectionDeleteCriteriaRequest(this OcipClientBase client, UserSelectiveCallRejectionDeleteCriteriaRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -49,7 +49,7 @@ namespace BroadWorksConnector
         /// Delete a criteria from the user's selective call rejection service.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserSelectiveCallRejectionDeleteCriteriaRequestAsync(this OcipClient client, UserSelectiveCallRejectionDeleteCriteriaRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserSelectiveCallRejectionDeleteCriteriaRequestAsync(this OcipClientBase client, UserSelectiveCallRejectionDeleteCriteriaRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -58,7 +58,7 @@ namespace BroadWorksConnector
         /// The response is either a UserSelectiveCallRejectionGetCriteriaListResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSelectiveCallRejectionGetCriteriaListRequestAsync instead.")]
-        public static async Task<UserSelectiveCallRejectionGetCriteriaListResponse> UserSelectiveCallRejectionGetCriteriaListRequest(this OcipClient client, UserSelectiveCallRejectionGetCriteriaListRequest request)
+        public static async Task<UserSelectiveCallRejectionGetCriteriaListResponse> UserSelectiveCallRejectionGetCriteriaListRequest(this OcipClientBase client, UserSelectiveCallRejectionGetCriteriaListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserSelectiveCallRejectionGetCriteriaListResponse;
         }
@@ -67,7 +67,7 @@ namespace BroadWorksConnector
         /// Get the user's selective call rejection criteria listing.
         /// The response is either a UserSelectiveCallRejectionGetCriteriaListResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<UserSelectiveCallRejectionGetCriteriaListResponse> UserSelectiveCallRejectionGetCriteriaListRequestAsync(this OcipClient client, UserSelectiveCallRejectionGetCriteriaListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<UserSelectiveCallRejectionGetCriteriaListResponse> UserSelectiveCallRejectionGetCriteriaListRequestAsync(this OcipClientBase client, UserSelectiveCallRejectionGetCriteriaListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserSelectiveCallRejectionGetCriteriaListResponse;
         }
@@ -76,7 +76,7 @@ namespace BroadWorksConnector
         /// The response is either a UserSelectiveCallRejectionGetCriteriaResponse21 or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSelectiveCallRejectionGetCriteriaRequest21Async instead.")]
-        public static async Task<UserSelectiveCallRejectionGetCriteriaResponse21> UserSelectiveCallRejectionGetCriteriaRequest21(this OcipClient client, UserSelectiveCallRejectionGetCriteriaRequest21 request)
+        public static async Task<UserSelectiveCallRejectionGetCriteriaResponse21> UserSelectiveCallRejectionGetCriteriaRequest21(this OcipClientBase client, UserSelectiveCallRejectionGetCriteriaRequest21 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as UserSelectiveCallRejectionGetCriteriaResponse21;
         }
@@ -85,7 +85,7 @@ namespace BroadWorksConnector
         /// Get a criteria for the user's selective call rejection service.
         /// The response is either a UserSelectiveCallRejectionGetCriteriaResponse21 or an ErrorResponse.
         /// </summary>
-        public static async Task<UserSelectiveCallRejectionGetCriteriaResponse21> UserSelectiveCallRejectionGetCriteriaRequest21Async(this OcipClient client, UserSelectiveCallRejectionGetCriteriaRequest21 request, CancellationToken cancellationToken = default)
+        public static async Task<UserSelectiveCallRejectionGetCriteriaResponse21> UserSelectiveCallRejectionGetCriteriaRequest21Async(this OcipClientBase client, UserSelectiveCallRejectionGetCriteriaRequest21 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as UserSelectiveCallRejectionGetCriteriaResponse21;
         }
@@ -94,7 +94,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSelectiveCallRejectionModifyActiveCriteriaListRequestAsync instead.")]
-        public static async Task<SuccessResponse> UserSelectiveCallRejectionModifyActiveCriteriaListRequest(this OcipClient client, UserSelectiveCallRejectionModifyActiveCriteriaListRequest request)
+        public static async Task<SuccessResponse> UserSelectiveCallRejectionModifyActiveCriteriaListRequest(this OcipClientBase client, UserSelectiveCallRejectionModifyActiveCriteriaListRequest request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -103,7 +103,7 @@ namespace BroadWorksConnector
         /// Activate the user's selective call rejection criteria list.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserSelectiveCallRejectionModifyActiveCriteriaListRequestAsync(this OcipClient client, UserSelectiveCallRejectionModifyActiveCriteriaListRequest request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserSelectiveCallRejectionModifyActiveCriteriaListRequestAsync(this OcipClientBase client, UserSelectiveCallRejectionModifyActiveCriteriaListRequest request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
@@ -116,7 +116,7 @@ namespace BroadWorksConnector
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
         [Obsolete("This method is deprecated. Use UserSelectiveCallRejectionModifyCriteriaRequest16Async instead.")]
-        public static async Task<SuccessResponse> UserSelectiveCallRejectionModifyCriteriaRequest16(this OcipClient client, UserSelectiveCallRejectionModifyCriteriaRequest16 request)
+        public static async Task<SuccessResponse> UserSelectiveCallRejectionModifyCriteriaRequest16(this OcipClientBase client, UserSelectiveCallRejectionModifyCriteriaRequest16 request)
         {
             return await client.CallAsync(request).ConfigureAwait(false) as SuccessResponse;
         }
@@ -129,7 +129,7 @@ namespace BroadWorksConnector
         /// For the callToNumbers in the callToNumberList, the extension element is not used and the number element is only used when the type is BroadWorks Mobility.
         /// The response is either a SuccessResponse or an ErrorResponse.
         /// </summary>
-        public static async Task<SuccessResponse> UserSelectiveCallRejectionModifyCriteriaRequest16Async(this OcipClient client, UserSelectiveCallRejectionModifyCriteriaRequest16 request, CancellationToken cancellationToken = default)
+        public static async Task<SuccessResponse> UserSelectiveCallRejectionModifyCriteriaRequest16Async(this OcipClientBase client, UserSelectiveCallRejectionModifyCriteriaRequest16 request, CancellationToken cancellationToken = default)
         {
             return await client.CallAsync(request, cancellationToken).ConfigureAwait(false) as SuccessResponse;
         }
