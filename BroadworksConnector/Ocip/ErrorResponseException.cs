@@ -7,7 +7,7 @@ namespace BroadWorksConnector.Ocip
     /// <summary>
     /// Thrown when BroadWorks returns an ErrorResponse object. This is generally returned when a validation or permission check fails.
     /// </summary>
-    public class ErrorResponseException : Exception
+    public class ErrorResponseException : OcipException
     {
         public int Code { get; private set; }
 
@@ -31,7 +31,7 @@ namespace BroadWorksConnector.Ocip
 
             if (matches.Count > 0)
             {
-                Code = Int32.Parse(matches[0].Groups[1].Value);
+                Code = int.Parse(matches[0].Groups[1].Value);
             }
         }
     }

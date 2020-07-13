@@ -17,8 +17,8 @@ namespace BroadWorksConnector
         /// <param name="password"></param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        /// <exception cref="LoginException"> Thrown when the login to the server fails.</exception>
         /// <exception cref="BadResponseException">Thrown when server returns something that isn't expected.</exception>
+        /// <exception cref="ErrorResponseException">Thrown when server returns an ErrorResponse object.</exception>
         Task<UserDetails> LoginAsync(string username, string password, CancellationToken cancellationToken);
 
         /// <summary>
@@ -29,8 +29,8 @@ namespace BroadWorksConnector
         /// <param name="password"></param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        /// <exception cref="LoginException"> Thrown when the login to the server fails.</exception>
         /// <exception cref="BadResponseException">Thrown when server returns something that isn't expected.</exception>
+        /// <exception cref="ErrorResponseException">Thrown when server returns an ErrorResponse object.</exception>
         Task<UserDetails> LoginR22Async(string username, string password, CancellationToken cancellationToken);
 
         /// <summary>

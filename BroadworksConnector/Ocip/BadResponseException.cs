@@ -5,7 +5,7 @@ namespace BroadWorksConnector.Ocip
     /// <summary>
     /// Thrown when BroadWorks returns a response from an OCIP call that can't be handled.
     /// </summary>
-    public class BadResponseException : Exception
+    public class BadResponseException : OcipException
     {
         /// <summary>
         /// Constructor

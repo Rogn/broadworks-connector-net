@@ -33,8 +33,8 @@ namespace BroadWorksConnector
         /// <param name="password"></param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        /// <exception cref="LoginException"> Thrown when the login to the server fails.</exception>
         /// <exception cref="BadResponseException">Thrown when server returns something that isn't expected.</exception>
+        /// <exception cref="ErrorResponseException">Thrown when server returns an ErrorResponse object.</exception>
         public async Task<UserDetails> LoginAsync(string username, string password, CancellationToken cancellationToken)
         {
             _sessionId = GenerateSessionId();
@@ -58,7 +58,7 @@ namespace BroadWorksConnector
             }
             else
             {
-                throw new LoginException("Only MD5 supported for signing");
+                throw new NotSupportedException("Only MD5 supported for signing");
             }
 
             // Release 14sp4 if the default login method unless R22 is specified
@@ -93,8 +93,8 @@ namespace BroadWorksConnector
         /// <param name="password"></param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        /// <exception cref="LoginException"> Thrown when the login to the server fails.</exception>
         /// <exception cref="BadResponseException">Thrown when server returns something that isn't expected.</exception>
+        /// <exception cref="ErrorResponseException">Thrown when server returns an ErrorResponse object.</exception>
         public async Task<UserDetails> LoginR22Async(string username, string password, CancellationToken cancellationToken)
         {
             // Release 22 login will return reseller information if logging in as a reseller
