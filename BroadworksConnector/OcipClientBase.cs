@@ -35,7 +35,7 @@ namespace BroadWorksConnector
         /// <returns></returns>
         /// <exception cref="BadResponseException">Thrown when server returns something that isn't expected.</exception>
         /// <exception cref="ErrorResponseException">Thrown when server returns an ErrorResponse object.</exception>
-        public async Task<UserDetails> LoginAsync(string username, string password, CancellationToken cancellationToken)
+        public async Task<UserDetails> LoginAsync(string username, string password, CancellationToken cancellationToken = default)
         {
             _sessionId = GenerateSessionId();
 
@@ -95,7 +95,7 @@ namespace BroadWorksConnector
         /// <returns></returns>
         /// <exception cref="BadResponseException">Thrown when server returns something that isn't expected.</exception>
         /// <exception cref="ErrorResponseException">Thrown when server returns an ErrorResponse object.</exception>
-        public async Task<UserDetails> LoginR22Async(string username, string password, CancellationToken cancellationToken)
+        public async Task<UserDetails> LoginR22Async(string username, string password, CancellationToken cancellationToken = default)
         {
             // Release 22 login will return reseller information if logging in as a reseller
             var loginRequest = new LoginRequest22V2

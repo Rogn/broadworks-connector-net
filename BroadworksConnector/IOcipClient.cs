@@ -19,7 +19,7 @@ namespace BroadWorksConnector
         /// <returns></returns>
         /// <exception cref="BadResponseException">Thrown when server returns something that isn't expected.</exception>
         /// <exception cref="ErrorResponseException">Thrown when server returns an ErrorResponse object.</exception>
-        Task<UserDetails> LoginAsync(string username, string password, CancellationToken cancellationToken);
+        Task<UserDetails> LoginAsync(string username, string password, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Logs into OCI-P using the given credentials. This must be done before any other calls can be made.
@@ -31,7 +31,7 @@ namespace BroadWorksConnector
         /// <returns></returns>
         /// <exception cref="BadResponseException">Thrown when server returns something that isn't expected.</exception>
         /// <exception cref="ErrorResponseException">Thrown when server returns an ErrorResponse object.</exception>
-        Task<UserDetails> LoginR22Async(string username, string password, CancellationToken cancellationToken);
+        Task<UserDetails> LoginR22Async(string username, string password, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Executes a single OCI command
